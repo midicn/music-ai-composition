@@ -25,11 +25,11 @@ sources:
 用什么工具、怎么把想法说清楚、生成出来的东西不满意怎么改、改完以什么格式交付、
 这段音频到底能不能用。这些是**流程与判断**，不是声学。
 
-## 与「生产与数字音乐」的分界
+## 与「音频与音乐制作」的分界
 
 同一件事会在两站出现，各讲自己那一半：
 
-> **生产与数字音乐 = 声音是怎么被造出来的**（参数、物理、协议）
+> **音频与音乐制作 = 声音是怎么被造出来的**（参数、物理、协议）
 > **本站 = 怎么把成品做出来**（工具、选型、流程、可控性、交付、合规）
 
 比如"压缩"：那一站讲阈值与比率为什么让声音变紧；这一站讲 AI 生成的整轨太糊时，
@@ -47,7 +47,7 @@ sources:
 ## 这一站不讲什么
 
 - **不讲乐理** —— 和声、调式、曲式在乐理与和声那一站。
-- **不讲声音原理** —— 采样率、动态、滤波在「生产与数字音乐」。
+- **不讲声音原理** —— 采样率、动态、滤波在「音频与音乐制作」。
 - **不做导购** —— 比较维度照给，但不排"哪个最好"。
 - **不承诺例证音频长期可听** —— AI 生成的音频其权利状态与合成示例不同，
   本页的音频例证策略见各条目页首的许可标注。
@@ -63,11 +63,11 @@ decisions — which tool, how to describe what you want, how to fix a generation
 that isn't right, what format to deliver in, and whether you may use the result
 at all. Those are questions of **process and judgement**, not acoustics.
 
-## Where it stops and Production begins
+## Where it stops and Audio & Music Production begins
 
 The same topic appears on both sites, each covering its own half:
 
-> **Production & Digital Audio = how a sound is made** (parameters, physics, protocols)
+> **Audio & Music Production = how a sound is made** (parameters, physics, protocols)
 > **This site = how a deliverable is made** (tools, selection, workflow, control, hand-off, rights)
 
 Compression, for example: that site explains why threshold and ratio make a
