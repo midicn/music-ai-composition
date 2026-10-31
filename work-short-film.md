@@ -12,7 +12,7 @@ tags_en: [short film, scoring, dialogue, timecode]
 alias: [短片配乐, 电影配乐, short film score]
 order: 5
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 案例
 tool_platforms: [通用]
 tool_price: 不适用

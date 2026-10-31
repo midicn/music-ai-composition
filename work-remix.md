@@ -12,7 +12,7 @@ tags_en: [remix, stems, licensing, dance]
 alias: [重混, remix, 混音改编, bootleg]
 order: 11
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 案例
 tool_platforms: [通用]
 tool_price: 不适用

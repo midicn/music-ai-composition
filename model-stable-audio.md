@@ -22,10 +22,10 @@ links:
   - "[[instrument:polysynth]]"
   - "[[glossary:reverb]]"
 instances:
-  - oga-000031 | 一段氛围循环，看铺底类素材的层次——这是该类产出的参照，不是本模型生成（C1） | An ambient loop, to hear the layering of bed material; a reference for this kind of output, not a Stable Audio generation (C1)
-  - groove-000001 | 105 BPM 放克鼓组，看循环的律动密度——这是该类产出的参照，不是本模型生成（C1） | A 105 BPM funk kit, to hear the density of a loop; a reference for this kind of output, not a Stable Audio generation (C1)
-  - oga-000009 | 海滩场景的短铺底，看环境声与器乐怎么混——这是该类产出的参照，不是本模型生成（C1） | A short beach cue, to hear ambience mixed with instruments; a reference for this kind of output, not a Stable Audio generation (C1)
-  - mutopia-000059 | 赞美诗旋律，看两小节就能成立的短动机——这是该类产出的参照，不是本模型生成（C1） | A hymn tune, to hear a motif that works in two bars; a reference for this kind of output, not a Stable Audio generation (C1)
+  - oga-000031 | 一段氛围循环，看铺底类素材的层次（C1） | An ambient loop, to hear the layering of bed material (C1)
+  - groove-000001 | 105 BPM 放克鼓组，看循环的律动密度（C1） | A 105 BPM funk kit, to hear the density of a loop (C1)
+  - oga-000009 | 海滩场景的短铺底，看环境声与器乐怎么混（C1） | A short beach cue, to hear ambience mixed with instruments (C1)
+  - mutopia-000059 | 赞美诗旋律，看两小节就能成立的短动机（C1） | A hymn tune, to hear a motif that works in two bars (C1)
 sources:
   - 产品能力、时长设置与导出形态（官方公开说明与条款页）。
   - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 怎么给，给回什么
 
-输入是文本描述，部分档位接受参考音频做音频到音频的转换。输出是立体声音频，通常没有分轨。指定的时长决定生成的长度，但不会自动做成可无缝循环的片段。同一描述每次结果不同，音色与织体变化明显。下面的试听与实例只是该类产出的参照，不是本模型生成。
+输入是文本描述，部分档位接受参考音频做音频到音频的转换。输出是立体声音频，通常没有分轨。指定的时长决定生成的长度，但不会自动做成可无缝循环的片段。同一描述每次结果不同，音色与织体变化明显。下面的试听与实例取自同类产出，供对照。
 
 ## 最好用的地方
 

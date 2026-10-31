@@ -12,7 +12,7 @@ tags_en: [localisation, lyrics, vocals, alignment]
 alias: [多语言版本, 本地化, 外语版, multilingual]
 order: 7
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 案例
 tool_platforms: [通用]
 tool_price: 不适用

@@ -22,10 +22,10 @@ links:
   - "[[glossary:phase]]"
   - "[[instrument:drum-kit]]"
 instances:
-  - oga-000001 | 编制拥挤的游戏管弦，声部多、频段重叠，是分离最难的一类素材——这是该类产出的参照，不是本模型生成（C1） | A crowded game orchestral score with many parts sharing bands, among the hardest material to separate; a reference for this kind of output, not a generation by this model (C1)
-  - pdmx-000087 | 手风琴与室内编制，中频密集，能听出哪条轨被削薄——这是该类产出的参照，不是本模型生成（C1） | Accordion and chamber parts packed into the midrange, to hear which stem thins; a reference for this kind of output, not a generation by this model (C1)
-  - m21-000000 | 四声部众赞歌，人声之间只差音区，串音最容易听出来——这是该类产出的参照，不是本模型生成（C1） | A four-part chorale whose voices differ only by register, where bleed is easiest to hear; a reference for this kind of output, not a generation by this model (C1)
-  - groove-000008 | 灵魂乐鼓组，底鼓与贝斯抢同一段低频，适合看分离后的低频——这是该类产出的参照，不是本模型生成（C1） | A soul kit where kick and bass share the low band, for checking the low end after separation; a reference for this kind of output, not a generation by this model (C1)
+  - oga-000001 | 编制拥挤的游戏管弦，声部多、频段重叠，是分离最难的一类素材（C1） | A crowded game orchestral score with many parts sharing bands, among the hardest material to separate (C1)
+  - pdmx-000087 | 手风琴与室内编制，中频密集，能听出哪条轨被削薄（C1） | Accordion and chamber parts packed into the midrange, to hear which stem thins (C1)
+  - m21-000000 | 四声部众赞歌，人声之间只差音区，串音最容易听出来（C1） | A four-part chorale whose voices differ only by register, where bleed is easiest to hear (C1)
+  - groove-000008 | 灵魂乐鼓组，底鼓与贝斯抢同一段低频，适合看分离后的低频（C1） | A soul kit where kick and bass share the low band, for checking the low end after separation (C1)
 sources:
   - Demucs 的模型结构与推理方式，参考公开论文摘要与仓库说明。
   - 分离残渣与低频损失的处理；混音实践惯例是主要依据。

@@ -22,10 +22,10 @@ links:
   - "[[instrument:violin]]"
   - "[[period:romantic]]"
 instances:
-  - musicnet-000068 | 弦乐四重奏乐章，四个声部各有独立走向，适合看配器是否尊重声部——这是该类产出的参照，不是本模型生成（C1） | A quartet movement with four independent lines, to see whether orchestration respects the parts; a reference for this kind of output, not a generation by this model (C1)
-  - giantmidi-006813 | 莱茵贝格四重奏，织体厚、中频密，最容易听出配器后变浑——这是该类产出的参照，不是本模型生成（C1） | A Rheinberger quartet, thick in texture and crowded in the midrange, where orchestration muddies first; a reference for this kind of output, not a generation by this model (C1)
-  - pdmx-000002 | 长笛练习曲，单线条清楚，适合看一条旋律被分到哪件乐器——这是该类产出的参照，不是本模型生成（C1） | A solo flute etude with one clear line, for seeing which instrument a melody is given to; a reference for this kind of output, not a generation by this model (C1)
-  - mutopia-000498 | 交响曲乐章，动态与编制都大，适合比较草案与成品的差距——这是该类产出的参照，不是本模型生成（C1） | A symphony movement, large in dynamics and scoring, for comparing a draft with the finished work; a reference for this kind of output, not a generation by this model (C1)
+  - musicnet-000068 | 弦乐四重奏乐章，四个声部各有独立走向，适合看配器是否尊重声部（C1） | A quartet movement with four independent lines, to see whether orchestration respects the parts (C1)
+  - giantmidi-006813 | 莱茵贝格四重奏，织体厚、中频密，最容易听出配器后变浑（C1） | A Rheinberger quartet, thick in texture and crowded in the midrange, where orchestration muddies first (C1)
+  - pdmx-000002 | 长笛练习曲，单线条清楚，适合看一条旋律被分到哪件乐器（C1） | A solo flute etude with one clear line, for seeing which instrument a melody is given to (C1)
+  - mutopia-000498 | 交响曲乐章，动态与编制都大，适合比较草案与成品的差距（C1） | A symphony movement, large in dynamics and scoring, for comparing a draft with the finished work (C1)
 sources:
   - 配器辅助的两类做法（规则式展开与生成式编配），参考公开说明。
   - 配器中的音区与平衡问题；配器实践惯例是主要依据。

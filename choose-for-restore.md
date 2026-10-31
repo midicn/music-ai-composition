@@ -16,20 +16,20 @@ links:
   - "[[glossary:monitoring]]"
   - "[[glossary:mastering]]"
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 网页
 tool_platforms: [浏览器]
 tool_price: 免费
 tool_jobs: [选型, 修复]
 tool_verified: 2026-10-30
 instances:
-  - cyberhymnal-000001 | 桑基《九十九只羊》，十九世纪福音赞美诗，窄带老录音的典型素材（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - pdmx-002646 | 《纽约的人行道》，十九世纪末的流行歌曲，方整短小，修完容易听出处理痕迹（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - giantmidi-004939 | 格什温《斯瓦尼》，早期流行歌曲，人声与乐队争频段的参照（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - cyberhymnal-001734 | 勃拉姆斯《伯利恒摇篮曲》，弱奏管风琴，底噪与动态的边界（C1）；这是该用途常见产出的参照，不是本站工具的演示
+  - cyberhymnal-000001 | 桑基《九十九只羊》，十九世纪福音赞美诗，窄带老录音的典型素材（C1）
+  - pdmx-002646 | 《纽约的人行道》，十九世纪末的流行歌曲，方整短小，修完容易听出处理痕迹（C1）
+  - giantmidi-004939 | 格什温《斯瓦尼》，早期流行歌曲，人声与乐队争频段的参照（C1）
+  - cyberhymnal-001734 | 勃拉姆斯《伯利恒摇篮曲》，弱奏管风琴，底噪与动态的边界（C1）
 sources:
-  - 谱修复、降噪与语音增强的公开技术说明——依据来自2026-10-30 复核。
-  - 档案保存与再发行的通行做法，对照惯例整理。法律结论不在本文范围。
+  - 谱修复、降噪与语音增强的公开技术说明（2026-10-30 复核）。
+  - 档案保存与再发行的通行做法，对照惯例整理。法律层面以现行法规为准。
 updated: 2026-10-30
 ---
 
@@ -98,7 +98,7 @@ If the voice must be clear and the music can go, separate with Demucs or LALAL.A
 
 ## First three things to learn
 
-Learn to keep an untouched original, to change one thing per pass, and to A/B before and after every step. Then read this site's pages on fixing artifacts, stem separation tools and loudness targets.
+Learn to keep an untouched original, to change one thing per pass, and to A/B before and after every step. Then read the pages on fixing artifacts, stem separation tools and loudness targets.
 
 ```audiolab
 {"type":"instrument","gm":"Reed Organ","synth":"reed","phrase":["G3","B3","D4","G4","F4","D4","B3","G3"],"label":"An organ from an old recording","label_en":"An organ from an old recording","hint":"Hear the noise floor first, then decide how much to remove","hint_en":"Hear the noise floor first, then decide how much to remove"}

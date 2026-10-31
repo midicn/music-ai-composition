@@ -12,7 +12,7 @@ tags_en: [game, loops, layers, middleware]
 alias: [游戏循环, 游戏配乐, game loop, 无缝循环]
 order: 4
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 案例
 tool_platforms: [通用]
 tool_price: 不适用

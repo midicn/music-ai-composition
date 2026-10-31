@@ -22,9 +22,9 @@ links:
   - "[[glossary:timbre]]"
   - "[[instrument:voice]]"
 instances:
-  - mutopia-000546 | 布拉姆斯艺术歌曲，长音与辅音交替，最考验合成人声的咬字——这是该类产出的参照，不是本模型生成（C1） | A Brahms art song alternating long notes with consonants, a hard test of synthetic diction; a reference for this kind of output, not a generation by this model (C1)
-  - mutopia-000001 | 分句短、换气明显，可对照合成人声的呼吸处理——这是该类产出的参照，不是本模型生成（C1） | Short phrases with audible breaths, for comparing how a synthetic voice handles breathing; a reference for this kind of output, not a generation by this model (C1)
-  - mutopia-000527 | 旋律简单、歌词重复，容易听清每个字的音头——这是该类产出的参照，不是本模型生成（C1） | A simple tune with repeated words, so each syllable onset is easy to hear; a reference for this kind of output, not a generation by this model (C1)
+  - mutopia-000546 | 布拉姆斯艺术歌曲，长音与辅音交替，最考验合成人声的咬字（C1） | A Brahms art song alternating long notes with consonants, a hard test of synthetic diction (C1)
+  - mutopia-000001 | 分句短、换气明显，可对照合成人声的呼吸处理（C1） | Short phrases with audible breaths, for comparing how a synthetic voice handles breathing (C1)
+  - mutopia-000527 | 旋律简单、歌词重复，容易听清每个字的音头（C1） | A simple tune with repeated words, so each syllable onset is easy to hear (C1)
 sources:
   - VOCALOID 与 Synthesizer V 的编辑方式——依据来自厂商公开说明。
   - 歌声合成的咬字与表情处理，对照制作实践惯例整理。

@@ -16,20 +16,20 @@ links:
   - "[[glossary:incidental-music]]"
   - "[[glossary:lufs]]"
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 网页
 tool_platforms: [浏览器]
 tool_price: 免费
 tool_jobs: [选型, 影视配乐]
 tool_verified: 2026-10-30
 instances:
-  - atepp-000398 | 门德尔松《仲夏夜之梦》戏剧配乐，场景转换处如何换气（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - atepp-005536 | 穆索尔斯基《图画展览会》的侏儒，性格小品的配器密度参照（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - pdmx-002038 | 圣桑《骷髅之舞》，悬念与推进的节奏参照（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - mutopia-001411 | 萨蒂《裸体歌舞》第一首，稀疏底乐的留白参照（C1）；这是该用途常见产出的参照，不是本站工具的演示
+  - atepp-000398 | 门德尔松《仲夏夜之梦》戏剧配乐，场景转换处如何换气（C1）
+  - atepp-005536 | 穆索尔斯基《图画展览会》的侏儒，性格小品的配器密度参照（C1）
+  - pdmx-002038 | 圣桑《骷髅之舞》，悬念与推进的节奏参照（C1）
+  - mutopia-001411 | 萨蒂《裸体歌舞》第一首，稀疏底乐的留白参照（C1）
 sources:
-  - 影视配乐与同步授权的公开流程说明，对照2026-10-30 复核整理。
-  - 响度与交付规格的行业通识（制作实践）。发行结论不在本文范围。
+  - 影视配乐与同步授权的公开流程说明（2026-10-30 复核）。
+  - 响度与交付规格的行业通识（制作实践）。发行层面另说。
 updated: 2026-10-30
 ---
 
@@ -72,7 +72,7 @@ updated: 2026-10-30
 ::: en
 ## What it finishes for you
 
-This page turns scoring a picture into three deliverables: a thirty-second short that needs a cuttable sketch; a ninety-second trailer that needs three hit points landed; four minutes of underscore that must step aside for dialogue. The control each job demands differs by an order of magnitude, and a wrong route sends every revision back to the edit suite.
+Scoring a picture comes down to three deliverables: a thirty-second short that needs a cuttable sketch; a ninety-second trailer that needs three hit points landed; four minutes of underscore that must step aside for dialogue. The control each job demands differs by an order of magnitude, and a wrong route sends every revision back to the edit suite.
 
 ## How it works
 
@@ -98,7 +98,7 @@ For a pitch or a mood check, use Suno or Udio, because it is fast and cheap; for
 
 ## First three things
 
-Learn to match timecode with tempo, to place hit points as markers in the session, and to export at exactly the picture's length. Then read this site's pages on film scoring, sync and cue editing, and loudness targets.
+Learn to match timecode with tempo, to place hit points as markers in the session, and to export at exactly the picture's length. Then read the pages on film scoring, sync and cue editing, and loudness targets.
 
 ```audiolab
 {"type":"instrument","gm":"Tremolo Strings","synth":"bowed","phrase":["D3","F3","A3","D3","C#4","A3","F3","D3"],"label":"Tightened strings","label_en":"Tightened strings","hint":"Set the tension first, the hit points second","hint_en":"Set the tension first, the hit points second"}

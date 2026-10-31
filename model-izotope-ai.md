@@ -22,9 +22,9 @@ links:
   - "[[glossary:noise-floor]]"
   - "[[glossary:limiter]]"
 instances:
-  - giantmidi-000002 | 老式钢琴改编曲，织体与和声都旧，适合看修复会不会磨掉音头——这是该类产出的参照，不是本模型生成（C1） | An old piano arrangement with dated texture and harmony, for checking whether repair blunts the attacks; a reference for this kind of output, not a generation by this model (C1)
-  - pdmx-000004 | 安静的钢琴小品，弱奏段落最容易暴露底噪与处理痕迹——这是该类产出的参照，不是本模型生成（C1） | A quiet piano miniature whose soft passages expose noise and processing marks; a reference for this kind of output, not a generation by this model (C1)
-  - mutopia-000497 | 交响曲乐章，动态大、编制厚，适合看母带助手会不会压过头——这是该类产出的参照，不是本模型生成（C1） | A symphony movement with wide dynamics and thick scoring, for checking whether a master assistant over-compresses; a reference for this kind of output, not a generation by this model (C1)
+  - giantmidi-000002 | 老式钢琴改编曲，织体与和声都旧，适合看修复会不会磨掉音头（C1） | An old piano arrangement with dated texture and harmony, for checking whether repair blunts the attacks (C1)
+  - pdmx-000004 | 安静的钢琴小品，弱奏段落最容易暴露底噪与处理痕迹（C1） | A quiet piano miniature whose soft passages expose noise and processing marks (C1)
+  - mutopia-000497 | 交响曲乐章，动态大、编制厚，适合看母带助手会不会压过头（C1） | A symphony movement with wide dynamics and thick scoring, for checking whether a master assistant over-compresses (C1)
 sources:
   - 修复、再平衡与母带助手的功能划分；厂商公开说明是主要依据。
   - 修复与母带处理的听感取舍——依据来自混音实践惯例。

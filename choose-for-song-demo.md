@@ -16,19 +16,19 @@ links:
   - "[[glossary:daw]]"
   - "[[glossary:tempo]]"
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 网页
 tool_platforms: [浏览器]
 tool_price: 免费
 tool_jobs: [选型, 做歌]
 tool_verified: 2026-10-30
 instances:
-  - wikifonia-000362 | 谢南多厄，主歌副歌分明的民谣，是做歌 Demo 最常对照的结构形态（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - mutopia-000818 | 焦尔达尼《我亲爱的》，一条主旋律加一件伴奏，Demo 阶段的标配编制（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - pdmx-000208 | 奇异恩典，同一旋律的多种编配，用来对照换配器后的差别（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - groove-000006 | 138 BPM 流行鼓组，Demo 里最先被要求改的就是鼓的密度（C1）；这是该用途常见产出的参照，不是本站工具的演示
+  - wikifonia-000362 | 谢南多厄，主歌副歌分明的民谣，是做歌 Demo 最常对照的结构形态（C1）
+  - mutopia-000818 | 焦尔达尼《我亲爱的》，一条主旋律加一件伴奏，Demo 阶段的标配编制（C1）
+  - pdmx-000208 | 奇异恩典，同一旋律的多种编配，用来对照换配器后的差别（C1）
+  - groove-000006 | 138 BPM 流行鼓组，Demo 里最先被要求改的就是鼓的密度（C1）
 sources:
-  - 文本生成、歌声合成与编曲软件公开文档所列能力，对照2026-10-30 复核整理。
+  - 文本生成、歌声合成与编曲软件公开文档所列能力（2026-10-30 复核）。
   - Demo 制作流程的成本与返工经验（制作实践惯例）。
 updated: 2026-10-30
 ---
@@ -72,7 +72,7 @@ updated: 2026-10-30
 ::: en
 ## Jobs it covers
 
-This page settles one narrow question: you have a song and need a demo, so which route. Three jobs fit it: a complete track for a short video by tomorrow; a pitch version a producer can transpose on the spot; a backing track for a singer you already have. Once the route is chosen, the work is fixing the file format, because a demo is not a master and room to change matters more than polish.
+One narrow question settles the route: you have a song and need a demo, so which route. Three jobs fit it: a complete track for a short video by tomorrow; a pitch version a producer can transpose on the spot; a backing track for a singer you already have. Once the route is chosen, the work is fixing the file format, because a demo is not a master and room to change matters more than polish.
 
 ## How it works
 
@@ -98,7 +98,7 @@ If you need editable harmony and orchestration, move from Suno to the arrangemen
 
 ## First three things
 
-Make three versions of the same lyric, one generated, one arrangement draft, one played and sung, and compare how hard each is to revise. Then read this site's pages on choosing a tool, section-by-section generation and arrangement control, and decide which steps you must write yourself.
+Make three versions of the same lyric, one generated, one arrangement draft, one played and sung, and compare how hard each is to revise. Then read the pages on choosing a tool, section-by-section generation and arrangement control, and decide which steps you must write yourself.
 
 ```audiolab
 {"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"A common verse progression","label_en":"A common verse progression","hint":"Get this loop solid before adding arrangement","hint_en":"Get this loop solid before adding arrangement"}

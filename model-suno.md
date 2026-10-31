@@ -22,10 +22,10 @@ links:
   - "[[glossary:stems]]"
   - "[[period:contemporary]]"
 instances:
-  - groove-000006 | 138 BPM 流行鼓组，看整首歌的节奏底盘能否被稳定复现——这是该类产出的参照，不是本模型生成（C1） | A 138 BPM pop kit, to check whether a song's rhythmic bed holds; a reference for this kind of output, not a Suno generation (C1)
-  - groove-000007 | 65 BPM 摇滚鼓组，看慢歌的推力有没有被做出来——这是该类产出的参照，不是本模型生成（C1） | A 65 BPM rock kit, to check the drive of a slow song; a reference for this kind of output, not a Suno generation (C1)
-  - mutopia-000622 | 人声加钢琴的通俗歌曲，看一首歌的骨架——这是该类产出的参照，不是本模型生成（C1） | A voice-and-piano popular song, to hear the shape of a song; a reference for this kind of output, not a Suno generation (C1)
-  - abcmisc-001329 | 里尔舞曲，看带重复段落的器乐小品怎么成立——这是该类产出的参照，不是本模型生成（C1） | A reel, to check how repeated sections hold; a reference for this kind of output, not a Suno generation (C1)
+  - groove-000006 | 138 BPM 流行鼓组，看整首歌的节奏底盘能否被稳定复现（C1） | A 138 BPM pop kit, to check whether a song's rhythmic bed holds (C1)
+  - groove-000007 | 65 BPM 摇滚鼓组，看慢歌的推力有没有被做出来（C1） | A 65 BPM rock kit, to check the drive of a slow song (C1)
+  - mutopia-000622 | 人声加钢琴的通俗歌曲，看一首歌的骨架（C1） | A voice-and-piano popular song, to hear the shape of a song (C1)
+  - abcmisc-001329 | 里尔舞曲，看带重复段落的器乐小品怎么成立（C1） | A reel, to check how repeated sections hold (C1)
 sources:
   - 产品能力与导出形态；官方公开说明与条款页是主要依据。
   - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 接口的两端
 
-输入是文本：风格与情绪描述、歌词、可选的段落标记（主歌、副歌、桥段），部分档位接受参考音频来限定音色与律动。输出通常是立体声音频，部分档位可导出分轨与人声。同一提示会给多个候选，每次结果不同，能留档复现的只有提示与种子，不是音频本身。下面的试听与实例只是该类产出的参照，不是本模型生成。
+输入是文本：风格与情绪描述、歌词、可选的段落标记（主歌、副歌、桥段），部分档位接受参考音频来限定音色与律动。输出通常是立体声音频，部分档位可导出分轨与人声。同一提示会给多个候选，每次结果不同，能留档复现的只有提示与种子，不是音频本身。下面的试听与实例取自同类产出，供对照。
 
 ## 最好用的地方
 
@@ -94,7 +94,7 @@ Input is text: style and mood, lyrics, optional section tags for verse, chorus a
 
 ## Cost, licence, alternatives
 
-Confirm: the commercial scope of your current tier, whether streaming release is allowed, what export rights you have for stems and MIDI, and the official statement on training data. Pricing is tiered; exact figures and regional availability belong on the official page, and this site does not fix them.
+Confirm: the commercial scope of your current tier, whether streaming release is allowed, what export rights you have for stems and MIDI, and the official statement on training data. Pricing is tiered; exact figures and regional availability belong on the official page, and those belong on the official page.
 Alternatives: Udio if you need a more recorded-sounding voice; Stable Audio if you only need instrumental beds and want to avoid vocal-related terms. Both may cost you whole-song structural coherence, so choose by the job at hand.
 
 ```audiolab

@@ -12,7 +12,7 @@ tags_en: [advertising, brand, editing, delivery]
 alias: [30秒广告, 广告配乐, TVC 音乐, 30s ad]
 order: 1
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 案例
 tool_platforms: [通用]
 tool_price: 不适用

@@ -16,20 +16,20 @@ links:
   - "[[glossary:stems]]"
   - "[[glossary:tempo]]"
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 网页
 tool_platforms: [浏览器]
 tool_price: 免费
 tool_jobs: [选型, 游戏音频]
 tool_verified: 2026-10-30
 instances:
-  - oga-000011 | boss 01，一分半的战斗循环，常见长度与段落结构（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - oga-000004 | battle 01，不足一分钟的短循环，接缝处理最难（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - oga-000021 | cave 01，洞穴环境层，稀疏写法与留白（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - oga-000009 | beach 01，三十一秒的场景循环，短到几乎没有发展空间（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - oga-000013 | boss battle 10，八位机音源限制下的战斗段，配器取舍清楚（C1）；这是该用途常见产出的参照，不是本站工具的演示
+  - oga-000011 | boss 01，一分半的战斗循环，常见长度与段落结构（C1）
+  - oga-000004 | battle 01，不足一分钟的短循环，接缝处理最难（C1）
+  - oga-000021 | cave 01，洞穴环境层，稀疏写法与留白（C1）
+  - oga-000009 | beach 01，三十一秒的场景循环，短到几乎没有发展空间（C1）
+  - oga-000013 | boss battle 10，八位机音源限制下的战斗段，配器取舍清楚（C1）
 sources:
-  - 游戏音频中间件与自适应音乐的公开文档——依据来自2026-10-30 复核。
+  - 游戏音频中间件与自适应音乐的公开文档（2026-10-30 复核）。
   - 循环、分层与资产命名的行业实践，对照惯例整理。
 updated: 2026-10-30
 ---
@@ -73,7 +73,7 @@ updated: 2026-10-30
 ::: en
 ## Jobs it covers
 
-This page covers three deliverable jobs: a thirty-second seamlessly loopable bed for a two-minute level; a set of intensity layers for a boss fight that thickens as health drops; a forty-five-second finished piece for an indie trailer. They differ completely in whether the music must be editable and whether it must reach the engine, so name the job before naming software.
+Three deliverable jobs matter here: a thirty-second seamlessly loopable bed for a two-minute level; a set of intensity layers for a boss fight that thickens as health drops; a forty-five-second finished piece for an indie trailer. They differ completely in whether the music must be editable and whether it must reach the engine, so name the job before naming software.
 
 ## How it works
 
@@ -99,7 +99,7 @@ For few levels that only need atmosphere, a library plus Wwise or FMOD is least 
 
 ## First three things
 
-Learn to place loop points on zero crossings, to document each layer's intensity parameter, and to deliver assets under a naming convention. Then read this site's pages on game audio, interactive layers and delivering to an engine.
+Learn to place loop points on zero crossings, to document each layer's intensity parameter, and to deliver assets under a naming convention. Then read the pages on game audio, interactive layers and delivering to an engine.
 
 ```audiolab
 {"type":"rhythm","sig":"4/4","pattern":"s s e s s s e s s s e s s s e s","bpm":132,"label":"A loopable rhythmic layer","label_en":"A loopable rhythmic layer","hint":"Listen for the seam, not just the sound","hint_en":"Listen for the seam, not just the sound"}

@@ -22,10 +22,10 @@ links:
   - "[[glossary:sample-clearance]]"
   - "[[instrument:popular-voice]]"
 instances:
-  - pdmx-000048 | 波萨诺瓦编制，人声与吉他、贝斯贴得近，适合看人声轨的残渣——这是该类产出的参照，不是本模型生成（C1） | A bossa arrangement with the voice close to guitar and bass, for checking residue in the vocal stem; a reference for this kind of output, not a generation by this model (C1)
-  - pdmx-000135 | 小编制歌曲，乐器少但混响多，人声轨容易留住空间感——这是该类产出的参照，不是本模型生成（C1） | A small-ensemble song, few instruments but plenty of reverb, where the vocal stem keeps its space; a reference for this kind of output, not a generation by this model (C1)
-  - pdmx-000107 | 手风琴与弦乐为主的舞曲，中频拥挤，适合看乐器分离——这是该类产出的参照，不是本模型生成（C1） | A dance piece led by accordion and strings with a crowded midrange, for checking instrument separation; a reference for this kind of output, not a generation by this model (C1)
-  - oga-000006 | 游戏战斗配乐，鼓与铜管密集，适合看瞬态是否被保留——这是该类产出的参照，不是本模型生成（C1） | Dense game battle music with drums and brass, for checking whether transients survive; a reference for this kind of output, not a generation by this model (C1)
+  - pdmx-000048 | 波萨诺瓦编制，人声与吉他、贝斯贴得近，适合看人声轨的残渣（C1） | A bossa arrangement with the voice close to guitar and bass, for checking residue in the vocal stem (C1)
+  - pdmx-000135 | 小编制歌曲，乐器少但混响多，人声轨容易留住空间感（C1） | A small-ensemble song, few instruments but plenty of reverb, where the vocal stem keeps its space (C1)
+  - pdmx-000107 | 手风琴与弦乐为主的舞曲，中频拥挤，适合看乐器分离（C1） | A dance piece led by accordion and strings with a crowded midrange, for checking instrument separation (C1)
+  - oga-000006 | 游戏战斗配乐，鼓与铜管密集，适合看瞬态是否被保留（C1） | Dense game battle music with drums and brass, for checking whether transients survive (C1)
 sources:
   - 在线分轨的输入输出与档位（服务官方页面）。
   - 上传素材的隐私与版权处理，参考服务条款与惯例。

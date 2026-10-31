@@ -12,7 +12,7 @@ tags_en: [sampling, chopping, clearance, beatmaking]
 alias: [采样再创作, 采样翻转, sample flip, 切片]
 order: 8
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 案例
 tool_platforms: [通用]
 tool_price: 不适用

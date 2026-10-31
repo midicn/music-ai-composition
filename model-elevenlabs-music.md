@@ -22,10 +22,10 @@ links:
   - "[[instrument:voice]]"
   - "[[glossary:reverb]]"
 instances:
-  - oga-000003 | 一分半的紧张场景曲，看短配乐的铺陈——这是该类产出的参照，不是本模型生成（C1） | A ninety second tension cue, to hear short-form scoring; a reference for this kind of output, not an ElevenLabs generation (C1)
-  - oga-000005 | 三十八秒的战斗片段，看强节奏短音效的用法——这是该类产出的参照，不是本模型生成（C1） | A thirty-eight second battle cue, to hear rhythm-driven short audio; a reference for this kind of output, not an ElevenLabs generation (C1)
-  - oga-000031 | 一段氛围循环，看环境音的层次——这是该类产出的参照，不是本模型生成（C1） | An ambient loop, to hear environmental layers; a reference for this kind of output, not an ElevenLabs generation (C1)
-  - cyberhymnal-003336 | 中文歌词的赞美诗，看配音与歌词的咬字——这是该类产出的参照，不是本模型生成（C1） | A hymn with Chinese words, to hear diction for dubbing; a reference for this kind of output, not an ElevenLabs generation (C1)
+  - oga-000003 | 一分半的紧张场景曲，看短配乐的铺陈（C1） | A ninety second tension cue, to hear short-form scoring (C1)
+  - oga-000005 | 三十八秒的战斗片段，看强节奏短音效的用法（C1） | A thirty-eight second battle cue, to hear rhythm-driven short audio (C1)
+  - oga-000031 | 一段氛围循环，看环境音的层次（C1） | An ambient loop, to hear environmental layers (C1)
+  - cyberhymnal-003336 | 中文歌词的赞美诗，看配音与歌词的咬字（C1） | A hymn with Chinese words, to hear diction for dubbing (C1)
 sources:
   - 产品线、接口与授权流程，对照官方公开说明与条款页整理。
   - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 喂什么，拿什么
 
-输入是文本，配音与克隆需要参考音频或已授权的声音。输出是音频文件，音效与人声可单独导出，音乐通常没有分轨。批量调用按字符或时长计量。可用的声音、语种与音效类别以官方页面为准。下面的试听与实例只是该类产出的参照，不是本模型生成。
+输入是文本，配音与克隆需要参考音频或已授权的声音。输出是音频文件，音效与人声可单独导出，音乐通常没有分轨。批量调用按字符或时长计量。可用的声音、语种与音效类别以官方页面为准。下面的试听与实例取自同类产出，供对照。
 
 ## 最好用的地方
 

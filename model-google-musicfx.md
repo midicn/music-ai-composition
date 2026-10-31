@@ -22,10 +22,10 @@ links:
   - "[[instrument:violin]]"
   - "[[period:contemporary]]"
 instances:
-  - oga-000001 | 三分钟的管弦场景曲，看器乐铺底的段落感——这是该类产出的参照，不是本模型生成（C1） | A three minute orchestral scene cue, to hear sectional instrumental writing; a reference for this kind of output, not a MusicFX or Lyria generation (C1)
-  - oga-000011 | 一分半的 Boss 战配乐，看强节奏的器乐写作——这是该类产出的参照，不是本模型生成（C1） | A ninety second boss cue, to hear rhythm-driven instrumental writing; a reference for this kind of output, not a MusicFX or Lyria generation (C1)
-  - oga-000009 | 半分钟的场景铺底，看短提示的产出粒度——这是该类产出的参照，不是本模型生成（C1） | A half minute scene bed, to hear the grain of short cues; a reference for this kind of output, not a MusicFX or Lyria generation (C1)
-  - cyberhymnal-008729 | 管风琴赞美诗，看持续音与和声铺陈——这是该类产出的参照，不是本模型生成（C1） | An organ hymn, to hear sustained harmony; a reference for this kind of output, not a MusicFX or Lyria generation (C1)
+  - oga-000001 | 三分钟的管弦场景曲，看器乐铺底的段落感（C1） | A three minute orchestral scene cue, to hear sectional instrumental writing (C1)
+  - oga-000011 | 一分半的 Boss 战配乐，看强节奏的器乐写作（C1） | A ninety second boss cue, to hear rhythm-driven instrumental writing (C1)
+  - oga-000009 | 半分钟的场景铺底，看短提示的产出粒度（C1） | A half minute scene bed, to hear the grain of short cues (C1)
+  - cyberhymnal-008729 | 管风琴赞美诗，看持续音与和声铺陈（C1） | An organ hymn, to hear sustained harmony (C1)
 sources:
   - 产品入口、可用范围与输出形态；官方公开说明是主要依据。
   - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 输入与产出
 
-输入主要是文本，部分入口允许选时长或乐器组合。输出是音频，没有分轨，也没有 MIDI。可用地区、账号要求与入口形态以官方页面为准，同一描述在不同入口给出的结果可能不同。下面的试听与实例只是该类产出的参照，不是本模型生成。
+输入主要是文本，部分入口允许选时长或乐器组合。输出是音频，没有分轨，也没有 MIDI。可用地区、账号要求与入口形态以官方页面为准，同一描述在不同入口给出的结果可能不同。下面的试听与实例取自同类产出，供对照。
 
 ## 最好用的地方
 

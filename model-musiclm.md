@@ -22,9 +22,9 @@ links:
   - "[[glossary:reference-track]]"
   - "[[period:impressionist]]"
 instances:
-  - oga-000002 | 短小的游戏场景配乐，情绪与场景绑定，适合看文本描述能否抓住功能——这是该类产出的参照，不是本模型生成（C1） | A short game cue tied to a scene, to see whether a text description captures its function; a reference for this kind of output, not a generation by this model (C1)
-  - pdmx-000206 | 探戈改编，旋律与伴奏层次清楚，适合看生成模型能不能保住声部关系——这是该类产出的参照，不是本模型生成（C1） | A tango arrangement with clear melody and accompaniment layers, to see whether part relations survive; a reference for this kind of output, not a generation by this model (C1)
-  - oga-000000 | 二十几秒的小品，短、完整、目标明确，接近研究模型的生成长度——这是该类产出的参照，不是本模型生成（C1） | A twenty-second miniature, short, complete and focused, close to a research model's output length; a reference for this kind of output, not a generation by this model (C1)
+  - oga-000002 | 短小的游戏场景配乐，情绪与场景绑定，适合看文本描述能否抓住功能（C1） | A short game cue tied to a scene, to see whether a text description captures its function (C1)
+  - pdmx-000206 | 探戈改编，旋律与伴奏层次清楚，适合看生成模型能不能保住声部关系（C1） | A tango arrangement with clear melody and accompaniment layers, to see whether part relations survive (C1)
+  - oga-000000 | 二十几秒的小品，短、完整、目标明确，接近研究模型的生成长度（C1） | A twenty-second miniature, short, complete and focused, close to a research model's output length (C1)
 sources:
   - AudioLM 与 MusicLM 的建模思路（公开论文摘要）。
   - 研究模型与商用服务的差别，参考公开文档与惯例。

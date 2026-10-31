@@ -22,11 +22,11 @@ links:
   - "[[glossary:signal-to-noise]]"
   - "[[instrument:popular-voice]]"
 instances:
-  - mutopia-000038 | 无伴奏合唱，长音多、房间感明显，适合看增强后的尾音——这是该类产出的参照，不是本模型生成（C1） | Unaccompanied choral singing with long notes and clear room sound, for hearing the tail after enhancement; a reference for this kind of output, not a generation by this model (C1)
-  - mutopia-000053 | 众赞歌，声部密集、辅音集中，适合听齿音与字头是否被保住——这是该类产出的参照，不是本模型生成（C1） | A chorale with dense parts and clustered consonants, to hear whether sibilance and onsets survive; a reference for this kind of output, not a generation by this model (C1)
-  - mutopia-000062 | 短小的合唱圣咏，句尾收得干净，便于对比处理前后的底噪——这是该类产出的参照，不是本模型生成（C1） | A short choral hymn with clean phrase endings, for comparing the noise floor before and after; a reference for this kind of output, not a generation by this model (C1)
+  - mutopia-000038 | 无伴奏合唱，长音多、房间感明显，适合看增强后的尾音（C1） | Unaccompanied choral singing with long notes and clear room sound, for hearing the tail after enhancement (C1)
+  - mutopia-000053 | 众赞歌，声部密集、辅音集中，适合听齿音与字头是否被保住（C1） | A chorale with dense parts and clustered consonants, to hear whether sibilance and onsets survive (C1)
+  - mutopia-000062 | 短小的合唱圣咏，句尾收得干净，便于对比处理前后的底噪（C1） | A short choral hymn with clean phrase endings, for comparing the noise floor before and after (C1)
 sources:
-  - 语音增强的输入输出与额度，对照Adobe 官方页面整理。
+  - 语音增强的输入输出与额度，对照 Adobe 官方页面整理。
   - 语音清理的听感取舍（播客制作惯例）。
 updated: 2026-10-30
 ---

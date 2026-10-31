@@ -22,10 +22,10 @@ links:
   - "[[glossary:tempo]]"
   - "[[instrument:electronic-drums]]"
 instances:
-  - groove-000005 | 87 BPM 嘻哈鼓组，看循环的节奏骨架——这是该类产出的参照，不是本模型生成（C1） | An 87 BPM hip-hop kit, to hear a loop's rhythmic skeleton; a reference for this kind of output, not a Riffusion generation (C1)
-  - groove-000002 | 86 BPM 灵魂乐鼓组，看低保真素材的松紧——这是该类产出的参照，不是本模型生成（C1） | An 86 BPM soul kit, to hear the looseness of lo-fi material; a reference for this kind of output, not a Riffusion generation (C1)
-  - oga-000031 | 一段氛围循环，看可反复播放的短素材——这是该类产出的参照，不是本模型生成（C1） | An ambient loop, to hear a short repeating asset; a reference for this kind of output, not a Riffusion generation (C1)
-  - groove-000007 | 65 BPM 摇滚鼓组，看慢速循环的呼吸——这是该类产出的参照，不是本模型生成（C1） | A 65 BPM rock kit, to hear the feel of a slow loop; a reference for this kind of output, not a Riffusion generation (C1)
+  - groove-000005 | 87 BPM 嘻哈鼓组，看循环的节奏骨架（C1） | An 87 BPM hip-hop kit, to hear a loop's rhythmic skeleton (C1)
+  - groove-000002 | 86 BPM 灵魂乐鼓组，看低保真素材的松紧（C1） | An 86 BPM soul kit, to hear the looseness of lo-fi material (C1)
+  - oga-000031 | 一段氛围循环，看可反复播放的短素材（C1） | An ambient loop, to hear a short repeating asset (C1)
+  - groove-000007 | 65 BPM 摇滚鼓组，看慢速循环的呼吸（C1） | A 65 BPM rock kit, to hear the feel of a slow loop (C1)
 sources:
   - 产品能力与生成方式（官方公开说明与条款页）。
   - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 怎么给，给回什么
 
-输入是文本描述，部分档位接受参考音频。输出是音频，通常是一段可循环的短片段，没有分轨。生成在频谱图上进行，再还原成波形，这一步决定了它的声音特征。同一描述每次结果不同，音色差异明显。下面的试听与实例只是该类产出的参照，不是本模型生成。
+输入是文本描述，部分档位接受参考音频。输出是音频，通常是一段可循环的短片段，没有分轨。生成在频谱图上进行，再还原成波形，这一步决定了它的声音特征。同一描述每次结果不同，音色差异明显。下面的试听与实例取自同类产出，供对照。
 
 ## 最好用的地方
 

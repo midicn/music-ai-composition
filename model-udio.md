@@ -22,10 +22,10 @@ links:
   - "[[glossary:timbre]]"
   - "[[glossary:harmony]]"
 instances:
-  - mutopia-000546 | 艺术歌曲的人声线条，看人声与钢琴怎么互相让位——这是该类产出的参照，不是本模型生成（C1） | An art-song vocal line, to hear voice and piano share space; a reference for this kind of output, not a Udio generation (C1)
-  - groove-000005 | 87 BPM 嘻哈鼓组，看说唱类歌曲的律动底子——这是该类产出的参照，不是本模型生成（C1） | An 87 BPM hip-hop kit, to hear the groove under a rap vocal; a reference for this kind of output, not a Udio generation (C1)
-  - groove-000007 | 65 BPM 摇滚鼓组，看慢速摇滚的推力——这是该类产出的参照，不是本模型生成（C1） | A 65 BPM rock kit, to hear slow rock drive; a reference for this kind of output, not a Udio generation (C1)
-  - cyberhymnal-003336 | 中文歌词的赞美诗旋律，看词与音怎么对应——这是该类产出的参照，不是本模型生成（C1） | A hymn tune set to Chinese words, to hear lyric fitted to melody; a reference for this kind of output, not a Udio generation (C1)
+  - mutopia-000546 | 艺术歌曲的人声线条，看人声与钢琴怎么互相让位（C1） | An art-song vocal line, to hear voice and piano share space (C1)
+  - groove-000005 | 87 BPM 嘻哈鼓组，看说唱类歌曲的律动底子（C1） | An 87 BPM hip-hop kit, to hear the groove under a rap vocal (C1)
+  - groove-000007 | 65 BPM 摇滚鼓组，看慢速摇滚的推力（C1） | A 65 BPM rock kit, to hear slow rock drive (C1)
+  - cyberhymnal-003336 | 中文歌词的赞美诗旋律，看词与音怎么对应（C1） | A hymn tune set to Chinese words, to hear lyric fitted to melody (C1)
 sources:
   - 产品能力与续写流程——依据来自官方公开说明与条款页。
   - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 接口的两端
 
-输入是文本与歌词，部分档位接受上传音频作为续写或改编的起点。输出是立体声音频，部分档位有分轨。续写会沿用前一段的音色与调性，但不会自动修正前面写坏的段落。每次生成都是新的采样，同一提示无法复现同一条音频。下面的试听与实例只是该类产出的参照，不是本模型生成。
+输入是文本与歌词，部分档位接受上传音频作为续写或改编的起点。输出是立体声音频，部分档位有分轨。续写会沿用前一段的音色与调性，但不会自动修正前面写坏的段落。每次生成都是新的采样，同一提示无法复现同一条音频。下面的试听与实例取自同类产出，供对照。
 
 ## 最好用的地方
 

@@ -12,7 +12,7 @@ tags_en: [brand, sonic logo, jingle, buyout]
 alias: [品牌音效, 声音标识, sonic logo, 广告歌]
 order: 9
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 案例
 tool_platforms: [通用]
 tool_price: 不适用

@@ -16,20 +16,20 @@ links:
   - "[[glossary:sampler]]"
   - "[[glossary:bit-depth]]"
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 网页
 tool_platforms: [浏览器]
 tool_price: 免费
 tool_jobs: [选型, 采样]
 tool_verified: 2026-10-30
 instances:
-  - groove-000005 | 87 BPM 嘻哈鼓组，循环素材的典型长度与量化程度（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - groove-000013 | 116 BPM 爵士放克的过门，一击即用的一小节 fill（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - groove-000007 | 65 BPM 摇滚鼓组，慢速下重音位置决定这段素材能不能用（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - groove-000000 | 138 BPM 放克鼓组，越快切点越难，循环点最考验手艺（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - m21-002276 | 绿袖子吉格，有调性的旋律片段，做带调 loop 的参照（C1）；这是该用途常见产出的参照，不是本站工具的演示
+  - groove-000005 | 87 BPM 嘻哈鼓组，循环素材的典型长度与量化程度（C1）
+  - groove-000013 | 116 BPM 爵士放克的过门，一击即用的一小节 fill（C1）
+  - groove-000007 | 65 BPM 摇滚鼓组，慢速下重音位置决定这段素材能不能用（C1）
+  - groove-000000 | 138 BPM 放克鼓组，越快切点越难，循环点最考验手艺（C1）
+  - m21-002276 | 绿袖子吉格，有调性的旋律片段，做带调 loop 的参照（C1）
 sources:
-  - 采样库与生成式音频服务的公开授权说明，对照2026-10-30 复核整理。
+  - 采样库与生成式音频服务的公开授权说明（2026-10-30 复核）。
   - 采样录制、切点与元数据规范的通行做法（惯例）。
 updated: 2026-10-30
 ---
@@ -99,7 +99,7 @@ For a distinctive sound, record it yourself; for volume and speed, start from a 
 
 ## First three things to learn
 
-Learn to cut on zero crossings, to write tempo and key into every file, and to put the licence text inside the pack. Then read this site's pages on sample generation, formats and stems, and stem-level editing.
+Learn to cut on zero crossings, to write tempo and key into every file, and to put the licence text inside the pack. Then read the pages on sample generation, formats and stems, and stem-level editing.
 
 ```audiolab
 {"type":"rhythm","sig":"4/4","pattern":"s e s s e s s e s s e s s e s s","bpm":87,"label":"A loop that must cut cleanly","label_en":"A loop that must cut cleanly","hint":"Listen a full cycle and mind the seam back to beat one","hint_en":"Listen a full cycle and mind the seam back to beat one"}

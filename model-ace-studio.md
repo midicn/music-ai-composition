@@ -22,10 +22,10 @@ links:
   - "[[glossary:vibrato]]"
   - "[[glossary:timbre]]"
 instances:
-  - mutopia-000546 | 艺术歌曲的人声线条，看词怎么随旋律走——这是该类产出的参照，不是本模型生成（C1） | An art-song vocal line, to hear words riding a melody; a reference for this kind of output, not an ACE Studio generation (C1)
-  - mutopia-000782 | 德沃夏克的艺术歌曲，看长句的换气与收尾——这是该类产出的参照，不是本模型生成（C1） | A Dvorak art song, to hear breath and phrase endings; a reference for this kind of output, not an ACE Studio generation (C1)
-  - mutopia-000527 | 通俗歌曲的人声与钢琴，看近麦演唱的吐字——这是该类产出的参照，不是本模型生成（C1） | A popular song for voice and piano, to hear close-miked diction; a reference for this kind of output, not an ACE Studio generation (C1)
-  - cyberhymnal-003336 | 中文歌词的赞美诗，看声调与旋律怎么配合——这是该类产出的参照，不是本模型生成（C1） | A hymn with Chinese words, to hear tones meeting melody; a reference for this kind of output, not an ACE Studio generation (C1)
+  - mutopia-000546 | 艺术歌曲的人声线条，看词怎么随旋律走（C1） | An art-song vocal line, to hear words riding a melody (C1)
+  - mutopia-000782 | 德沃夏克的艺术歌曲，看长句的换气与收尾（C1） | A Dvorak art song, to hear breath and phrase endings (C1)
+  - mutopia-000527 | 通俗歌曲的人声与钢琴，看近麦演唱的吐字（C1） | A popular song for voice and piano, to hear close-miked diction (C1)
+  - cyberhymnal-003336 | 中文歌词的赞美诗，看声调与旋律怎么配合（C1） | A hymn with Chinese words, to hear tones meeting melody (C1)
 sources:
   - 产品形态、声库与编辑方式，对照官方公开说明与条款页整理。
   - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 喂什么，拿什么
 
-输入是歌词、MIDI 旋律与音符时值，部分流程可用文本提示调整唱法。输出是人声轨，可导出干声或带效果的音频。独立程序与插件两种形态，插件用于在编曲软件里边听边改。声库的语种覆盖与可用音色以官方页面为准。下面的试听与实例只是该类产出的参照，不是本模型生成。
+输入是歌词、MIDI 旋律与音符时值，部分流程可用文本提示调整唱法。输出是人声轨，可导出干声或带效果的音频。独立程序与插件两种形态，插件用于在编曲软件里边听边改。声库的语种覆盖与可用音色以官方页面为准。下面的试听与实例取自同类产出，供对照。
 
 ## 最好用的地方
 

@@ -22,10 +22,10 @@ links:
   - "[[glossary:pitch]]"
   - "[[glossary:vibrato]]"
 instances:
-  - cyberhymnal-003336 | 中文歌词的赞美诗，看字与音的对应——这是该类产出的参照，不是本模型生成（C1） | A hymn with Chinese words, to hear syllables mapped to notes; a reference for this kind of output, not a DiffSinger generation (C1)
-  - mutopia-000546 | 艺术歌曲的人声线条，看连音与换气——这是该类产出的参照，不是本模型生成（C1） | An art-song vocal line, to hear legato and breath; a reference for this kind of output, not a DiffSinger generation (C1)
-  - mutopia-000527 | 通俗歌曲的人声与钢琴，看近麦吐字——这是该类产出的参照，不是本模型生成（C1） | A popular song for voice and piano, to hear close diction; a reference for this kind of output, not a DiffSinger generation (C1)
-  - cyberhymnal-002209 | 短小的赞美诗旋律，看短句的音高轮廓——这是该类产出的参照，不是本模型生成（C1） | A short hymn tune, to hear the pitch contour of a brief phrase; a reference for this kind of output, not a DiffSinger generation (C1)
+  - cyberhymnal-003336 | 中文歌词的赞美诗，看字与音的对应（C1） | A hymn with Chinese words, to hear syllables mapped to notes (C1)
+  - mutopia-000546 | 艺术歌曲的人声线条，看连音与换气（C1） | An art-song vocal line, to hear legato and breath (C1)
+  - mutopia-000527 | 通俗歌曲的人声与钢琴，看近麦吐字（C1） | A popular song for voice and piano, to hear close diction (C1)
+  - cyberhymnal-002209 | 短小的赞美诗旋律，看短句的音高轮廓（C1） | A short hymn tune, to hear the pitch contour of a brief phrase (C1)
 sources:
   - 项目结构、训练流程与输入形式，参考公开仓库说明。
   - 失败模式来自公开用户报告与自建声库经验，未引用具体评测数据。
@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 喂什么，拿什么
 
-输入是歌词、MIDI 与时值，训练阶段还需要带音素标注的录音数据。输出是人声轨，可导出干声。整个流程在本地跑，模型文件与声库都要自己管理。可用的语言取决于音素词典与声库，不是所有语种都有现成方案。下面的试听与实例只是该类产出的参照，不是本模型生成。
+输入是歌词、MIDI 与时值，训练阶段还需要带音素标注的录音数据。输出是人声轨，可导出干声。整个流程在本地跑，模型文件与声库都要自己管理。可用的语言取决于音素词典与声库，不是所有语种都有现成方案。下面的试听与实例取自同类产出，供对照。
 
 ## 最好用的地方
 

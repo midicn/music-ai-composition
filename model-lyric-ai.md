@@ -22,10 +22,10 @@ links:
   - "[[glossary:melody]]"
   - "[[instrument:voice]]"
 instances:
-  - mutopia-000066 | 分节叙事歌曲，词句与旋律重音贴合，适合对照生成的词能不能唱——这是该类产出的参照，不是本模型生成（C1） | A strophic narrative song where words and melodic stress align, for testing whether generated words sing; a reference for this kind of output, not a generation by this model (C1)
-  - mutopia-000622 | 分节歌，每段词格相同，适合看音节数与韵脚能否保持一致——这是该类产出的参照，不是本模型生成（C1） | A strophic song with an identical verse shape, for checking syllable counts and rhyme consistency; a reference for this kind of output, not a generation by this model (C1)
-  - mutopia-000686 | 短句多、停顿清楚，适合检查换气点是否够用——这是该类产出的参照，不是本模型生成（C1） | Short lines and clear pauses, for checking whether there is room to breathe; a reference for this kind of output, not a generation by this model (C1)
-  - mutopia-000004 | 长句与跳进并存，词的重音一旦错位立刻听得出来——这是该类产出的参照，不是本模型生成（C1） | Long lines and leaps, where a misplaced word stress is immediately audible; a reference for this kind of output, not a generation by this model (C1)
+  - mutopia-000066 | 分节叙事歌曲，词句与旋律重音贴合，适合对照生成的词能不能唱（C1） | A strophic narrative song where words and melodic stress align, for testing whether generated words sing (C1)
+  - mutopia-000622 | 分节歌，每段词格相同，适合看音节数与韵脚能否保持一致（C1） | A strophic song with an identical verse shape, for checking syllable counts and rhyme consistency (C1)
+  - mutopia-000686 | 短句多、停顿清楚，适合检查换气点是否够用（C1） | Short lines and clear pauses, for checking whether there is room to breathe (C1)
+  - mutopia-000004 | 长句与跳进并存，词的重音一旦错位立刻听得出来（C1） | Long lines and leaps, where a misplaced word stress is immediately audible (C1)
 sources:
   - 歌词与旋律的配合关系，参考歌曲写作惯例。
   - 语言模型的输出限制；公开文档与使用经验是主要依据。

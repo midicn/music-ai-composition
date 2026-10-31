@@ -22,10 +22,10 @@ links:
   - "[[glossary:phrase]]"
   - "[[instrument:piano]]"
 instances:
-  - giantmidi-000004 | 主题与变奏，结构与重复关系清楚，适合看模型能不能接住动机——这是该类产出的参照，不是本模型生成（C1） | A theme and variations with clear repetition, to see whether a model can catch the motif; a reference for this kind of output, not a generation by this model (C1)
-  - m21-000003 | 四声部众赞歌，声部进行与和声约束密集，生成的错误最容易听出——这是该类产出的参照，不是本模型生成（C1） | A four-part chorale dense with voice-leading and harmonic constraints, where generated errors are audible; a reference for this kind of output, not a generation by this model (C1)
-  - oga-000005 | 游戏战斗配乐，多轨 MIDI 结构典型，适合做续写与配器试验——这是该类产出的参照，不是本模型生成（C1） | Typical multi-track game battle MIDI, useful for continuation and orchestration trials; a reference for this kind of output, not a generation by this model (C1)
-  - giantmidi-000001 | 沙龙风格小品，句法与终止式规整，便于判断生成段是否跑题——这是该类产出的参照，不是本模型生成（C1） | A salon-style miniature with regular phrasing and cadences, for judging whether generated bars wander; a reference for this kind of output, not a generation by this model (C1)
+  - giantmidi-000004 | 主题与变奏，结构与重复关系清楚，适合看模型能不能接住动机（C1） | A theme and variations with clear repetition, to see whether a model can catch the motif (C1)
+  - m21-000003 | 四声部众赞歌，声部进行与和声约束密集，生成的错误最容易听出（C1） | A four-part chorale dense with voice-leading and harmonic constraints, where generated errors are audible (C1)
+  - oga-000005 | 游戏战斗配乐，多轨 MIDI 结构典型，适合做续写与配器试验（C1） | Typical multi-track game battle MIDI, useful for continuation and orchestration trials (C1)
+  - giantmidi-000001 | 沙龙风格小品，句法与终止式规整，便于判断生成段是否跑题（C1） | A salon-style miniature with regular phrasing and cadences, for judging whether generated bars wander (C1)
 sources:
   - 符号音乐生成的代表项目与输出形态，对照公开仓库与论文摘要整理。
   - MIDI 生成结果的后期修剪（编曲实践惯例）。

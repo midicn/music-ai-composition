@@ -12,7 +12,7 @@ tags_en: [cover, licensing, vocals, arrangement]
 alias: [翻唱, cover, 翻唱授权, 二次演唱]
 order: 6
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 案例
 tool_platforms: [通用]
 tool_price: 不适用

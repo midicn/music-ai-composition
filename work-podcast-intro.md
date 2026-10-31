@@ -12,7 +12,7 @@ tags_en: [podcast, intro, voice, loudness]
 alias: [播客片头, 节目片头, podcast intro]
 order: 2
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 案例
 tool_platforms: [通用]
 tool_price: 不适用

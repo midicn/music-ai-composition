@@ -16,19 +16,19 @@ links:
   - "[[glossary:vibrato]]"
   - "[[glossary:portamento]]"
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 网页
 tool_platforms: [浏览器]
 tool_price: 免费
 tool_jobs: [选型, 人声]
 tool_verified: 2026-10-30
 instances:
-  - mutopia-000919 | 古诺《圣母颂》，长句连奏与人声进入点的参照（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - mutopia-000038 | 阿利亚比耶夫《基路伯之歌》，四部合唱，合成人声叠层的对照（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - pdmx-002540 | 丹尼男孩，叙事民谣，咬字与气口的参照（C1）；这是该用途常见产出的参照，不是本站工具的演示
-  - mutopia-001682 | 绿袖子，单旋律，最容易被合成唱得没有起伏的素材（C1）；这是该用途常见产出的参照，不是本站工具的演示
+  - mutopia-000919 | 古诺《圣母颂》，长句连奏与人声进入点的参照（C1）
+  - mutopia-000038 | 阿利亚比耶夫《基路伯之歌》，四部合唱，合成人声叠层的对照（C1）
+  - pdmx-002540 | 丹尼男孩，叙事民谣，咬字与气口的参照（C1）
+  - mutopia-001682 | 绿袖子，单旋律，最容易被合成唱得没有起伏的素材（C1）
 sources:
-  - 歌声合成与变声工具的公开文档所列参数与控制方式，对照2026-10-30 复核整理。
+  - 歌声合成与变声工具的公开文档所列参数与控制方式（2026-10-30 复核）。
   - 人声录音与修音的工作实践（制作惯例）。
 updated: 2026-10-30
 ---
@@ -98,7 +98,7 @@ For a demo that only needs to be audible, use singing synthesis such as ACE Stud
 
 ## First three things
 
-Learn to split lyrics into syllables, to treat vibrato and breath as parameters rather than effects, and to export dry vocals with reverb bypassed. Then read this site's pages on synthetic vocals, vocal tuning and lyric intelligibility.
+Learn to split lyrics into syllables, to treat vibrato and breath as parameters rather than effects, and to export dry vocals with reverb bypassed. Then read the pages on synthetic vocals, vocal tuning and lyric intelligibility.
 
 ```audiolab
 {"type":"instrument","gm":"Voice Oohs","synth":"vocal","phrase":["A3","C4","E4","D4","C4","A3","G3","A3"],"label":"A line that must stay legato","label_en":"A line that must stay legato","hint":"Hear the legato first, the diction second","hint_en":"Hear the legato first, the diction second"}

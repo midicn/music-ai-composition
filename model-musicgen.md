@@ -22,10 +22,10 @@ links:
   - "[[glossary:midi-protocol]]"
   - "[[instrument:piano]]"
 instances:
-  - mutopia-000059 | 四十三秒的赞美诗旋律，看短片段的条件素材——这是该类产出的参照，不是本模型生成（C1） | A forty-three second hymn tune, to hear material for short conditioned clips; a reference for this kind of output, not a MusicGen generation (C1)
-  - abcmisc-001329 | 里尔舞曲，看可循环的短旋律——这是该类产出的参照，不是本模型生成（C1） | A reel, to hear a short loopable melody; a reference for this kind of output, not a MusicGen generation (C1)
-  - groove-000002 | 86 BPM 灵魂乐鼓组，看文本描述的节奏目标——这是该类产出的参照，不是本模型生成（C1） | An 86 BPM soul kit, to hear the rhythmic target a text prompt describes; a reference for this kind of output, not a MusicGen generation (C1)
-  - oga-000005 | 三十八秒的战斗配乐片段，看短促的器乐提示——这是该类产出的参照，不是本模型生成（C1） | A thirty-eight second battle cue, to hear a short instrumental prompt; a reference for this kind of output, not a MusicGen generation (C1)
+  - mutopia-000059 | 四十三秒的赞美诗旋律，看短片段的条件素材（C1） | A forty-three second hymn tune, to hear material for short conditioned clips (C1)
+  - abcmisc-001329 | 里尔舞曲，看可循环的短旋律（C1） | A reel, to hear a short loopable melody (C1)
+  - groove-000002 | 86 BPM 灵魂乐鼓组，看文本描述的节奏目标（C1） | An 86 BPM soul kit, to hear the rhythmic target a text prompt describes (C1)
+  - oga-000005 | 三十八秒的战斗配乐片段，看短促的器乐提示（C1） | A thirty-eight second battle cue, to hear a short instrumental prompt (C1)
 sources:
   - 模型能力、条件输入与权重发布形态，对照官方模型说明整理。
   - 失败模式来自公开用户报告与本地实测经验，未引用具体评测数据。
@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 怎么给，给回什么
 
-输入是文本，可选一段音频作为旋律条件，让生成的音乐跟着这条旋律走。输出是音频文件，没有分轨，也没有 MIDI。本地部署时采样参数、时长与随机种子都能控制，同一种子可以复现同一条结果。下面的试听与实例只是该类产出的参照，不是本模型生成。
+输入是文本，可选一段音频作为旋律条件，让生成的音乐跟着这条旋律走。输出是音频文件，没有分轨，也没有 MIDI。本地部署时采样参数、时长与随机种子都能控制，同一种子可以复现同一条结果。下面的试听与实例取自同类产出，供对照。
 
 ## 最好用的地方
 

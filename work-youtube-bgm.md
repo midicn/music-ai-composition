@@ -12,7 +12,7 @@ tags_en: [video, background, licensing, loops]
 alias: [视频背景乐, YouTube 配乐, BGM, youtube bgm]
 order: 3
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 案例
 tool_platforms: [通用]
 tool_price: 不适用

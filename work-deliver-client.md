@@ -12,7 +12,7 @@ tags_en: [delivery, stems, naming, licensing]
 alias: [给客户交付, 交付清单, delivery, 文件交付]
 order: 12
 tool_kind: guide
-tool_vendor: 本站
+tool_vendor: —
 tool_form: 案例
 tool_platforms: [通用]
 tool_price: 不适用
