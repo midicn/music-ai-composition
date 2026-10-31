@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 怎么给，给回什么
 
-输入是文本描述，部分档位接受参考音频做音频到音频的转换。输出是立体声音频，通常没有分轨。指定的时长决定生成的长度，但不会自动做成可无缝循环的片段。同一描述每次结果不同，音色与织体变化明显。下面的试听与实例取自同类产出，供对照。
+输入是文本描述，部分档位接受参考音频做音频到音频的转换。输出是立体声音频，通常没有分轨。指定的时长决定生成的长度，但不会自动做成可无缝循环的片段。同一描述每次结果不同，音色与织体变化明显。
 
 ## 最好用的地方
 
@@ -74,7 +74,7 @@ Describe an atmosphere or an instrumental texture and it returns instrumental au
 
 ## How you feed it, what it returns
 
-Input is text; some tiers accept reference audio for audio-to-audio conversion. Output is stereo audio, usually without stems. The duration you set fixes the length but does not make the result seamlessly loopable. Each run from the same description differs noticeably in timbre and texture. The listening examples and instances below are references for this kind of output, not this model's generations.
+Input is text; some tiers accept reference audio for audio-to-audio conversion. Output is stereo audio, usually without stems. The duration you set fixes the length but does not make the result seamlessly loopable. Each run from the same description differs noticeably in timbre and texture.
 
 ## Where it shines
 

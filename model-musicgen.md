@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 怎么给，给回什么
 
-输入是文本，可选一段音频作为旋律条件，让生成的音乐跟着这条旋律走。输出是音频文件，没有分轨，也没有 MIDI。本地部署时采样参数、时长与随机种子都能控制，同一种子可以复现同一条结果。下面的试听与实例取自同类产出，供对照。
+输入是文本，可选一段音频作为旋律条件，让生成的音乐跟着这条旋律走。输出是音频文件，没有分轨，也没有 MIDI。本地部署时采样参数、时长与随机种子都能控制，同一种子可以复现同一条结果。
 
 ## 最好用的地方
 
@@ -74,7 +74,7 @@ Generate a few dozen seconds of instrumental audio from a text description, or h
 
 ## How you feed it, what it returns
 
-Input is text, optionally with an audio clip as a melodic condition so the output follows that line. Output is an audio file with no stems and no MIDI. Running locally, you control sampling parameters, duration and seed, and one seed reproduces one result. The listening examples and instances below are references for this kind of output, not this model's generations.
+Input is text, optionally with an audio clip as a melodic condition so the output follows that line. Output is an audio file with no stems and no MIDI. Running locally, you control sampling parameters, duration and seed, and one seed reproduces one result.
 
 ## Where it shines
 

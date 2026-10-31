@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 怎么给，给回什么
 
-输入是文本描述，部分档位接受参考音频。输出是音频，通常是一段可循环的短片段，没有分轨。生成在频谱图上进行，再还原成波形，这一步决定了它的声音特征。同一描述每次结果不同，音色差异明显。下面的试听与实例取自同类产出，供对照。
+输入是文本描述，部分档位接受参考音频。输出是音频，通常是一段可循环的短片段，没有分轨。生成在频谱图上进行，再还原成波形，这一步决定了它的声音特征。同一描述每次结果不同，音色差异明显。
 
 ## 最好用的地方
 
@@ -74,7 +74,7 @@ Generate a short loopable asset from one description: drums, a bass line, a chor
 
 ## How you feed it, what it returns
 
-Input is text, with reference audio on some tiers. Output is audio, usually a short loopable clip, with no stems. Generation happens on a spectrogram that is then converted back to waveform, and that step defines its sound. Each run from one description differs clearly in timbre. The listening examples and instances below are references for this kind of output, not this model's generations.
+Input is text, with reference audio on some tiers. Output is audio, usually a short loopable clip, with no stems. Generation happens on a spectrogram that is then converted back to waveform, and that step defines its sound. Each run from one description differs clearly in timbre.
 
 ## Where it shines
 

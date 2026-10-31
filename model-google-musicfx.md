@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 输入与产出
 
-输入主要是文本，部分入口允许选时长或乐器组合。输出是音频，没有分轨，也没有 MIDI。可用地区、账号要求与入口形态以官方页面为准，同一描述在不同入口给出的结果可能不同。下面的试听与实例取自同类产出，供对照。
+输入主要是文本，部分入口允许选时长或乐器组合。输出是音频，没有分轨，也没有 MIDI。可用地区、账号要求与入口形态以官方页面为准，同一描述在不同入口给出的结果可能不同。
 
 ## 最好用的地方
 
@@ -74,7 +74,7 @@ Write a description and get instrumental audio or an effect with no voice, leani
 
 ## Input and output
 
-Input is mainly text; some entries let you pick a duration or an instrument group. Output is audio with no stems and no MIDI. Available regions, account requirements and entry points follow the official pages, and the same description can give different results at different entries. The listening examples and instances below are references for this kind of output, not this model's generations.
+Input is mainly text; some entries let you pick a duration or an instrument group. Output is audio with no stems and no MIDI. Available regions, account requirements and entry points follow the official pages, and the same description can give different results at different entries.
 
 ## Where it shines
 

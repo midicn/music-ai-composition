@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 喂什么，拿什么
 
-输入是歌词、MIDI 与时值，训练阶段还需要带音素标注的录音数据。输出是人声轨，可导出干声。整个流程在本地跑，模型文件与声库都要自己管理。可用的语言取决于音素词典与声库，不是所有语种都有现成方案。下面的试听与实例取自同类产出，供对照。
+输入是歌词、MIDI 与时值，训练阶段还需要带音素标注的录音数据。输出是人声轨，可导出干声。整个流程在本地跑，模型文件与声库都要自己管理。可用的语言取决于音素词典与声库，不是所有语种都有现成方案。
 
 ## 最好用的地方
 
@@ -74,7 +74,7 @@ Feed it lyrics, a MIDI melody and phoneme labels and get a sung vocal. You can u
 
 ## What goes in, what comes out
 
-Input is lyrics, MIDI and note lengths; training also needs recorded data with phoneme labels. Output is a vocal track, exportable dry. The whole pipeline runs locally, and you manage model files and voicebanks yourself. Language coverage depends on the phoneme dictionary and the voicebank, and not every language has a ready route. The listening examples and instances below are references for this kind of output, not this model's generations.
+Input is lyrics, MIDI and note lengths; training also needs recorded data with phoneme labels. Output is a vocal track, exportable dry. The whole pipeline runs locally, and you manage model files and voicebanks yourself. Language coverage depends on the phoneme dictionary and the voicebank, and not every language has a ready route.
 
 ## Where it shines
 

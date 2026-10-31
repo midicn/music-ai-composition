@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 喂什么，拿什么
 
-输入是歌词、MIDI 旋律与音符时值，部分流程可用文本提示调整唱法。输出是人声轨，可导出干声或带效果的音频。独立程序与插件两种形态，插件用于在编曲软件里边听边改。声库的语种覆盖与可用音色以官方页面为准。下面的试听与实例取自同类产出，供对照。
+输入是歌词、MIDI 旋律与音符时值，部分流程可用文本提示调整唱法。输出是人声轨，可导出干声或带效果的音频。独立程序与插件两种形态，插件用于在编曲软件里边听边改。声库的语种覆盖与可用音色以官方页面为准。
 
 ## 最好用的地方
 
@@ -74,7 +74,7 @@ Hand it lyrics and a melody and get a sung vocal track. You edit timing and pitc
 
 ## What goes in, what comes out
 
-Input is lyrics, a MIDI melody and note lengths, with some workflows taking text direction for delivery. Output is a vocal track, exportable dry or with effects. It exists as a standalone program and as a plugin, the plugin letting you revise while listening in the DAW. Language coverage and available voicebanks follow the official pages. The listening examples and instances below are references for this kind of output, not this model's generations.
+Input is lyrics, a MIDI melody and note lengths, with some workflows taking text direction for delivery. Output is a vocal track, exportable dry or with effects. It exists as a standalone program and as a plugin, the plugin letting you revise while listening in the DAW. Language coverage and available voicebanks follow the official pages.
 
 ## Where it shines
 

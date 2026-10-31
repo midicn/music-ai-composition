@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 喂什么，拿什么
 
-输入是文本，配音与克隆需要参考音频或已授权的声音。输出是音频文件，音效与人声可单独导出，音乐通常没有分轨。批量调用按字符或时长计量。可用的声音、语种与音效类别以官方页面为准。下面的试听与实例取自同类产出，供对照。
+输入是文本，配音与克隆需要参考音频或已授权的声音。输出是音频文件，音效与人声可单独导出，音乐通常没有分轨。批量调用按字符或时长计量。可用的声音、语种与音效类别以官方页面为准。
 
 ## 最好用的地方
 
@@ -74,7 +74,7 @@ Generate a sound effect from one description: footsteps, a door, an explosion, r
 
 ## What goes in, what comes out
 
-Input is text; dubbing and cloning need reference audio or a consented voice. Output is audio files, with effects and voice exportable separately and music usually without stems. Batch calls are metered by characters or duration. Available voices, languages and effect categories follow the official pages. The listening examples and instances below are references for this kind of output, not this model's generations.
+Input is text; dubbing and cloning need reference audio or a consented voice. Output is audio files, with effects and voice exportable separately and music usually without stems. Batch calls are metered by characters or duration. Available voices, languages and effect categories follow the official pages.
 
 ## Where it shines
 

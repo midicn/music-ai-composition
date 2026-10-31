@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 接口的两端
 
-输入是文本：风格与情绪描述、歌词、可选的段落标记（主歌、副歌、桥段），部分档位接受参考音频来限定音色与律动。输出通常是立体声音频，部分档位可导出分轨与人声。同一提示会给多个候选，每次结果不同，能留档复现的只有提示与种子，不是音频本身。下面的试听与实例取自同类产出，供对照。
+输入是文本：风格与情绪描述、歌词、可选的段落标记（主歌、副歌、桥段），部分档位接受参考音频来限定音色与律动。输出通常是立体声音频，部分档位可导出分轨与人声。同一提示会给多个候选，每次结果不同，能留档复现的只有提示与种子，不是音频本身。
 
 ## 最好用的地方
 
@@ -74,7 +74,7 @@ Give it a style line and some lyrics and it returns a complete song with vocals,
 
 ## Both ends of the interface
 
-Input is text: style and mood, lyrics, optional section tags for verse, chorus and bridge; some tiers accept reference audio to narrow timbre and groove. Output is usually stereo audio, with stems and vocals exportable on some tiers. One prompt returns several candidates and each run differs; what you can archive and reproduce is the prompt and seed, not the audio itself. The listening examples and instances below are references for this kind of output, not this model's generations.
+Input is text: style and mood, lyrics, optional section tags for verse, chorus and bridge; some tiers accept reference audio to narrow timbre and groove. Output is usually stereo audio, with stems and vocals exportable on some tiers. One prompt returns several candidates and each run differs; what you can archive and reproduce is the prompt and seed, not the audio itself.
 
 ## Where it shines
 

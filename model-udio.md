@@ -39,7 +39,7 @@ updated: 2026-10-30
 
 ## 接口的两端
 
-输入是文本与歌词，部分档位接受上传音频作为续写或改编的起点。输出是立体声音频，部分档位有分轨。续写会沿用前一段的音色与调性，但不会自动修正前面写坏的段落。每次生成都是新的采样，同一提示无法复现同一条音频。下面的试听与实例取自同类产出，供对照。
+输入是文本与歌词，部分档位接受上传音频作为续写或改编的起点。输出是立体声音频，部分档位有分轨。续写会沿用前一段的音色与调性，但不会自动修正前面写坏的段落。每次生成都是新的采样，同一提示无法复现同一条音频。
 
 ## 最好用的地方
 
@@ -74,7 +74,7 @@ Write a description and lyrics and it returns a song with vocals whose breath an
 
 ## Both ends of the interface
 
-Input is text plus lyrics; some tiers accept uploaded audio as a starting point for extension or rework. Output is stereo audio, with stems on some tiers. Extension inherits timbre and key from the previous section but will not repair a bad section behind it. Every run is fresh sampling, so one prompt cannot reproduce one exact file. The listening examples and instances below are references for this kind of output, not this model's generations.
+Input is text plus lyrics; some tiers accept uploaded audio as a starting point for extension or rework. Output is stereo audio, with stems on some tiers. Extension inherits timbre and key from the previous section but will not repair a bad section behind it. Every run is fresh sampling, so one prompt cannot reproduce one exact file.
 
 ## Where it shines
 
