@@ -1,7 +1,7 @@
 ---
 id: choose-for-film-cue
 site: ai
-cat: A
+cat: K
 title: 影视 cue 选型
 title_en: Choosing a Tool for a Film Cue
 summary: 画面先定落点，工具只决定你用什么去填这几个落点。
@@ -28,13 +28,13 @@ instances:
   - pdmx-002038 | 圣桑《骷髅之舞》，悬念与推进的节奏参照（C1）；这是该用途常见产出的参照，不是本站工具的演示
   - mutopia-001411 | 萨蒂《裸体歌舞》第一首，稀疏底乐的留白参照（C1）；这是该用途常见产出的参照，不是本站工具的演示
 sources:
-  - 影视配乐与同步授权的公开流程说明，2026-10-30 核对，未抄原文
-  - 响度与交付规格的行业通识，依制作实践核对，未据以下发行结论
+  - 影视配乐与同步授权的公开流程说明，对照2026-10-30 复核整理。
+  - 响度与交付规格的行业通识（制作实践）。发行结论不在本文范围。
 updated: 2026-10-30
 ---
 
 ::: zh
-## 它能完成什么
+## 能替你做完什么
 
 这一页把「给画面配一段音乐」拆成三种可交付的活：三十秒短片要一版粗剪能看的配乐；九十秒预告要三个落点都踩住的版本；长片里四分钟的底乐要能随对白让路。三种活对控制力的要求差一个量级，路线选错，返工全发生在剪辑台上。
 
@@ -50,19 +50,19 @@ updated: 2026-10-30
 
 免版税曲库加粗剪：控制力最低，只能挑不能改。交付是可直接使用的授权文件。学习成本几乎为零。风险中等，授权范围、期限与同曲撞车都要看。
 
-## 边界与坑
+## 哪里会坑你
 
 第一是精度错配。生成给你的是「感觉对」，画面要的是「第几帧对」，两者之间必须有人工剪辑这一层。第二是交付规格。片子要上流媒体，响度、真峰值、cue sheet 与许可文件缺一不可，生成工具一条都不管。第三是模仿的界线，用提示去复刻仍在版权期的电影主题，旋律轮廓一像就麻烦。
 
 不要用生成曲直接当交付母版交给客户。不要在需要精确落点的段落靠反复重生成。不要拿同一段配乐同时喂给两个品牌的片子，平台条款常限制再分发。不要用没写清授权范围的曲库曲去投标。
 
-## 替代与搭配
+## 换成什么
 
 只是要提案、要看感觉，用 Suno 或 Udio，快且便宜；要交片，就把生成降到出草稿，成品回 DAW 里写。片子长、要随对白起伏，用分轨交给混音做闪避。最常见的搭配是：生成找音色，DAW 写结构，iZotope 那一类工具走单独的母带流程。
 
-## 上手路径
+## 先学三件事
 
-先学三件事：把时间码与拍速对上、把落点标在工程里、把成品导出成与画面同长。然后读本站的影视配乐、同步与 cue 剪辑、响度目标三篇。
+先学三件事：把时间码与拍速对上、把落点标在工程里、把成品导出成与画面同长。然后读这里的影视配乐、同步与 cue 剪辑、响度目标三篇。
 
 ```audiolab
 {"type":"instrument","gm":"Tremolo Strings","synth":"bowed","phrase":["D3","F3","A3","D3","C#4","A3","F3","D3"],"label":"一段绷紧的弦乐","label_en":"Tightened strings","hint":"配乐草稿先定张力，再定落点","hint_en":"Set the tension first, the hit points second"}
@@ -70,7 +70,7 @@ updated: 2026-10-30
 :::
 
 ::: en
-## What it lets you finish
+## What it finishes for you
 
 This page turns scoring a picture into three deliverables: a thirty-second short that needs a cuttable sketch; a ninety-second trailer that needs three hit points landed; four minutes of underscore that must step aside for dialogue. The control each job demands differs by an order of magnitude, and a wrong route sends every revision back to the edit suite.
 
@@ -86,17 +86,17 @@ Writing by hand with sampled instruments gives the most control; every beat can 
 
 A royalty-free library plus rough cutting gives the least control: you choose, you do not change. The deliverable is a usable licence file. Learning cost is nearly zero. Risk is moderate and lies in licence scope, term and the same track turning up in a rival's film.
 
-## Limits and traps
+## Where it bites
 
 First, a precision mismatch: generation gives you a feeling, the picture wants a frame, and human editing is the layer between them. Second, delivery specs: streaming release needs loudness, true peak, a cue sheet and licence paperwork, none of which a generator handles. Third, the line of imitation: using prompts to recreate a film theme still in copyright gets awkward the moment the melodic contour matches.
 
 Do not deliver a generated track as the master to a client. Do not chase a precise hit point by regenerating over and over. Do not feed one cue to two different brands' films, since platform terms often limit redistribution. Do not bid with a library track whose scope is unstated.
 
-## Alternatives and pairings
+## What to swap in
 
 For a pitch or a mood check, use Suno or Udio, because it is fast and cheap; for delivery, demote generation to drafting and write the master in a DAW. For long edits that breathe with dialogue, work in stems and let the mix duck them. The usual pairing: generation for timbre, a DAW for structure, a suite such as iZotope RX for a separate mastering pass.
 
-## First three things to learn
+## First three things
 
 Learn to match timecode with tempo, to place hit points as markers in the session, and to export at exactly the picture's length. Then read this site's pages on film scoring, sync and cue editing, and loudness targets.
 

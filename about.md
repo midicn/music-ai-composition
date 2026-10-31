@@ -13,7 +13,7 @@ alias: [关于, 说明, AI 音乐说明, about, ai]
 order: 99
 updated: 2026-10-27
 sources:
-  - 本站自订说明，据实描述本站的内容范围与编写约定
+  - 本站自订说明，据实描述这里的内容范围与编写约定
 ---
 
 ::: zh
@@ -39,17 +39,17 @@ sources:
 
 工具在这个领域半年一变。所以：
 
-- **讲原理与判断的条目**（可控性、评测方法、权利结构）不带版本号，长期有效。
-- **讲具体工具的条目**在页首标更新日期，只写"它擅长什么、会在哪里坑你"，
+- 讲原理与判断的条目（可控性、评测方法、权利结构）不带版本号，长期有效。
+- 讲具体工具的条目在页首标更新日期，只写"它擅长什么、会在哪里坑你"，
   不写界面步骤 —— 步骤会烂，判断不会。
-- 价格、免费额度这类极易变的信息**一律不写死**，只说去哪里查。
+- 价格、免费额度这类极易变的信息一律不写死，只说去哪里查。
 
 ## 这一站不讲什么
 
-- **不讲乐理** —— 和声、调式、曲式在乐理与和声那一站。
-- **不讲声音原理** —— 采样率、动态、滤波在「音频与音乐制作」。
-- **不做导购** —— 比较维度照给，但不排"哪个最好"。
-- **不承诺例证音频长期可听** —— AI 生成的音频其权利状态与合成示例不同，
+- 不讲乐理 —— 和声、调式、曲式在乐理与和声那一站。
+- 不讲声音原理 —— 采样率、动态、滤波在「音频与音乐制作」。
+- 不做导购 —— 比较维度照给，但不排"哪个最好"。
+- 不承诺例证音频长期可听 —— AI 生成的音频其权利状态与合成示例不同，
   本页的音频例证策略见各条目页首的许可标注。
 :::
 
@@ -78,18 +78,18 @@ at all, and what to do with it afterwards. The two pages link and do not overlap
 
 Tools here change every few months, so:
 
-- **Entries about principles and judgement** (controllability, how to evaluate,
+- Entries about principles and judgement (controllability, how to evaluate,
   how rights stack up) carry no version numbers and stay true for years.
-- **Entries about specific tools** show an updated date and cover only what the
+- Entries about specific tools show an updated date and cover only what the
   tool is good at and where it bites — never click-by-click steps. Steps rot;
   judgement doesn't.
-- Prices and free-tier limits are **never stated as facts**, only where to check.
+- Prices and free-tier limits are never stated as facts, only where to check.
 
 ## What this site does not do
 
-- **No music theory** — that lives on the theory and harmony site.
-- **No sound fundamentals** — sample rate, dynamics and filters are on Production.
-- **No buying advice** — comparison dimensions are given; "which is best" is not.
-- **No promise that examples stay playable** — AI-generated audio has a different
+- No music theory — that lives on the theory and harmony site.
+- No sound fundamentals — sample rate, dynamics and filters are on Production.
+- No buying advice — comparison dimensions are given; "which is best" is not.
+- No promise that examples stay playable — AI-generated audio has a different
   rights position from synthesised demos; each entry labels its own.
 :::

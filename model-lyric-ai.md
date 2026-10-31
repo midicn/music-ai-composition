@@ -27,21 +27,21 @@ instances:
   - mutopia-000686 | 短句多、停顿清楚，适合检查换气点是否够用——这是该类产出的参照，不是本模型生成（C1） | Short lines and clear pauses, for checking whether there is room to breathe; a reference for this kind of output, not a generation by this model (C1)
   - mutopia-000004 | 长句与跳进并存，词的重音一旦错位立刻听得出来——这是该类产出的参照，不是本模型生成（C1） | Long lines and leaps, where a misplaced word stress is immediately audible; a reference for this kind of output, not a generation by this model (C1)
 sources:
-  - 歌词与旋律的配合关系，依歌曲写作通识核对，未抄文本
-  - 语言模型的输出限制，依公开文档与使用经验核对，未抄原文
+  - 歌词与旋律的配合关系，参考歌曲写作惯例。
+  - 语言模型的输出限制；公开文档与使用经验是主要依据。
 updated: 2026-10-30
 ---
 
 ::: zh
-## 它能做什么
+## 用武之地
 
 按主题出十个副歌方向，挑一个往下写；给一组押韵候选，把韵脚统一；按每行音节数改词，让词贴住旋律；把写俗的句子换掉，保留原意；做双语版本或翻译，让同一首歌进另一个市场；给结构打草稿，主歌、预副歌、副歌、桥段各写什么；检查重复用词与口水话。
 
-## 输入与输出
+## 输入与产出
 
 输入是主题、情绪、叙述视角、韵式、每行音节数与参考歌；输出是纯文本，按行分好，可以一次给多个版本。它不输出音频，也不判断可唱性：重音落在哪一拍、哪个元音能拉长、换气够不够，都要你对着旋律读一遍。旋律可以先有，也可以后配，但两者必须合。
 
-## 强项
+## 最好用的地方
 
 - 铺量快，卡壳时能在十分钟里拿到十个方向。
 - 给出约束（韵式、音节、禁用词）后，格式稳定性明显提高。
@@ -50,7 +50,7 @@ updated: 2026-10-30
 - 结构完整，主歌与副歌的功能分配清楚。
 - 适合做备选清单，而不是最终稿。
 
-## 弱项与翻车点
+## 会翻车的地方
 
 - 陈词滥调：雨、霓虹、灰烬、折翼这类意象反复出现，十版里八版同味。
 - 为韵伤意：为了押韵把重音挪到弱拍，唱出来词不达意，中文尤其明显。
@@ -59,7 +59,7 @@ updated: 2026-10-30
 - 事实与细节：地名、年代、行业细节会编，叙事歌曲里尤其危险。
 - 风格模仿：要求"像某位在世词作者"时，可能越过风格借鉴的边界。
 
-## 条款、价格与替代
+## 收费、授权与替代品
 
 要确认的问题：输出能否商用、是否需要署名？输入的歌词是否被用于训练？条款是否禁止模仿特定词作者？翻译版本的权利归谁？把生成歌词交给作曲者或歌手是否受限？
 
@@ -73,15 +73,15 @@ updated: 2026-10-30
 :::
 
 ::: en
-## What it lets you finish
+## Where it earns its place
 
 Ten chorus directions on a theme, one of which you develop; a set of rhyme candidates that unifies the scheme; rewritten lines at a fixed syllable count so words sit on the melody; fresh replacements for clichés that keep the meaning; a bilingual or translated version for another market; a structural draft showing what verse, pre-chorus, chorus and bridge each do; a check for repeated words and filler.
 
-## Inputs and outputs
+## Input and output
 
 You input theme, mood, point of view, rhyme scheme, syllables per line and reference songs; you get plain text, line by line, often several versions at once. It outputs no audio and cannot judge singability: which beat carries the stress, which vowel can be held, whether there is room to breathe, all need reading against the melody. The melody may come first or later, but the two must fit.
 
-## Strengths
+## Where it shines
 
 - Fast volume: ten directions in ten minutes when you are stuck.
 - With constraints on rhyme, syllables and banned words, format stability improves markedly.
@@ -90,7 +90,7 @@ You input theme, mood, point of view, rhyme scheme, syllables per line and refer
 - Complete structure, with clear jobs for verse and chorus.
 - Good for a shortlist of options, not a final lyric.
 
-## Weaknesses and failure modes
+## Where it falls over
 
 - Cliché: rain, neon, ashes and broken wings recur, and eight of ten versions taste the same.
 - Rhyme over meaning: stress moves onto weak beats to close a rhyme, and the sense collapses when sung, most visibly in Chinese.
@@ -99,7 +99,7 @@ You input theme, mood, point of view, rhyme scheme, syllables per line and refer
 - Facts: place names, dates and trade details get invented, which is dangerous in narrative songs.
 - Style imitation: asking for a living writer's voice can cross from influence into impersonation.
 
-## Terms, price and alternatives
+## Cost, licence, alternatives
 
 Questions to check: may output be used commercially, and is credit required? Are input lyrics used for training? Do the terms forbid imitating a specific writer? Who owns the rights in a translated version? Are there limits on handing generated lyrics to a composer or singer?
 

@@ -20,27 +20,27 @@ instances:
   - atepp-007103 | 莫扎特回旋曲，主题与插部交替，段落边界清楚（C1）
   - thesession-020649 | 里尔舞曲，短小重复的段落适合逐段生成再拼（C1）
 sources:
-  - 分段生成与拼接的常见做法，依生成实践公开资料核对，未抄原文
-  - 段落边界的和声与节拍处理，依曲式学通识核对，未抄文本
+  - 分段生成与拼接的常见做法，参考生成实践公开资料。
+  - 段落边界的和声与节拍处理；曲式学惯例是主要依据。
 updated: 2026-10-30
 ---
 
 ::: zh
-## 问题
+## 卡在哪
 
-让模型一次生成四分钟，常见结果是开头像样、中段松散、结尾草率收场。长结构需要计划，而模型没有计划。分段生成把控制权拿回来：每段单独写提示，分别生成，再按段落边界拼接。
+一次要四分钟，模型通常给得出开头，守不住中段，结尾草草收。长结构需要计划，它没有计划。分段生成把控制权拿回来：四分钟按 8–12 段切，每段 16–32 小节，单独写提示、单独生成，再到边界上拼。
 
-## 原理
+## 为什么会裂
 
-拼接的难点在边界。两段的速度、调性、配器与混响必须一致，否则接缝立刻暴露。最稳的接法是让边界落在和声稳定处，并在前段末尾留出自然的收束，后段从同调同速进入。硬切适合段落对比明显的场合，交叉淡化适合氛围连续的音乐。长度不必相等，但要在节拍上对齐。
+接缝暴露的是三个参数：速度、调性、混响。两段差 2 BPM，三十秒后就能听出来；调性差一个全音，接上去像换了一首歌；前段尾巴混响 2.5 秒、后段 0.8 秒，交界处会突然变干。最稳的接法是边界落在主和弦上，前段收束、后段同调同速进入。
 
-## 做法
+## 怎么接
 
-先画出段落表：每段的长度、调性、配器、情绪与功能。逐段生成时把相邻段落的信息写进提示，减少风格漂移。生成后先单独听每段是否成立，再听接缝。接缝问题优先重生成后段，而不是修前段。拼接完成后统一做响度与音色匹配，最后整体听一遍结构是否讲得通。
+先画段落表：每段的小节数、调性、配器、情绪。写提示时带上相邻段的信息，例如「90 BPM，D 小调，弦乐铺底，结尾停在 A 和弦」。拼接留 2 小节重叠，交叉淡化 200–500 毫秒；氛围段落可以放到 1 秒。硬切只用于明确对比，比如从室内乐切到电子鼓。
 
 ## 听什么
 
-在变奏乐章里听段落之间的性格差异，在回旋曲里听主题与插部的边界，在里尔舞曲里听重复段落的接缝。分段做得好的曲子，听不出哪一段是单独生成的。
+在变奏乐章里听段落性格的差异，在回旋曲里听主题与插部的边界，在里尔舞曲里听重复段落的接缝。分段做得好，听不出哪一段是单独生成的；做得不好，每次进副歌都像换台。
 
 ```audiolab
 {"type":"progression","key":"C","chords":["C","Am","F","G"],"label":"段落边界的和声","label_en":"Harmony at a section boundary","hint":"边界落在稳定和弦上，接缝才不刺耳","hint_en":"A seam is quietest when it lands on a stable chord"}
@@ -48,23 +48,23 @@ updated: 2026-10-30
 :::
 
 ::: en
-## The problem
+## Where it breaks
 
-Ask for four minutes in one pass and the usual result starts well, loosens in the middle and ends abruptly. Long forms need a plan and the model has none. Section-by-section generation takes control back: a prompt per section, generated separately, stitched at the boundaries.
+Ask for four minutes in one pass and the model gives you an opening, loses the middle and rushes the end. Long form needs a plan; it has none. Generate in sections instead: cut four minutes into 8–12 sections of 16–32 bars, prompt each one, then stitch at the boundaries.
 
-## How it works
+## Why the seams show
 
-The difficulty is the seam. Tempo, key, instrumentation and reverb must match across the join or it shows at once. The safest join lands on stable harmony, with the first section closing naturally and the next entering in the same key and tempo. A hard cut suits strong contrast, crossfades suit continuous atmosphere. Sections need not be equal, but they must align on the beat.
+Three parameters give a seam away: tempo, key and reverb. Two BPM of drift is audible after thirty seconds; a whole tone of key change sounds like another song; a 2.5-second tail meeting a 0.8-second tail goes abruptly dry. The safest join lands on the tonic chord, with the first section closing and the next entering in the same key and tempo.
 
-## Practice
+## How to stitch
 
-Draw a section table first: length, key, instrumentation, mood and function. Include neighbouring section information in each prompt to reduce drift. After generating, audition each section alone before the seams. Fix a seam by regenerating the later section rather than patching the earlier one. Match loudness and tone after stitching, then listen through for whether the form makes sense.
+Draw a section table first: bars, key, instrumentation, mood. Include the neighbouring section in each prompt, for example "90 BPM, D minor, strings underneath, ending on an A chord". Overlap two bars at the join and crossfade 200–500 ms; atmospheric sections can take a full second. Save hard cuts for deliberate contrast, such as chamber music into electronic drums.
 
 ## What to listen for
 
-In the variation movement, the change of character between sections; in the rondo, the boundaries of theme and episode; in the reel, the joins between repeats. Good section work leaves no audible clue about which part was generated alone.
+In a variation movement, the change of character between sections; in a rondo, the boundaries of theme and episode; in a reel, the joins between repeats. Good section work leaves no clue about which part was generated alone. Bad section work sounds like changing stations at every chorus.
 
 ```audiolab
-{"type":"progression","key":"C","chords":["C","Am","F","G"],"label":"Harmony at a section boundary","label_en":"Harmony at a section boundary","hint":"A seam is quietest when it lands on a stable chord","hint_en":"A seam is quietest when it lands on a stable chord"}
+{"type":"progression","key":"C","chords":["C","Am","F","G"],"label":"段落边界的和声","label_en":"Harmony at a section boundary","hint":"边界落在稳定和弦上，接缝才不刺耳","hint_en":"A seam is quietest when it lands on a stable chord"}
 ```
 :::

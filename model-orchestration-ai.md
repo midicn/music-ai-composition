@@ -27,21 +27,21 @@ instances:
   - pdmx-000002 | 长笛练习曲，单线条清楚，适合看一条旋律被分到哪件乐器——这是该类产出的参照，不是本模型生成（C1） | A solo flute etude with one clear line, for seeing which instrument a melody is given to; a reference for this kind of output, not a generation by this model (C1)
   - mutopia-000498 | 交响曲乐章，动态与编制都大，适合比较草案与成品的差距——这是该类产出的参照，不是本模型生成（C1） | A symphony movement, large in dynamics and scoring, for comparing a draft with the finished work; a reference for this kind of output, not a generation by this model (C1)
 sources:
-  - 配器辅助的两类做法（规则式展开与生成式编配），依公开说明核对，未抄原文
-  - 配器中的音区与平衡问题，依配器实践通识核对，未抄文本
+  - 配器辅助的两类做法（规则式展开与生成式编配），参考公开说明。
+  - 配器中的音区与平衡问题；配器实践惯例是主要依据。
 updated: 2026-10-30
 ---
 
 ::: zh
-## 它能做什么
+## 能替你做完什么
 
 把一份钢琴谱展开到弦乐、木管、铜管的各个声部；给旋律配一层和声或对位伴奏；一次出几个配器方案供试奏比较；生成多轨 MIDI，进 DAW 换成音源做 mockup；给教学演示"同一材料换编制"的差别；把草图快速变成能听的版本，先给导演或客户听方向。
 
-## 输入与输出
+## 怎么给，给回什么
 
 输入是 MIDI 或钢琴谱，加上编制、风格与情绪的描述；输出是多轨 MIDI，或直接渲染的音频。它不给分谱排版，也不检查演奏法，声部数量、音区与换气都需要人工核。规则式功能（记谱软件里的展开与编配）结果可预测；生成式服务偏向按风格重建，不一定贴着你的动机。
 
-## 强项
+## 最好用的地方
 
 - 省誊抄与试配时间，一个动机能很快听到几种编制。
 - 能给非钢琴家写出可弹的声部，避免十度叠置这类没法演奏的写法。
@@ -50,7 +50,7 @@ updated: 2026-10-30
 - 规则式展开确定、可复现，适合教学与流水线工作。
 - 适合做 mockup 前的粗配，先定方向再精修。
 
-## 弱项与翻车点
+## 会翻车的地方
 
 - 演奏法：不懂换气、弓法、连奏与双音限制，写得出但不好演，乐团一试就露。
 - 平衡：音区与力度缺少配器常识，木管常被弦乐埋，内声部糊成一片。
@@ -59,7 +59,7 @@ updated: 2026-10-30
 - 特殊乐器：竖琴踏板、打击乐记谱、铜管弱音器这类细节常不可用。
 - 术语与排版：声部名与缩写不统一，进乐谱还要重排一遍。
 
-## 条款、价格与替代
+## 收费、授权与替代品
 
 要确认的问题：生成式服务的产出归谁，免费档是否要求署名？上传的草图是否被用于训练？商用发行与影视同步各需要什么授权？生成 MIDI 再分发给乐团或制作方是否允许？
 
@@ -73,15 +73,15 @@ updated: 2026-10-30
 :::
 
 ::: en
-## What it lets you finish
+## What it finishes for you
 
 Spread a piano score across string, woodwind and brass parts; add a harmony or countermelody under a tune; produce several orchestration options to play through and compare; export multi-track MIDI for a mockup with your own sounds; show students how one idea changes with instrumentation; turn a sketch into something audible so a director or client can react to the direction.
 
-## Inputs and outputs
+## How you feed it, what it returns
 
 You input MIDI or a piano score plus a description of ensemble, style and mood; you get multi-track MIDI or rendered audio. It does not engrave parts or check playability, so part count, register and breathing need human review. Rule-based functions in notation software are predictable; generative services lean toward rebuilding in a style and may not stay close to your motif.
 
-## Strengths
+## Where it shines
 
 - Saves copying and trial time: one motif can be heard in several instrumentations quickly.
 - Writes playable parts for non-pianists, avoiding tenths and other unplayable spacing.
@@ -90,7 +90,7 @@ You input MIDI or a piano score plus a description of ensemble, style and mood; 
 - Rule-based spreading is deterministic and reproducible, which suits teaching and production lines.
 - Useful for a rough pre-mockup pass that fixes direction before detail work.
 
-## Weaknesses and failure modes
+## Where it falls over
 
 - Playing technique: breathing, bowing, slurs and double-stop limits are unknown, so parts look fine and fall apart in rehearsal.
 - Balance: register and dynamic sense is missing, woodwind is buried under strings, and inner parts smear together.
@@ -99,7 +99,7 @@ You input MIDI or a piano score plus a description of ensemble, style and mood; 
 - Special instruments: harp pedalling, percussion notation and brass mutes are often unusable.
 - Naming and layout: part names and abbreviations are inconsistent, so the score needs re-laying out.
 
-## Terms, price and alternatives
+## Cost, licence, alternatives
 
 Questions to check: who owns output from a generative service, and does the free tier require credit? Are uploaded sketches used for training? What permissions cover commercial release and sync? May generated MIDI be sent to an orchestra or a production partner?
 

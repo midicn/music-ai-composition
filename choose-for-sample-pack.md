@@ -1,7 +1,7 @@
 ---
 id: choose-for-sample-pack
 site: ai
-cat: A
+cat: K
 title: 采样包选型
 title_en: Choosing Tools for a Sample Pack
 summary: 采样包卖的是授权与元数据，不是文件数量。
@@ -10,7 +10,7 @@ level: standard
 tags: [选型, 采样, 循环, 授权]
 tags_en: [selection, sampling, loops, licensing]
 alias: [采样选型, 采样包工具, sample pack]
-order: 17
+order: 16
 links:
   - "[[glossary:sample-rate]]"
   - "[[glossary:sampler]]"
@@ -29,8 +29,8 @@ instances:
   - groove-000000 | 138 BPM 放克鼓组，越快切点越难，循环点最考验手艺（C1）；这是该用途常见产出的参照，不是本站工具的演示
   - m21-002276 | 绿袖子吉格，有调性的旋律片段，做带调 loop 的参照（C1）；这是该用途常见产出的参照，不是本站工具的演示
 sources:
-  - 采样库与生成式音频服务的公开授权说明，2026-10-30 核对，未抄原文
-  - 采样录制、切点与元数据规范的通行做法，依通识核对，未抄文本
+  - 采样库与生成式音频服务的公开授权说明，对照2026-10-30 复核整理。
+  - 采样录制、切点与元数据规范的通行做法（惯例）。
 updated: 2026-10-30
 ---
 
@@ -63,7 +63,7 @@ updated: 2026-10-30
 
 ## 上手路径
 
-先学三件事：切点做在零交叉、每个文件写清速度与调性、把授权说明放进包里。然后读本站的样本生成、文件与分轨、分轨级编辑三篇。
+先学三件事：切点做在零交叉、每个文件写清速度与调性、把授权说明放进包里。然后读这里的样本生成、文件与分轨、分轨级编辑三篇。
 
 ```audiolab
 {"type":"rhythm","sig":"4/4","pattern":"s e s s e s s e s s e s s e s s","bpm":87,"label":"一段要切干净的循环","label_en":"A loop that must cut cleanly","hint":"听完一整圈，注意回到第一拍时的接缝","hint_en":"Listen a full cycle and mind the seam back to beat one"}

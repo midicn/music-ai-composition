@@ -26,21 +26,21 @@ instances:
   - pdmx-000004 | 安静的钢琴小品，弱奏段落最容易暴露底噪与处理痕迹——这是该类产出的参照，不是本模型生成（C1） | A quiet piano miniature whose soft passages expose noise and processing marks; a reference for this kind of output, not a generation by this model (C1)
   - mutopia-000497 | 交响曲乐章，动态大、编制厚，适合看母带助手会不会压过头——这是该类产出的参照，不是本模型生成（C1） | A symphony movement with wide dynamics and thick scoring, for checking whether a master assistant over-compresses; a reference for this kind of output, not a generation by this model (C1)
 sources:
-  - 修复、再平衡与母带助手的功能划分，依厂商公开说明核对，未抄原文
-  - 修复与母带处理的听感取舍，依混音实践通识核对，未抄文本
+  - 修复、再平衡与母带助手的功能划分；厂商公开说明是主要依据。
+  - 修复与母带处理的听感取舍——依据来自混音实践惯例。
 updated: 2026-10-30
 ---
 
 ::: zh
-## 它能做什么
+## 实际用途
 
 修一段底噪明显的老录音：去嗡声、去咔嗒、去混响、用频谱笔刷补掉一声咳嗽；把人声、贝斯、鼓与其他从成品里重新配比；给混音一条平衡建议当作起点；给母带一条参考曲线与响度目标；批量处理一季播客或一张专辑。
 
-## 输入与输出
+## 输入与产出
 
 输入是音频或分轨，插件跑在 DAW 里，独立应用可以不进 DAW 直接处理文件。输出是处理后的音频、母带文件，或再平衡后的一组分轨。处理在本机完成，素材不上传。助手给的是参数与曲线，全部可以手改，也可以整段关掉。
 
-## 强项
+## 最好用的地方
 
 - 与 DAW 工作流贴合，修复完直接往下混，不用导出再导入。
 - 频谱编辑可以精确到笔刷，处理个别噪声事件比整段降噪干净。
@@ -49,7 +49,7 @@ updated: 2026-10-30
 - 可以批量，适合播客、有声书这类重复性工作。
 - 本地处理，保密素材不必上传。
 
-## 弱项与翻车点
+## 会翻车的地方
 
 - 过度处理：母带助手偏亮偏压，直接接受建议会把动态压平，鼓的冲击最先消失。
 - 去混响：抹掉空间的同时抹掉瞬态，钢琴与鼓的起音会变软，尾巴变干。
@@ -58,7 +58,7 @@ updated: 2026-10-30
 - 授权与激活：换机、离线现场、团队协作都可能卡在激活上，出发前要试一遍。
 - 学习曲线：助手省的是起点，不是判断；不会听的人更容易被"建议"带着走。
 
-## 条款、价格与替代
+## 收费、授权与替代品
 
 要确认的问题：买断版与订阅版的差别在哪里？升级是否另付费？一台机器能装几份、可否离线激活？EULA 对处理后的产出有没有额外主张？把处理结果交给客户是否受限？
 
@@ -72,15 +72,15 @@ updated: 2026-10-30
 :::
 
 ::: en
-## What it lets you finish
+## In practice
 
 Repair an old recording with audible noise: hum, clicks, reverb, or a cough removed with a spectral brush; rebalance vocals, bass, drums and other from a finished mix; get a starting balance for a mix; get a reference curve and loudness target for a master; batch a season of podcasts or a whole album.
 
-## Inputs and outputs
+## Input and output
 
 You input audio or stems, running as a plug-in inside a DAW, or as a standalone application on files without a DAW. The output is processed audio, a master file, or a set of rebalanced stems. Processing is local and nothing is uploaded. The assistants produce parameters and curves that can all be edited by hand or switched off.
 
-## Strengths
+## Where it shines
 
 - Fits the DAW workflow: repair and keep mixing without export and re-import.
 - Spectral editing down to a brush removes single noise events more cleanly than broadband denoising.
@@ -89,7 +89,7 @@ You input audio or stems, running as a plug-in inside a DAW, or as a standalone 
 - Batch processing suits repetitive work such as podcasts and audiobooks.
 - Local processing keeps confidential material off the network.
 
-## Weaknesses and failure modes
+## Where it falls over
 
 - Over-processing: master suggestions lean bright and compressed, and accepting them flattens dynamics, with drum impact going first.
 - De-reverb: removing space also removes transients, so piano and drum attacks soften and tails dry out.
@@ -98,7 +98,7 @@ You input audio or stems, running as a plug-in inside a DAW, or as a standalone 
 - Licensing and activation: machine changes, offline shows and team work can stall on activation, so test before you travel.
 - Learning curve: assistants save the starting point, not the judgement; anyone who cannot hear is led further astray.
 
-## Terms, price and alternatives
+## Cost, licence, alternatives
 
 Questions to check: how do perpetual and subscription licences differ? Are upgrades charged separately? How many machines are covered, and is offline activation possible? Does the EULA claim anything over processed output? Are there limits on delivering the result to clients?
 

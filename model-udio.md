@@ -27,28 +27,28 @@ instances:
   - groove-000007 | 65 BPM 摇滚鼓组，看慢速摇滚的推力——这是该类产出的参照，不是本模型生成（C1） | A 65 BPM rock kit, to hear slow rock drive; a reference for this kind of output, not a Udio generation (C1)
   - cyberhymnal-003336 | 中文歌词的赞美诗旋律，看词与音怎么对应——这是该类产出的参照，不是本模型生成（C1） | A hymn tune set to Chinese words, to hear lyric fitted to melody; a reference for this kind of output, not a Udio generation (C1)
 sources:
-  - 产品能力与续写流程，依官方公开说明与条款页核对，未抄原文
-  - 失败模式依公开用户报告与创作实践归纳，未引用具体评测数据
+  - 产品能力与续写流程——依据来自官方公开说明与条款页。
+  - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
 updated: 2026-10-30
 ---
 
 ::: zh
-## 它能做什么
+## 实际用途
 
 写一段描述加上歌词，它给出一首带人声的歌，人声的质感与气息处理比多数同类更像录音。可以整首生成，也可以先出一段，再从这一段往后续写，把一首歌逐段攒出来。适合做风格样带、给人声找参考、试探某种唱法能不能成立。
 
-## 输入与输出
+## 接口的两端
 
 输入是文本与歌词，部分档位接受上传音频作为续写或改编的起点。输出是立体声音频，部分档位有分轨。续写会沿用前一段的音色与调性，但不会自动修正前面写坏的段落。每次生成都是新的采样，同一提示无法复现同一条音频。下面的试听与实例只是该类产出的参照，不是本模型生成。
 
-## 强项
+## 最好用的地方
 
 - 人声的气息、颤音与咬字的自然度，在短句上很接近真实录音。
 - 分段续写能把一首歌逐段搭起来，适合先确认副歌再补主歌。
 - 摇滚、灵魂、说唱等以人声为中心的体裁，配器与人声的平衡通常合理。
 - 同一段歌词换几种风格重唱，比较成本低，便于选方向。
 
-## 弱项与翻车点
+## 会翻车的地方
 
 - 续写的接缝处容易露馅：前一段结尾的混响被切断，后一段起音偏硬。可复现的测法是把接缝前后十秒单独循环听。
 - 结构上偏保守，第二次副歌常与首段逐音相同，缺少变化；要变化得手动改词或改描述。
@@ -57,7 +57,7 @@ updated: 2026-10-30
 - 描述里写具体和弦、精确速度时响应很弱，编曲细节常被"平均化"成该风格的常见做法。
 - 分轨不总是干净，人声轨可能夹带伴奏残响，重混前要修。
 
-## 条款、价格与替代
+## 收费、授权与替代品
 
 要确认：当前档位的商用范围与发行权限、上传音频的权属声明、训练数据来源的官方说明、分轨导出的条件。价格按档位分，具体数字与地区可用性以官方页面为准。
 替代：要整首歌一次成型、结构更完整，换 Suno；要能逐字控制唱法与音高，换 ACE Studio，代价是要自己画曲线。
@@ -68,22 +68,22 @@ updated: 2026-10-30
 :::
 
 ::: en
-## What it lets you finish
+## In practice
 
 Write a description and lyrics and it returns a song with vocals whose breath and timbre read closer to a recording than most rivals. You can generate a whole song, or start with one section and extend forward, building the track piece by piece. It suits style demos, vocal references, and testing whether a delivery works.
 
-## Inputs and outputs
+## Both ends of the interface
 
 Input is text plus lyrics; some tiers accept uploaded audio as a starting point for extension or rework. Output is stereo audio, with stems on some tiers. Extension inherits timbre and key from the previous section but will not repair a bad section behind it. Every run is fresh sampling, so one prompt cannot reproduce one exact file. The listening examples and instances below are references for this kind of output, not this model's generations.
 
-## Strengths
+## Where it shines
 
 - Breath, vibrato and diction on short phrases are close to a real take.
 - Section-by-section extension lets you confirm a chorus before writing verses.
 - On voice-led genres such as rock, soul and rap, the balance of vocal against backing is usually sensible.
 - Re-singing the same lyric in several styles is cheap to compare, which helps pick a direction.
 
-## Weaknesses and failure modes
+## Where it falls over
 
 - Seams show: the reverb tail at the end of one section is cut, and the next section starts hard. A reproducible test is to loop the ten seconds around the join.
 - Structure is conservative; the second chorus is often note-for-note the first. Variation needs manual lyric or description changes.
@@ -92,7 +92,7 @@ Input is text plus lyrics; some tiers accept uploaded audio as a starting point 
 - Specific chords and exact tempos get a weak response; arrangement detail averages out into the genre's usual moves.
 - Stems are not always clean, and the vocal stem may carry backing reverb that must be fixed before remixing.
 
-## Terms, price and alternatives
+## Cost, licence, alternatives
 
 Confirm: commercial scope and release rights for your tier, the ownership terms for uploaded audio, the official statement on training data, and the conditions for stem export. Pricing is tiered; exact figures and regional availability belong on the official page.
 Alternatives: Suno for a whole song in one pass with stronger structure; ACE Studio when you need to control delivery and pitch syllable by syllable, at the cost of drawing the curves yourself.

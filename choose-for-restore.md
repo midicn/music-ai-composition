@@ -1,7 +1,7 @@
 ---
 id: choose-for-restore
 site: ai
-cat: A
+cat: K
 title: 修复选型
 title_en: Choosing Tools for Restoration
 summary: 修复的上限是原始素材，不是软件；先定修到什么程度，再选工具。
@@ -10,7 +10,7 @@ level: standard
 tags: [选型, 修复, 降噪, 老录音]
 tags_en: [selection, restoration, noise reduction, archival]
 alias: [修复选型, 降噪工具, restoration]
-order: 16
+order: 15
 links:
   - "[[glossary:headroom]]"
   - "[[glossary:monitoring]]"
@@ -28,8 +28,8 @@ instances:
   - giantmidi-004939 | 格什温《斯瓦尼》，早期流行歌曲，人声与乐队争频段的参照（C1）；这是该用途常见产出的参照，不是本站工具的演示
   - cyberhymnal-001734 | 勃拉姆斯《伯利恒摇篮曲》，弱奏管风琴，底噪与动态的边界（C1）；这是该用途常见产出的参照，不是本站工具的演示
 sources:
-  - 谱修复、降噪与语音增强的公开技术说明，2026-10-30 核对，未抄原文
-  - 档案保存与再发行的通行做法，依通识核对，未据以下法律结论
+  - 谱修复、降噪与语音增强的公开技术说明——依据来自2026-10-30 复核。
+  - 档案保存与再发行的通行做法，对照惯例整理。法律结论不在本文范围。
 updated: 2026-10-30
 ---
 
@@ -62,7 +62,7 @@ updated: 2026-10-30
 
 ## 上手路径
 
-先学三件事：留一份未处理的原件、每一步只做一件事、每次处理前后做 A/B。然后读本站的修复伪影、分轨分离工具、响度目标三篇。
+先学三件事：留一份未处理的原件、每一步只做一件事、每次处理前后做 A/B。然后读这里的修复伪影、分轨分离工具、响度目标三篇。
 
 ```audiolab
 {"type":"instrument","gm":"Reed Organ","synth":"reed","phrase":["G3","B3","D4","G4","F4","D4","B3","G3"],"label":"老录音里的管风琴","label_en":"An organ from an old recording","hint":"先听底噪，再决定要修掉多少","hint_en":"Hear the noise floor first, then decide how much to remove"}

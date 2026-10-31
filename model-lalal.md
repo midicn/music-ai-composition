@@ -27,21 +27,21 @@ instances:
   - pdmx-000107 | 手风琴与弦乐为主的舞曲，中频拥挤，适合看乐器分离——这是该类产出的参照，不是本模型生成（C1） | A dance piece led by accordion and strings with a crowded midrange, for checking instrument separation; a reference for this kind of output, not a generation by this model (C1)
   - oga-000006 | 游戏战斗配乐，鼓与铜管密集，适合看瞬态是否被保留——这是该类产出的参照，不是本模型生成（C1） | Dense game battle music with drums and brass, for checking whether transients survive; a reference for this kind of output, not a generation by this model (C1)
 sources:
-  - 在线分轨的输入输出与档位，依服务官方页面核对，未抄原文
-  - 上传素材的隐私与版权处理，依服务条款与通识核对，未抄文本
+  - 在线分轨的输入输出与档位（服务官方页面）。
+  - 上传素材的隐私与版权处理，参考服务条款与惯例。
 updated: 2026-10-30
 ---
 
 ::: zh
-## 它能做什么
+## 能替你做完什么
 
 把一首成品歌拆成人声与伴奏，再按需分出鼓、贝斯、钢琴、吉他等声部；给翻唱做无人声伴奏；给采样找一段干净的鼓或贝斯；把现场录像里的对白或演唱单独拎出来；在不装软件的情况下处理客户的急件。
 
-## 输入与输出
+## 输入与产出
 
 输入是音频或视频文件，上传后选择要拆的声部，服务返回可试听、可下载的分轨，格式与位深在下载时选。视频会先取音轨再处理。免费档能处理多长、能下载什么，以官方页面为准；付费按分钟或按文件计。上传文件保留多久、是否用于改进模型，写在条款里，用前要读。
 
-## 强项
+## 最好用的地方
 
 - 零安装，浏览器里几步出结果，不碰命令行。
 - 声部选项多，除了人声与伴奏，还能单独取鼓、贝斯、钢琴等。
@@ -49,7 +49,7 @@ updated: 2026-10-30
 - 附带的人声清洁功能，对去回声与降噪有帮助，具体项目以官方页面为准。
 - 结果直接下载进 DAW，适合非技术岗位与临时需求。
 
-## 弱项与翻车点
+## 会翻车的地方
 
 - 排队与时长：免费档限制多，长节目或批量任务要反复上传，进度不受自己控制。
 - 隐私：上传意味着素材离开本机，未发行作品与保密对白不适合走这条路径。
@@ -58,7 +58,7 @@ updated: 2026-10-30
 - 转码损失：上传压缩格式再拆分，等于在已经损失过的素材上做第二次处理，齿音与高频最先坏。
 - 计费方式：按分钟计费时，反复试参数会直接增加成本，先想清楚要哪几轨再一次处理。
 
-## 条款、价格与替代
+## 收费、授权与替代品
 
 要确认的问题：上传内容的所有权是否仍归你？服务是否拿上传素材训练模型？文件保留多久、能否手动删除？产出用于商业发行是否要额外授权？把分轨再分发给第三方是否允许？
 
@@ -72,15 +72,15 @@ updated: 2026-10-30
 :::
 
 ::: en
-## What it lets you finish
+## What it finishes for you
 
 Split a finished song into vocals and backing, then take drums, bass, piano or guitar separately; make an instrumental for a cover; pull a clean drum or bass fragment for sampling; lift a vocal or a line of dialogue out of a live video; handle a client's rush job without installing anything.
 
-## Inputs and outputs
+## Input and output
 
 You upload audio or video, choose the parts to take, and the service returns stems you can preview and download, with format and bit depth chosen at download. Video is stripped to its audio first. What the free tier accepts and lets you download is as stated on the official pages, and paid use is metered by minute or by file. How long uploads are kept and whether they feed model improvement are stated in the terms and should be read before use.
 
-## Strengths
+## Where it shines
 
 - No install: a few steps in a browser, no command line.
 - Many part options beyond vocals and backing, including drums, bass and piano.
@@ -88,7 +88,7 @@ You upload audio or video, choose the parts to take, and the service returns ste
 - Built-in voice cleanup helps make a stem usable; the exact options are listed on the official pages.
 - Results download straight into a DAW, which suits non-technical roles and one-off jobs.
 
-## Weaknesses and failure modes
+## Where it falls over
 
 - Queues and limits: free use is restricted, so long programmes and batches mean repeated uploads with no control over timing.
 - Privacy: uploading sends material off the machine, which rules out unreleased work and confidential dialogue.
@@ -97,7 +97,7 @@ You upload audio or video, choose the parts to take, and the service returns ste
 - Transcoding: uploading a lossy file means a second pass of loss, and sibilance and highs suffer first.
 - Metering: when billing is by the minute, repeated attempts cost money, so decide which parts you need and process once.
 
-## Terms, price and alternatives
+## Cost, licence, alternatives
 
 Questions to check: do you still own what you upload? Is uploaded material used to train models? How long are files kept, and can you delete them? Does commercial release need extra permission? May you redistribute the stems to third parties?
 
