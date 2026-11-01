@@ -1,0 +1,372 @@
+{
+  "hero": {
+    "kicker": {
+      "zh": "AI 做音乐",
+      "en": "AI Music"
+    },
+    "title": {
+      "zh": "把一首曲子，从提示词做到能交付",
+      "en": "From a prompt to something you can deliver"
+    },
+    "lead": {
+      "zh": "先确定要做完什么，再倒推工具和流程：写歌、分轨、配乐、修音，还是母带。这里不按模型列表排队，而是按你手上的活来组织。",
+      "en": "Decide what has to be finished first, then work back to tools and process: a song, stems, a score, vocal repair or a master. Organised by the job in front of you, not by model leaderboards."
+    }
+  },
+  "needs_title": {
+    "zh": "你现在手里是哪件活",
+    "en": "Which job is on your desk"
+  },
+  "needs_sub": {
+    "zh": "每张卡先给判断标准，再给两三条能直接读的条目。",
+    "en": "Each card gives the test first, then two or three entries to read next."
+  },
+  "needs": [
+    {
+      "icon": "写",
+      "t": {
+        "zh": "想从零做一首歌",
+        "en": "Make a song from scratch"
+      },
+      "d": {
+        "zh": "先定风格与结构，再决定哪些段落交给模型。全程能改，比一次生成好听更重要。",
+        "en": "Fix style and structure first, then decide which sections to hand to a model. Staying editable matters more than a lucky first take."
+      },
+      "links": [
+        {
+          "id": "workflow-from-idea-to-master"
+        },
+        {
+          "id": "prompt-anatomy"
+        },
+        {
+          "id": "choose-for-song-demo"
+        }
+      ]
+    },
+    {
+      "icon": "影",
+      "t": {
+        "zh": "给短片或游戏配乐",
+        "en": "Score a film or a game"
+      },
+      "d": {
+        "zh": "配乐先对齐画面与状态，再谈音乐性。交付格式、循环点和授权要一开始就写清楚。",
+        "en": "Picture and game state come before musicality. Delivery format, loop points and licensing need to be settled at the start."
+      },
+      "links": [
+        {
+          "id": "ai-for-film-scoring"
+        },
+        {
+          "id": "ai-for-game-audio"
+        },
+        {
+          "id": "choose-for-film-cue"
+        }
+      ]
+    },
+    {
+      "icon": "修",
+      "t": {
+        "zh": "已有素材，想修、分轨或母带",
+        "en": "Repair, separate or master existing audio"
+      },
+      "d": {
+        "zh": "先判断问题是素材、编曲还是处理链。分轨能解决什么、会留下什么痕迹，要事先知道。",
+        "en": "Decide whether the problem is the source, the arrangement or the chain. Know what separation can fix and what artefacts it leaves."
+      },
+      "links": [
+        {
+          "id": "stem-separation-tools"
+        },
+        {
+          "id": "fixing-artifacts"
+        },
+        {
+          "id": "mastering-ai-generated"
+        }
+      ]
+    },
+    {
+      "icon": "声",
+      "t": {
+        "zh": "人声与歌声合成",
+        "en": "Vocals and synthetic voice"
+      },
+      "d": {
+        "zh": "咬字、换气与情感比音高更难仿。涉及真人声音时，同意与授权先于效果。",
+        "en": "Diction, breath and intent are harder to fake than pitch. With a real person's voice, consent comes before quality."
+      },
+      "links": [
+        {
+          "id": "synthetic-vocals"
+        },
+        {
+          "id": "voice-cloning-consent"
+        },
+        {
+          "id": "choose-for-vocal"
+        }
+      ]
+    },
+    {
+      "icon": "权",
+      "t": {
+        "zh": "能不能商用、怎么署名",
+        "en": "Can I use it, and how do I credit it"
+      },
+      "d": {
+        "zh": "把平台条款、训练来源和输出权利分开看。签合同前先确认素材与模型的授权链。",
+        "en": "Separate platform terms, training sources and rights in the output. Check the licensing chain before signing."
+      },
+      "links": [
+        {
+          "id": "licensing-ai-output"
+        },
+        {
+          "id": "copyright-of-ai-output"
+        },
+        {
+          "id": "attribution-and-disclosure"
+        }
+      ]
+    },
+    {
+      "icon": "验",
+      "t": {
+        "zh": "怎么判断这次生成值不值得留",
+        "en": "Is this generation worth keeping"
+      },
+      "d": {
+        "zh": "盲听、可复现和返工成本是三把尺子。听不出差别时，先别加处理。",
+        "en": "Blind listening, reproducibility and rework cost are the three tests. If you cannot hear a difference, stop processing."
+      },
+      "links": [
+        {
+          "id": "evaluating-generations"
+        },
+        {
+          "id": "blind-listening-tests"
+        },
+        {
+          "id": "reproducibility"
+        }
+      ]
+    },
+    {
+      "icon": "地",
+      "t": {
+        "zh": "国产模型与本地部署",
+        "en": "Chinese models and local deployment"
+      },
+      "d": {
+        "zh": "数据不出门、中文咬字、按次付费，是三条不同的需求；先分清再选。",
+        "en": "Keeping data local, Chinese diction and pay-per-use are three different needs; separate them before choosing."
+      },
+      "links": [
+        {
+          "id": "model-yue"
+        },
+        {
+          "id": "model-tme-tianqin"
+        },
+        {
+          "id": "model-netease-tianyin"
+        },
+        {
+          "id": "ai-vendor-exit"
+        }
+      ]
+    }
+  ],
+  "ladder_title": {
+    "zh": "一条不会返工的路线",
+    "en": "A route that avoids rework"
+  },
+  "ladder_sub": {
+    "zh": "从定目标到交付，四步走完；每一步都可以停下来检查。",
+    "en": "Four steps from brief to delivery; each one has a checkpoint."
+  },
+  "ladder": [
+    {
+      "n": "01",
+      "t": {
+        "zh": "先写清交付物",
+        "en": "Define the deliverable"
+      },
+      "d": {
+        "zh": "时长、用途、格式、响度与授权，先落在纸上。",
+        "en": "Length, use, format, loudness and licence, written down first."
+      },
+      "href": "choose-for-song-demo"
+    },
+    {
+      "n": "02",
+      "t": {
+        "zh": "再选工具",
+        "en": "Pick the tool"
+      },
+      "d": {
+        "zh": "按工作结果选，不按模型热度选。",
+        "en": "Choose by the result you need, not by model hype."
+      },
+      "href": "ai-music-tool-map"
+    },
+    {
+      "n": "03",
+      "t": {
+        "zh": "把控制写进提示",
+        "en": "Put control into the prompt"
+      },
+      "d": {
+        "zh": "结构、速度、配器、禁用的声音，逐项写进去。",
+        "en": "Structure, tempo, instrumentation and forbidden sounds, named one by one."
+      },
+      "href": "prompt-anatomy"
+    },
+    {
+      "n": "04",
+      "t": {
+        "zh": "交付前再听一遍",
+        "en": "Listen again before delivery"
+      },
+      "d": {
+        "zh": "换设备、对参考曲、查响度与分轨命名。",
+        "en": "Change systems, compare with a reference, check loudness and stem names."
+      },
+      "href": "file-formats-and-stems"
+    }
+  ],
+  "picks_title": {
+    "zh": "先读这几条，少走弯路",
+    "en": "Read these first"
+  },
+  "picks_sub": {
+    "zh": "六条覆盖选型、控制、分轨、评估与授权。",
+    "en": "Six entries covering selection, control, stems, evaluation and licensing."
+  },
+  "picks": [
+    {
+      "id": "ai-music-tool-map",
+      "why": {
+        "zh": "先看清工具地图：哪些做歌、哪些做分轨、哪些只做母带。",
+        "en": "See the map first: which tools make songs, which separate stems, which only master."
+      }
+    },
+    {
+      "id": "workflow-from-idea-to-master",
+      "why": {
+        "zh": "把“一次生成”拆成可检查的工序。",
+        "en": "Turns one generation into a sequence you can inspect."
+      }
+    },
+    {
+      "id": "prompt-anatomy",
+      "why": {
+        "zh": "提示词的结构比形容词堆砌更管用。",
+        "en": "Structure beats piled-up adjectives in a prompt."
+      }
+    },
+    {
+      "id": "stem-separation-tools",
+      "why": {
+        "zh": "分轨之前先知道它会留下什么痕迹。",
+        "en": "Know the artefacts before you split anything."
+      }
+    },
+    {
+      "id": "when-not-to-use-ai",
+      "why": {
+        "zh": "有些活交给模型只会增加返工。",
+        "en": "Some jobs only get more rework when handed to a model."
+      }
+    },
+    {
+      "id": "licensing-ai-output",
+      "why": {
+        "zh": "商用与署名问题，最好在开工前读完。",
+        "en": "Read the commercial-use and credit rules before you start."
+      }
+    },
+    {
+      "id": "ai-model-matrix",
+      "why": {
+        "zh": "先按四轴排除，再谈音质。",
+        "en": "Filter on four axes before discussing sound."
+      }
+    },
+    {
+      "id": "model-yue",
+      "why": {
+        "zh": "开放权重、整曲生成，门槛在显存与许可。",
+        "en": "Open weights and full songs, with VRAM and licence gates."
+      }
+    },
+    {
+      "id": "work-audiobook",
+      "why": {
+        "zh": "长文本、章节与质检，和做歌是两套流程。",
+        "en": "Long text, chapters and QC: a different pipeline from songs."
+      }
+    }
+  ],
+  "trails_title": {
+    "zh": "三条能走通的线",
+    "en": "Three routes that hold together"
+  },
+  "trails_sub": {
+    "zh": "每条四到五站，顺序读，不用跳。",
+    "en": "Four or five stops each; read in order."
+  },
+  "trails": [
+    {
+      "t": {
+        "zh": "做一首完整 Demo",
+        "en": "Finish a full demo"
+      },
+      "d": {
+        "zh": "从结构到母带，盯住每个可交付节点。",
+        "en": "From structure to master, with a deliverable at each stop."
+      },
+      "stops": [
+        "workflow-from-idea-to-master",
+        "prompt-anatomy",
+        "stem-level-editing",
+        "mastering-ai-generated"
+      ]
+    },
+    {
+      "t": {
+        "zh": "给短片配乐",
+        "en": "Score a short film"
+      },
+      "d": {
+        "zh": "先对画面，再谈风格，最后处理授权。",
+        "en": "Picture first, style second, licensing last."
+      },
+      "stops": [
+        "ai-for-film-scoring",
+        "trailer-music-ai",
+        "choose-for-film-cue",
+        "licensing-ai-output"
+      ]
+    },
+    {
+      "t": {
+        "zh": "分辨模型、工具与服务",
+        "en": "Tell models, tools and services apart"
+      },
+      "d": {
+        "zh": "同样叫 AI 音乐，能力边界完全不同。",
+        "en": "All called AI music, with very different limits."
+      },
+      "stops": [
+        "ai-music-tool-map",
+        "model-suno",
+        "model-musiclm",
+        "choose-for-song-demo"
+      ]
+    }
+  ]
+}
