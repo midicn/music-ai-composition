@@ -11,85 +11,43 @@ tags: [本站说明]
 tags_en: [about]
 alias: [关于, 说明, AI 音乐说明, about, ai]
 order: 99
-updated: 2026-10-27
+updated: 2026-11-02
 sources:
   - 本站自订说明，据实描述这里的内容范围与编写约定
 ---
 
 ::: zh
-## 这一站是做什么的
+## 内容范围
 
-这一站只回答一个问题：**怎么用 AI 把一首想要的曲子做出来。**
+本站介绍 AI 音乐工具的任务选择、输入准备、生成与修改、后期衔接及交付检查。涉及声学、MIDI 协议和音频处理原理时，可继续读[音频与音乐制作](https://prod.midicn.com/)。
 
-从"我脑子里有个模糊的样子"到"我交出一个能用的文件"，中间每一步都有选择：
-用什么工具、怎么把想法说清楚、生成出来的东西不满意怎么改、改完以什么格式交付、
-这段音频到底能不能用。这些是**流程与判断**，不是声学。
+## 核对工具信息
 
-## 与「音频与音乐制作」的分界
+模型档案应结合核对日期阅读。工具可能调整模型、下载方式、分轨、额度和条款；文章不能代替当前官方说明或账号内实际功能。开始项目之前，先验证所需输入、输出格式和许可，再决定工作流程。
 
-同一件事会在两站出现，各讲自己那一半：
+## 看待示例
 
-> **音频与音乐制作 = 声音是怎么被造出来的**（参数、物理、协议）
-> **本站 = 怎么把成品做出来**（工具、选型、流程、可控性、交付、合规）
+本站的固定 MIDI 与合成谱例用于说明旋律、节奏、音色等概念。除页面明确说明来源与条件外，不应把它们当作某个 AI 模型的输出、评测或性能证明。
 
-比如"压缩"：那一站讲阈值与比率为什么让声音变紧；这一站讲 AI 生成的整轨太糊时，
-该不该压、压完交给谁。两页互链，不重复写。
+比较生成工具时，应使用可记录的同类任务，保留输入、参数与输出，再按歌词准确性、结构、音质和后期可用性分别检查。不同任务可能需要不同工具。
 
-## 时间敏感的内容怎么处理
-
-工具在这个领域半年一变。所以：
-
-- 讲原理与判断的条目（可控性、评测方法、权利结构）不带版本号，长期有效。
-- 讲具体工具的条目在页首标更新日期，只写"它擅长什么、会在哪里坑你"，
-  不写界面步骤 —— 步骤会烂，判断不会。
-- 价格、免费额度这类极易变的信息一律不写死，只说去哪里查。
-
-## 这一站不讲什么
-
-- 不讲乐理 —— 和声、调式、曲式在乐理与和声那一站。
-- 不讲声音原理 —— 采样率、动态、滤波在「音频与音乐制作」。
-- 不做导购 —— 比较维度照给，但不排"哪个最好"。
-- 不承诺例证音频长期可听 —— AI 生成的音频其权利状态与合成示例不同，
-  本页的音频例证策略见各条目页首的许可标注。
+可从[做音乐](https://home.midicn.com/make/)或本站首页选择入口。发现过时信息，请到[项目反馈页](https://github.com/midicn/home/issues)附具体页面、版本与官方来源。
 :::
 
 ::: en
-## What this site is for
+## Scope
 
-One question only: **how to actually finish a piece of music using AI.**
+This site covers AI music task selection, input preparation, generation and revision, production hand-offs and delivery checks. Continue with [Audio and Music Production](https://prod.midicn.com/) for acoustics, MIDI protocols and processing principles.
 
-Between "I have a vague idea" and "I hand over a usable file" sit a chain of
-decisions — which tool, how to describe what you want, how to fix a generation
-that isn't right, what format to deliver in, and whether you may use the result
-at all. Those are questions of **process and judgement**, not acoustics.
+## Checking tool information
 
-## Where it stops and Audio & Music Production begins
+Read a model profile alongside its verification date. Models, downloads, stems, quotas and terms can change. An article does not replace current documentation or the functions actually available in an account. Test required inputs, output formats and permissions before committing to a workflow.
 
-The same topic appears on both sites, each covering its own half:
+## Interpreting examples
 
-> **Audio & Music Production = how a sound is made** (parameters, physics, protocols)
-> **This site = how a deliverable is made** (tools, selection, workflow, control, hand-off, rights)
+Fixed MIDI and synthetic examples illustrate concepts such as melody, rhythm and timbre. Unless a page identifies the source and test conditions, they are not outputs, evaluations or performance evidence for an AI model.
 
-Compression, for example: that site explains why threshold and ratio make a
-part feel tighter; this one explains whether to compress a muddy full AI bound
-at all, and what to do with it afterwards. The two pages link and do not overlap.
+Compare tools using recorded tasks of a similar kind. Preserve inputs, settings and outputs, then assess lyrics, structure, audio quality and production usability separately. Different tasks may call for different tools.
 
-## Handling time-sensitive material
-
-Tools here change every few months, so:
-
-- Entries about principles and judgement (controllability, how to evaluate,
-  how rights stack up) carry no version numbers and stay true for years.
-- Entries about specific tools show an updated date and cover only what the
-  tool is good at and where it bites — never click-by-click steps. Steps rot;
-  judgement doesn't.
-- Prices and free-tier limits are never stated as facts, only where to check.
-
-## What this site does not do
-
-- No music theory — that lives on the theory and harmony site.
-- No sound fundamentals — sample rate, dynamics and filters are on Production.
-- No buying advice — comparison dimensions are given; "which is best" is not.
-- No promise that examples stay playable — AI-generated audio has a different
-  rights position from synthesised demos; each entry labels its own.
+Start from [Create music](https://home.midicn.com/en/make/) or this site's home page. Report outdated information through the [project issue page](https://github.com/midicn/home/issues), with the page, version and official source.
 :::

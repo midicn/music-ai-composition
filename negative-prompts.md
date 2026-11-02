@@ -16,55 +16,55 @@ links:
   - "[[glossary:tempo]]"
   - "[[glossary:daw]]"
 instances:
-  - groove-000000 | 138 BPM 放克鼓组，排除"电子鼓机"后音色更接近原声（C1）
-  - cyberhymnal-000003 | 管风琴赞美诗，排除"人声"避免合唱混入（C1）
-  - thesession-022200 | 传统曲调，排除"现代鼓组"保持原声编制（C1）
+  - groove-000000 | 放克鼓组的配器参照，没有应用排除电子鼓机的生成条件（C1） | Funk-drum instrumentation without a generated drum-machine exclusion (C1)
+  - cyberhymnal-000003 | 管风琴旋律参照，没有执行去人声或反向提示（C1） | Organ-melody reference without vocal removal or negative prompting (C1)
+  - thesession-022200 | 传统曲调的音符参照，没有执行排除现代鼓组的生成（C1） | Traditional-tune notes without a generated modern-drum exclusion (C1)
 sources:
   - 反向条件在生成模型中的实现，参考公开模型说明。
   - 排除项与正面描述的关系；创作实践惯例是主要依据。
-updated: 2026-10-30
+updated: 2026-11-02
 ---
 
 ::: zh
 ## 问题
 
-模型喜欢补全：你说"弦乐"，它可能加上鼓；你说"安静"，它可能加一层铺底。反复强调"不要太吵"通常没用，因为否定词在语言模型里容易被忽略。反向提示把排除项单独列出，效果更直接。
+有些生成器提供独立的排除项或 negative prompt，有些只提供普通文本描述。先确认当前模型是否支持负面条件；在普通提示里写“不带鼓”不等于调用独立的负面条件通道。效果应通过同一任务的对照生成来检查，不能保证加了排除项就一定生效。
 
 ## 怎么写
 
-排除项要具体：写"不要电子鼓机"比写"不要太现代"有效。一次列三到五项，太多会互相冲突。常见排除项包括人声、鼓组、失真、混响过大、突然的转调。排除的是类别而不是个别音符，别写"不要那个高音"。
+先把目标写成明确的正向描述，再列当前界面支持的排除项。一次改变一项，避免把音色、配器和空间要求同时混在一起。保留修改前后的提示与输出，检查排除鼓组时是否也损失了想保留的打击质感；不需要给所有模型规定固定的排除项数量。
 
 ## 做法
 
-先写正面描述，再补排除项。生成后听是否还有被排除的元素，有就加强那一条。排除项也可能误伤：排除"混响"会让声音发干，排除"低频"会让整体变薄。定期清理不再需要的排除项，避免提示越写越长。
+若没有专门排除功能，可以试写“独奏钢琴、无伴奏”等正向编制说明，并把不符合要求的候选剔除。不要不断加强同一句否定而忽略结果；必要时用剪辑、分离或重新演奏完成控制，但这些后续处理也须验证音质与许可。
 
 ## 听什么
 
-在放克鼓组里听电子鼓机是否被排除干净，在赞美诗里听是否混入人声，在传统曲调里听现代鼓组是否消失。排除项做得好，正面描述才有空间。
+保留相同正向描述、模型和其他参数，分别生成无排除项与有排除项的候选，记录目标元素是否减少、是否误伤其他声部。如果平台不能固定随机过程，应多取几次结果再判断。现有 MIDI 文件没有在生成器里应用反向提示，不能拿它证明排除电子鼓机或人声成功。
 
 ```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"没有加料的原声","label_en":"Acoustic, nothing added","hint":"排除掉多余层之后，听原本的乐器是否更清楚","hint_en":"With extra layers excluded, hear whether the instrument stands clearer"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"单件乐器参照","label_en":"Single-instrument reference","hint":"这里只播放预设乐器，没有运行正向或反向提示。排除条件是否有效需要比较生成器的真实输出。","hint_en":"This plays a preset instrument without running positive or negative prompts. Evaluate exclusions using actual generator outputs."}
 ```
 :::
 
 ::: en
 ## The problem
 
-Models like to complete: ask for strings and drums may appear, ask for quiet and a pad may creep in. Repeating "not too busy" rarely helps, because negation is easily lost in language models. Negative prompts list exclusions separately and work more directly.
+Some generators provide a separate exclusion or negative-prompt field; others accept ordinary descriptive text only. Confirm what the current model supports. Writing no drums in a normal prompt is not the same as using a dedicated negative-conditioning channel. Test controlled generations rather than assuming exclusions must work.
 
 ## How to write them
 
-Be concrete: "no electronic drum machine" beats "not too modern". List three to five items, since more start to conflict. Common exclusions include vocals, drum kit, distortion, heavy reverb and sudden modulations. Exclude categories rather than single notes; "not that high note" is not actionable.
+Start with a clear positive target, then use exclusions supported by the interface. Change one condition at a time rather than mixing timbre, instrumentation and space at once. Keep prompts and outputs before and after, checking whether removing drums also removes a wanted percussive texture. One fixed exclusion count does not suit every model.
 
 ## Practice
 
-Write the positive description first, then add exclusions. After generation, listen for anything excluded that survived and strengthen that line. Exclusions can overshoot: removing reverb dries the sound out and removing low end thins it. Prune exclusions you no longer need so the prompt does not grow without limit.
+Without a dedicated exclusion feature, try a positive arrangement description such as solo piano, unaccompanied, and reject unsuitable candidates. Do not keep intensifying one negative phrase without examining the result. Editing, separation or a new performance may provide control, but those later steps also need quality and permission checks.
 
 ## What to listen for
 
-On the funk kit, whether the drum machine is truly gone; in the hymn, whether vocals have crept in; in the traditional tune, whether a modern kit has vanished. Good exclusions give the positive description room.
+Keep the positive description, model and other settings fixed, then generate candidates with and without exclusions. Record whether the target element decreases and whether other parts suffer. If randomness cannot be fixed, compare several samples. The existing MIDI files have not been generated with negative prompts and cannot demonstrate successful exclusion of drum machines or vocals.
 
 ```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"Acoustic, nothing added","label_en":"Acoustic, nothing added","hint":"With extra layers excluded, hear whether the instrument stands clearer","hint_en":"With extra layers excluded, hear whether the instrument stands clearer"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"Single-instrument reference","label_en":"Single-instrument reference","hint":"This plays a preset instrument without running positive or negative prompts. Evaluate exclusions using actual generator outputs.","hint_en":"This plays a preset instrument without running positive or negative prompts. Evaluate exclusions using actual generator outputs."}
 ```
 :::

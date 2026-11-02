@@ -15,56 +15,57 @@ links:
   - "[[glossary:diffusion]]"
   - "[[glossary:sample-rate]]"
 instances:
-  - pdmx-000153 | 二十六分钟长文件，微小偏差会累积成结构差异（C1）
-  - atepp-002965 | 巴赫 D 大调托卡塔，自由段落难以从参数还原（C1）
-  - groove-000000 | 一百三十八拍鼓循环，参数确定但音色未必复现（C1）
-  - atepp-000075 | 斯克里亚宾第二奏鸣曲，自由速度无法被配方穷尽（C1）
+  - pdmx-000153 | 长篇 MIDI 文件，可用于保存文件校验值的练习（C1） | A long MIDI file for an exercise in retaining file checksums (C1)
+  - atepp-002965 | 托卡塔的固定音符文件，不是模型重跑结果（C1） | A fixed toccata note file, not repeated model inference (C1)
+  - groove-000000 | 固定速度鼓循环，可区分重复播放与重新生成（C1） | A fixed-tempo drum loop for distinguishing replay from regeneration (C1)
+  - atepp-000075 | 含自由速度的演奏记录，不能用于判定模型种子效果（C1） | Performance data with tempo variation, not a test of model seeds (C1)
 sources:
+  - "https://docs.pytorch.org/docs/2.15/notes/randomness.html"
   - 生成式模型的随机性与版本漂移（机器学习公开资料）。
   - 复现测试的容差与记录方式，参考工程实践惯例。
-updated: 2026-10-30
+updated: 2026-11-02
 ---
 
 ::: zh
 ## 问题
 
-同样的提示词、同样的种子，应该得到同样的结果，这句话在 AI 音乐里经常不成立。采样有随机性，模型会更新，服务端的前处理看不见，参考音频换一个文件就全变。追求逐位相同的音频，多数时候是浪费时间；但完全不可复现，又会让修改和授权都失去依据。
+AI 音乐的复现要求应先写清：是输出文件完全相同、同一环境中可重复生成，还是足够相近以便继续编辑。在线服务可能更新模型或隐藏设置，本地流程则可能固定更多条件。无论采用哪种方式，输出音频都应独立保存，不能只留下提示词。
 
 ## 为什么复现不了
 
-三个原因。第一，生成过程本身带随机采样，种子只固定一部分。第二，模型和推理服务会升级，同一个名字背后已经是另一套权重。第三，输入不止提示词，还有参考音频、时长、隐藏参数，任何一项变了，结果就分叉。所以能复现的是流程与决策，不是波形。把这两件事分开，才谈得上方法。
+种子控制随机数起点，不会自动固定模型权重、预处理、运算精度和非确定性算子。本地流程有时可以配置为确定性计算；在线服务没有暴露的设置，应写成未知。跨版本或硬件是否仍可复现，需要单独验证，不应一概说“只能复现流程，不能复现波形”。
 
 ## 配方与测试
 
-一份有用的配方包含工具与版本、模型、提示词原文、负面提示、种子、时长、速度、调性、参考音频的校验值与授权、输入 MIDI 或音频、候选数量、筛选标准、后期链，再加一行已知的未知项。每个项目做一次复现测试，同一配方连跑三次，比较时长、段落边界、频谱差异与盲听结果，把容差写下来，比如结构一致、音色有浮动。客户项目优先选能固定种子的工具；存档时冻结输出文件，不要指望冻结服务。如果三次结果差异很大，就把这条工具从客户项目的候选里去掉。
+记录工具版本、检查点、完整输入、可见参数、参考素材校验值与后期步骤，并保存每次输出。为任务预先确定接受条件：研究试验可能要求文件校验一致，配乐修改可能只要求旋律、长度和段落可重建。重复生成差异较大时，可改用已冻结音频继续编辑，或选择控制能力更适合任务的流程。
 
 ## 听什么
 
-在二十六分钟的托卡塔里听长文件如何让微小偏差累积成结构差异。在巴赫 D 大调托卡塔里听自由段落，哪些决定根本无法从参数还原。在一百三十八拍的放克循环里听参数确定的部分，节奏型与速度可以照做，音色未必。在斯克里亚宾第二奏鸣曲里听自由速度，演奏本身就不能被配方穷尽。
+选一段有明确输入和设置的生成任务，保留三次输出，再比较文件校验值、长度、段落边界和听感。若文件不同，先确定任务需要逐位一致还是可继续编辑的近似版本。原有托卡塔、奏鸣曲和鼓组 MIDI 不是同一模型重复推理的结果，不能用它们验证随机种子或生成漂移。
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":120,"label":"同样的参数，未必同样的结果","label_en":"Same settings, not always the same result","hint":"节奏型与速度可以复现，模型的采样未必","hint_en":"Pattern and tempo repeat; the model's sampling may not"}
+{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":120,"label":"固定节奏参照","label_en":"Fixed-pattern reference","hint":"重复播放同一节奏只说明播放器再次读取固定数据，不等于模型重复推理得到了同一输出。","hint_en":"Repeating a fixed pattern shows playback of fixed data, not identical output from repeated model inference."}
 ```
 :::
 
 ::: en
 ## The problem
 
-The same prompt and the same seed should give the same result, except in AI music they often do not. Sampling is stochastic, models update, server-side preprocessing is invisible, and changing one reference file changes everything. Chasing a bit-identical waveform is usually wasted time, but a result that cannot be reproduced at all cannot be revised or defended.
+Define reproduction first: identical output files, repeatable generation in one environment, or a result similar enough for further editing. Online services may update models or hide settings; local pipelines may expose more controls. In every case, preserve output audio rather than prompts alone.
 
 ## Why it fails
 
-Three reasons. The generation process samples randomly, and a seed fixes only part of it. Models and inference services are upgraded, so the same name now hides different weights. Inputs include more than the prompt, namely reference audio, duration and hidden settings, and changing any one forks the result. What can be reproduced is the process and the decisions, not the waveform. Separating the two is the whole method.
+A seed fixes a random-number starting point, not weights, preprocessing, precision or nondeterministic operations. Local pipelines can sometimes use deterministic computation; unexposed service settings should be recorded as unknown. Reproduction across versions or hardware needs a separate test rather than a blanket claim that waveforms cannot be reproduced.
 
 ## Recipe and testing
 
-A useful recipe lists tool and version, model, prompt verbatim, negative prompt, seed, duration, tempo, key, hash and licence of the reference audio, input MIDI or audio, number of candidates, selection criteria, post chain, and a line of known unknowns. Test once per project, run the same recipe three times and compare duration, section boundaries, spectral difference and a blind listen, then write down the tolerance, for example same structure with timbral drift. Prefer tools that expose seeds for client work; for archives, freeze the output rather than trusting the service. If three runs differ wildly, drop that tool from the candidate list for client work.
+Record tool version, checkpoint, complete inputs, visible settings, reference checksums and later processing, retaining every output. Set acceptance conditions for the task: research may need identical checksums, while score revision may need reconstructable melody, duration and sections. If regeneration varies too much, edit frozen audio or choose a workflow with more suitable controls.
 
 ## What to listen for
 
-In the twenty-six minute Toccata, how small deviations accumulate into structural differences over a long file. In Bach's Toccata in D major, free passages whose decisions cannot be recovered from parameters. In the 138 BPM funk loop, the part that is determined, since pattern and tempo can be repeated but timbre may not. In Scriabin's Second Sonata, rubato that no recipe can exhaust.
+Run one clearly specified generation task three times, retain the files, and compare checksums, length, section boundaries and listening results. If files differ, decide whether the job needs bit identity or a sufficiently similar editable version. The linked toccatas, sonata and drum MIDI are not repeated outputs from one model and cannot test seeds or generation drift.
 
 ```audiolab
-{"type": "rhythm", "sig": "4/4", "pattern": "s s s s s s s s s s s s s s s s", "bpm": 120, "label": "Same settings, not always the same result", "label_en": "Same settings, not always the same result", "hint": "节奏型与速度可以复现，模型的采样未必", "hint_en": "Pattern and tempo repeat; the model's sampling may not"}
+{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":120,"label":"Fixed-pattern reference","label_en":"Fixed-pattern reference","hint":"Repeating a fixed pattern shows playback of fixed data, not identical output from repeated model inference.","hint_en":"Repeating a fixed pattern shows playback of fixed data, not identical output from repeated model inference."}
 ```
 :::

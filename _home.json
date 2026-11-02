@@ -5,12 +5,12 @@
       "en": "AI Music"
     },
     "title": {
-      "zh": "把一首曲子，从提示词做到能交付",
-      "en": "From a prompt to something you can deliver"
+      "zh": "AI 音乐工具与工作流程",
+      "en": "AI music tools and workflows"
     },
     "lead": {
-      "zh": "先确定要做完什么，再倒推工具和流程：写歌、分轨、配乐、修音，还是母带。这里不按模型列表排队，而是按你手上的活来组织。",
-      "en": "Decide what has to be finished first, then work back to tools and process: a song, stems, a score, vocal repair or a master. Organised by the job in front of you, not by model leaderboards."
+      "zh": "按任务核对工具能力、输入输出、后期衔接与使用条件。",
+      "en": "Compare capabilities, inputs, outputs, production hand-offs and terms by task."
     }
   },
   "needs_title": {

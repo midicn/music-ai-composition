@@ -4,8 +4,8 @@ site: ai
 cat: I
 title: MusicGen
 title_en: MusicGen
-summary: 开源权重，能本地跑，短片段加旋律条件。
-summary_en: Open weights you can run locally, short clips steered by a melody.
+summary: 可本地运行的音乐生成模型；旋律条件需选对应检查点，官方权重为非商业许可。
+summary_en: Locally runnable music generation; melody conditioning requires a supported checkpoint and official weights carry a non-commercial licence.
 level: standard
 tags: [模型档案, 开源, 本地部署, 旋律条件]
 tags_en: [model profile, open source, local, melody conditioning]
@@ -13,10 +13,14 @@ alias: [MusicGen, Meta MusicGen, 音乐生成模型]
 order: 4
 model_vendor: Meta
 model_form: 本地模型
-model_input: [文本, 旋律, 参考音频]
+model_form_en: Local model
+model_input: [文本, 音频提示, melody版本的旋律条件]
+model_input_en: [Text, Audio prompts, Melody conditioning for the melody variant]
 model_output: [音频]
-model_licence: 代码与权重分别核对，权重的商用范围以模型卡与随附许可为准
-model_verified: 2026-10-30
+model_output_en: [Audio]
+model_licence: AudioCraft 代码为 MIT；官方 MusicGen 权重为 CC BY-NC 4.0，衍生权重另查
+model_licence_en: AudioCraft code is MIT; official MusicGen weights are CC BY-NC 4.0; check derivatives separately
+model_verified: 2026-11-02
 links:
   - "[[glossary:melody]]"
   - "[[glossary:midi-protocol]]"
@@ -27,9 +31,11 @@ instances:
   - groove-000002 | 86 BPM 灵魂乐鼓组，看文本描述的节奏目标（C1） | An 86 BPM soul kit, to hear the rhythmic target a text prompt describes (C1)
   - oga-000005 | 三十八秒的战斗配乐片段，看短促的器乐提示（C1） | A thirty-eight second battle cue, to hear a short instrumental prompt (C1)
 sources:
+  - "https://github.com/facebookresearch/audiocraft"
+  - "https://huggingface.co/facebook/musicgen-small"
   - 模型能力、条件输入与权重发布形态，对照官方模型说明整理。
   - 失败模式来自公开用户报告与本地实测经验，未引用具体评测数据。
-updated: 2026-10-30
+updated: 2026-11-02
 ---
 
 ::: zh
@@ -39,31 +45,25 @@ updated: 2026-10-30
 
 ## 怎么给，给回什么
 
-输入是文本，可选一段音频作为旋律条件，让生成的音乐跟着这条旋律走。输出是音频文件，没有分轨，也没有 MIDI。本地部署时采样参数、时长与随机种子都能控制，同一种子可以复现同一条结果。
+MusicGen 有不同检查点，旋律条件需选支持该输入的 melody 版本，不能假定 small、medium、large 都接受同一种条件。输出是音频，不是现成分轨或 MIDI。固定种子有助于重复实验，但还需保留检查点、代码、依赖、硬件与采样设置；跨环境不应承诺逐位相同。
 
 ## 最好用的地方
 
-- 本地运行，素材不出机器，适合有保密要求的项目。
-- 旋律条件好用：给一条哼唱或单音旋律，配器会围着它走，做编曲草稿省事。
-- 可以在自己的音频上继续训练，做出接近自家曲库音色的版本。
-- 批量生成便宜，一次跑几十条再挑，适合做素材筛选。
+- 在固定本地环境中保存检查点与推理设置，便于重复试验。
+- 支持旋律条件的版本可比较输入旋律与生成音频的关系，仍需检查和声与结构。
+- 批量处理可提高筛选效率，但安装、算力和维护仍有成本。
+- 自有数据训练要另查数据和权重许可，不能由本地运行推导商业权限。
 
 ## 会翻车的地方
 
-- 不唱。所有人声请求都会变成含混的类人声纹理，别拿它做歌。
-- 片段短，超过半分钟后容易原地打转：同一动机反复，结尾没有收束。可复现的测法是同提示生成两次，都在相似位置开始重复。
-- 旋律条件给得太具体时，配器会跟着旋律的每个音走，和声被压平，听起来像伴奏在爬音阶。
-- 文本里的配器与风格描述常被忽略一半，写"弦乐加电钢琴"往往只出现其中一件。
-- 输出电平与立体声像不稳定，同一批素材要逐条处理才能放进工程。
-- 默认质量与在线服务有差距，糊、闷、镲片发虚是常见问题，后期要补。
+先用短片段验证提示和旋律条件是否起作用，再比较多次采样的结构、织体与结尾。长段生成、含人声结果和复杂配器的表现会随检查点与参数而变，不应把一次听感写成固定失败规律。所附 MIDI 是参照素材，不是 MusicGen 的生成结果或质量测试集。
 
 ## 收费、授权与替代品
 
-要确认：代码许可与权重许可是两件事，权重能否商用、能否用于训练衍生模型，都要看模型卡与随附许可；训练数据来源以官方说明为准。本地运行没有按次费用，但算力成本要自己算。
-替代：要开箱可用的音质与更长片段，换 Stable Audio；要人声，换 DiffSinger 或 ACE Studio。它适合当"能改、能训、能离线"的那一档。
+官方 AudioCraft 代码和模型权重的许可要分开查：代码采用 MIT，官方 MusicGen 权重标注 CC BY-NC 4.0，不能把“可以下载到本地”理解为默认允许商业项目。衍生模型与数据也须核对各自条件。算力费用、安装维护和项目授权应分别评估。
 
 ```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["G4","A4","B4","D5","B4","A4","G4","E4"],"label":"一条可作条件的短旋律","label_en":"A short melody to condition on","hint":"这类单线条旋律正是它最擅长的条件输入，配器应当围着它转","hint_en":"A single-line melody like this is its natural conditioning input; the arrangement should follow it"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["G4","A4","B4","D5","B4","A4","G4","E4"],"label":"单线条旋律","label_en":"Single-line melody","hint":"听旋律的音高与时值；这是条件素材的概念参照，没有把音频送入 MusicGen 生成伴奏。","hint_en":"Hear pitch and duration as a conceptual conditioning reference; this block does not send audio into MusicGen to generate accompaniment."}
 ```
 :::
 
@@ -74,30 +74,24 @@ Generate a few dozen seconds of instrumental audio from a text description, or h
 
 ## How you feed it, what it returns
 
-Input is text, optionally with an audio clip as a melodic condition so the output follows that line. Output is an audio file with no stems and no MIDI. Running locally, you control sampling parameters, duration and seed, and one seed reproduces one result.
+MusicGen has distinct checkpoints: melody conditioning requires the supported melody variant, not an assumption that small, medium and large accept identical conditions. Output is audio rather than ready-made stems or MIDI. A seed helps repeat experiments, but checkpoint, code, dependencies, hardware and sampling settings must also be recorded; bit-identical output across environments is not guaranteed.
 
 ## Where it shines
 
-- Local execution keeps material on your machine, which suits confidential work.
-- Melody conditioning works: give a hummed or single-note line and the arrangement follows it, which speeds up arrangement sketches.
-- You can continue training on your own audio to approach the timbre of your own catalogue.
-- Batch generation is cheap, so running dozens of candidates and selecting is practical.
+- Preserve checkpoints and inference settings in a fixed local environment for repeat experiments.
+- A melody-conditioned variant allows comparison with an input tune, while harmony and structure still need checking.
+- Batch processing can aid selection but still incurs setup, compute and maintenance cost.
+- Check data and weight permissions separately for training; local execution does not imply commercial permission.
 
 ## Where it falls over
 
-- It does not sing. Vocal requests become indistinct vocal-like texture, so it is not a song tool.
-- Clips are short and start circling past half a minute: one motif repeats and the ending does not close. A reproducible test is two runs from one prompt; both start repeating around a similar point.
-- Over-specific melody conditioning makes the accompaniment track every note, flattening the harmony into a scale-following part.
-- Text descriptions of instrumentation are half ignored; ask for strings and electric piano and often only one appears.
-- Output level and stereo image vary, so a batch needs per-file work before it enters a session.
-- Default quality trails hosted services: muffled highs and soft cymbals are common and need post work.
+Test prompt and melody conditioning on short clips before comparing structure, texture and endings across samples. Longer output, vocal-like material and complex instrumentation depend on checkpoint and settings rather than one fixed failure pattern. The linked MIDI is reference material, not MusicGen output or an evaluation set.
 
 ## Cost, licence, alternatives
 
-Confirm: code licence and weight licence are separate questions, and whether weights may be used commercially or to train derivatives belongs to the model card and its accompanying licence; training data provenance follows the official statement. Local runs carry no per-use fee, but you pay in compute.
-Alternatives: Stable Audio for out-of-the-box quality and longer clips; DiffSinger or ACE Studio when you need singing. This is the option that you can modify, retrain and run offline.
+Check AudioCraft code and model weights separately: the code uses MIT, while official MusicGen weights are labelled CC BY-NC 4.0. Being downloadable does not imply permission for commercial projects. Check conditions for derived models and data separately, and assess compute, maintenance and project permission as distinct questions.
 
 ```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["G4","A4","B4","D5","B4","A4","G4","E4"],"label":"A short melody to condition on","label_en":"A short melody to condition on","hint":"A single-line melody like this is its natural conditioning input; the arrangement should follow it","hint_en":"A single-line melody like this is its natural conditioning input; the arrangement should follow it"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["G4","A4","B4","D5","B4","A4","G4","E4"],"label":"Single-line melody","label_en":"Single-line melody","hint":"Hear pitch and duration as a conceptual conditioning reference; this block does not send audio into MusicGen to generate accompaniment.","hint_en":"Hear pitch and duration as a conceptual conditioning reference; this block does not send audio into MusicGen to generate accompaniment."}
 ```
 :::

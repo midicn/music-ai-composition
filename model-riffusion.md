@@ -2,21 +2,25 @@
 id: model-riffusion
 site: ai
 cat: I
-title: Riffusion
-title_en: Riffusion
-summary: 从频谱图生成循环，低保真与实验素材好用。
-summary_en: Loops made from spectrograms, useful for lo-fi and experimental material.
+title: Riffusion（早期频谱模型）
+title_en: Riffusion (early spectrogram model)
+summary: 介绍早期riffusion-hobby的频谱扩散与音频还原
+summary_en: This entry covers early riffusion-hobby spectrogram diffusion and audio reconstruction, not later online products.
 level: standard
 tags: [模型档案, 频谱生成, 循环, 低保真]
 tags_en: [model profile, spectrogram, loops, lo-fi]
 alias: [Riffusion, 频谱生成, 循环生成]
 order: 5
 model_vendor: Riffusion
-model_form: 网页服务
-model_input: [文本, 参考音频]
-model_output: [音频]
-model_licence: 商用范围与训练数据来源需按当前服务条款核对
-model_verified: 2026-10-30
+model_form: 早期本地研究项目（riffusion-hobby）
+model_form_en: Early local research project (riffusion-hobby)
+model_input: [文本, 该实现支持的初始化频谱与采样设置]
+model_input_en: [Text, Initialization spectrogram and sampling settings supported by that implementation]
+model_output: [频谱表示, 还原音频]
+model_output_en: [Spectrogram representations, Reconstructed audio]
+model_licence: riffusion-hobby 代码为 MIT；模型权重许可及后续在线条款分别核对
+model_licence_en: riffusion-hobby code is MIT; check model-weight licences and later online-service terms separately
+model_verified: 2026-11-02
 links:
   - "[[glossary:sampler]]"
   - "[[glossary:tempo]]"
@@ -27,77 +31,64 @@ instances:
   - oga-000031 | 一段氛围循环，看可反复播放的短素材（C1） | An ambient loop, to hear a short repeating asset (C1)
   - groove-000007 | 65 BPM 摇滚鼓组，看慢速循环的呼吸（C1） | A 65 BPM rock kit, to hear the feel of a slow loop (C1)
 sources:
+  - "https://github.com/riffusion/riffusion-hobby"
   - 产品能力与生成方式（官方公开说明与条款页）。
   - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
-updated: 2026-10-30
+updated: 2026-11-02
 ---
 
 ::: zh
 ## 用武之地
 
-用一句描述生成一段可循环的短素材，鼓组、贝斯线、和弦铺底都能做，风格偏向低保真、电子与实验。生成的片段适合直接铺进编曲软件当循环层，或者当采样继续切。也能拿一段音频做变体，保留大致走向换音色。它做的是循环和纹理，不是有主副歌的歌。
+Riffusion 这个名称曾用于频谱图扩散生成音频的开源项目，也被用于后续在线音乐产品。讨论模型结构前，应先写清仓库或服务版本。早期 riffusion-hobby 适合研究文本、频谱与音频转换，不能据此推断当前在线产品只能生成短循环。
 
 ## 怎么给，给回什么
 
-输入是文本描述，部分档位接受参考音频。输出是音频，通常是一段可循环的短片段，没有分轨。生成在频谱图上进行，再还原成波形，这一步决定了它的声音特征。同一描述每次结果不同，音色差异明显。
+早期开源项目以文本条件生成频谱表示，再把它转换为音频。使用时保存仓库版本、模型权重、提示和采样参数；生成出来的声音是否能循环，需要另查首尾。后续在线产品的输入、分轨和导出能力应另按其当前文档核验，不能从旧模型结构直接推断。
 
 ## 最好用的地方
 
-- 循环素材出得快，鼓与贝斯的律动密度容易调，适合做 beat 的底。
-- 低保真、磁带感、颗粒感这类质感，比多数通用模型更对味。
-- 一次给多个变体，做采样筛选的成本低。
-- 短片段迭代快，改一个词就能听到明显不同的织体，适合找方向。
+- 早期开源代码可用于研究频谱表示与音频转换。
+- 对同一输入保留不同采样参数的结果，比较织体和瞬态。
+- 将候选放进实际工程检验速度、长度和接缝，不因短片段生成成功就认定适合交付。
 
 ## 会翻车的地方
 
-- 频谱还原会留下金属味：镲片与齿音发脆发毛，高频像被砂纸磨过。可复现的测法是把高频单独提起来听。
-- 循环接缝对不上，首尾相位与电平不一致，直接循环会听到一声"嗒"。
-- 人声完全不能用，唱出来的东西听不出词，只能当纹理。
-- 没有段落概念，要求"主歌转副歌"只会得到更密的织体，不会真的转段。
-- 低频常糊成一团，贝斯与底鼓抢同一块，进工程要切。
-- 服务与模型会更新，上个月好用的描述这个月给出不同结果，项目要留音频副本而不是只留提示。
+评估早期频谱模型时，分别检查频谱重建伪影、瞬态和循环接缝，保留具体模型与采样参数。评估在线产品时，则按当前官方说明另验结构、输出和下载条件。没有公开对照测试，不应写成“比多数模型更对味”或“人声完全不能用”等通用排名。
 
 ## 收费、授权与替代品
 
-要确认：当前服务条款的商用范围、生成音频的再分发条件、训练数据来源的官方说明。价格按档位或按量计，具体以官方页面为准；地区可用性也以官方页面为准。
-替代：要更干净的高频与更长的铺底，换 Stable Audio；要本地可控、能微调，换 MusicGen。它胜在循环手感，输在干净程度。
+早期代码与模型的许可，以及后续在线服务的条款，应分别核对。先确定使用的是哪一个项目，再检查生成文件的下载、修改和再分发条件。工具选型应围绕可控输入、可用输出和工程接续，不沿用跨代产品的音质排名。
 
 ```audiolab
-{"type":"instrument","gm":"Electric Bass (finger)","synth":"plucked","phrase":["E2","E2","G2","A2","E2","D2","E2","G2"],"label":"一条循环贝斯线","label_en":"A looping bass line","hint":"这类两小节循环是它最常被要求的素材，听的是接缝与低频的干净度","hint_en":"Two-bar loops like this are its usual request; listen for the seam and how clean the low end is"}
+{"type":"instrument","gm":"Electric Bass (finger)","synth":"plucked","phrase":["E2","E2","G2","A2","E2","D2","E2","G2"],"label":"短贝斯乐句","label_en":"Short bass phrase","hint":"这是固定音符的循环素材参照，没有经过 Riffusion 的频谱生成或还原流程。","hint_en":"This fixed-note bass phrase is a loop reference, not output from Riffusion spectrogram generation or reconstruction."}
 ```
 :::
 
 ::: en
 ## Where it earns its place
 
-Generate a short loopable asset from one description: drums, a bass line, a chord bed, with a lean toward lo-fi, electronic and experimental. The result drops into a DAW as a loop layer or gets chopped as a sample. It can also vary existing audio, keeping the general motion and changing timbre. It makes loops and textures, not songs with verses and choruses.
+Riffusion has named both an open-source spectrogram-diffusion audio project and later online music products. Identify the repository or service version before describing architecture. The earlier riffusion-hobby project is useful for studying text, spectrograms and audio conversion; it does not establish that a current online product is limited to short loops.
 
 ## How you feed it, what it returns
 
-Input is text, with reference audio on some tiers. Output is audio, usually a short loopable clip, with no stems. Generation happens on a spectrogram that is then converted back to waveform, and that step defines its sound. Each run from one description differs clearly in timbre.
+The earlier open-source project generates a spectrogram representation from text conditioning and converts it to audio. Preserve repository version, weights, prompt and sampling settings; test loop boundaries separately. Inputs, stems and exports of later online products need their current documentation rather than inference from the old model architecture.
 
 ## Where it shines
 
-- Loops come fast, and the density of drums and bass is easy to steer, which suits beat beds.
-- Lo-fi, tape and grain textures land closer than with most general models.
-- Several variants per run make sample selection cheap.
-- Short clips iterate quickly: change one word and the texture shifts, which helps find a direction.
+- The earlier open-source code can support study of spectrogram representation and audio conversion.
+- Keep results from different sampling settings for one input and compare texture and transients.
+- Test tempo, duration and joins inside the actual session rather than treating successful clip generation as proof of delivery suitability.
 
 ## Where it falls over
 
-- Spectrogram reconstruction leaves a metallic edge: cymbals and sibilance turn brittle and furry, as if the top end were sanded. A reproducible test is to solo the highs.
-- Loop seams do not match; phase and level differ at head and tail, so looping as-is gives an audible tick.
-- Vocals are unusable: words cannot be made out, so treat any voice as texture.
-- There is no sense of sections; asking for verse into chorus yields a denser texture, not an actual transition.
-- Low end often smears, with bass and kick fighting for the same band, so it needs cutting in the session.
-- The service and models change, and a description that worked last month returns something else now, so archive audio rather than prompts alone.
+For an early spectrogram model, inspect reconstruction artifacts, transients and loop boundaries, retaining model and sampling settings. For an online product, separately verify structure, outputs and downloads against current official documentation. Without a published comparison, avoid general rankings or blanket claims that vocals are unusable.
 
 ## Cost, licence, alternatives
 
-Confirm: the commercial scope of the current terms, conditions for redistributing generated audio, and the official statement on training data. Pricing is by tier or usage; exact figures and regional availability belong on the official page.
-Alternatives: Stable Audio for cleaner highs and longer beds; MusicGen for local control and fine-tuning. It wins on loop feel and loses on cleanliness.
+Check licences for earlier code and models separately from later online-service terms. Identify the actual project before checking download, modification and redistribution conditions. Select tools by controllable inputs, available outputs and session handoff rather than carrying sound-quality rankings across generations.
 
 ```audiolab
-{"type":"instrument","gm":"Electric Bass (finger)","synth":"plucked","phrase":["E2","E2","G2","A2","E2","D2","E2","G2"],"label":"A looping bass line","label_en":"A looping bass line","hint":"Two-bar loops like this are its usual request; listen for the seam and how clean the low end is","hint_en":"Two-bar loops like this are its usual request; listen for the seam and how clean the low end is"}
+{"type":"instrument","gm":"Electric Bass (finger)","synth":"plucked","phrase":["E2","E2","G2","A2","E2","D2","E2","G2"],"label":"Short bass phrase","label_en":"Short bass phrase","hint":"This fixed-note bass phrase is a loop reference, not output from Riffusion spectrogram generation or reconstruction.","hint_en":"This fixed-note bass phrase is a loop reference, not output from Riffusion spectrogram generation or reconstruction."}
 ```
 :::
