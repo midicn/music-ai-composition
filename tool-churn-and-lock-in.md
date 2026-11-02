@@ -4,8 +4,8 @@ site: ai
 cat: A
 title: 工具更替与锁定
 title_en: Tool Churn and Lock-in
-summary: 工具半年一变，把素材与工程存成通用格式，才不会被一个平台绑住。
-summary_en: Tools turn over every few months; keep material and sessions in common formats and no platform owns your work.
+summary: 按实际导出能力保存文件、参数与条款记录，并做一次脱离原平台的回放检查。
+summary_en: Archive available files, settings and applicable terms, then verify playback independently of the original platform.
 level: standard
 tags: [工具更替, 锁定, 存档, 迁移]
 tags_en: [tool churn, lock-in, archiving, migration]
@@ -15,14 +15,14 @@ links:
   - "[[glossary:daw]]"
   - "[[glossary:midi-protocol]]"
   - "[[glossary:stems]]"
-instances:
-  - groove-000001 | 105 BPM 放克鼓组，导出的分轨在任何工具里都能继续用（C1）
-  - atepp-000122 | 德彪西练习曲，MIDI 与音频双份保存降低迁移风险（C1）
-  - thesession-015842 | 爱尔兰曲调，文本与录音分离保存便于长期归档（C1）
+example_mode: references
+example_basis: 本页讨论平台导出与独立存档，应核对实际导出文件、服务条款和重建过程，普通MIDI试听不能证明平台迁移或备份能力。
 sources:
+  - https://replicate.com/docs/topics/predictions/data-retention
+  - https://help.ableton.com/hc/en-us/articles/360000843404-Importing-and-exporting-stems
   - 生成式工具市场的更替速度；公开行业报道是主要依据。
   - 工程归档与格式迁移的实践——依据来自数据管理惯例。
-updated: 2026-10-30
+updated: 2026-11-03
 ---
 
 ::: zh
@@ -36,15 +36,12 @@ updated: 2026-10-30
 
 ## 做法
 
-每个项目完成时导出一套"冷存档"：分轨、混音、MIDI、总谱、提示与参数记录。把这些文件放在与平台无关的存储里。保留一份说明文档，写清使用了哪些工具、哪个版本、什么条款。给自己定一个迁移演练：每半年试着把旧项目在另一个工具里打开一次。
+每个项目完成时，保存平台实际提供的无损混音、分轨、MIDI或总谱，并明确缺失项；音频生成不等于能导出原生 MIDI，分离得到的 stems 也未必是原始工程轨道。另存提示、参数、工具版本与适用条款记录。迁移检查时，在一个不依赖原平台的项目中导入文件，核对起点、长度、尾音和可编辑范围；临时下载链接不能代替文件备份。
 
-## 听什么
+## 怎样核验
 
-在鼓组分轨里听无损导出是否保住了瞬态，在钢琴练习曲里听 MIDI 回放与原音频的差别，在民谣里听文本与录音分开保存的好处。锁定发生时，能带走的只有文件。
+本站播放不能验证平台的导出或迁移能力。应检查自己实际下载的文件，并把重建后的回放与已保存的参考混音比较；MIDI 换音源后音色改变，不等于文件已损坏。
 
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["G3","B3","D4","G4","F4","D4","B3","G3"],"label":"一份能带走的文件","label_en":"A file you can take away","hint":"听导出后的声音是否与平台内一致，迁移才靠得住","hint_en":"Hear whether the export matches what you heard inside the platform"}
-```
 :::
 
 ::: en
@@ -58,13 +55,10 @@ Export options: can you get stems, MIDI, lossless audio and a notes file. Format
 
 ## Practice
 
-At the end of every project, export a cold archive: stems, mix, MIDI, score, prompts and parameter notes. Store those files somewhere independent of the platform. Keep a document naming the tools, versions and terms used. Schedule a migration drill twice a year by opening an old project in a different tool.
+Archive the lossless mix, stems, MIDI or score that the service actually provides, and list what is missing. Generated audio does not imply native MIDI export, and separated stems may not be original project tracks. Save prompts, settings, tool versions and applicable terms. Import the files into an independent project and check start, duration, tails and remaining editability. A temporary download URL is not a file backup.
 
-## What to listen for
+## How to verify
 
-In the drum stems, whether lossless export preserves transients; in the piano étude, how MIDI playback differs from the rendered audio; in the folk tune, why separating text and recording helps. When lock-in arrives, files are all you take with you.
+Playback here does not test a platform’s export or migration abilities. Inspect your downloaded files and compare the rebuilt playback with a saved reference mix. A MIDI file sounding different through another instrument does not by itself mean file corruption.
 
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["G3","B3","D4","G4","F4","D4","B3","G3"],"label":"A file you can take away","label_en":"A file you can take away","hint":"Hear whether the export matches what you heard inside the platform","hint_en":"Hear whether the export matches what you heard inside the platform"}
-```
 :::

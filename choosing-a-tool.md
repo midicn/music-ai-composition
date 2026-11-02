@@ -15,14 +15,14 @@ links:
   - "[[glossary:daw]]"
   - "[[glossary:stems]]"
   - "[[glossary:lufs]]"
-instances:
-  - thesession-020649 | 里尔舞曲，短小的循环素材对工具要求不高（C1）
-  - atepp-007103 | 莫扎特回旋曲，结构清晰的古典作品需要更强的可控性（C1）
-  - musicnet-000090 | 贝多芬四重奏，多声部写作是选型的分水岭（C1）
+example_mode: references
+example_basis: 本页讨论工具选型与测试方法，必须比较各工具的真实输出、版本与交付条件，本站MIDI并非这些工具生成的测试结果。
 sources:
+  - https://huggingface.co/docs/diffusers/en/using-diffusers/reusing_seeds
+  - https://huggingface.co/datasets/disco-eth/AIME-survey
   - 软件选型的通用方法，对照产品管理公开资料整理。
   - 音乐制作的交付要求（行业实践惯例）。
-updated: 2026-10-30
+updated: 2026-11-03
 ---
 
 ::: zh
@@ -36,15 +36,12 @@ updated: 2026-10-30
 
 ## 做法
 
-把需求写成一张清单，按必要性排序。用同一段素材试三个工具，比较输出而不是比较功能表。重点看失败时的表现：出错时是否容易修，是否容易换工具。别被单一亮点打动，看整体流程是否顺。选完给自己留退路，素材与工程用通用格式保存。
+把需求写成一张清单，按必要性排序。先用有权上传的同一段素材或同一份文字需求，试用两三个候选工具。记录实际模型版本、完整提示与参数、生成次数、等待时间、费用和导出格式；用实际导出文件检查是否达到交付要求。试听时匹配响度，分开记录音乐质量、可修改性与操作成本，避免只挑一次偶然成功的结果。重点看失败时的表现：出错时是否容易修，是否容易换工具。别被单一亮点打动，看整体流程是否顺。选完给自己留退路，素材与工程用通用格式保存。
 
-## 听什么
+## 怎样核验
 
-在里尔舞曲里听简单素材的差异，在回旋曲里听结构可控性的差别，在四重奏里听多声部处理的高下。选型的答案，往往在复杂任务里才分得出来。
+比较工具的控制能力，需要实际让各工具完成同一需求，再检查结果与修改过程。本站 MIDI 不能代替这项测试。
 
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["D4","F4","A4","D5","C5","A4","F4","D4"],"label":"多声部的考验","label_en":"A test of multiple parts","hint":"简单素材分不出工具高下，多声部才见真章","hint_en":"Simple material hides the differences; multiple parts reveal them"}
-```
 :::
 
 ::: en
@@ -58,13 +55,10 @@ Deliverable: a finished song, a cue, editable stems or a few effects. Control: i
 
 ## Practice
 
-Write the requirements as a list and rank them by necessity. Test three tools on the same material and compare outputs rather than feature tables. Watch how each behaves when it fails: is repair easy, is switching away easy. Resist a single headline feature and judge the whole flow. Leave yourself an exit by storing material and sessions in common formats.
+Write the requirements as a list and rank them by necessity. Test a few candidates with the same authorized input or written brief. Record model version, full prompt and settings, attempts, waiting time, cost and export format. Check the downloaded files against the deliverable. Match playback loudness and score musical quality, editability and operational cost separately, rather than selecting one lucky output. Watch how each behaves when it fails: is repair easy, is switching away easy. Resist a single headline feature and judge the whole flow. Leave yourself an exit by storing material and sessions in common formats.
 
-## What to listen for
+## How to verify
 
-In the reel, differences on simple material; in the rondo, differences in structural control; in the quartet, differences in handling many parts. Answers usually appear only under complex tasks.
+Test controllability by giving the tools the same brief and examining their actual results and revision process. The site’s MIDI files do not replace that test.
 
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["D4","F4","A4","D5","C5","A4","F4","D4"],"label":"A test of multiple parts","label_en":"A test of multiple parts","hint":"Simple material hides the differences; multiple parts reveal them","hint_en":"Simple material hides the differences; multiple parts reveal them"}
-```
 :::

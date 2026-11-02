@@ -15,14 +15,15 @@ links:
   - "[[glossary:daw]]"
   - "[[glossary:stems]]"
   - "[[glossary:monitoring]]"
-instances:
-  - groove-000003 | 80 BPM 灵魂乐鼓循环，批量生成鼓型时接口比界面快得多（C1）
-  - thesession-006629 | 爱尔兰曲调，批量做无伴奏版本适合脚本化（C1）
-  - atepp-001114 | 肖邦叙事曲现场录音，单件精细处理更适合在界面里做（C1）
+example_mode: references
+example_basis: 本页比较接口调用与应用工作流，需要依据任务状态、实际导出文件和服务日志核验，普通MIDI试听不能证明接口可靠性、费用或速度。
 sources:
+  - https://replicate.com/docs/topics/predictions/lifecycle
+  - https://replicate.com/docs/topics/predictions/data-retention
+  - https://huggingface.co/docs/diffusers/en/using-diffusers/reusing_seeds
   - 生成服务的接口与应用的能力差异，参考公开文档。
   - 自动化批处理的成本与风险；工程实践惯例是主要依据。
-updated: 2026-10-30
+updated: 2026-11-03
 ---
 
 ::: zh
@@ -32,19 +33,16 @@ updated: 2026-10-30
 
 ## 判断标准
 
-看重复次数：一次性任务用界面更快。看是否需要固定参数：需要严格复现的任务用接口。看团队：接口方案要有人维护密钥与费用。看输出形式：接口通常返回文件或链接，需要自己组织命名与存储。看失败处理：批量任务必须能记录失败并重试。
+看重复次数：一次性任务用界面更快。看是否需要固定参数：需要保存参数、批量执行和追踪记录时可考虑接口；接口本身不保证相同种子永远得到相同音频。看团队：接口方案要有人维护密钥与费用。看输出形式：接口通常返回文件或链接，需要自己组织命名与存储。看失败处理：批量任务必须能记录失败并重试。
 
 ## 做法
 
-先用界面摸清参数与效果，再把稳定的流程写成脚本。密钥放在环境变量里，别写进代码。给每次请求记录提示、参数、种子与输出路径。批量任务分批跑，留出失败重试的余量。用接口做生成，用界面做审听，两者结合最省时间。
+先用界面摸清参数与效果，再把稳定的流程写成脚本。密钥放在环境变量里，别写进代码。给每次请求记录提示、参数、种子与输出路径。若服务使用异步任务，保存返回的任务 ID，区分排队、运行、成功和失败。请求超时时，先查询已有任务状态，再决定是否重发，避免重复生成与计费；输出完成后及时另存文件，不能把临时下载链接当作长期存档。用接口做生成，用界面做审听，两者结合最省时间。
 
-## 听什么
+## 怎样核验
 
-在鼓循环里听批量生成的稳定性，在传统曲调里听批量导出的命名是否清楚，在钢琴现场录音里听精细处理为什么更适合手动。自动化省的是重复，不是判断。
+先提交一个小任务，确认任务 ID、状态查询与文件保存都能对应上。再测试一次超时或中断，检查程序能否找回原任务。最后用两三个任务检查命名、失败记录和费用统计，再扩大批量。
 
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":80,"label":"批量生成的鼓型","label_en":"Drum patterns at scale","hint":"同一条律动生成一百次，接口才显出价值","hint_en":"A hundred copies of one groove is where an API earns its keep"}
-```
 :::
 
 ::: en
@@ -54,17 +52,14 @@ The same model can answer a few clicks in an interface or a few lines in an API 
 
 ## Judging it
 
-Count repetitions: one-off tasks are faster through an interface. Ask whether parameters must be fixed, since strict reproducibility favours the API. Consider the team, because API work needs someone to manage keys and costs. Consider output shape, since APIs usually return files or links and leave naming and storage to you. Consider failure handling, since batch jobs must log failures and retry.
+Count repetitions: one-off tasks are faster through an interface. Ask whether parameters must be fixed, since parameter logging and repeatable procedures may favour an API, although an API alone does not guarantee identical audio. Consider the team, because API work needs someone to manage keys and costs. Consider output shape, since APIs usually return files or links and leave naming and storage to you. Consider failure handling, since batch jobs must log failures and retry.
 
 ## Practice
 
-Explore parameters and results in the interface first, then turn the stable process into a script. Keep keys in environment variables, never in code. Log prompt, parameters, seed and output path for every request. Run batches in chunks with room for retries. Generate through the API and audition in the interface, which saves the most time overall.
+Explore parameters and results in the interface first, then turn the stable process into a script. Keep keys in environment variables, never in code. Log prompt, parameters, seed and output path for every request. For asynchronous services, store the returned job ID and distinguish queued, running, successful and failed jobs. After a timeout, check that job before resubmitting to avoid duplicate work or charges. Save completed files yourself rather than treating temporary download links as permanent archives. Generate through the API and audition in the interface, which saves the most time overall.
 
-## What to listen for
+## How to verify
 
-On the drum loops, whether batch output stays consistent; on the folk tune, whether batch exports are named clearly; on the live piano recording, why delicate work still suits hands-on editing. Automation saves repetition, not judgement.
+Start with one small job and confirm that its ID, status and saved file correspond. Test an interruption and check whether the original job can be recovered. Then use a few jobs to verify naming, failure logs and cost records before increasing the batch size.
 
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":80,"label":"Drum patterns at scale","label_en":"Drum patterns at scale","hint":"A hundred copies of one groove is where an API earns its keep","hint_en":"A hundred copies of one groove is where an API earns its keep"}
-```
 :::
