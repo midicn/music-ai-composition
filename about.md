@@ -31,7 +31,7 @@ sources:
 
 比较生成工具时，应使用可记录的同类任务，保留输入、参数与输出，再按歌词准确性、结构、音质和后期可用性分别检查。不同任务可能需要不同工具。
 
-可从[做音乐](https://home.midicn.com/make/)或本站首页选择入口。发现过时信息，请到[项目反馈页](https://github.com/midicn/midi-library/issues)附具体页面、版本与官方来源。
+可从[做音乐](https://midicn.com/make/)或本站首页选择入口。发现过时信息，请到[项目反馈页](https://github.com/midicn/midi-library/issues)附具体页面、版本与官方来源。
 :::
 
 ::: en
@@ -49,5 +49,5 @@ Fixed MIDI and synthetic examples illustrate concepts such as melody, rhythm and
 
 Compare tools using recorded tasks of a similar kind. Preserve inputs, settings and outputs, then assess lyrics, structure, audio quality and production usability separately. Different tasks may call for different tools.
 
-Start from [Create music](https://home.midicn.com/en/make/) or this site's home page. Report outdated information through the [project issue page](https://github.com/midicn/midi-library/issues), with the page, version and official source.
+Start from [Create music](https://midicn.com/en/make/) or this site's home page. Report outdated information through the [project issue page](https://github.com/midicn/midi-library/issues), with the page, version and official source.
 :::
