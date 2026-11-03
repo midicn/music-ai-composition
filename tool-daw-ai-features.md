@@ -1,36 +1,29 @@
 ---
-id: tool-daw-ai-features
-site: ai
-cat: J
-title: DAW 内置 AI 功能
-title_en: AI Features Built into DAWs
-summary: 生成、对齐与和声建议被放进工程，省去往返，判断仍归你。
-summary_en: Generation, alignment and harmony suggestions now live inside the session, saving round trips but not judgement.
-level: standard
-tags: [DAW, 内置功能, 编曲, 对齐]
-tags_en: [DAW, built-in, arrangement, alignment]
-alias: [DAW 自带 AI, 宿主内置助手]
+id: "tool-daw-ai-features"
+site: "ai"
+cat: "J"
+title: "DAW 内置 AI 功能"
+title_en: "AI Features Built into DAWs"
+summary: "生成、对齐与和声建议被放进工程，省去往返，判断仍归你。"
+summary_en: "Generation, alignment and harmony suggestions now live inside the session, saving round trips but not judgement."
+level: "standard"
+tags: ["DAW", "内置功能", "编曲", "对齐"]
+tags_en: ["DAW", "built-in", "arrangement", "alignment"]
+alias: ["DAW 自带 AI", "宿主内置助手"]
 order: 1
-links:
-  - "[[glossary:daw]]"
-  - "[[glossary:stems]]"
-  - "[[glossary:tempo]]"
-tool_kind: daw
-tool_vendor: DAW 厂商
-tool_form: 桌面应用
-tool_platforms: [macOS, Windows]
-tool_price: 买断
-tool_jobs: [编曲, 剪辑, 混音]
-tool_verified: 2026-10-30
-instances:
-  - musicnet-000067 | 贝多芬四重奏，多声部素材在内置建议下是否还能逐声部修改（C1）
-  - m21-000000 | 巴赫四部和众赞歌，和弦建议最容易在这里显得正确却平庸（C1）
-  - mutopia-000497 | 贝多芬第五交响曲，整段配器导入后听内置功能能否守住结构（C1）
-  - groove-000000 | 138 BPM 放克鼓组，律动生成与量化是否保留重音（C1）
-sources:
-  - 主流 DAW 公开文档所列内置生成、对齐与分离功能（2026-10-30 复核）。
-  - 工程交换、插件格式与版本兼容的通识，参考制作实践。
-updated: 2026-10-30
+links: ["[[glossary:daw]]", "[[glossary:stems]]", "[[glossary:tempo]]"]
+tool_kind: "daw"
+tool_vendor: "DAW 厂商"
+tool_form: "桌面应用"
+tool_platforms: ["macOS", "Windows"]
+tool_price: "买断"
+tool_jobs: ["编曲", "剪辑", "混音"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://support.apple.com/en-ca/guide/logicpro/lgcpbf624405/mac", "https://support.apple.com/en-lamr/guide/logicpro/lgcp61bae908/12.3/mac/15.6"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "DAW 内置功能需分别查看伴奏生成与分轨功能的版本、输入和硬件条件；任意曲目的播放不能证明这些功能在当前工程里可用或可逆。"
 ---
 
 ::: zh
@@ -53,10 +46,6 @@ updated: 2026-10-30
 ## 上手路径
 
 先学三件事：查清每个功能是本地还是云端、用旁通做 A/B、把原始导出另存一份。随后读这里的 DAW 集成、分轨分离工具与生成结果的量化三篇，再决定哪些步骤交给内置功能。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":138,"label":"内置律动","label_en":"Built-in groove","hint":"听重音是否还在，而不只是否对齐","hint_en":"Listen for the accents, not only the grid"}
-```
 :::
 
 ::: en
@@ -79,8 +68,5 @@ For cross-DAW or batch work, use a standalone generator and import the result, a
 ## First three things to learn
 
 Learn three things first: whether each feature runs locally or in the cloud, how to bypass it for an A/B, and where to archive the original export. Then read the site's pages on DAW integration, stem separation tools and quantizing generated parts before deciding which steps to delegate.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":138,"label":"Built-in groove","label_en":"Built-in groove","hint":"Listen for the accents, not only the grid","hint_en":"Listen for the accents, not only the grid"}
-```
 :::
+

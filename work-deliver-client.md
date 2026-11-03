@@ -1,35 +1,29 @@
 ---
-id: work-deliver-client
-site: ai
-cat: K
-title: 给客户交付
-title_en: Delivering to a Client
-summary: 交付是一份可核对的清单，不是一条 mp3
-summary_en: Delivery is a checkable list of files, not a single mp3.
-level: standard
-tags: [交付, 分轨, 命名, 授权]
-tags_en: [delivery, stems, naming, licensing]
-alias: [给客户交付, 交付清单, delivery, 文件交付]
+id: "work-deliver-client"
+site: "ai"
+cat: "K"
+title: "给客户交付"
+title_en: "Delivering to a Client"
+summary: "交付是一份可核对的清单，不是一条 mp3"
+summary_en: "Delivery is a checkable list of files, not a single mp3."
+level: "standard"
+tags: ["交付", "分轨", "命名", "授权"]
+tags_en: ["delivery", "stems", "naming", "licensing"]
+alias: ["给客户交付", "交付清单", "delivery", "文件交付"]
 order: 12
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [交付, 文件管理, 母带检查]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:true-peak]]"
-  - "[[glossary:lufs]]"
-instances:
-  - mutopia-000497 | 贝多芬第五，多组总线与大量分轨的交付样本（C1）
-  - pdmx-000153 | 二十六分钟长文件，分段与体积在交付时最容易被忽略（C1）
-  - groove-000001 | 105 BPM 放克鼓组，导出的分轨在任何工具里都能继续用（C1）
-sources:
-  - 分轨与母带的交付口径，参考制作与发行惯例。
-  - 文件命名与元数据的做法；交付实践是主要依据。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["交付", "文件管理", "母带检查"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:stems]]", "[[glossary:true-peak]]", "[[glossary:lufs]]"]
+instances: []
+sources: ["https://studiopartner.netflix.net/studio/branded-sound-mix-spec-and-best-practices", "https://www.ableton.com/en/manual/managing-files-and-sets/", "https://www.copyright.gov/register/pa-sr.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "客户交付要约定文件版本、分轨结构与权利范围，接收方的具体规范优先；音乐能顺利播放无法证明工程可改、命名完整或版权链齐备。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 常见返工原因
 
 分轨少了和声层，客户混不出来。分轨相加与母版不一致。命名混乱，客户分不清版本。响度按流媒体做，客户拿去广播。授权文件没附，法务卡住。修改轮次没写清，第七轮还在改。交付后没有留档，客户回头要旧版时找不到。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"各版本从同一工程导出","label_en":"Every version from one session","hint":"听两份文件是不是同一场演奏，不要靠文件名判断","hint_en":"Hear whether two files are the same performance; do not trust the file name"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ File count and naming match the list exactly. Sample rate is 48 kHz and bit dept
 ## Common rework causes
 
 A harmony layer is missing and the client cannot mix. Stems do not sum to the master. Naming is chaotic and versions are indistinguishable. The loudness is set for streaming and the client takes it to broadcast. No licence document is attached and legal blocks release. Revision rounds are undefined and the seventh pass is still in progress. Nothing is archived, so an old version cannot be found when the client asks.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"Every version from one session","label_en":"Every version from one session","hint":"Hear whether two files are the same performance; do not trust the file name","hint_en":"Hear whether two files are the same performance; do not trust the file name"}
-```
 :::
+

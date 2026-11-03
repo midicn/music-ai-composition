@@ -1,29 +1,22 @@
 ---
-id: platform-terms
-site: ai
-cat: G
-title: 平台条款
-title_en: Platform Terms
-summary: 条款写的不是功能，是你上传什么、拿走什么、平台留下什么
-summary_en: Terms are not about features but about what you upload, take away and leave behind
-level: standard
-tags: [平台条款, 商用, 数据导出, 终止]
-tags_en: [terms of service, commercial use, export, termination]
-alias: [服务条款, 使用协议, platform terms]
+id: "platform-terms"
+site: "ai"
+cat: "G"
+title: "平台条款"
+title_en: "Platform Terms"
+summary: "条款写的不是功能，是你上传什么、拿走什么、平台留下什么"
+summary_en: "Terms are not about features but about what you upload, take away and leave behind"
+level: "standard"
+tags: ["平台条款", "商用", "数据导出", "终止"]
+tags_en: ["terms of service", "commercial use", "export", "termination"]
+alias: ["服务条款", "使用协议", "platform terms"]
 order: 4
-links:
-  - "[[glossary:licensing]]"
-  - "[[glossary:master-rights]]"
-  - "[[glossary:termination-right]]"
-instances:
-  - atepp-001115 | 肖邦第一叙事曲的常规录音，同一作品的一份具体表演（C1）
-  - atepp-001116 | 同一首曲子的重制版，母带处理不同，权利版本也不同（C1）
-  - m21-000481 | 《枫叶拉格》的合奏改编，同一首曲换编制就是另一份交付物（C1）
-  - mutopia-000497 | 贝多芬第五交响曲第一乐章，作品在公有领域，你的制作仍可能产生新权利（C1）
-sources:
-  - 生成式音乐服务的条款结构（公开用户协议）。
-  - 上传内容与输出的权利归属讨论，参考公开法律评论。这里不下结论。
-updated: 2026-10-30
+links: ["[[glossary:licensing]]", "[[glossary:master-rights]]", "[[glossary:termination-right]]"]
+instances: []
+sources: ["https://suno.com/terms", "https://suno.com/privacy/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "平台条款需要核对具体服务、版本日期、套餐和上传数据用途；音乐能否播放与用户是否拥有商用、下载或再分发权限没有必然关系。"
 ---
 
 ::: zh
@@ -38,14 +31,6 @@ updated: 2026-10-30
 ## 从哪开始
 
 把关键条款抄进项目笔记，记下日期与链接。上传前确认素材权利，别人的干声、未发行的 demo、客户给的参考曲，都不该随手传。商业项目开始前确认当前套餐是否允许商用，需要时升级或换服务。定期导出工程与分轨，别把唯一副本留在云端。团队共用账号时，谁同意过条款要写清。条款有疑问就发邮件问，答复留着。涉及大额授权或独家约定，找律师看一遍，不同法域的消费者保护与合同规则不一样。
-
-## 耳朵要抓的点
-
-在肖邦叙事曲的常规录音与重制版之间听差别，音符一样，母带处理与版本不同；在《枫叶拉格》的合奏改编里听同一首曲换编制后多出来的劳动；在贝多芬第五里听公有领域的作品如何被一次具体制作重新包装。上传之前，先分清你手里是哪一层。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":104,"label":"上传前的那一遍检查","label_en":"The check before uploading","hint":"同一段素材，传上去和留在本机是两种状态","hint_en":"The same material is in two different states once uploaded"}
-```
 :::
 
 ::: en
@@ -60,12 +45,5 @@ Four clauses matter most. Ownership and licence, since many services say you own
 ## Where to start
 
 Copy the key clauses into your project notes with the date and link. Confirm you have the rights to whatever you upload, other people's raw vocals, unreleased demos and client references should not go up casually. Before a commercial job, confirm the current plan allows commercial use, and upgrade or switch if it does not. Export project files and stems regularly, and never keep the only copy in the cloud. When a team shares an account, record who accepted which version. If a clause is unclear, email and keep the answer. For large or exclusive deals, have a lawyer read it, since consumer protection and contract rules differ by jurisdiction.
-
-## What the ear catches
-
-Between the standard and remastered Ballade recording, the notes are identical while the master and the rights version are not. In the ensemble Maple Leaf Rag, the extra labour when the same piece changes instrumentation. In the Beethoven symphony, how a public-domain work is repackaged by one specific production. Before uploading, know which layer you are holding.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":104,"label":"The check before uploading","label_en":"The check before uploading","hint":"The same material is in two different states once uploaded","hint_en":"The same material is in two different states once uploaded"}
-```
 :::
+

@@ -1,30 +1,22 @@
 ---
-id: breath-and-phrasing
-site: ai
-cat: E
-title: 换气与句读
-title_en: Breath and Phrasing
-summary: 气口决定句子怎么被听懂，合成人声默认不会替你呼吸
-summary_en: Breath marks decide how a line is understood, and a synthetic voice will not breathe for you.
-level: standard
-tags: [换气, 句读, 连断, 句尾]
-tags_en: [breath, phrasing, legato, line endings]
-alias: [气口, 呼吸, breath marks]
+id: "breath-and-phrasing"
+site: "ai"
+cat: "E"
+title: "换气与句读"
+title_en: "Breath and Phrasing"
+summary: "气口决定句子怎么被听懂，合成人声默认不会替你呼吸"
+summary_en: "Breath marks decide how a line is understood, and a synthetic voice will not breathe for you."
+level: "standard"
+tags: ["换气", "句读", "连断", "句尾"]
+tags_en: ["breath", "phrasing", "legato", "line endings"]
+alias: ["气口", "呼吸", "breath marks"]
 order: 143
-links:
-  - "[[instrument:voice]]"
-  - "[[glossary:legato]]"
-  - "[[glossary:phrase]]"
-instances:
-  - openscore-000084 | 舒伯特《你是我的安宁》，长句在哪里换气，句子才不塌（C1）
-  - openscore-000008 | 舒伯特《魔王》，一人三腔，气口和音色一起换角色（C1）
-  - openscore-000538 | 霍尔梅斯《晨曲》，法语连诵与句尾收法，合成最容易硬切（C1）
-  - openscore-000014 | 奎尔特《来吧，死亡》，英语宣叙靠辅音与停顿断句（C1）
-sources:
-  - Richard Miller, The Structure of Singing（Schirmer）与 James McKinney, The Diagnosis and Correction of Vocal Faults 中关于气口与分句的章节。
-  - 合成歌声系统文档里对呼吸标记、音素时长与连奏参数的说明。
-  - Vocal pedagogy texts on breath placement and phrasing, with reference to singing-voice system documentation.
-updated: 2026-10-31
+links: ["[[instrument:voice]]", "[[glossary:legato]]", "[[glossary:phrase]]"]
+instances: []
+sources: ["https://docs.acestudio.ai/ai-vocal-synth/creating-ai-vocals/vocal-parameters", "https://docs.acestudio.ai/ai-vocal-synth/creating-ai-vocals/editing-lyrics.md"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论合成人声气口、音素与分句，需要查声库编辑功能并审听真实歌声渲染；不唱歌词的MIDI音色不能证明换气与句读自然。"
 ---
 
 ::: zh
@@ -53,10 +45,6 @@ updated: 2026-10-31
 ## 哪里会坏
 
 气口加太密，听起来像喘不上气；为了自然乱加呼吸声，反而暴露是贴上去的。快歌里气口要短，慢歌里可以长，但都不要压掉拍点。合唱和声部不需要每句都换气，几条线一起呼吸会整齐得可疑。念白、旁白和歌唱的气口规则不同，别把唱歌的模板套到口播上。
-
-```audiolab
-{"type":"instrument","gm":"Choir Aahs","synth":"vocal","phrase":["E4","E4","G4","G4","A4","G4","E4","D4"],"label":"一口气唱完的一句","label_en":"A phrase taken in one breath","hint":"听句尾怎么收，气口迟一拍，整句就塌","hint_en":"Hear how the ending closes; breathe one beat late and the line sags"}
-```
 :::
 
 ::: en
@@ -85,8 +73,5 @@ Even with breaths in the right places a line can still fail, and the fault is us
 ## Where it breaks
 
 Breaths packed too closely sound like panic, and breath noise added for realism often sounds pasted on. Fast songs need short breaths and slow ones can afford long breaths, but neither should cover the beat. Backing parts do not need a breath at every phrase, and several lines breathing together sound suspiciously tidy. Spoken narration and singing follow different rules, so do not carry a vocal template into a voice-over.
-
-```audiolab
-{"type":"instrument","gm":"Choir Aahs","synth":"vocal","phrase":["E4","E4","G4","G4","A4","G4","E4","D4"],"label":"A phrase taken in one breath","label_en":"A phrase taken in one breath","hint":"Hear how the ending closes; breathe one beat late and the line sags","hint_en":"Hear how the ending closes; breathe one beat late and the line sags"}
-```
 :::
+

@@ -1,36 +1,29 @@
 ---
-id: choose-for-vocal
-site: ai
-cat: K
-title: 人声 Demo 选型
-title_en: Choosing a Tool for a Vocal Demo
-summary: 嗓子是自己的、借来的还是合成的，决定人声 Demo 走哪条路线。
-summary_en: Whether the voice is yours, borrowed or synthesized decides the whole route for a vocal demo.
-level: standard
-tags: [选型, 人声, 演唱, Demo]
-tags_en: [selection, vocals, singing, demo]
-alias: [人声选型, 演唱工具, vocal demo]
+id: "choose-for-vocal"
+site: "ai"
+cat: "K"
+title: "人声 Demo 选型"
+title_en: "Choosing a Tool for a Vocal Demo"
+summary: "嗓子是自己的、借来的还是合成的，决定人声 Demo 走哪条路线。"
+summary_en: "Whether the voice is yours, borrowed or synthesized decides the whole route for a vocal demo."
+level: "standard"
+tags: ["选型", "人声", "演唱", "Demo"]
+tags_en: ["selection", "vocals", "singing", "demo"]
+alias: ["人声选型", "演唱工具", "vocal demo"]
 order: 18
-links:
-  - "[[instrument:voice]]"
-  - "[[glossary:vibrato]]"
-  - "[[glossary:portamento]]"
-tool_kind: guide
-tool_vendor: —
-tool_form: 网页
-tool_platforms: [浏览器]
-tool_price: 免费
-tool_jobs: [选型, 人声]
-tool_verified: 2026-10-30
-instances:
-  - mutopia-000919 | 古诺《圣母颂》，长句连奏与人声进入点的参照（C1）
-  - mutopia-000038 | 阿利亚比耶夫《基路伯之歌》，四部合唱，合成人声叠层的对照（C1）
-  - pdmx-002540 | 丹尼男孩，叙事民谣，咬字与气口的参照（C1）
-  - mutopia-001682 | 绿袖子，单旋律，最容易被合成唱得没有起伏的素材（C1）
-sources:
-  - 歌声合成与变声工具的公开文档所列参数与控制方式（2026-10-30 复核）。
-  - 人声录音与修音的工作实践（制作惯例）。
-updated: 2026-10-30
+links: ["[[instrument:voice]]", "[[glossary:vibrato]]", "[[glossary:portamento]]"]
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "网页"
+tool_platforms: ["浏览器"]
+tool_price: "免费"
+tool_jobs: ["选型", "人声"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://docs.acestudio.ai/ai-vocal-synth/creating-ai-vocals/vocal-parameters", "https://docs.acestudio.ai/project/file-management/export-files"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论歌声小样的编辑和导出，需要核对具体声库、音素与文件功能，并用实际歌声试验；普通MIDI不唱歌词，不能验证咬字和演唱导出。"
 ---
 
 ::: zh
@@ -63,10 +56,6 @@ updated: 2026-10-30
 ## 上手
 
 先学三件事：把歌词按音节切开、把颤音与气口当参数而不是效果、导出干声时关掉混响。然后读这里的合成人声、人声修音、咬字清晰度三篇。
-
-```audiolab
-{"type":"instrument","gm":"Voice Oohs","synth":"vocal","phrase":["A3","C4","E4","D4","C4","A3","G3","A3"],"label":"一条要唱得连的旋律","label_en":"A line that must stay legato","hint":"先听连线，再听咬字","hint_en":"Hear the legato first, the diction second"}
-```
 :::
 
 ::: en
@@ -99,8 +88,5 @@ For a demo that only needs to be audible, use singing synthesis such as ACE Stud
 ## First three things
 
 Learn to split lyrics into syllables, to treat vibrato and breath as parameters rather than effects, and to export dry vocals with reverb bypassed. Then read the pages on synthetic vocals, vocal tuning and lyric intelligibility.
-
-```audiolab
-{"type":"instrument","gm":"Voice Oohs","synth":"vocal","phrase":["A3","C4","E4","D4","C4","A3","G3","A3"],"label":"A line that must stay legato","label_en":"A line that must stay legato","hint":"Hear the legato first, the diction second","hint_en":"Hear the legato first, the diction second"}
-```
 :::
+

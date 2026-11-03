@@ -1,92 +1,80 @@
 ---
-id: model-yue
-site: ai
-cat: I
-title: YuE
-title_en: YuE
-summary: 歌词换整曲，能在本地跑，显存与许可是两道门。
-summary_en: Lyrics in, a full song out, runnable locally; VRAM and licence are the gates.
-level: standard
-tags: [模型档案, 开源权重, 歌词生歌, 本地部署]
-tags_en: [model profile, open weights, lyrics to song, local deployment]
-alias: [YuE, 乐, 歌词生歌]
+id: "model-yue"
+site: "ai"
+cat: "I"
+title: "YuE"
+title_en: "YuE"
+summary: "先区分 YuE-v1 与 YuE2，再核对部署、文件与权重许可。"
+summary_en: "Separate YuE-v1 from YuE2 before checking deployment, files and weight licensing."
+level: "standard"
+tags: ["模型档案", "开源权重", "歌词生歌", "本地部署"]
+tags_en: ["model profile", "open weights", "lyrics to song", "local deployment"]
+alias: ["YuE", "乐", "歌词生歌"]
 order: 200
-model_vendor: YuE 项目（M-A-P / 中国香港科技大学）
-model_form: 本地模型
-model_input: [歌词, 文本]
-model_output: [音频]
-model_licence: 代码多为 Apache 2.0，权重按版本另标；较新权重默认非商用、个人创作者另有豁免，商用前读仓库许可
-model_verified: 2026-10-31
-links:
-  - "[[glossary:strophic-form]]"
-  - "[[glossary:timbre]]"
-  - "[[glossary:stems]]"
-instances:
-  - mutopia-000527 | 六十三秒的分节歌《Home, Sweet Home》，主歌反复，适合看长曲的段落回归（C1） | A sixty-three second strophic song, "Home, Sweet Home", with repeated verses, to hear sections return in a long song (C1)
-  - cyberhymnal-002209 | 十八秒的中国旋律，短而完整，适合看极短素材的收束（C1） | An eighteen second Chinese melody, short but complete, to hear how a very short asset closes (C1)
-  - mutopia-000622 | 四十四秒的分节歌，看主歌反复时旋律怎么变（C1） | A forty-four second strophic song, to hear how the tune changes across verses (C1)
-  - cyberhymnal-003336 | 中文歌词的短赞美诗，看声调与旋律的配合（C1） | A short hymn with Chinese words, to hear tones meeting melody (C1)
-sources:
-  - YuE 项目仓库与模型卡（M-A-P / 中国香港科技大学）关于输入形式、显存建议与权重许可的说明。
-  - YuE 技术报告对长曲生成与歌词对齐的公开描述。
-  - 公开用户报告中的显存、速度与咬字问题，只取现象，不引用具体评测分数。
-updated: 2026-10-31
+model_vendor: "YuE 项目（M-A-P / 中国香港科技大学）"
+model_form: "本地模型 / 项目在线入口"
+model_input: ["歌词", "文本"]
+model_output: ["音频"]
+model_licence: "代码与模型权重分别授权；原始 YuE、YuE2 及公司商用按对应版本许可核对"
+model_verified: "2026-11-03"
+links: ["[[glossary:strophic-form]]", "[[glossary:timbre]]", "[[glossary:stems]]"]
+instances: []
+sources: ["https://github.com/multimodal-art-projection/YuE", "https://github.com/multimodal-art-projection/YuE/blob/main/MODEL_LICENSE"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍YuE系列，需要区分原始YuE与YuE2代码、权重及许可版本；普通MIDI不是这些模型的生成结果，不能证明实际显存、运行速度、长曲质量或权重授权。"
 ---
 
 ::: zh
-## 先算显存，再谈创作
+## 先选择版本
 
-YuE 是少数能把整首歌唱完的开放权重模型：给歌词和风格，它直接出人声加伴奏，长度到几分钟。它不适合当网页工具用，装好环境、下载权重、备一张够大的显卡，才算进场。官方与打包环境常给 24GB 显存的建议；量化版和社区推理栈能压到 8–12GB，代价是速度与稳定性。先确认这一步，再谈歌好不好听。
+当前官方主分支介绍 YuE2，原始 YuE 的代码、文档与许可保存在 YuE-v1 分支。两代的输入流程、脚本和运行要求不能混用。阅读安装教程前，先记录仓库分支、提交或发布版本，以及所用模型文件。
 
-## 歌词怎么进去
+本地部署与项目列出的在线入口也应分别测试。在线能运行，不代表同一配置能在自己的显卡上运行；某个社区量化方案能启动，也不代表它保留官方版本的全部行为。
 
-输入是分行写的歌词，加上风格描述；主歌、副歌、桥段这类段标记可以写在歌词里。输出是混好的立体声，有的推理脚本会把伴奏与人声分别写出。它不提供“一句提示马上出歌”的即时反馈：一首三分钟的歌，在消费级显卡上通常要几十秒到几分钟，试错成本按分钟算。较新的版本会先把旋律与和弦落成可读的谱面，再渲染音频，改起来比纯黑箱方便。
+## 做一次完整的小样测试
 
-## 长曲的连贯性是卖点
+选择一段有权使用的歌词和明确的制作需求，先按所选版本文档完成短样。保留输入、实际参数和原始文件，记录显存占用、运行时间、失败日志及输出长度。硬件是否够用，应依据这组实测与版本要求判断，不能用一个固定显存数字概括整个系列。
 
-多数开源模型只能做几十秒的片段，YuE 的价值在整曲：主歌到副歌的抬升、桥段后的回归、尾奏的收束，能在同一次生成里完成。中文歌是它的强项之一，五声调式、字少腔长的句子，比英文快嘴更容易站住。做方言或古风 demo 时，它能给出一版结构完整的参照，再拿去做编曲或找人重唱。
+| 检查对象 | 要记录的结果 |
+|---|---|
+| 人声与歌词 | 漏字、重复、音节位置和目标语种的发音；逐句标时间点 |
+| 结构 | 段落是否完整，转接与收尾是否满足项目需求 |
+| 音频与分轨 | 实际导出了什么；文件起点、尾音与可编辑范围 |
+| 工程交接 | 离开推理环境能否打开文件，DAW 导入是否需要拉伸或补齐 |
 
-## 三道坎：显存、咬字、重复
+如果某版本提供符号文件或分轨，按实际文件验收，不据另一版本的介绍推定。生成完成不代表已经达到混音或发行交付标准。
 
-- 显存与速度：24GB 是舒服的线，低于 12GB 要靠量化，长歌容易中途崩。
-- 咬字：中文声调在快句、叠字和高音区容易糊，逐句对歌词听，别只看波形。
-- 重复：三分钟以后常回到前面的旋律与配器，第二次副歌最明显。
-- 分轨：若用分别写出人声与伴奏的脚本，人声轨常带混响与残渣，重混前要修。
+## 分清代码和模型许可
 
-先拿一首短歌试，别一上来就做五分钟。
+项目分别列出代码 LICENSE 与模型 MODEL_LICENSE。当前 YuE2 说明区分个人或内容创作者的变现、学术非商用及公司商用许可；原始 YuE 应回到对应分支检查。保存实际使用的许可文件、模型版本和素材来源，不只保存一个仓库首页链接。
 
-## 许可分层与替代
-
-许可要分三层看：代码、权重、随附模型。早期版本以 Apache 2.0 放出，较新的权重默认非商用，个人创作者有豁免，公司商用要单独授权；具体以仓库里的许可文件为准。替代：要网页即开即用，换 Suno 或 MiniMax Music；要更快的本地整曲，换 DiffRhythm；要符号级可控，换 Magenta。三者都可能牺牲中文咬字或整曲连贯，按任务取舍。
-
-```audiolab
-{"type":"instrument","gm":"Voice Oohs","synth":"vocal","phrase":["G4","A4","C5","A4","G4","E4","D4","E4"],"label":"一句五声音阶的歌词落点","label_en":"A pentatonic line for setting words","hint":"先让旋律站住，再看每个字落在哪一拍、哪个音","hint_en":"Let the melody stand first, then check which beat and pitch each word lands on"}
-```
+选型时把部署成本、发音检查与可修改文件一起比较。若项目只需一次小样，可先评估在线入口；若需要本地批量流程，再以所选版本的资源和许可要求作决定。
 :::
 
 ::: en
-## Count the VRAM first
+## Select a version first
 
-YuE is one of the few open-weight models that finishes a whole song: give it lyrics and a style and it returns vocals plus backing, several minutes long. It is not a browser tool; you install an environment, download weights and bring a large enough GPU before anything starts. Official and packaged setups often recommend 24GB of VRAM; quantised builds and community inference stacks can squeeze into 8–12GB at the cost of speed and stability. Settle that before judging the music.
+The current official main branch documents YuE2, while original YuE code, documentation and licensing remain on the YuE-v1 branch. Do not mix generations of input workflows, scripts and runtime requirements. Record the branch, commit or release and model files before following an installation guide.
 
-## How the lyrics get in
+Test local deployment separately from online entries listed by the project. An online run does not establish that the same configuration fits your GPU, and a community quantization setup starting successfully does not establish full equivalence with the official version.
 
-Input is line-broken lyrics plus a style description; verse, chorus and bridge tags can sit inside the lyric text. Output is a mixed stereo file, and some inference scripts write the backing and vocal separately. There is no instant one-line-to-song loop: a three-minute song usually takes tens of seconds to a few minutes on a consumer GPU, so experiments are measured in minutes. Newer builds first lay out melody and chords as a readable score plan, then render audio, which is easier to revise than a pure black box.
+## Complete one small production test
 
-## Long-form coherence is the point
+Choose lyrics you have permission to use and a clear brief, then make a short sample using the selected version's instructions. Keep inputs, actual parameters and original files, recording VRAM use, runtime, failure logs and output length. Judge hardware suitability from these measurements and the version requirements rather than one memory figure for the entire family.
 
-Most open models manage a few dozen seconds; YuE's value is the whole song, with the lift into the chorus, the return after the bridge and the closing all in one pass. Chinese songs are a strength: pentatonic lines and sparse, long-held syllables hold up better than rapid English verses. For a dialect or guofeng demo it gives a structurally complete reference that you can arrange or hand to a singer.
+| Object | Record |
+|---|---|
+| Vocals and lyrics | Missing or repeated words, syllable placement and target-language pronunciation at specific times |
+| Structure | Complete sections, transitions and ending against the brief |
+| Audio and stems | Files actually exported, their start and tails, and editing scope |
+| Handoff | Files reopening outside inference, and any stretching or alignment required in the DAW |
 
-## Three walls: VRAM, diction, repetition
+If a version provides symbolic files or stems, inspect the actual exports rather than inferring them from another version's description. A completed generation does not establish mix or release readiness.
 
-- VRAM and speed: 24GB is the comfortable line; under 12GB means quantisation and a higher chance of a long song collapsing.
-- Diction: Mandarin tones blur on fast lines, stacked syllables and high notes. Check line by line against the lyric, not just the waveform.
-- Repetition: past three minutes it often returns to earlier melody and orchestration, most audible in the second chorus.
-- Stems: if a script writes vocals and backing separately, the vocal track carries reverb tails and residue and needs repair before remixing.
+## Separate code from model licensing
 
-Start with a short song; do not open with five minutes.
+The project lists a code LICENSE separately from MODEL_LICENSE. Current YuE2 guidance distinguishes individual or content-creator monetization, academic noncommercial use and company commercial licensing. Check original YuE on its corresponding branch. Save the applicable licence files, model version and material sources rather than only a repository homepage link.
 
-## Licence layers and alternatives
-
-Read three layers: code, weights and companion models. Early releases were Apache 2.0; newer weights default to non-commercial with an exemption for individual creators, and companies need a separate licence. The repository licence file is the authority. Alternatives: Suno or MiniMax Music for a browser service; DiffRhythm for faster local full songs; Magenta for symbolic control. Each may cost you Mandarin diction or whole-song coherence, so choose by the job.
+Compare deployment cost, pronunciation checks and editable files together. For a one-off demo, assess the online route first; for local batch work, decide from the chosen version's resource and licensing requirements.
 :::

@@ -1,36 +1,28 @@
 ---
-id: model-diffrhythm
-site: ai
-cat: I
-title: DiffRhythm
-title_en: DiffRhythm
-summary: 十秒出整曲，快得能当草稿机，结构要自己盯。
-summary_en: A full song in seconds, fast enough as a sketch machine; watch the structure yourself.
-level: standard
-tags: [模型档案, 开源权重, 扩散模型, 整曲生成]
-tags_en: [model profile, open weights, diffusion, full-song generation]
-alias: [DiffRhythm, 谛韵, 扩散整曲]
+id: "model-diffrhythm"
+site: "ai"
+cat: "I"
+title: "DiffRhythm"
+title_en: "DiffRhythm"
+summary: "十秒出整曲，快得能当草稿机，结构要自己盯。"
+summary_en: "A full song in seconds, fast enough as a sketch machine; watch the structure yourself."
+level: "standard"
+tags: ["模型档案", "开源权重", "扩散模型", "整曲生成"]
+tags_en: ["model profile", "open weights", "diffusion", "full-song generation"]
+alias: ["DiffRhythm", "谛韵", "扩散整曲"]
 order: 201
-model_vendor: ASLP Lab（西北工业大学）
-model_form: 本地模型
-model_input: [歌词, 文本]
-model_output: [音频]
-model_licence: 代码以 Apache 2.0 放出，权重与后续版本（含 DiffRhythm+）的商用范围另行标注，以仓库与模型卡为准
-model_verified: 2026-10-31
-links:
-  - "[[glossary:diffusion]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:binary-form]]"
-instances:
-  - mutopia-000527 | 六十三秒的分节歌，看主歌反复时歌词怎么排（C1） | A sixty-three second strophic song, to hear how words are laid across repeated verses (C1)
-  - mutopia-000622 | 四十四秒的分节歌，看主歌反复时歌词怎么排（C1） | A forty-four second strophic song, to hear how words are laid across repeated verses (C1)
-  - mutopia-000782 | 九十九秒的艺术歌曲，长句多，适合看漏句与咬字（C1） | A ninety-nine second art song with long phrases, to check dropped words and diction (C1)
-  - groove-000006 | 138 BPM 流行鼓组，看生成曲的节拍底盘（C1） | A 138 BPM pop kit, to hear the rhythmic bed under a generated song (C1)
-sources:
-  - DiffRhythm 官方仓库与论文（ASLP Lab）关于潜在扩散、整曲时长与输入格式的说明。
-  - DiffRhythm 模型卡上的权重许可与版本差异。
-  - 公开用户报告中的重复、漏句与结构问题，只取现象，不引用具体评测数据。
-updated: 2026-10-31
+model_vendor: "ASLP Lab（西北工业大学）"
+model_form: "本地模型"
+model_input: ["歌词", "文本"]
+model_output: ["音频"]
+model_licence: "代码以 Apache 2.0 放出，权重与后续版本（含 DiffRhythm+）的商用范围另行标注，以仓库与模型卡为准"
+model_verified: "2026-10-31"
+links: ["[[glossary:diffusion]]", "[[glossary:tempo]]", "[[glossary:binary-form]]"]
+instances: []
+sources: ["https://github.com/ASLP-lab/DiffRhythm", "https://arxiv.org/abs/2503.01183"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍DiffRhythm研究模型，应对照官方仓库与论文的具体版本、输入和运行条件；普通MIDI不是模型生成结果，不能用来验证整曲时长、速度或歌词对齐。"
 ---
 
 ::: zh
@@ -63,10 +55,6 @@ DiffRhythm 把整首歌压进一次扩散：歌词加风格提示，十秒左右
 ## 本地跑与替代
 
 8GB 显存能跑基础版，生成速度快，适合反复试。权重与代码的许可分开看，后续版本与 DiffRhythm+ 的商用范围不同，发行前确认模型卡。替代：要更长、更稳的整曲，换 YuE；要网页端省事，换 Suno；要分轨与后期，换腾讯音乐天琴这类平台工具。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","G4","A4","E4","F4","G4","E4","C4"],"label":"一段主歌到副歌的旋律","label_en":"A verse-to-chorus melodic line","hint":"听同一动机在副歌有没有被抬高，而不是原样重复","hint_en":"Hear whether the motif lifts in the chorus instead of repeating verbatim"}
-```
 :::
 
 ::: en
@@ -100,3 +88,4 @@ Ten seconds a song means dozens of tries in an afternoon. Split lyrics, style an
 
 The base model runs in 8GB of VRAM and generates quickly, which suits repeated trials. Code and weights are licensed separately, and later versions and DiffRhythm+ carry different commercial terms; check the model card before release. Alternatives: YuE for longer, steadier full songs; Suno for a browser service; TME Tianqin or a similar platform for stems and post-production.
 :::
+

@@ -1,39 +1,29 @@
 ---
-id: tool-ai-lyric-video
-site: ai
-cat: J
-title: 歌词视频工具
-title_en: Lyric Video Tools
-summary: 歌词视频先赢在对齐，再谈模板；词曲与录音授权要分开清。
-summary_en: Lyric videos are won on sync before templates, and words and recordings clear separately.
-level: standard
-tags: [歌词视频, 字幕, 同步, 授权]
-tags_en: [lyric video, subtitles, sync, licensing]
-alias: [歌词字幕, 动态歌词, 卡拉 OK 视频]
+id: "tool-ai-lyric-video"
+site: "ai"
+cat: "J"
+title: "歌词视频工具"
+title_en: "Lyric Video Tools"
+summary: "歌词视频先赢在对齐，再谈模板；词曲与录音授权要分开清。"
+summary_en: "Lyric videos are won on sync before templates, and words and recordings clear separately."
+level: "standard"
+tags: ["歌词视频", "字幕", "同步", "授权"]
+tags_en: ["lyric video", "subtitles", "sync", "licensing"]
+alias: ["歌词字幕", "动态歌词", "卡拉 OK 视频"]
 order: 253
-links:
-  - "[[glossary:sync-license]]"
-  - "[[glossary:music-copyright]]"
-  - "[[glossary:master-rights]]"
-  - "[[glossary:phrase]]"
-tool_kind: service
-tool_vendor: 剪映、Rotor Videos
-tool_form: 视频编辑器
-tool_platforms: [macOS, Windows, iOS, Android]
-tool_price: 免费 + 订阅
-tool_jobs: [字幕, 视频, 发布]
-tool_verified: 2026-10-31
-instances:
-  - openscore-000250 | 《菩提树》分节歌，同一段旋律配多段词，模板要能逐段换词（C1）
-  - chinafolk-000149 | 《茉莉花》重复句加拖腔，中文分行与逐字高亮最容易错位（C1）
-  - openscore-000084 | 《你是安宁》长句接长音，句级高亮常跟不住人声的收尾（C1）
-  - openscore-001354 | 舒曼《奉献》，唱完还有一段钢琴后奏，结尾卡点别切在最后一个字（C1）
-sources:
-  - 剪映（CapCut）与 Rotor Videos 官方字幕、模板与导出说明。
-  - W3C WebVTT 与 TTML 字幕规范中时间码、分行与显示时长规则。
-  - 音乐同步许可与词曲授权的行业通行框架。
-  - 各视频平台内容识别与版权声明机制的公开说明。
-updated: 2026-10-31
+links: ["[[glossary:sync-license]]", "[[glossary:music-copyright]]", "[[glossary:master-rights]]", "[[glossary:phrase]]"]
+tool_kind: "service"
+tool_vendor: "剪映、Rotor Videos"
+tool_form: "视频编辑器"
+tool_platforms: ["macOS", "Windows", "iOS", "Android"]
+tool_price: "免费 + 订阅"
+tool_jobs: ["字幕", "视频", "发布"]
+tool_verified: "2026-10-31"
+instances: []
+sources: ["https://www.w3.org/TR/webvtt1/", "https://support.google.com/youtube/answer/2797370?hl=en", "https://www.copyright.gov/register/pa-sr.html", "https://support.distrokid.com/hc/en-us/articles/360013648953-Uploading-Cover-Songs-to-DistroKid"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "歌词视频需要逐句核对时间码、字幕布局及音乐使用权；单独播放音乐没有字幕轨和画幅信息，不能证明词级对齐或视频授权已经完成。"
 ---
 
 ::: zh
@@ -54,7 +44,7 @@ updated: 2026-10-31
 
 ## 版权是两层
 
-词曲版权与录音版权要分开理清：用原曲要同步许可，用重录或伴奏要另拿录音授权；只放歌词文本也涉及词作者。平台的内容识别会自动匹配录音，声明与分成跟视频绑定。生成或下载的背景视频、模板、字体各有各的许可，不能只看音乐。
+词曲与录音是两层权利。把受保护词曲与视频结合，需按所在地及发布渠道核对词曲同步授权；使用他人的原唱录音或伴奏录音，还要核对该录音的使用许可。自行重录不涉及使用原唱母带，但不会因此免除词曲层面的授权；取得音频发行的翻唱许可，也不代表已取得视频同步许可。歌词文本、背景视频、模板和字体也应分别确认许可。Content ID 声明或分成安排不能代替这些授权。
 
 ## 会出错的地方
 
@@ -63,10 +53,6 @@ updated: 2026-10-31
 ## 先做一版能改的
 
 先对齐副歌，再补主歌，最后处理前奏与尾奏；把歌词存成纯文本加时间码，换模板时不用重做。之后再看歌词听辨、同步许可与竖屏配乐三篇。
-
-```audiolab
-{"type":"instrument","gm":40,"phrase":["D4","F4","A4","D5"],"label":"句尾长音","label_en":"Line ending","hint":"听每个长音收在哪里，字幕的最后一行该跟到哪","hint_en":"Hear where each long note ends and where the last line should follow"}
-```
 :::
 
 ::: en
@@ -87,7 +73,7 @@ Vertical, horizontal and square frames put subtitles in different places, so cho
 
 ## Rights come in two layers
 
-Composition and recording clear separately: an original recording needs a sync licence, a re-record or backing track needs a separate master licence, and even text-only lyrics involve the writer. Platform fingerprinting matches the recording automatically, and claims and revenue attach to the video. Generated or downloaded backgrounds, templates and fonts carry their own licences; music is only one part.
+Composition and sound recording are separate rights. Combining a protected composition with video requires checking composition synchronization permissions for the relevant jurisdiction and release channel. Using someone else’s original master or backing recording also requires checking permission for that recording. A new recording does not use the original master, but still requires clearance of the composition where applicable; a cover licence for audio distribution does not itself provide video synchronization rights. Check lyric display, backgrounds, templates and fonts separately. A Content ID claim or revenue-sharing arrangement does not replace these permissions.
 
 ## Where it breaks
 
@@ -96,8 +82,5 @@ Chinese has no spaces, so break lines by meaning rather than character count; wh
 ## Build a version you can revise
 
 Sync the chorus first, then the verses, then intros and outros; keep lyrics as plain text plus timecodes so a template swap does not restart the work. After that, read lyric intelligibility, sync licensing and vertical scoring.
-
-```audiolab
-{"type":"instrument","gm":40,"phrase":["D4","F4","A4","D5"],"label":"Line ending","label_en":"Line ending","hint":"Hear where each long note ends and where the last line should follow","hint_en":"Hear where each long note ends and where the last line should follow"}
-```
 :::
+

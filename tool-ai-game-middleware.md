@@ -1,36 +1,29 @@
 ---
-id: tool-ai-game-middleware
-site: ai
-cat: J
-title: 游戏中间件里的 AI
-title_en: AI Inside Game Audio Middleware
-summary: 自适应音乐与批量素材进入中间件，真正的难点在运行时与可复现。
-summary_en: Adaptive music and batch assets enter middleware, where the real difficulty is runtime and reproducibility.
-level: standard
-tags: [游戏音频, 中间件, 自适应, 运行时]
-tags_en: [game audio, middleware, adaptive, runtime]
-alias: [游戏中间件, 自适应音乐 AI]
+id: "tool-ai-game-middleware"
+site: "ai"
+cat: "J"
+title: "游戏中间件里的 AI"
+title_en: "AI Inside Game Audio Middleware"
+summary: "自适应音乐与批量素材进入中间件，真正的难点在运行时与可复现。"
+summary_en: "Adaptive music and batch assets enter middleware, where the real difficulty is runtime and reproducibility."
+level: "standard"
+tags: ["游戏音频", "中间件", "自适应", "运行时"]
+tags_en: ["game audio", "middleware", "adaptive", "runtime"]
+alias: ["游戏中间件", "自适应音乐 AI"]
 order: 9
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:cue]]"
-  - "[[glossary:latency]]"
-tool_kind: middleware
-tool_vendor: 游戏音频中间件厂商
-tool_form: 桌面应用
-tool_platforms: [macOS, Windows]
-tool_price: 按量
-tool_jobs: [游戏音频, 声音设计, 交付]
-tool_verified: 2026-10-30
-instances:
-  - oga-000009 | 海滩场景配乐，环境层要能长时间循环而不显重复（C1）
-  - oga-000021 | 洞穴场景配乐，稀疏素材最适合检验过渡与混响切换（C1）
-  - oga-000004 | 战斗配乐，强度分层能否随事件推进是自适应的核心（C1）
-  - oga-000000 | 二十三秒的小品，短循环的接缝与回退最容易被听出来（C1）
-sources:
-  - 主流游戏音频中间件的公开文档所列事件、分层与运行时限制（2026-10-30 复核）。
-  - 游戏平台认证与音频内存预算的通识；游戏音频实践是主要依据。
-updated: 2026-10-30
+links: ["[[glossary:stems]]", "[[glossary:cue]]", "[[glossary:latency]]"]
+tool_kind: "middleware"
+tool_vendor: "游戏音频中间件厂商"
+tool_form: "桌面应用"
+tool_platforms: ["macOS", "Windows"]
+tool_price: "按量"
+tool_jobs: ["游戏音频", "声音设计", "交付"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://www.fmod.com/docs/2.04/studio/authoring-events.html", "https://www.audiokinetic.com/download/documents/WwiseProjectAdventure_en.pdf"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "游戏中间件要核对事件、参数、循环和过渡调度，并在引擎中触发状态测试；线性音乐播放不能证明运行时切换逻辑或内存预算合格。"
 ---
 
 ::: zh
@@ -53,10 +46,6 @@ updated: 2026-10-30
 ## 上手路径
 
 先学三件事：事件与参数怎么驱动分层、循环点与过渡怎么设、运行时内存与平台限制。随后读这里的游戏音频、自适应音乐与交互分层三篇，再决定哪些环节引入生成。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":120,"label":"战斗层","label_en":"Combat layer","hint":"切换探索层，听过渡有没有音量跳变","hint_en":"Switch to the exploration layer and listen for level jumps"}
-```
 :::
 
 ::: en
@@ -79,8 +68,5 @@ For small projects, the engine's own audio system is enough and saves a middlewa
 ## First three things to learn
 
 Learn three things first: how events and parameters drive layers, how loop points and transitions are set, and what runtime memory and platform limits allow. Then read the site's pages on game audio, adaptive music and interactive layers before deciding where generation enters.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":120,"label":"Combat layer","label_en":"Combat layer","hint":"Switch to the exploration layer and listen for level jumps","hint_en":"Switch to the exploration layer and listen for level jumps"}
-```
 :::
+

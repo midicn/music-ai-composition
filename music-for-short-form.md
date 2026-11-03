@@ -1,27 +1,22 @@
 ---
-id: music-for-short-form
-site: ai
-cat: F
-title: 短视频音乐
-title_en: Music for Short Form
-summary: 前两秒没有钩子就没有后面，结构还要能循环
-summary_en: No hook in the first two seconds means no viewer, and the loop must survive repeats
-level: standard
-tags: [短视频, 钩子, 授权, 循环]
-tags_en: [short form, hook, clearance, loops]
-alias: [短视频配乐, 竖屏音乐, short form music]
+id: "music-for-short-form"
+site: "ai"
+cat: "F"
+title: "短视频音乐"
+title_en: "Music for Short Form"
+summary: "前两秒没有钩子就没有后面，结构还要能循环"
+summary_en: "No hook in the first two seconds means no viewer, and the loop must survive repeats"
+level: "standard"
+tags: ["短视频", "钩子", "授权", "循环"]
+tags_en: ["short form", "hook", "clearance", "loops"]
+alias: ["短视频配乐", "竖屏音乐", "short form music"]
 order: 10
-links:
-  - "[[glossary:sync-license]]"
-  - "[[glossary:loudness-normalization]]"
-instances:
-  - giantmidi-007791 | 两秒内建立动机，钩子的标准（C1）
-  - pdmx-001170 | 主题不加铺垫直接出现，开头即记忆点（C1）
-  - pdmx-002097 | 无前奏的快速音型，开头就抓住注意力（C1）
-sources:
-  - 短视频音频的钩子与授权要点，参考平台公开规则与制作惯例。
-  - Short form audio hooks and clearance; public platform rules and general practice is the main basis.
-updated: 2026-10-30
+links: ["[[glossary:sync-license]]", "[[glossary:loudness-normalization]]"]
+instances: []
+sources: ["https://artists.youtube/resources/shorts-for-artists/", "https://support.google.com/youtube/answer/3376882?hl=en"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "短视频音乐要同时核验片段入口、平台音乐使用范围和视频发布方式；孤立播放一段旋律不能证明它适合具体画面或已经取得跨平台许可。"
 ---
 
 ::: zh
@@ -36,14 +31,6 @@ updated: 2026-10-30
 ## 从哪开始
 
 生成时要求直接从主题开始、不要前奏。拿到素材后把最好的四小节剪到最前面，前奏丢掉或放到中段。整段控制在十五到三十秒，结尾做干净收尾或可循环的切点。发布前确认授权是否覆盖商业账号和投放，保留生成记录和提示词。给同一段素材做两三个版本，换开头、换配器，看哪一个留人更久。
-
-## 耳朵要抓的点
-
-在《致爱丽丝》里听第一个动机怎样在两秒内建立记忆点，在莫扎特的《土耳其进行曲》里听主题怎样不加铺垫直接出现，在《野蜂飞舞》里听持续的快速音型怎样在没有前奏的情况下抓住注意力。短视频要的就是这种开头。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["E4","D#4","E4","D#4","E4","B3","D4","C4"],"label":"两秒内建立的钩子","label_en":"A hook built in two seconds","hint":"从第一个音开始数，看记忆点在第几拍出现","hint_en":"Count from the first note and hear on which beat the hook lands"}
-```
 :::
 
 ::: en
@@ -58,12 +45,5 @@ Audio in short form is accompaniment, not the subject. The hook has to appear wi
 ## Where to start
 
 Ask for a start on the theme and no intro. When the material arrives, cut the best four bars to the front and drop the intro or move it to the middle. Keep the whole cue between fifteen and thirty seconds, ending on a clean close or a cut that loops. Before posting, confirm the licence covers a commercial account and paid promotion, and keep the generation record and prompt. Make two or three versions of the same material with different openings and orchestration, and see which holds viewers longer.
-
-## What the ear catches
-
-In Für Elise, how the first motif plants a memory in two seconds; in Mozart's Turkish March, how the theme appears with no preparation; in Flight of the Bumblebee, how a continuous fast figure holds attention without an intro. That is the kind of opening short form needs.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["E4","D#4","E4","D#4","E4","B3","D4","C4"],"label":"A hook built in two seconds","label_en":"A hook built in two seconds","hint":"Count from the first note and hear on which beat the hook lands","hint_en":"Count from the first note and hear on which beat the hook lands"}
-```
 :::
+

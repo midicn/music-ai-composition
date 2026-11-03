@@ -1,28 +1,22 @@
 ---
-id: lyric-writing-for-ai
-site: ai
-cat: B
-title: 为 AI 写词
-title_en: Writing Lyrics for AI
-summary: 歌词要按演唱来写，重音、换气与韵脚决定合成人声唱不唱得出来。
-summary_en: Write lyrics for singing, where stress, breath and rhyme decide whether a synthetic voice can deliver them.
-level: standard
-tags: [歌词, 咬字, 韵脚, 人声]
-tags_en: [lyrics, diction, rhyme, vocals]
-alias: [写词, 歌词, lyric writing]
+id: "lyric-writing-for-ai"
+site: "ai"
+cat: "B"
+title: "为 AI 写词"
+title_en: "Writing Lyrics for AI"
+summary: "歌词要按演唱来写，重音、换气与韵脚决定合成人声唱不唱得出来。"
+summary_en: "Write lyrics for singing, where stress, breath and rhyme decide whether a synthetic voice can deliver them."
+level: "standard"
+tags: ["歌词", "咬字", "韵脚", "人声"]
+tags_en: ["lyrics", "diction", "rhyme", "vocals"]
+alias: ["写词", "歌词", "lyric writing"]
 order: 9
-links:
-  - "[[glossary:text-painting]]"
-  - "[[glossary:ornaments]]"
-  - "[[instrument:voice]]"
-instances:
-  - cyberhymnal-000000 | 赞美诗的四句体，韵脚与句长都非常规整（C1）
-  - thesession-015842 | 传统曲调的歌词，音节与旋律一一对应（C1）
-  - atepp-001114 | 肖邦叙事曲，作为对照听无词旋律的呼吸（C1）
-sources:
-  - 歌词与旋律的音节对应关系；歌曲写作惯例是主要依据。
-  - 合成人声的咬字限制——依据来自语音合成公开资料。
-updated: 2026-10-30
+links: ["[[glossary:text-painting]]", "[[glossary:ornaments]]", "[[instrument:voice]]"]
+instances: []
+sources: ["https://docs.acestudio.ai/ai-vocal-synth/creating-ai-vocals/editing-lyrics.md", "https://help.suno.com/en/articles/6141505"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论歌词、音节与旋律配合，需要查看歌词编辑机制并实际演唱或合成核对；固定无歌词MIDI不能说明韵脚、辅音与字词唱出效果。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ updated: 2026-10-30
 ## 怎么修
 
 先写旋律骨架，再填词，或者先写词再让旋律服从音节。每句留出换气点，长句拆成短句。避免连续三个以上辅音，避免同音重复过多。录一版人声 demo 再交给合成，能听出哪里拗口。写完后朗读一遍，读不顺的地方唱起来一定不顺。需要多语言版本时，按目标语言的音节重写，不要直译。
-
-## 耳朵要抓的点
-
-在赞美诗里听规整句长与韵脚的作用，在传统曲调里听音节与旋律的对应，在无词旋律里听呼吸的位置如何被留出。歌词的好坏，最终由唱出来的清晰度决定。
-
-```audiolab
-{"type":"instrument","gm":"Choir Aahs","synth":"vocal","phrase":["C4","D4","E4","F4","E4","D4","C4","G3"],"label":"音节落在旋律上","label_en":"Syllables on a melody","hint":"每个音一个音节最清楚，挤进两个就会糊","hint_en":"One syllable per note stays clear; two per note smears"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ The number of notes must match the number of syllables; one note over several sy
 ## How to fix it
 
 Write a melodic skeleton first and fit words to it, or write words first and let the melody obey the syllables. Leave a breath in each phrase and split long lines. Avoid three consonants in a row and too much repetition of one vowel. Record a rough human demo before handing words to a synthetic voice to hear what is awkward. Read the lyric aloud, since anything hard to say is harder to sing. For other languages, rewrite to the target language's syllables rather than translating literally.
-
-## What the ear catches
-
-In the hymn, how regular line lengths and rhyme help; in the traditional tune, the one-to-one fit of syllable and note; in the wordless melody, where breaths are left. Lyrics are judged by how clearly they come out when sung.
-
-```audiolab
-{"type":"instrument","gm":"Choir Aahs","synth":"vocal","phrase":["C4","D4","E4","F4","E4","D4","C4","G3"],"label":"Syllables on a melody","label_en":"Syllables on a melody","hint":"One syllable per note stays clear; two per note smears","hint_en":"One syllable per note stays clear; two per note smears"}
-```
 :::
+

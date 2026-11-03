@@ -1,37 +1,27 @@
 ---
-id: choose-for-sample-pack
-site: ai
-cat: K
-title: 采样包选型
-title_en: Choosing Tools for a Sample Pack
-summary: 采样包卖的是授权与元数据，不是文件数量。
-summary_en: A sample pack sells licensing and metadata, not file count.
-level: standard
-tags: [选型, 采样, 循环, 授权]
-tags_en: [selection, sampling, loops, licensing]
-alias: [采样选型, 采样包工具, sample pack]
+id: "choose-for-sample-pack"
+site: "ai"
+cat: "K"
+title: "采样包选型"
+title_en: "Choosing Tools for a Sample Pack"
+summary: "采样包卖的是授权与元数据，不是文件数量。"
+summary_en: "A sample pack sells licensing and metadata, not file count."
+level: "standard"
+tags: ["选型", "采样", "循环", "授权"]
+tags_en: ["selection", "sampling", "loops", "licensing"]
+alias: ["采样选型", "采样包工具", "sample pack"]
 order: 16
-links:
-  - "[[glossary:sample-rate]]"
-  - "[[glossary:sampler]]"
-  - "[[glossary:bit-depth]]"
-tool_kind: guide
-tool_vendor: —
-tool_form: 网页
-tool_platforms: [浏览器]
-tool_price: 免费
-tool_jobs: [选型, 采样]
-tool_verified: 2026-10-30
-instances:
-  - groove-000005 | 87 BPM 嘻哈鼓组，循环素材的典型长度与量化程度（C1）
-  - groove-000013 | 116 BPM 爵士放克的过门，一击即用的一小节 fill（C1）
-  - groove-000007 | 65 BPM 摇滚鼓组，慢速下重音位置决定这段素材能不能用（C1）
-  - groove-000000 | 138 BPM 放克鼓组，越快切点越难，循环点最考验手艺（C1）
-  - m21-002276 | 绿袖子吉格，有调性的旋律片段，做带调 loop 的参照（C1）
-sources:
-  - 采样库与生成式音频服务的公开授权说明（2026-10-30 复核）。
-  - 采样录制、切点与元数据规范的通行做法（惯例）。
-updated: 2026-10-30
+links: ["[[glossary:sample-rate]]", "[[glossary:sampler]]", "[[glossary:bit-depth]]"]
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "网页"
+tool_platforms: ["浏览器"]
+tool_price: "免费"
+tool_jobs: ["选型", "采样"]
+tool_verified: "2026-10-30"
+instances: ["groove-000005", "groove-000013", "groove-000007", "groove-000000", "m21-002276"]
+sources: ["采样库与生成式音频服务的公开授权说明（2026-10-30 复核）。", "采样录制、切点与元数据规范的通行做法（惯例）。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -66,7 +56,7 @@ updated: 2026-10-30
 先学三件事：切点做在零交叉、每个文件写清速度与调性、把授权说明放进包里。然后读这里的样本生成、文件与分轨、分轨级编辑三篇。
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s e s s e s s e s s e s s e s s","bpm":87,"label":"一段要切干净的循环","label_en":"A loop that must cut cleanly","hint":"听完一整圈，注意回到第一拍时的接缝","hint_en":"Listen a full cycle and mind the seam back to beat one"}
+{"type":"rhythm","sig":"4/4","pattern":"s e s s e s s e s s e s s e s s","bpm":87,"label":"合成节奏示意","label_en":"Synthesized rhythm","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -102,6 +92,7 @@ For a distinctive sound, record it yourself; for volume and speed, start from a 
 Learn to cut on zero crossings, to write tempo and key into every file, and to put the licence text inside the pack. Then read the pages on sample generation, formats and stems, and stem-level editing.
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s e s s e s s e s s e s s e s s","bpm":87,"label":"A loop that must cut cleanly","label_en":"A loop that must cut cleanly","hint":"Listen a full cycle and mind the seam back to beat one","hint_en":"Listen a full cycle and mind the seam back to beat one"}
+{"type":"rhythm","sig":"4/4","pattern":"s e s s e s s e s s e s s e s s","bpm":87,"label":"Synthesized rhythm","label_en":"Synthesized rhythm","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

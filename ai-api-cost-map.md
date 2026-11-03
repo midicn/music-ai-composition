@@ -1,30 +1,22 @@
 ---
-id: ai-api-cost-map
-site: ai
-cat: A
-title: 调用成本与配额
-title_en: API Cost and Quotas
-summary: 计费单位决定成本结构；先算一次任务真正跑几遍，再谈单价。
-summary_en: Billing units shape the real cost. Estimate how many runs a task takes before comparing headline rates.
-level: standard
-tags: [API, 成本, 计费, 配额]
-tags_en: [API, cost, billing, quotas]
-alias: [调用成本, 计费口径, API 配额]
+id: "ai-api-cost-map"
+site: "ai"
+cat: "A"
+title: "调用成本与配额"
+title_en: "API Cost and Quotas"
+summary: "计费单位决定成本结构；先算一次任务真正跑几遍，再谈单价。"
+summary_en: "Billing units shape the real cost. Estimate how many runs a task takes before comparing headline rates."
+level: "standard"
+tags: ["API", "成本", "计费", "配额"]
+tags_en: ["API", "cost", "billing", "quotas"]
+alias: ["调用成本", "计费口径", "API 配额"]
 order: 123
-links:
-  - "[[glossary:licensing]]"
-  - "[[glossary:stems]]"
-  - "[[glossary:sync-license]]"
-instances:
-  - oga-000053 | 两秒的 fanfare，按秒计费时最短任务也有起送量（C1）
-  - pdmx-000153 | 二十六分钟长曲，按输出时长计费会线性放大（C1）
-  - groove-000000 | 138 BPM 放克鼓组，短循环多次重生成的成本（C1）
-  - pdmx-000497 | 大型多分轨作品，导出与返工推高单条成本（C1）
-sources:
-  - 生成服务公开的 API 文档，关于计费单位、配额与错误码的说明。
-  - 云计算计费白皮书中关于存储、流量与请求计费的通用做法。
-  - 后期制作工时估算的行业惯例，关于分轨修整与试听筛选。
-updated: 2026-10-31
+links: ["[[glossary:licensing]]", "[[glossary:stems]]", "[[glossary:sync-license]]"]
+instances: []
+sources: ["https://replicate.com/docs/topics/billing", "https://replicate.com/docs/topics/predictions/rate-limits"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论请求计费、并发与额度，需要查服务账单口径和限流文档；曲目试听不能说明一次生成实际收费或可用配额。"
 ---
 
 ::: zh
@@ -61,10 +53,6 @@ updated: 2026-10-31
 ## 按量计费不划算的时候
 
 短音效、批量循环、教学演示这类高频小任务，包月或本地部署通常更稳。反过来，一年只做几条长配乐，按量更省。别把“单价低”当成“总价低”；把配额、并发和返工一起算进去，才是可比的数字。预算表里还应留一列“重做”，否则一次失败的任务就会让整张表失真。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","D4","E4","G4"],"label":"八秒素材：计费的最小单位","label_en":"Eight seconds: the billing unit","hint":"按秒计费时，短素材和长素材的差价从这里开始","hint_en":"With per-second pricing, the gap starts at this length"}
-```
-
 :::
 
 ::: en
@@ -102,3 +90,4 @@ An example: a two-minute instrumental billed on output duration, six generations
 
 High-frequency small jobs such as stingers, loop batches and teaching demos are usually steadier on a subscription or a local setup. A handful of long cues a year is cheaper metered. Low unit price is not low total price. Put quota, concurrency and rework into the same comparison, and keep a redo column in the budget, or the first failed job will distort the whole sheet.
 :::
+

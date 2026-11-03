@@ -1,28 +1,20 @@
 ---
-id: negative-prompts
-site: ai
-cat: B
-title: 反向提示
-title_en: Negative Prompts
-summary: 说清不要什么，往往比反复强调要什么更有效。
-summary_en: Saying what you do not want often works better than repeating what you do.
-level: standard
-tags: [反向提示, 排除项, 生成, 控制]
-tags_en: [negative prompt, exclusions, generation, control]
-alias: [反向提示, 排除项, negative prompt]
+id: "negative-prompts"
+site: "ai"
+cat: "B"
+title: "反向提示"
+title_en: "Negative Prompts"
+summary: "说清不要什么，往往比反复强调要什么更有效。"
+summary_en: "Saying what you do not want often works better than repeating what you do."
+level: "standard"
+tags: ["反向提示", "排除项", "生成", "控制"]
+tags_en: ["negative prompt", "exclusions", "generation", "control"]
+alias: ["反向提示", "排除项", "negative prompt"]
 order: 5
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:daw]]"
-instances:
-  - groove-000000 | 放克鼓组的配器参照，没有应用排除电子鼓机的生成条件（C1） | Funk-drum instrumentation without a generated drum-machine exclusion (C1)
-  - cyberhymnal-000003 | 管风琴旋律参照，没有执行去人声或反向提示（C1） | Organ-melody reference without vocal removal or negative prompting (C1)
-  - thesession-022200 | 传统曲调的音符参照，没有执行排除现代鼓组的生成（C1） | Traditional-tune notes without a generated modern-drum exclusion (C1)
-sources:
-  - 反向条件在生成模型中的实现，参考公开模型说明。
-  - 排除项与正面描述的关系；创作实践惯例是主要依据。
-updated: 2026-11-02
+links: ["[[glossary:timbre]]", "[[glossary:tempo]]", "[[glossary:daw]]"]
+instances: ["groove-000000", "cyberhymnal-000003", "thesession-022200"]
+sources: ["反向条件在生成模型中的实现，参考公开模型说明。", "排除项与正面描述的关系；创作实践惯例是主要依据。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -68,3 +60,4 @@ Keep the positive description, model and other settings fixed, then generate can
 {"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"Single-instrument reference","label_en":"Single-instrument reference","hint":"This plays a preset instrument without running positive or negative prompts. Evaluate exclusions using actual generator outputs.","hint_en":"This plays a preset instrument without running positive or negative prompts. Evaluate exclusions using actual generator outputs."}
 ```
 :::
+

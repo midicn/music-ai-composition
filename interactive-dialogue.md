@@ -1,30 +1,22 @@
 ---
-id: interactive-dialogue
-site: ai
-cat: F
-title: 互动对白与音乐
-title_en: Interactive Dialogue and Music
-summary: 对白在说，音乐就得让；状态切换要落在设计好的接缝上
-summary_en: When dialogue speaks, music yields; state changes must land on seams you designed.
-level: standard
-tags: [互动对白, ducking, 状态切换, 游戏音频]
-tags_en: [interactive dialogue, ducking, state changes, game audio]
-alias: [对白优先, 动态混音, dialogue ducking]
+id: "interactive-dialogue"
+site: "ai"
+cat: "F"
+title: "互动对白与音乐"
+title_en: "Interactive Dialogue and Music"
+summary: "对白在说，音乐就得让；状态切换要落在设计好的接缝上"
+summary_en: "When dialogue speaks, music yields; state changes must land on seams you designed."
+level: "standard"
+tags: ["互动对白", "ducking", "状态切换", "游戏音频"]
+tags_en: ["interactive dialogue", "ducking", "state changes", "game audio"]
+alias: ["对白优先", "动态混音", "dialogue ducking"]
 order: 156
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:loudness-normalization]]"
-  - "[[glossary:cue]]"
-instances:
-  - oga-000293 | 菜单循环，对白开始前音乐要能在一拍内让开（C1）
-  - oga-000031 | 环境循环，对白下面的噪声底决定台词清不清楚（C1）
-  - musicnet-000067 | 贝多芬四重奏，四件乐器互相让位，混音让路的参照（C1）
-  - m21-000020 | 巴赫众赞歌，四声部进出干净，状态切换的切点参考（C1）
-sources:
-  - 游戏音频引擎文档中关于对白总线、ducking 与状态切换的说明。
-  - 影视混音教材中关于对白优先与中频让位的通行做法。
-  - 交互音乐设计的公开访谈，讨论分层与实时切换的边界。
-updated: 2026-10-31
+links: ["[[glossary:stems]]", "[[glossary:loudness-normalization]]", "[[glossary:cue]]"]
+instances: []
+sources: ["https://www.fmod.com/docs/2.04/studio/authoring-events.html", "https://www.ableton.com/en/manual/live-audio-effect-reference/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论对白触发与音乐让位，需要在实际事件、路由和侧链处理中检查响应；无对白轨的固定MIDI不能证明ducking或状态切换正确。"
 ---
 
 ::: zh
@@ -55,10 +47,6 @@ updated: 2026-10-31
 ## 常见坏法
 
 把 ducking 挂在对白总线上，音乐会被音效一起触发，战斗时忽大忽小。用生成音乐直接进引擎，往往没有干净的分轨，没法只留一层。台词密集的段落，音乐写得再好在混音里也听不见，不如写成稀疏的垫子。还有，别用音乐盖住语音压缩的瑕疵，那会把问题留到玩家耳机里。
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["A3","C4","E4","C4","A3","G3","E3","A3"],"label":"对白下面的一层垫子","label_en":"A bed under dialogue","hint":"对白进来时，这一层要让出中频，而不是整体消失","hint_en":"When dialogue enters, this layer yields the midrange rather than vanishing"}
-```
 :::
 
 ::: en
@@ -89,8 +77,5 @@ Two things break a state change: a mismatched beat and a tail that bleeds into t
 ## Common failures
 
 Put ducking on the dialogue bus and sound effects will trigger it too, so the music jumps during combat. Generated music dropped straight into an engine often lacks clean stems, so there is no way to keep just one layer. In dialogue-heavy scenes, no music survives the mix, so write a sparse bed instead of a full cue. And never use music to hide artefacts in compressed speech; that only moves the problem into the player's headphones.
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["A3","C4","E4","C4","A3","G3","E3","A3"],"label":"A bed under dialogue","label_en":"A bed under dialogue","hint":"When dialogue enters, this layer yields the midrange rather than vanishing","hint_en":"When dialogue enters, this layer yields the midrange rather than vanishing"}
-```
 :::
+

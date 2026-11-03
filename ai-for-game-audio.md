@@ -1,27 +1,20 @@
 ---
-id: ai-for-game-audio
-site: ai
-cat: F
-title: 游戏音频
-title_en: AI for Game Audio
-summary: 游戏要的是可循环可触发的资产，不是一首完整的曲子
-summary_en: A game needs loopable, triggerable assets, not a finished song
-level: standard
-tags: [游戏音频, 循环, 触发, 引擎]
-tags_en: [game audio, loops, stingers, engine]
-alias: [游戏音乐, 游戏配乐, game audio]
+id: "ai-for-game-audio"
+site: "ai"
+cat: "F"
+title: "游戏音频"
+title_en: "AI for Game Audio"
+summary: "游戏要的是可循环可触发的资产，不是一首完整的曲子"
+summary_en: "A game needs loopable, triggerable assets, not a finished song"
+level: "standard"
+tags: ["游戏音频", "循环", "触发", "引擎"]
+tags_en: ["game audio", "loops", "stingers", "engine"]
+alias: ["游戏音乐", "游戏配乐", "game audio"]
 order: 2
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:loudness-normalization]]"
-instances:
-  - oga-000293 | 菜单循环，听首尾接缝与进入速度（C1）
-  - oga-000031 | 环境层的噪声底与静默，检查循环是否稳（C1）
-  - oga-000056 | 紧张状态循环，听节奏层是否按拍对齐（C1）
-sources:
-  - 游戏音频的状态划分与循环做法（引擎文档与制作惯例）。
-  - Game audio state design and looping, with reference to engine documentation and general practice.
-updated: 2026-10-30
+links: ["[[glossary:stems]]", "[[glossary:loudness-normalization]]"]
+instances: ["oga-000293", "oga-000031", "oga-000056"]
+sources: ["游戏音频的状态划分与循环做法（引擎文档与制作惯例）。", "Game audio state design and looping, with reference to engine documentation and general practice."]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -39,10 +32,10 @@ updated: 2026-10-30
 
 ## 耳朵要抓的点
 
-在 rpg-main-menu-fanfare-loop 里听循环点有没有接缝，在 creepy-ambient-loop 里听环境层的噪声底是否稳定，在 fast-mystery-loop-040 里听紧张层的节奏是否按拍对齐。这三个都是引擎里实际会遇到的形态，比听一首完整的游戏配乐更有用。
+循环接缝、底噪变化与状态切换，应在实际导出的音频和目标引擎中检查。先重复回放同一状态，再测试过渡和尾音。本页合成节奏只用于数拍，不是已经处理好的游戏循环资产。
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":120,"label":"可循环的一小节","label_en":"One bar that has to loop","hint":"听首尾接不接得上，循环点比风格更难做对","hint_en":"Hear whether the ends meet; the loop point is harder to get right than the style"}
+{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":120,"label":"合成节奏示意","label_en":"Synthesized rhythm","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -61,9 +54,10 @@ Write a state table first, exploration, combat, victory, defeat, menu, with leng
 
 ## What the ear catches
 
-In rpg-main-menu-fanfare-loop, whether the loop point has a seam; in creepy-ambient-loop, whether the noise floor stays steady; in fast-mystery-loop-040, whether the tension layer sits on the beat. These are the shapes an engine actually meets, more useful than listening to a finished game score.
+Check loop seams, noise changes and state transitions in the actual exported audio and target engine. Repeat a state before testing transitions and tails. The synthesized rhythm here is for counting beats; it is not a finished game-loop asset.
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":120,"label":"One bar that has to loop","label_en":"One bar that has to loop","hint":"Hear whether the ends meet; the loop point is harder to get right than the style","hint_en":"Hear whether the ends meet; the loop point is harder to get right than the style"}
+{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":120,"label":"Synthesized rhythm","label_en":"Synthesized rhythm","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

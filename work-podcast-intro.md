@@ -1,35 +1,29 @@
 ---
-id: work-podcast-intro
-site: ai
-cat: K
-title: 播客片头
-title_en: A Podcast Intro
-summary: 片头是每周复用的模板，人声清楚比音乐好听更重要
-summary_en: An intro is a weekly template; clear speech matters more than a pretty bed.
-level: standard
-tags: [播客, 片头, 人声, 响度]
-tags_en: [podcast, intro, voice, loudness]
-alias: [播客片头, 节目片头, podcast intro]
+id: "work-podcast-intro"
+site: "ai"
+cat: "K"
+title: "播客片头"
+title_en: "A Podcast Intro"
+summary: "片头是每周复用的模板，人声清楚比音乐好听更重要"
+summary_en: "An intro is a weekly template; clear speech matters more than a pretty bed."
+level: "standard"
+tags: ["播客", "片头", "人声", "响度"]
+tags_en: ["podcast", "intro", "voice", "loudness"]
+alias: ["播客片头", "节目片头", "podcast intro"]
 order: 2
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [播客, 片头包装, 人声处理]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:loudness-normalization]]"
-  - "[[glossary:mixdown]]"
-  - "[[glossary:reference-track]]"
-instances:
-  - oga-000293 | 菜单循环，听首尾接缝与进入速度（C1）
-  - groove-000492 | 短循环素材复用率高，适合做片头床（C1）
-  - thesession-015842 | 传统曲调的演唱版本，咬字与呼吸是合成人声的弱点（C1）
-sources:
-  - 播客响度与交付口径；播客分发平台公开规范是主要依据。
-  - 片头结构（口播、标签、收尾）的划分——依据来自节目制作惯例。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["播客", "片头包装", "人声处理"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:loudness-normalization]]", "[[glossary:mixdown]]", "[[glossary:reference-track]]"]
+instances: []
+sources: ["https://support.spotify.com/us/creators/article/podcast-specification-doc/", "https://www.itu.int/rec/R-REC-BS.1770-5-202311-I/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "播客片头要结合口播、片尾衔接和分发平台文件要求验收；单独播放配乐无法证明人声可懂度、节目整体响度或上传编码符合要求。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 常见返工原因
 
 床太满，人声被压。片头超过四十秒，听众直接跳过。主播名读错，只能重录。每期响度不同，连播时音量忽大忽小。音乐标签和正片音乐不是一套。授权只覆盖非商业，接赞助后整条重做。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"q q e e q q e e","bpm":92,"label":"人声下面的循环床","label_en":"A loop bed under speech","hint":"听床的密度，留出说话的位置才算合格","hint_en":"Hear the density; a bed is right when speech still has room"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ The intro matches the agreed length within half a second. The whole segment sits
 ## Common rework causes
 
 The bed is too busy and presses on the voice. The intro passes forty seconds and listeners skip it. The host name is mispronounced and the take is unusable. Loudness drifts between episodes, so a binge listen jumps in volume. The tag and the episode music come from different worlds. The licence covers non-commercial use only and a sponsor forces a rebuild.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"q q e e q q e e","bpm":92,"label":"A loop bed under speech","label_en":"A loop bed under speech","hint":"Hear the density; a bed is right when speech still has room","hint_en":"Hear the density; a bed is right when speech still has room"}
-```
 :::
+

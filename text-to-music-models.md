@@ -1,28 +1,22 @@
 ---
-id: text-to-music-models
-site: ai
-cat: A
-title: 文本生成音乐模型
-title_en: Text-to-Music Models
-summary: 一句话生成一首歌，听起来神奇，实际是概率采样加人工筛选。
-summary_en: A sentence in, a song out feels magical, but it is probabilistic sampling plus human selection.
-level: standard
-tags: [文本生成, 生成模型, 采样, AI]
-tags_en: [text to music, generative model, sampling, AI]
-alias: [文本生成音乐, 文生音乐, text to music, TTM]
+id: "text-to-music-models"
+site: "ai"
+cat: "A"
+title: "文本生成音乐模型"
+title_en: "Text-to-Music Models"
+summary: "一句话生成一首歌，听起来神奇，实际是概率采样加人工筛选。"
+summary_en: "A sentence in, a song out feels magical, but it is probabilistic sampling plus human selection."
+level: "standard"
+tags: ["文本生成", "生成模型", "采样", "AI"]
+tags_en: ["text to music", "generative model", "sampling", "AI"]
+alias: ["文本生成音乐", "文生音乐", "text to music", "TTM"]
 order: 2
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:daw]]"
-instances:
-  - groove-000001 | 105 BPM 放克鼓组，看描述节奏时模型能否抓住律动（C1）
-  - thesession-020649 | 里尔舞曲，看模型能否生成可循环的段落结构（C1）
-  - cyberhymnal-008729 | 管风琴赞美诗，看持续音与和声铺陈能不能被稳定生成（C1）
-sources:
-  - 文本条件生成模型的基本原理（公开论文摘要）。
-  - 生成结果的筛选与后期流程，参考创作实践惯例。
-updated: 2026-10-30
+links: ["[[glossary:timbre]]", "[[glossary:tempo]]", "[[glossary:daw]]"]
+instances: []
+sources: ["https://arxiv.org/abs/2306.05284", "https://facebookresearch.github.io/audiocraft/api_docs/audiocraft/models/musicgen.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "文本生成音乐模型应以研究原文和参数接口解释条件输入与采样过程；曲库音乐的播放不能证明模型架构、训练数据来源或输出控制能力。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ updated: 2026-10-30
 ## 怎么用
 
 把提示当成方向而不是指令，一次生成多个候选再挑。先定风格与情绪，再补乐器与速度，最后加排除项。需要精确控制的部分留给 MIDI 或后期。生成结果先听整体走向，再听细节，不要在明显不合适的候选上修。保留提示与种子，方便复现与微调。
-
-## 听什么
-
-在放克鼓组里听律动是否被理解，在里尔舞曲里听重复段落是否成立，在管风琴长音里听和声是否稳。模型擅长氛围与音色，薄弱处通常在结构与精确的和声进行。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Guitar (nylon)","synth":"plucked","phrase":["G3","B3","D4","G4","F#4","D4","B3","G3"],"label":"一段原声吉他","label_en":"An acoustic guitar figure","hint":"这类音色与情绪是文本模型最擅长的部分","hint_en":"This kind of timbre and mood is where text models do best"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ The model learns statistical relations between audio and text descriptions, then
 ## How to use it
 
 Treat the prompt as a direction rather than an instruction, and generate several candidates before choosing. Fix style and mood first, add instruments and tempo next, then exclusions. Leave anything that needs precision to MIDI or later editing. Judge the overall arc before detail, and do not polish a candidate that is clearly wrong. Keep prompts and seeds so results can be reproduced and adjusted.
-
-## What to listen for
-
-On the funk kit, whether groove is understood; in the reel, whether repeated sections hold; on the organ, whether harmony stays stable. Models are strongest on atmosphere and timbre, weakest on structure and exact harmonic motion.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Guitar (nylon)","synth":"plucked","phrase":["G3","B3","D4","G4","F#4","D4","B3","G3"],"label":"An acoustic guitar figure","label_en":"An acoustic guitar figure","hint":"This kind of timbre and mood is where text models do best","hint_en":"This kind of timbre and mood is where text models do best"}
-```
 :::
+

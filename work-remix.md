@@ -1,35 +1,29 @@
 ---
-id: work-remix
-site: ai
-cat: K
-title: 重混
-title_en: A Remix
-summary: 先拿到分轨与授权，再动人声的时间与音高
-summary_en: Get the stems and the licence before touching the vocal's time and pitch.
-level: standard
-tags: [重混, 分轨, 授权, 舞曲]
-tags_en: [remix, stems, licensing, dance]
-alias: [重混, remix, 混音改编, bootleg]
+id: "work-remix"
+site: "ai"
+cat: "K"
+title: "重混"
+title_en: "A Remix"
+summary: "先拿到分轨与授权，再动人声的时间与音高"
+summary_en: "Get the stems and the licence before touching the vocal's time and pitch."
+level: "standard"
+tags: ["重混", "分轨", "授权", "舞曲"]
+tags_en: ["remix", "stems", "licensing", "dance"]
+alias: ["重混", "remix", "混音改编", "bootleg"]
 order: 11
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [重混, 分轨处理, 舞曲制作]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:key]]"
-instances:
-  - mutopia-000497 | 贝多芬第五，大型工程缺一层就无法重混（C1）
-  - groove-000002 | 86 BPM 灵魂乐鼓组，听军鼓落在拍后那一点（C1）
-  - openscore-000269 | 马勒艺术歌曲，人声从低语到爆发，宏观动态清楚（C1）
-sources:
-  - 重混的分轨与授权流程（发行与制作惯例）。
-  - 时间伸缩与移调对音色的影响，参考音频处理公开资料。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["重混", "分轨处理", "舞曲制作"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:stems]]", "[[glossary:tempo]]", "[[glossary:key]]"]
+instances: []
+sources: ["https://support.distrokid.com/hc/en-us/articles/360013648953-Uploading-Cover-Songs-to-DistroKid", "https://www.ableton.com/en/live-manual/12/audio-clips-tempo-and-warping/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "重混要核对原录音与词曲授权，并在实际分轨上检查拉伸和移调结果；普通播放不能区分获得许可的 remix 与未获授权的原录音使用。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 常见返工原因
 
 分离出的人声带串音，镲片跟着唱。拉伸比例太大，人声发金属味。鼓组太满，原曲钩子被埋。bootleg 直接上架，收到下架通知。credit 只写自己，原作者缺失。响度做到 -6 LUFS，平台压回来后动态全无。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"q q q q e e e e q q q q","bpm":128,"label":"人声对齐的新网格","label_en":"A new grid the vocal must sit on","hint":"听主唱落在拍上还是拍后，重混的松紧全在这里","hint_en":"Hear whether the vocal sits on or behind the beat; the feel lives there"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ The vocal sits within 10 ms of the new grid without distorting diction. The key 
 ## Common rework causes
 
 A separated vocal carries bleed and the cymbals sing along. The stretch ratio is extreme and the voice turns metallic. Drums are so full that the original hook disappears. A bootleg goes live and draws a takedown. Credits name only the remixer and the original writers are missing. The mix hits -6 LUFS and the platform turns it down to nothing.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"q q q q e e e e q q q q","bpm":128,"label":"A new grid the vocal must sit on","label_en":"A new grid the vocal must sit on","hint":"Hear whether the vocal sits on or behind the beat; the feel lives there","hint_en":"Hear whether the vocal sits on or behind the beat; the feel lives there"}
-```
 :::
+

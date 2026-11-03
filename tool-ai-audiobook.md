@@ -1,39 +1,29 @@
 ---
-id: tool-ai-audiobook
-site: ai
-cat: J
-title: 有声书工具
-title_en: Audiobook Tools
-summary: 有声书的难点不在音色，而在几十万字的读音一致与章节交付。
-summary_en: The hard part of an audiobook is not the voice but consistent pronunciation and clean chapter delivery.
-level: standard
-tags: [有声书, 旁白, 发音, 交付]
-tags_en: [audiobook, narration, pronunciation, delivery]
-alias: [语音合成, 有声书制作, 长文本朗读]
+id: "tool-ai-audiobook"
+site: "ai"
+cat: "J"
+title: "有声书工具"
+title_en: "Audiobook Tools"
+summary: "有声书的难点不在音色，而在几十万字的读音一致与章节交付。"
+summary_en: "The hard part of an audiobook is not the voice but consistent pronunciation and clean chapter delivery."
+level: "standard"
+tags: ["有声书", "旁白", "发音", "交付"]
+tags_en: ["audiobook", "narration", "pronunciation", "delivery"]
+alias: ["语音合成", "有声书制作", "长文本朗读"]
 order: 259
-links:
-  - "[[glossary:loudness-normalization]]"
-  - "[[glossary:lufs]]"
-  - "[[glossary:music-copyright]]"
-  - "[[glossary:public-domain]]"
-tool_kind: service
-tool_vendor: ElevenLabs、Microsoft Azure AI Speech
-tool_form: 服务
-tool_platforms: [浏览器, macOS, Windows]
-tool_price: 按量 + 订阅
-tool_jobs: [有声书, 旁白, 本地化]
-tool_verified: 2026-10-31
-instances:
-  - openscore-000008 | 《魔王》四个角色在几分钟内切换，试多角色音色分配与旁白基准（C1）
-  - aria-159860 | 十八分钟的长段，章节底乐要连续铺满而不露接缝（C1）
-  - maestro-000799 | 九分半的即兴曲，单章长度的器乐垫乐，句尾要给人声让位（C1）
-  - chinafolk-000750 | 粤语童谣，儿童书的轻语气与句读参照（C1）
-sources:
-  - ElevenLabs、Microsoft Azure AI Speech 与 Amazon Polly 官方文档中的长文本、SSML 与发音词典说明。
-  - W3C Speech Synthesis Markup Language 规范中停顿、重音与发音标注。
-  - Audible 与 Spotify 有声书投稿规范中的章节、响度与元数据要求。
-  - 合成语音披露与声音克隆同意的平台政策。
-updated: 2026-10-31
+links: ["[[glossary:loudness-normalization]]", "[[glossary:lufs]]", "[[glossary:music-copyright]]", "[[glossary:public-domain]]"]
+tool_kind: "service"
+tool_vendor: "ElevenLabs、Microsoft Azure AI Speech"
+tool_form: "服务"
+tool_platforms: ["浏览器", "macOS", "Windows"]
+tool_price: "按量 + 订阅"
+tool_jobs: ["有声书", "旁白", "本地化"]
+tool_verified: "2026-10-31"
+instances: []
+sources: ["https://www.w3.org/TR/speech-synthesis/", "https://help.acx.com/s/article/what-are-the-acx-audio-submission-requirements"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "有声书工具涉及发音标记、分章和平台准入，ACX 对未经授权的合成朗读另有限制；普通音频播放不能证明全文发音合格或具备投稿资格。"
 ---
 
 ::: zh
@@ -54,8 +44,8 @@ updated: 2026-10-31
 ## 章节交付检查清单
 
 - 每章一个文件，文件名带书号、章号与版本。
-- 开头与结尾各留半秒静音，章间不吞字。
-- 全书响度一致，不靠后期压缩去救。
+- 首尾留白按接收平台要求设置，避免截断首尾字；ACX 建议保留 1–5 秒 room tone，不能直接套用半秒静音。
+- 全书响度一致，连播时检查相邻章节的音量变化。
 - 采样率与位深统一，交付格式跟平台要求。
 - 章节标题、作者、朗读者在元数据里写全。
 - 试听每章前三句与最后一句，专有名词逐个核对。
@@ -67,11 +57,7 @@ updated: 2026-10-31
 
 ## 从一章开始
 
-先做一章十五分钟的样带，把词典、停顿与响度定下来，再批量生成。之后再看响度归一、合成语音披露与版权归属的条目。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C3","G3","E4","G3"],"label":"章节垫乐","label_en":"Chapter bed","hint":"把音量压到能听清字，再听垫乐是否还在","hint_en":"Drop the bed until words are clear, then hear whether the music survives"}
-```
+先确认目标平台是否接受合成朗读，再做样章。ACX 当前要求真人朗读，除非另获授权；达到其 RMS、峰值和底噪指标并不等于获准提交 AI 朗读。确认准入后，用一章样带确定词典、停顿和响度，再批量制作。
 :::
 
 ::: en
@@ -92,12 +78,12 @@ Paste a hundred thousand words at once and the engine truncates, times out or st
 ## Chapter delivery checklist
 
 - One file per chapter, named with book, chapter and version.
-- Half a second of silence at each end; no clipped first or last word.
-- Consistent loudness across the book, not rescued by compression later.
-- One sample rate and bit depth, in the format the platform asks for.
-- Title, author and narrator complete in the metadata.
-- Audition the first and last sentences of every chapter; check proper nouns one by one.
-- Keep an untreated dry master so a revision does not regenerate whole chapters.
+- Follow the receiving platform’s head-and-tail spacing requirements without clipping words. ACX recommends 1–5 seconds of room tone; half a second of silence is not a universal specification.
+- Keep loudness consistent and check adjacent chapters in continuous playback.
+- Use consistent sample rate and bit depth, in the format the platform asks for.
+- Complete the title, author and narrator metadata.
+- Audition the opening and closing sentences of every chapter and check proper nouns.
+- Keep an untreated dry master for revisions.
 
 ## What not to hand to a synthetic voice
 
@@ -105,9 +91,6 @@ Poetry, dialect dialogue, a sob in a memoir, legal disclaimers: synthetic speech
 
 ## Start with one chapter
 
-Make a fifteen-minute sample chapter, settle the lexicon, pauses and loudness, then generate in batches. After that, read loudness normalisation, synthetic-voice disclosure and copyright ownership.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C3","G3","E4","G3"],"label":"Chapter bed","label_en":"Chapter bed","hint":"Drop the bed until words are clear, then hear whether the music survives","hint_en":"Drop the bed until words are clear, then hear whether the music survives"}
-```
+Confirm whether the receiving platform accepts synthetic narration before producing a sample chapter. ACX currently requires human narration unless otherwise authorized; meeting its RMS, peak and noise-floor limits does not establish permission to submit AI narration. Once eligibility is confirmed, use a sample chapter to settle pronunciation, pauses and loudness before batch production.
 :::
+

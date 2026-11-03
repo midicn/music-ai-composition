@@ -1,28 +1,22 @@
 ---
-id: genre-and-reference-words
-site: ai
-cat: B
-title: 风格与参考词
-title_en: Genre Words and References
-summary: 风格词是捷径也是陷阱，参考曲比风格标签更精确。
-summary_en: Genre words are shortcuts and traps; a reference track is more precise than a genre label.
-level: standard
-tags: [风格, 参考, 提示, 描述]
-tags_en: [genre, reference, prompt, description]
-alias: [风格词, 参考曲, genre words, reference]
+id: "genre-and-reference-words"
+site: "ai"
+cat: "B"
+title: "风格与参考词"
+title_en: "Genre Words and References"
+summary: "风格词是捷径也是陷阱，参考曲比风格标签更精确。"
+summary_en: "Genre words are shortcuts and traps; a reference track is more precise than a genre label."
+level: "standard"
+tags: ["风格", "参考", "提示", "描述"]
+tags_en: ["genre", "reference", "prompt", "description"]
+alias: ["风格词", "参考曲", "genre words", "reference"]
 order: 2
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:tempo]]"
-  - "[[instrument:piano]]"
-instances:
-  - groove-000005 | 87 BPM 嘻哈鼓组，风格词能否带出这种律动手感（C1）
-  - thesession-020649 | 里尔舞曲，传统风格标签的模糊性（C1）
-  - cyberhymnal-000001 | 赞美诗管风琴，宗教风格的音色联想（C1）
-sources:
-  - 风格标签在生成模型中的语义范围——依据来自公开模型说明。
-  - 参考曲与风格描述的差别，对照创作实践惯例整理。
-updated: 2026-10-30
+links: ["[[glossary:timbre]]", "[[glossary:tempo]]", "[[instrument:piano]]"]
+instances: []
+sources: ["https://kb.stability.ai/knowledge-base/stable-audio-3-prompt-guide", "https://kb.stability.ai/knowledge-base/tips-for-using-the-audio-to-audio-api"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论风格语言与参考音频条件，需要依据对应产品输入机制并用真实候选测试；固定曲库MIDI未经过提示或条件推理，不能证明词语控制效果。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ updated: 2026-10-30
 ## 做法
 
 先用一个风格词定框，再用两三个具体描述收窄。需要特定质感时用参考曲，并说明参考的是哪一层。把"像某年代的某类唱片"拆成可执行的要素：乐器、鼓机、混响大小、失真程度。避免互相冲突的风格标签同时出现，模型会在中间取一个模糊的结果。
-
-## 听什么
-
-在嘻哈鼓组里听风格词能否带出律动，在里尔舞曲里听传统标签的模糊，在赞美诗里听宗教风格的音色联想。风格词决定方向，细节还得靠具体描述。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":87,"label":"风格词背后的律动","label_en":"The groove behind a genre word","hint":"同一个风格词可以对应很多种律动，听模型选了哪一种","hint_en":"One genre word covers many grooves; hear which one the model picks"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ Genre words set direction and references set detail. A reference track conveys t
 ## Practice
 
 Frame with one genre word, then narrow with two or three concrete descriptions. Use a reference when a specific texture is needed and say which layer you mean. Break "like a record from a certain era" into executable parts: instruments, drum machine, reverb size, amount of distortion. Avoid contradictory labels, since the model will settle somewhere vague between them.
-
-## What to listen for
-
-On the hip-hop kit, whether the genre word brings the groove; in the reel, how blurry a traditional label is; in the hymn, the timbral associations of a religious style. Genre words set direction; detail still needs concrete description.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":87,"label":"The groove behind a genre word","label_en":"The groove behind a genre word","hint":"One genre word covers many grooves; hear which one the model picks","hint_en":"One genre word covers many grooves; hear which one the model picks"}
-```
 :::
+

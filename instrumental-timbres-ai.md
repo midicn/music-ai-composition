@@ -1,29 +1,20 @@
 ---
-id: instrumental-timbres-ai
-site: ai
-cat: E
-title: 音色选择
-title_en: Choosing Instrumental Timbres
-summary: 采样、合成与生成音色各有所长，选错是角色错位而非音质问题
-summary_en: Sampled, synthesized and generated timbres each have a job; the wrong choice is a casting error, not a quality one.
-level: standard
-tags: [音色, 采样, 合成器, 配器]
-tags_en: [timbre, sampling, synthesis, orchestration]
-alias: [音色挑选, 声音来源, timbre choice]
+id: "instrumental-timbres-ai"
+site: "ai"
+cat: "E"
+title: "音色选择"
+title_en: "Choosing Instrumental Timbres"
+summary: "采样、合成与生成音色各有所长，选错是角色错位而非音质问题"
+summary_en: "Sampled, synthesized and generated timbres each have a job; the wrong choice is a casting error, not a quality one."
+level: "standard"
+tags: ["音色", "采样", "合成器", "配器"]
+tags_en: ["timbre", "sampling", "synthesis", "orchestration"]
+alias: ["音色挑选", "声音来源", "timbre choice"]
 order: 6
-links:
-  - "[[glossary:timbre]]"
-  - "[[instrument:samplers]]"
-  - "[[instrument:piano]]"
-instances:
-  - atepp-001283 | 肖邦夜曲，听踏板共鸣如何成为音色的一部分（C1）
-  - atepp-001868 | 亨德尔羽管键琴变奏，听拨弦颗粒与起音（C1）
-  - mutopia-000437 | 巴赫众赞歌前奏曲，听持续低音怎么托住和声（C1）
-  - giantmidi-003765 | 索尔吉他教程曲，听拨弦噪声与余韵（C1）
-sources:
-  - 采样、合成与生成音色的差别，对照配器与合成器惯例整理。
-  -  (Sampled, synthesized and generated timbres).
-updated: 2026-10-30
+links: ["[[glossary:timbre]]", "[[instrument:samplers]]", "[[instrument:piano]]"]
+instances: ["atepp-001283", "atepp-001868", "mutopia-000437", "giantmidi-003765"]
+sources: ["采样、合成与生成音色的差别，对照配器与合成器惯例整理。", "(Sampled, synthesized and generated timbres)."]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -41,10 +32,10 @@ updated: 2026-10-30
 
 ## 耳朵要抓的点
 
-在肖邦夜曲里听踏板留下的共鸣，在亨德尔羽管键琴变奏里听拨弦的颗粒，在巴赫众赞歌前奏曲里听持续低音怎么托住上面，在索尔的吉他曲里听拨弦噪声和余韵。音色支不支持这个 part，这几处最清楚。
+下方可比较同一组音名的 GM 采样音色与浏览器合成近似。它们是当前音源的回放，不代表原演奏或原乐器录音。真实拨弦噪声、琴体共鸣和录音空间，需要另用获准的原始音频判断。
 
 ```audiolab
-{"type":"instrument","gm":"Church Organ","synth":"blown","phrase":["C3","G3","C4","E4","G4","E4","C4","G3"],"label":"同一乐句换一种音色","label_en":"One phrase in another timbre","hint":"先问这个 part 要持续、颗粒还是起音","hint_en":"Ask first whether the part needs sustain, grain or an attack"}
+{"type":"instrument","gm":"Church Organ","synth":"blown","phrase":["C3","G3","C4","E4","G4","E4","C4","G3"],"label":"音色与短句练习","label_en":"Timbre and phrase exercise","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -63,9 +54,10 @@ Write a function for every part first: bass support, rhythmic frame, colour, mel
 
 ## What the ear catches
 
-In Chopin's nocturne, listen to pedal resonance as part of the timbre. In Handel's harpsichord variations, listen to the grain of the plucked attack. In Bach's chorale prelude, listen to how the sustained pedal supports the harmony above. In Sor's guitar method piece, listen to pluck noise and the tail after it. These show most clearly whether a timbre supports its part.
+Below, compare GM sampled timbre with a browser-synthesized approximation using the same pitches. These are renderings by the current sound generators, not the original performance or instrument recording. Assess actual string noise, body resonance and recording space with authorized source audio.
 
 ```audiolab
-{"type": "instrument", "gm": "Church Organ", "synth": "blown", "phrase": ["C3", "G3", "C4", "E4", "G4", "E4", "C4", "G3"], "label": "One phrase in another timbre", "label_en": "One phrase in another timbre", "hint": "先问这个 part 要持续、颗粒还是起音", "hint_en": "Ask first whether the part needs sustain, grain or an attack"}
+{"type":"instrument","gm":"Church Organ","synth":"blown","phrase":["C3","G3","C4","E4","G4","E4","C4","G3"],"label":"Timbre and phrase exercise","label_en":"Timbre and phrase exercise","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

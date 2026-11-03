@@ -1,103 +1,76 @@
 ---
-id: model-google-musicfx
-site: ai
-cat: I
-title: Google MusicFX / Lyria 系
-title_en: Google MusicFX / Lyria
-summary: 器乐铺底与音效的试验入口，人声不是它的活。
-summary_en: An experimental entry for instrumental beds and effects; vocals are not its job.
-level: standard
-tags: [模型档案, 器乐生成, 云服务, 音效]
-tags_en: [model profile, instrumental, cloud service, sound design]
-alias: [MusicFX, Lyria, Google 音乐生成]
+id: "model-google-musicfx"
+site: "ai"
+cat: "I"
+title: "Google MusicFX / Lyria 系"
+title_en: "Google MusicFX / Lyria"
+summary: "按具体入口与 Lyria 版本核对人声、时长和导出。"
+summary_en: "Distinguish early MusicFX from current Lyria versions when checking vocals, length and controls."
+level: "standard"
+tags: ["模型档案", "音乐生成", "Lyria", "版本选型"]
+tags_en: ["model profile", "music generation", "Lyria", "version selection"]
+alias: ["MusicFX", "Lyria", "Google 音乐生成"]
 order: 6
-model_vendor: Google
-model_form: 网页服务
-model_input: [文本]
-model_output: [音频]
-model_licence: 商用与再分发范围随产品与云服务条款变化，需逐项核对
-model_verified: 2026-10-30
-links:
-  - "[[glossary:timbre]]"
-  - "[[instrument:violin]]"
-  - "[[period:contemporary]]"
-instances:
-  - oga-000001 | 三分钟的管弦场景曲，看器乐铺底的段落感（C1） | A three minute orchestral scene cue, to hear sectional instrumental writing (C1)
-  - oga-000011 | 一分半的 Boss 战配乐，看强节奏的器乐写作（C1） | A ninety second boss cue, to hear rhythm-driven instrumental writing (C1)
-  - oga-000009 | 半分钟的场景铺底，看短提示的产出粒度（C1） | A half minute scene bed, to hear the grain of short cues (C1)
-  - cyberhymnal-008729 | 管风琴赞美诗，看持续音与和声铺陈（C1） | An organ hymn, to hear sustained harmony (C1)
-sources:
-  - 产品入口、可用范围与输出形态；官方公开说明是主要依据。
-  - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
-updated: 2026-10-30
+model_vendor: "Google"
+model_form: "网页或接口（依具体产品）"
+model_input: ["文本（其他输入依入口核对）"]
+model_output: ["音频"]
+model_licence: "商用与再分发范围随产品与云服务条款变化，需逐项核对"
+model_verified: "2026-11-03"
+links: ["[[glossary:timbre]]", "[[instrument:violin]]", "[[period:contemporary]]"]
+instances: []
+sources: ["https://deepmind.google/models/lyria/", "https://deepmind.google/models/model-cards/lyria-3/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍Google音乐生成研究与服务，应区分历史MusicFX和不同Lyria版本的能力；普通MIDI不是相关模型输出，不能证明当前人声、长度或控制功能。"
 ---
 
 ::: zh
-## 它接什么活
+## MusicFX 与 Lyria 分开看
 
-写一段描述，得到一段无人声的器乐或音效，偏向氛围、影视感、电子铺底。适合给视频找底、给游戏做环境层、给播客做片头。它也提供面向开发者的云接口，可以接进自己的流程批量调用。做的是背景与质感，不是带唱的歌。
+早期 MusicFX 入口与现行 Lyria 模型不能共用一组规格。Google 当前官方页面介绍 Lyria 3.5，并列出人声、音乐表现与可变歌曲长度；Lyria 3 另有独立模型卡。这些说明属于相应版本，不能据此认定旧 MusicFX 界面已获得全部新功能。
 
-## 输入与产出
+查资料和记录测试时，写全产品入口、模型版本及日期。仅写“Google 音乐生成”不足以复现一次测试，也无法说明他人账号能否使用同一功能。
 
-输入主要是文本，部分入口允许选时长或乐器组合。输出是音频，没有分轨，也没有 MIDI。可用地区、账号要求与入口形态以官方页面为准，同一描述在不同入口给出的结果可能不同。
+## 按任务核对能力
 
-## 最好用的地方
+| 需要完成的任务 | 在实际入口检查 |
+|---|---|
+| 带人声的歌曲 | 是否支持歌词输入、目标语种及逐句修改；试听实际咬字与段落 |
+| 器乐与画面铺底 | 可选长度、结尾与循环方式；是否能按当前画面调整 |
+| 接回 DAW | 导出格式、实际起点、尾音、是否提供分轨或其他可编辑文件 |
+| 自动化调用 | 对应模型的接口、账号与地区可用范围、配额和返回方式 |
 
-- 氛围与影视感铺底稳定，长音、空间与配器层次都成立。
-- 短提示就能出可用素材，做前期方向探索很快。
-- 器乐写作偏保守，不会突然塞进奇怪音色，适合当背景。
-- 有云接口，能接进自动化流程，批量出底乐。
+不要把风格描述当成对速度、调性或和声的精确控制。若入口提供专门参数，记录实际值；若只接受文字，把要求写进需求单，再测量生成结果是否满足。
 
-## 会翻车的地方
+## 一次可比较的试用
 
-- 人声请求只会得到含混的类人声纹理，歌词听不出，合唱也做不了。
-- 可用性与入口随地区和账号变化，今天能用的页面明天可能换位置。可复现的测法是隔一周再用同一提示，比较结果与入口。
-- 时长通常偏短，做长铺底要自己拼接，接缝处电平与空间不一致。
-- 编辑能力弱：生成后基本只能重来，不能指定某一段修改。
-- 对精确速度、调性与和声的响应很弱，写具体数值得到的是近似。
-- 风格偏某几类制作质感，想要粗糙、低保真或强失真的声音，常被"修"得太干净。
+为同一个虚拟项目写一份固定需求，保存多个候选的原文件与标识。比较结构、人声、画面节点和可修改范围，记录具体时间点。更换产品入口或模型版本时单独建一轮记录，避免把版本差异当成提示词效果。
 
-## 收费、授权与替代品
-
-要确认：所用入口（实验页或云服务）各自的商用范围、输出能否再分发、训练数据来源的官方说明；云服务还有配额与计费方式要看清。价格按产品或按量计，具体数字与地区可用性以官方页面为准。
-替代：要更可控的时长与循环，换 Stable Audio；要带人声的歌，换 Suno。它适合当"快速拿到干净底乐"的那一档。
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C3","E3","G3","B3","C4","G3","E3","C3"],"label":"一段弦乐铺底","label_en":"A string bed","hint":"这类无人声的器乐层次是它最常被要求的产出，听的是和声是否稳","hint_en":"Layered instrumental writing like this is its usual output; listen for whether the harmony holds"}
-```
+在脱离生成页面的位置重新打开导出文件。若目标是交给剪辑师或混音师，先确认对方收到的文件能完成后续工作，再判断这个入口是否适合项目。商用、发布与再分发按所用产品条款核对，不从另一个 Google 产品推定。
 :::
 
 ::: en
-## The jobs it takes
+## Separate MusicFX from Lyria versions
 
-Write a description and get instrumental audio or an effect with no voice, leaning atmospheric, cinematic or electronic. It suits video beds, game ambience layers and podcast idents. There is also a cloud interface for developers to call in batches from their own pipeline. It makes backgrounds and texture, not sung songs.
+Early MusicFX and current Lyria models should not share one undifferentiated specification. Google's current official page presents Lyria 3.5 with vocals, musicality and variable song lengths; Lyria 3 also has its own model card. These descriptions belong to the respective versions and do not establish that an older MusicFX interface has every newer feature.
 
-## Input and output
+Record the product entry, model version and date when reading documentation or testing. “Google music generation” alone cannot reproduce a test or establish which features another account can access.
 
-Input is mainly text; some entries let you pick a duration or an instrument group. Output is audio with no stems and no MIDI. Available regions, account requirements and entry points follow the official pages, and the same description can give different results at different entries.
+## Check capabilities against the task
 
-## Where it shines
+| Task | Check in the actual entry |
+|---|---|
+| Songs with vocals | Lyric input, target language and line editing; audition real diction and sections |
+| Instrumental beds for picture | Duration choices, endings, looping and adjustment to the current edit |
+| DAW handoff | Export format, actual start and tails, stems or other editable files if available |
+| Automated calls | The relevant model endpoint, account and region availability, quotas and responses |
 
-- Atmospheric and cinematic beds are stable: sustained tones, space and layering hold together.
-- Short prompts yield usable material, so early direction-finding is quick.
-- Instrumental writing is conservative and rarely throws in stray timbres, which suits background use.
-- A cloud interface allows automation and batch production of beds.
+A style description is not precise tempo, key or harmony control. Record dedicated parameter values where available. When the entry only accepts text, put the requirement in the brief and measure whether the output meets it.
 
-## Where it falls over
+## Run a comparable trial
 
-- Vocal requests return indistinct vocal-like texture with no intelligible words, and choirs are out of reach.
-- Availability and entry points shift with region and account, so a page usable today may move tomorrow. A reproducible test is to retry the same prompt a week later and compare both the entry and the result.
-- Durations tend to be short, so long beds need stitching, and levels and space mismatch at the joins.
-- Editing is weak: after generation you can mostly only reroll, not revise one section.
-- Exact tempo, key and harmony get little response; specific values come back approximate.
-- The style leans toward a few production flavours, and requests for rough, lo-fi or heavily distorted sound get cleaned up too much.
+Write one fixed brief for a fictional project and retain original files and identifiers for several candidates. Compare structure, vocals, picture events and editing scope, noting specific time positions. Start a separate test round when changing the product entry or model version so version differences are not mistaken for prompt effects.
 
-## Cost, licence, alternatives
-
-Confirm: the commercial scope of each entry you use, whether output may be redistributed, and the official statement on training data; cloud use adds quotas and billing to read carefully. Pricing is per product or usage; exact figures and regional availability belong on the official page.
-Alternatives: Stable Audio for controllable duration and loops; Suno when you need a song with vocals. This is the quick route to clean instrumental beds.
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C3","E3","G3","B3","C4","G3","E3","C3"],"label":"A string bed","label_en":"A string bed","hint":"Layered instrumental writing like this is its usual output; listen for whether the harmony holds","hint_en":"Layered instrumental writing like this is its usual output; listen for whether the harmony holds"}
-```
+Reopen exports outside the generation page. If an editor or mixer will receive them, confirm that the delivered files support their next task before selecting the entry for the project. Check commercial use, publication and redistribution under the selected product terms rather than inferring them from another Google product.
 :::

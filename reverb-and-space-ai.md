@@ -1,28 +1,22 @@
 ---
-id: reverb-and-space-ai
-site: ai
-cat: D
-title: 空间与混响
-title_en: Space and Reverb
-summary: 素材自带空间时，补混响之前先决定要一个空间还是两个
-summary_en: When the material already carries space, decide whether you want one room or two before adding reverb.
-level: standard
-tags: [混响, 空间, 早期反射, 尾音]
-tags_en: [reverb, space, early reflections, decay]
-alias: [混响, 空间感, reverb and space]
+id: "reverb-and-space-ai"
+site: "ai"
+cat: "D"
+title: "空间与混响"
+title_en: "Space and Reverb"
+summary: "素材自带空间时，补混响之前先决定要一个空间还是两个"
+summary_en: "When the material already carries space, decide whether you want one room or two before adding reverb."
+level: "standard"
+tags: ["混响", "空间", "早期反射", "尾音"]
+tags_en: ["reverb", "space", "early reflections", "decay"]
+alias: ["混响", "空间感", "reverb and space"]
 order: 8
-links:
-  - "[[glossary:reverb]]"
-  - "[[glossary:stereo-technique]]"
-  - "[[glossary:phase-check]]"
-instances:
-  - openscore-000299 | 马勒《在这样的天气里》，人声与钢琴必须共享一个空间（C1）
-  - atepp-000433 | 海顿降 E 大调奏鸣曲慢乐章，近场钢琴与踏板延音的比例（C1）
-  - mutopia-001413 | 萨蒂《裸体歌舞》第三首，和弦之间的空气加多了就糊（C1）
-sources:
-  - 早期反射与尾音的区分——依据来自混响与空间处理惯例。
-  - Early reflections and decay tails, with reference to general reverb and spatial practice.
-updated: 2026-10-30
+links: ["[[glossary:reverb]]", "[[glossary:stereo-technique]]", "[[glossary:phase-check]]"]
+instances: []
+sources: ["https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/", "https://www.ableton.com/en/live-manual/11/audio-fact-sheet/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "空间与混响需检查实际音频的早期反射、尾音和声道处理，并比较干湿信号；普通曲库播放不能说明某个生成器或混响参数的作用。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ AI 生成的素材经常自带空间。人声后面有厅，鼓后面有房间�
 ## 具体做法
 
 先拿干声或分轨听，把已有空间找出来。如果是分离出来的轨，尾音通常已经被削过，可以补一个短房间，前延迟 10 到 20 ms，衰减 0.8 到 1.2 秒。如果原素材自带长尾，就别再加长混响，最多用一点早期反射补距离感。需要统一空间时，所有轨共用一个混响，靠发送量区分远近。同一首歌不要超过两个混响，前延迟差控制在 10 ms 以内，否则听感会分裂。发送前高通到 200 到 300 Hz，避免低频拖尾。混响量用自动化写，副歌可以少一点，留出清晰度。
-
-## 耳朵要抓的点
-
-在马勒《在这样的天气里》里，听人声与钢琴是否在同一个空间，两个空间会立刻露馅。在海顿降 E 大调奏鸣曲的慢乐章里，听近场钢琴的干与踏板延音之间的比例。在萨蒂《裸体歌舞》第三首里，听稀疏和弦之间的空气，加多了就糊成一片。三处都先听干声，再决定补什么。
-
-```audiolab
-{"type":"instrument","gm":"Choir Aahs","synth":"vocal","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"自带空间的和声","label_en":"Harmony that carries its own space","hint":"先听尾音有多长，再决定还要不要加混响","hint_en":"Hear how long the tail already is before deciding to add reverb"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ Reverb divides into early reflections and a tail. Early reflections tell you dis
 ## In practice
 
 Listen to the dry signal or the stems and locate the existing space. A separated track has usually had its tail shaved, so a short room can help, with 10 to 20 ms of pre-delay and a 0.8 to 1.2 second decay. If the source already has a long tail, do not add a long reverb; at most use a little early reflection to restore distance. When the space must be unified, send every track to one reverb and let send level set the depth. Keep it to two reverbs per song, with pre-delays within 10 ms of each other, or the space splits. High-pass the send at 200 to 300 Hz to keep the low end out. Automate the amount, using less in the chorus to preserve clarity.
-
-## What the ear catches
-
-In Mahler's In diesem Wetter, hear whether voice and piano share one space, since two spaces expose themselves immediately. In the slow movement of Haydn's Sonata in E-flat, hear the ratio between the close piano and the pedal decay. In Satie's Gymnopedie No. 3, hear the air between sparse chords, which turns to wash when overdone. Start from the dry signal in all three.
-
-```audiolab
-{"type":"instrument","gm":"Choir Aahs","synth":"vocal","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"Harmony that carries its own space","label_en":"Harmony that carries its own space","hint":"Hear how long the tail already is before deciding to add reverb","hint_en":"Hear how long the tail already is before deciding to add reverb"}
-```
 :::
+

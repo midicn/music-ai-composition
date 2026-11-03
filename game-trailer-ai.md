@@ -1,30 +1,22 @@
 ---
-id: game-trailer-ai
-site: ai
-cat: F
-title: 游戏预告片音乐
-title_en: Music for Game Trailers
-summary: 预告片按 hit point 写，三段式只是骨架，留白才是力气
-summary_en: A trailer is built around hit points; the three-act shape is only the frame, and silence does the lifting.
-level: standard
-tags: [游戏预告片, 落点, 三段式, 版本裁切]
-tags_en: [game trailer, hit points, three-act, version cuts]
-alias: [预告片配乐, trailer cue, 游戏预告]
+id: "game-trailer-ai"
+site: "ai"
+cat: "F"
+title: "游戏预告片音乐"
+title_en: "Music for Game Trailers"
+summary: "预告片按 hit point 写，三段式只是骨架，留白才是力气"
+summary_en: "A trailer is built around hit points; the three-act shape is only the frame, and silence does the lifting."
+level: "standard"
+tags: ["游戏预告片", "落点", "三段式", "版本裁切"]
+tags_en: ["game trailer", "hit points", "three-act", "version cuts"]
+alias: ["预告片配乐", "trailer cue", "游戏预告"]
 order: 151
-links:
-  - "[[glossary:cue]]"
-  - "[[glossary:sync-license]]"
-  - "[[glossary:tempo]]"
-instances:
-  - pdmx-000789 | 威尔第《安魂曲》的审判日强奏，预告片第一个 hit 的参照（C1）
-  - pdmx-000120 | 科普兰《为普通人吹响的号角》，logo 段落的铜管长音与收法（C1）
-  - pdmx-000580 | 柏辽兹《安魂曲》，大编制铺开前的留白，爆发才有分量（C1）
-  - pdmx-001524 | 格里格《在山魔王的宫殿里》，同一动机加速加厚，riser 的写法（C1）
-sources:
-  - 游戏预告片剪辑与配乐制作的公开访谈，讨论 hit point 与版本裁切。
-  - 影视与交互配乐教材中关于三段式结构、留白与主题呈现的章节。
-  - 发行平台对预告片音频交付的公开规范，涉及响度与文件格式。
-updated: 2026-10-31
+links: ["[[glossary:cue]]", "[[glossary:sync-license]]", "[[glossary:tempo]]"]
+instances: []
+sources: ["https://www.ableton.com/en/manual/working-with-video/", "https://www.wipo.int/web-publications/rights-clearance-a-guide-for-independent-filmmakers/en/3-rights-assessed-during-clearance.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论游戏预告片的画面落点与音乐交付，需要对真实画面版本、时间线和使用权检查；普通MIDI试听没有影片同步或正式授权证据。"
 ---
 
 ::: zh
@@ -55,10 +47,6 @@ updated: 2026-10-31
 ## 写满就失效
 
 最容易坏的是把爆发写满。整段都是铜管和鼓，观众到 logo 时已经麻木，hit 不再 hit。第二个问题是 riser 用得太规矩，每次都是四小节上行，听两遍就能预测。第三个是静音不敢留，怕空，结果所有段落一样密。生成素材常带前奏和渐弱，剪的时候要切干净，不要让尾巴拖进下一个镜头。
-
-```audiolab
-{"type":"instrument","gm":"Brass Section","synth":"brass","phrase":["C3","C3","G3","C3","E3","G3","C4","G3"],"label":"爆发段的一个 hit","label_en":"One hit in the final act","hint":"落点要对齐画面，前面的留白比这一下更响","hint_en":"The hit must land on the picture; the silence before it carries more weight"}
-```
 :::
 
 ::: en
@@ -89,8 +77,5 @@ One trailer usually ships at ninety, sixty, thirty and fifteen seconds, plus a v
 ## When the release is already full
 
 The usual failure is a release that is already full. If brass and drums run for the whole cut, the audience is numb by the logo and the hit stops hitting. The second fault is a riser that always climbs for four bars, predictable after one viewing. The third is fear of silence, which leaves every section equally dense. Generated material arrives with intros and fades, so cut them cleanly and keep tails out of the next shot.
-
-```audiolab
-{"type":"instrument","gm":"Brass Section","synth":"brass","phrase":["C3","C3","G3","C3","E3","G3","C4","G3"],"label":"One hit in the final act","label_en":"One hit in the final act","hint":"The hit must land on the picture; the silence before it carries more weight","hint_en":"The hit must land on the picture; the silence before it carries more weight"}
-```
 :::
+

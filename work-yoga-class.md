@@ -1,36 +1,29 @@
 ---
-id: work-yoga-class
-site: ai
-cat: K
-title: 瑜伽课音乐
-title_en: Music for a Yoga Class
-summary: 一节课六十分钟不出现突发事件，音量比曲子重要
-summary_en: Sixty minutes without an event; level matters more than the track.
-level: standard
-tags: [瑜伽, 长段, 音量, 循环]
-tags_en: [yoga, long-form, level, loops]
-alias: [瑜伽课音乐, 瑜伽配乐, yoga class music, 课堂音乐]
+id: "work-yoga-class"
+site: "ai"
+cat: "K"
+title: "瑜伽课音乐"
+title_en: "Music for a Yoga Class"
+summary: "一节课六十分钟不出现突发事件，音量比曲子重要"
+summary_en: "Sixty minutes without an event; level matters more than the track."
+level: "standard"
+tags: ["瑜伽", "长段", "音量", "循环"]
+tags_en: ["yoga", "long-form", "level", "loops"]
+alias: ["瑜伽课音乐", "瑜伽配乐", "yoga class music", "课堂音乐"]
 order: 272
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [瑜伽课, 长段音乐, 教室扩声]
-tool_verified: 2026-10-31
-links:
-  - "[[glossary:reverb]]"
-  - "[[glossary:lufs]]"
-  - "[[glossary:true-peak]]"
-instances:
-  - mutopia-001412 | 三分钟无鼓氛围，句尾自然消失，适合呼吸段（C1）
-  - pdmx-000070 | 慢速弦乐长弧，起伏克制，适合挺尸段（C1）
-  - oga-000021 | 游戏洞穴环境，底噪宽、无事件，适合长时间铺底（C1）
-sources:
-  - NIOSH 噪声暴露指南与 WHO Guidelines for Community Noise 中关于音量与暴露时间的建议。
-  - PRS for Music 与 PPL 公开的健身与课程音乐许可说明。
-  - 瑜伽课堂制作与播放的公开访谈。
-updated: 2026-10-31
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["瑜伽课", "长段音乐", "教室扩声"]
+tool_verified: "2026-10-31"
+links: ["[[glossary:reverb]]", "[[glossary:lufs]]", "[[glossary:true-peak]]"]
+instances: []
+sources: ["https://pplprs.co.uk/themusiclicence/sectors/fitness-dance-2/", "https://www.who.int/news-room/questions-and-answers/item/deafness-and-hearing-loss-safe-listening"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "瑜伽课音乐要核对营业场所使用许可，并在实际教室测量声压与暴露时间；文件播放响度不能直接推出课堂声压，也不能证明商业课程使用已获许可。"
 ---
 
 ::: zh
@@ -61,10 +54,6 @@ updated: 2026-10-31
 ## 突发音与版权
 
 生成结果里冒出人声哼唱，安静时最明显。低频堆太多，天花板喇叭发出嗡嗡声。前段音量合适，挺尸段显得吵。用个人订阅账号播放，工作室被平台判定商用。播放列表里有一首歌下架，整节课少一段。手机来电或通知音打断挺尸，课前必须开飞行模式。
-
-```audiolab
-{"type":"instrument","gm":"Pad 2 (warm)","synth":"bowed","phrase":["C3","G3","D4","A4","G4","D4","C4","G3"],"label":"呼吸段的持续音","label_en":"A drone for the breathing section","hint":"听两分钟里有没有突然的音头","hint_en":"Listen for any sudden attack across two minutes"}
-```
 :::
 
 ::: en
@@ -95,8 +84,5 @@ Adjacent sections stay within 3 dB and the class never builds to a crescendo. Pl
 ## Sudden sounds and rights
 
 A hummed vocal appears in the generation and is most obvious in silence. Too much low end makes the ceiling speakers buzz. The level suits the first half and feels loud in savasana. A personal subscription is used for playback and the studio is treated as commercial. One track leaves the playlist and the class loses a section. A phone call or notification breaks savasana, so the device goes into flight mode before class.
-
-```audiolab
-{"type":"instrument","gm":"Pad 2 (warm)","synth":"bowed","phrase":["C3","G3","D4","A4","G4","D4","C4","G3"],"label":"A drone for the breathing section","label_en":"A drone for the breathing section","hint":"Listen for any sudden attack across two minutes","hint_en":"Listen for any sudden attack across two minutes"}
-```
 :::
+

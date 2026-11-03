@@ -1,36 +1,29 @@
 ---
-id: tool-ai-plugins
-site: ai
-cat: J
-title: AI 插件（分离/修音/母带）
-title_en: AI Plug-ins for Separation, Tuning and Mastering
-summary: 把分离、修音与母带助手装进宿主，换来速度，也换来格式与授权约束。
-summary_en: Separation, tuning and mastering assistants inside the host buy speed, at the price of format and licence constraints.
-level: standard
-tags: [插件, 分离, 修音, 母带]
-tags_en: [plug-in, separation, tuning, mastering]
-alias: [AI 插件, 智能插件]
+id: "tool-ai-plugins"
+site: "ai"
+cat: "J"
+title: "AI 插件（分离/修音/母带）"
+title_en: "AI Plug-ins for Separation, Tuning and Mastering"
+summary: "把分离、修音与母带助手装进宿主，换来速度，也换来格式与授权约束。"
+summary_en: "Separation, tuning and mastering assistants inside the host buy speed, at the price of format and licence constraints."
+level: "standard"
+tags: ["插件", "分离", "修音", "母带"]
+tags_en: ["plug-in", "separation", "tuning", "mastering"]
+alias: ["AI 插件", "智能插件"]
 order: 2
-links:
-  - "[[glossary:plugin]]"
-  - "[[glossary:stems]]"
-  - "[[glossary:latency]]"
-tool_kind: plugin
-tool_vendor: 插件厂商
-tool_form: 插件
-tool_platforms: [macOS, Windows]
-tool_price: 买断
-tool_jobs: [混音, 母带, 人声制作]
-tool_verified: 2026-10-30
-instances:
-  - openscore-000443 | 弗朗茨艺术歌曲，人声与钢琴分离后是否还能各自修音（C1）
-  - giantmidi-002278 | 古利特小提琴奏鸣曲，旋律线的音准与揉弦最考验修音插件（C1）
-  - pdmx-000183 | 莫扎特安魂曲，声部密集，分离与总线处理最容易留下痕迹（C1）
-  - groove-001115 | 112 BPM 摇滚鼓组，瞬态是否被母带助手压平一听便知（C1）
-sources:
-  - 主流 AI 音频插件公开文档所列功能、格式与授权方式（2026-10-30 复核）。
-  - 分离、修音与限幅的常见伪影，参考混音实践惯例。
-updated: 2026-10-30
+links: ["[[glossary:plugin]]", "[[glossary:stems]]", "[[glossary:latency]]"]
+tool_kind: "plugin"
+tool_vendor: "插件厂商"
+tool_form: "插件"
+tool_platforms: ["macOS", "Windows"]
+tool_price: "买断"
+tool_jobs: ["混音", "母带", "人声制作"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://helpcenter.celemony.com/M5/doc/melodyneAssistant5/en/M5tour_QuickStart_assistant?env=live", "https://downloads.izotope.com/docs/ozone8/master-assistant/index.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "插件条目要核对修音与母带助手的实际控制范围，并在宿主里比较旁通与处理结果；普通音频播放不能证明插件格式、授权或处理延迟。"
 ---
 
 ::: zh
@@ -53,10 +46,6 @@ updated: 2026-10-30
 ## 先学三件事
 
 先学三件事：确认插件格式与授权方式、用旁通做 A/B、把处理结果渲染一份并检查相位。然后读这里的分离工具、人声修音与响度目标三篇，再决定哪些环节常驻插件、哪些交给独立软件。
-
-```audiolab
-{"type":"instrument","gm":41,"phrase":["G4","D5","A5"],"label":"独奏音准","label_en":"Solo intonation","hint":"修音后听颤音是否还在，而不是只听话准","hint_en":"After tuning, listen for vibrato, not only pitch"}
-```
 :::
 
 ::: en
@@ -79,8 +68,5 @@ For finer spectral work, use a dedicated repair application whose brush and spec
 ## First three things
 
 Learn three things first: the plug-in format and how it is authorised, how to bypass it for an A/B, and how to print a result and check phase. Then read the site's pages on separation tools, vocal tuning and loudness targets before deciding what stays on the chain.
-
-```audiolab
-{"type":"instrument","gm":41,"phrase":["G4","D5","A5"],"label":"Solo intonation","label_en":"Solo intonation","hint":"After tuning, listen for vibrato, not only pitch","hint_en":"After tuning, listen for vibrato, not only pitch"}
-```
 :::
+

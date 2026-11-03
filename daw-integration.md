@@ -1,70 +1,55 @@
 ---
-id: daw-integration
-site: ai
-cat: A
-title: AI 与 DAW 集成
-title_en: AI Inside the DAW
-summary: 生成结果进 DAW 才算进入工作流，格式与对齐决定后续能改多少。
-summary_en: Generated material only joins the workflow once it is in the DAW, and format decides how much can be changed.
-level: standard
-tags: [DAW, 集成, 工作流, 导出]
-tags_en: [DAW, integration, workflow, export]
-alias: [DAW 集成, 插件, 生成工具接入]
+id: "daw-integration"
+site: "ai"
+cat: "A"
+title: "AI 与 DAW 集成"
+title_en: "AI Inside the DAW"
+summary: "按实际导出文件选择编辑方式，并核对起点、自动拉伸与工程依赖。"
+summary_en: "Choose editing methods from actual exports and check alignment, warping and dependencies."
+level: "standard"
+tags: ["DAW", "集成", "工作流", "导出"]
+tags_en: ["DAW", "integration", "workflow", "export"]
+alias: ["DAW 集成", "插件", "生成工具接入"]
 order: 7
-links:
-  - "[[glossary:daw]]"
-  - "[[glossary:stems]]"
-  - "[[glossary:tempo]]"
-instances:
-  - groove-000000 | 138 BPM 放克鼓组，导入后是否与工程速度对齐一听便知（C1）
-  - atepp-007103 | 莫扎特回旋曲，符号导入后能否继续编辑和声与力度（C1）
-  - musicnet-000067 | 贝多芬四重奏，多声部素材导入后是否还能分开处理（C1）
-sources:
-  - DAW 与生成工具的常见接入方式，对照产品公开文档整理。
-  - 音频与 MIDI 导入的对齐问题（制作实践惯例）。
-updated: 2026-10-30
+links: ["[[glossary:daw]]", "[[glossary:stems]]", "[[glossary:tempo]]"]
+sources: ["https://www.ableton.com/en/live-manual/12/audio-clips-tempo-and-warping/", "https://help.ableton.com/hc/en-us/articles/22998838817820-Committing-Audio-in-Live", "https://docs.acestudio.ai/project/file-management/export-files"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页说明实际制作流程与文件核验方法，工作表示例为虚拟教学项目；须以工具说明和自己的输出文件核对，普通MIDI或合成试听不能证明生成服务的效果。"
 ---
 
 ::: zh
-## 问题
+## 先看手中的文件
 
-在网页里生成一段音乐很轻松，把它放进工程里继续做才是真正的工作。导入时经常遇到：速度对不上、起始点偏移、分轨混成一条、格式不支持。集成方式决定了后期能改多少。
+| 文件 | 可继续做什么 | 不能自动得到什么 |
+|---|---|---|
+| 立体声混音 | 剪接、增益、均衡、部分修复或再编配 | 完整独立声部和原始音符 |
+| 分轨 | 按提供的层次重新平衡和编辑 | 不一定是原工程轨或干声 |
+| MIDI | 修改事件并选择音源 | 原模型的声音与混音 |
+| 工程 | 在兼容环境继续制作 | 自动补齐缺失插件和外部素材 |
 
-## 判断标准
+“立体声音频改一个音必须整首重生成”并不准确。可用的路线还包括剪接、局部音高处理、分离后修补、重新演奏或工具提供的选区编辑；可行程度取决于素材和质量要求。
 
-看导出格式：能出分轨与 MIDI 的工具，后期空间大；只能出立体声的工具，改一个音就要重生成。看速度与调性是否写进文件，能否被 DAW 读取。看是否支持批量导出与命名规范。看插件形态还是网页形态：插件在工程内调用，省去导入导出；网页工具则要靠文件往返。
+## 接回工程的顺序
 
-## 做法
+保留源文件，导入工作副本。核对共同起点，再决定是否启用自动拉伸；检查音高与尾音，之后才做混音。需要在别处继续工作时，收集外部采样并保存版本和插件说明。在一个新位置重开工程，能更早发现引用文件缺失。
 
-先在 DAW 里定好速度与调性，再生成素材，减少对齐麻烦。导入后立刻对齐起点，检查长度与采样率。分轨按功能命名，进工程后建组。保留原始导出文件，别只在工程里留处理后的版本。用插件时注意工程迁移到别的电脑是否还能打开。
-
-## 听什么
-
-在放克鼓组里听导入后是否与网格对齐，在回旋曲里听符号导入后力度是否还在，在四重奏里听多声部是否还能单独调节。集成顺畅时，工具会消失在流程里。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":138,"label":"对齐到网格","label_en":"Aligned to the grid","hint":"导入后第一件事就是确认起点与速度对齐","hint_en":"The first check after import is whether start and tempo align"}
-```
+详细操作可按“DAW导入检查单”逐项核验。不要把平台临时下载链接当作本地工程的长期素材位置。
 :::
 
 ::: en
-## The problem
+## Inventory the export
 
-Generating music in a browser is easy; getting it into a session and continuing is the real work. Imports go wrong in familiar ways: wrong tempo, offset start, stems collapsed into one file, unsupported format. The integration method decides how much can still be changed.
+| File | Useful next steps | Not automatically included |
+|---|---|---|
+| Stereo mix | Cutting, gain, EQ, some repairs or arranging around it | Independent parts and original notes |
+| Stems | Balance and editing at the provided layer level | Original project tracks or dry recordings |
+| MIDI | Event editing and another sound generator | The model's original sound and mix |
+| Project | Continuing in a compatible environment | Missing plug-ins and external assets |
 
-## Judging it
+Changing a note in mixed audio does not always require regenerating the whole piece. Depending on material and quality requirements, routes may include cutting, local pitch work, separation and repair, replaying a part or supported region editing.
 
-Look at export options: tools that deliver stems and MIDI leave room to work, while stereo-only tools force a full regeneration to change one note. Check whether tempo and key are written into the file and readable by the DAW. Check batch export and naming conventions. Consider plug-in versus web form: a plug-in runs inside the session and skips the round trip, while a web tool depends on files going back and forth.
+## Import in a deliberate order
 
-## Practice
-
-Set tempo and key in the DAW before generating to reduce alignment work. Align the start point immediately after import, then check length and sample rate. Name stems by function and group them in the session. Keep the original exports rather than only processed copies inside the project. With plug-ins, confirm the session still opens on another machine.
-
-## What to listen for
-
-On the funk kit, whether the import sits on the grid; in the rondo, whether dynamics survive a symbolic import; in the quartet, whether parts remain separately adjustable. When integration is smooth, the tool disappears into the process.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":138,"label":"Aligned to the grid","label_en":"Aligned to the grid","hint":"The first check after import is whether start and tempo align","hint_en":"The first check after import is whether start and tempo align"}
-```
+Keep source files and import working copies. Check the shared origin before deciding whether to time-stretch. Verify pitch and tails, then mix. Collect external samples and record versions and plug-in dependencies for another workstation. Reopen from a fresh location to expose missing references early. Follow the detailed import checklist, and do not treat a temporary download link as a permanent project asset.
 :::

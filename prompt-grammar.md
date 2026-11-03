@@ -1,30 +1,22 @@
 ---
-id: prompt-grammar
-site: ai
-cat: B
-title: 提示语法与结构标记
-title_en: Prompt Grammar and Section Tags
-summary: 把提示当分句写：先定骨架，再下约束，最后排除。
-summary_en: Treat a prompt as clauses, fixing the skeleton, then constraints, then exclusions, in that order.
-level: standard
-tags: [提示词, 语法, 段落标记, 约束]
-tags_en: [prompting, grammar, section tags, constraints]
-alias: [提示语法, 结构标记, prompt grammar]
+id: "prompt-grammar"
+site: "ai"
+cat: "B"
+title: "提示语法与结构标记"
+title_en: "Prompt Grammar and Section Tags"
+summary: "把提示当分句写：先定骨架，再下约束，最后排除。"
+summary_en: "Treat a prompt as clauses, fixing the skeleton, then constraints, then exclusions, in that order."
+level: "standard"
+tags: ["提示词", "语法", "段落标记", "约束"]
+tags_en: ["prompting", "grammar", "section tags", "constraints"]
+alias: ["提示语法", "结构标记", "prompt grammar"]
 order: 129
-links:
-  - "[[glossary:tempo]]"
-  - "[[glossary:ternary-form]]"
-  - "[[glossary:texture]]"
-instances:
-  - m21-001918 | 无前奏直接进主题的里尔，段落标记与切点自由度更大（C1）
-  - pdmx-000575 | 恰空固定低音，先写框架再写变奏的顺序（C1）
-  - groove-000002 | 86 BPM 灵魂乐鼓组，速度写在前面才稳（C1）
-  - pdmx-002370 | 《特里斯坦》钢琴改编，推迟解决靠和声词而非形容词（C1）
-sources:
-  - Suno 与 Udio 官方提示指南中关于段落标记与控制词的用法。
-  - 流行歌曲写作教材中关于段落划分与句法的公开章节。
-  - 编曲实践中关于速度、调性与配器的记写惯例。
-updated: 2026-10-31
+links: ["[[glossary:tempo]]", "[[glossary:ternary-form]]", "[[glossary:texture]]"]
+instances: []
+sources: ["https://help.suno.com/en/articles/3726721", "https://help.udio.com/en/articles/10716221-create-a-song-with-your-own-lyrics"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "提示语法与段落标记取决于平台实际支持的字段和编辑方式；播放一首歌不能证明关键词优先级，也不能保证另一服务按同样标记生成。"
 ---
 
 ::: zh
@@ -56,10 +48,6 @@ updated: 2026-10-31
 ## 语法失效的时候
 
 模型不认标记、歌词与标记语言不同、约束互相打架、提示超过有效长度，都会让结构塌掉。这时删掉一半修饰，只留速度、编制、段落三样，再逐项加回。语法是减少歧义的工具，不是越长越准的咒语。若换了模型仍不认标记，就改用行序与重复副歌来表达结构，别在符号上较劲。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["E4","G4","A4","G4"],"label":"同一动机，两种段落标记","label_en":"One motif, two section tags","hint":"标记写错时，结构会先乱，音色还在","hint_en":"When tags are wrong, structure breaks first"}
-```
-
 :::
 
 ::: en
@@ -92,3 +80,4 @@ Brackets are human-facing boundaries, not a syntax every model understands. If t
 
 Structure collapses when tags are unrecognised, tags and lyrics use different languages, constraints contradict, or the prompt exceeds the effective length. Cut half the modifiers, keep tempo, ensemble and sections, then add items back one at a time. Grammar reduces ambiguity; it is not a spell that improves with length. If a new model still ignores tags, express form through line order and repeated choruses instead of fighting the notation.
 :::
+

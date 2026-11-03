@@ -1,38 +1,29 @@
 ---
-id: work-church-service
-site: ai
-cat: K
-title: 礼拜与教会活动配乐
-title_en: Music for Church Services
-summary: 按流程排歌，调性照顾会众，版权分现场与录制两条线
-summary_en: Order the music by liturgy, choose keys for the congregation, and separate live from recorded rights.
-level: standard
-tags: [礼拜, 教会, 会众诗歌, 版权]
-tags_en: [church, worship, hymns, licensing]
-alias: [教会配乐, 礼拜音乐, church music, worship service]
+id: "work-church-service"
+site: "ai"
+cat: "K"
+title: "礼拜与教会活动配乐"
+title_en: "Music for Church Services"
+summary: "按流程排歌，调性照顾会众，版权分现场与录制两条线"
+summary_en: "Order the music by liturgy, choose keys for the congregation, and separate live from recorded rights."
+level: "standard"
+tags: ["礼拜", "教会", "会众诗歌", "版权"]
+tags_en: ["church", "worship", "hymns", "licensing"]
+alias: ["教会配乐", "礼拜音乐", "church music", "worship service"]
 order: 278
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [礼拜配乐, 会众诗歌, 现场扩声]
-tool_verified: 2026-10-31
-links:
-  - "[[glossary:public-domain]]"
-  - "[[glossary:sync-license]]"
-  - "[[glossary:performing-rights-organization]]"
-  - "[[instrument:organ]]"
-instances:
-  - aria-005141 | 巴赫《耶稣，我的喜乐》，会众熟悉的旋律，前奏与间奏都能用（C1）
-  - pdmx-000208 | 《奇异恩典》，会众能跟唱，调性要照顾人声（C1）
-  - aria-008038 | 巴赫管风琴奏鸣曲，礼拜前后的长时间铺底（C1）
-  - cyberhymnal-008729 | 十七秒的管风琴短句，适合做流程提示（C1）
-sources:
-  - CCLI 公开的教会音乐授权说明，涉及投影、直播与录制。
-  - 美国版权局关于宗教场所音乐使用的公开资料。
-  - 教会现场扩声与直播混音的公开制作指南。
-updated: 2026-10-31
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["礼拜配乐", "会众诗歌", "现场扩声"]
+tool_verified: "2026-10-31"
+links: ["[[glossary:public-domain]]", "[[glossary:sync-license]]", "[[glossary:performing-rights-organization]]", "[[instrument:organ]]"]
+instances: []
+sources: ["https://ccli.com/us/en/5-questions", "https://au.ccli.com/wp-content/uploads/sites/5/church-streaming-licence-fact-sheet.pdf"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "教会音乐使用需区分现场、录制、直播及所处地区的许可产品，目录范围也要逐曲核验；播放一首宗教音乐不代表直播或录音分发已获许可。"
 ---
 
 ::: zh
@@ -64,10 +55,6 @@ updated: 2026-10-31
 ## 版权与现场的两类风险
 
 诗歌版权只覆盖现场投影，直播与录制要另外申报，词曲与编曲分开算。管风琴前奏用了受版权保护的改编谱，录音上传后被识别。备用伴奏没电，临时改用钢琴，调性对不上。无线话筒串频，讲道时突然出现另一间教室的声音。会众声太响，直播里只剩回声。
-
-```audiolab
-{"type":"instrument","gm":"Church Organ","synth":"blown","phrase":["C4","E4","G4","C5","A4","G4","E4","D4"],"label":"会众能跟唱的音域","label_en":"A register a congregation can sing","hint":"听旋律有没有超出普通人舒服的音区","hint_en":"Hear whether the line climbs out of an untrained singer's range"}
-```
 :::
 
 ::: en
@@ -99,8 +86,5 @@ When the congregation cannot reach the top, transpose on the spot rather than ex
 ## Two kinds of risk
 
 A song licence may cover projection in the room while streaming and recording need separate clearance, with words, music and arrangement counted separately. An organ prelude uses a copyrighted arrangement and the upload is flagged. A backup track loses power, the piano takes over, and the key does not match. A wireless microphone picks up the room next door during the sermon. The congregation is so loud in the stream that only reverb remains.
-
-```audiolab
-{"type":"instrument","gm":"Church Organ","synth":"blown","phrase":["C4","E4","G4","C5","A4","G4","E4","D4"],"label":"A register a congregation can sing","label_en":"A register a congregation can sing","hint":"Hear whether the line climbs out of an untrained singer's range","hint_en":"Hear whether the line climbs out of an untrained singer's range"}
-```
 :::
+

@@ -1,35 +1,28 @@
 ---
-id: model-elevenlabs-music
-site: ai
-cat: I
-title: ElevenLabs 音乐与声音
-title_en: ElevenLabs Music and Sound
-summary: 音效、配音与短音乐，接口化的声音服务。
-summary_en: Effects, dubbing and short music from an API-shaped audio service.
-level: standard
-tags: [模型档案, 音效, 配音, 声音克隆]
-tags_en: [model profile, sound effects, dubbing, voice cloning]
-alias: [ElevenLabs, Eleven Music, 音效生成]
+id: "model-elevenlabs-music"
+site: "ai"
+cat: "I"
+title: "ElevenLabs 音乐与声音"
+title_en: "ElevenLabs Music and Sound"
+summary: "音效、配音与短音乐，接口化的声音服务。"
+summary_en: "Effects, dubbing and short music from an API-shaped audio service."
+level: "standard"
+tags: ["模型档案", "音效", "配音", "声音克隆"]
+tags_en: ["model profile", "sound effects", "dubbing", "voice cloning"]
+alias: ["ElevenLabs", "Eleven Music", "音效生成"]
 order: 8
-model_vendor: ElevenLabs
-model_form: 网页服务
-model_input: [文本, 参考音频, 人声]
-model_output: [音频, 音效, 人声轨]
-model_licence: 商用范围按订阅与声音授权核对，克隆声音需取得本人同意
-model_verified: 2026-10-30
-links:
-  - "[[glossary:sync-license]]"
-  - "[[instrument:voice]]"
-  - "[[glossary:reverb]]"
-instances:
-  - oga-000003 | 一分半的紧张场景曲，看短配乐的铺陈（C1） | A ninety second tension cue, to hear short-form scoring (C1)
-  - oga-000005 | 三十八秒的战斗片段，看强节奏短音效的用法（C1） | A thirty-eight second battle cue, to hear rhythm-driven short audio (C1)
-  - oga-000031 | 一段氛围循环，看环境音的层次（C1） | An ambient loop, to hear environmental layers (C1)
-  - cyberhymnal-003336 | 中文歌词的赞美诗，看配音与歌词的咬字（C1） | A hymn with Chinese words, to hear diction for dubbing (C1)
-sources:
-  - 产品线、接口与授权流程，对照官方公开说明与条款页整理。
-  - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
-updated: 2026-10-30
+model_vendor: "ElevenLabs"
+model_form: "网页服务"
+model_input: ["文本", "参考音频", "人声"]
+model_output: ["音频", "音效", "人声轨"]
+model_licence: "商用范围按订阅与声音授权核对，克隆声音需取得本人同意"
+model_verified: "2026-10-30"
+links: ["[[glossary:sync-license]]", "[[instrument:voice]]", "[[glossary:reverb]]"]
+instances: []
+sources: ["https://elevenlabs.io/docs/overview/capabilities/music", "https://elevenlabs.io/eleven-music-api"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍ElevenLabs音乐与接口，应核对相应产品文档的输入、参考音频和编辑能力；普通曲库回放不是服务输出，不能测评实际音质、生成时长或API行为。"
 ---
 
 ::: zh
@@ -61,10 +54,6 @@ updated: 2026-10-30
 
 要确认：当前订阅的商用范围、克隆声音的授权与验证流程、生成音效能否作为音效库再分发、训练数据来源的官方说明。价格按订阅与用量分，具体数字与地区可用性以官方页面为准。
 替代：要成段的音乐，换 Stable Audio；要能逐字控制唱法的人声，换 ACE Studio。它适合"声音素材要快、要能批量"的活。
-
-```audiolab
-{"type":"instrument","gm":"Music Box","synth":"struck","phrase":["C5","E5","G5","B5","G5","E5"],"label":"一段短音效式的动机","label_en":"A short sting","hint":"这类几秒的短素材是它最常被要求的粒度，听的是尾音是否完整","hint_en":"Short assets of a few seconds are its usual grain; listen for whether the tail is complete"}
-```
 :::
 
 ::: en
@@ -96,8 +85,5 @@ Input is text; dubbing and cloning need reference audio or a consented voice. Ou
 
 Confirm: the commercial scope of your subscription, the consent and verification flow for cloned voices, whether generated effects may be redistributed as a library, and the official statement on training data. Pricing is by subscription and usage; exact figures and regional availability belong on the official page.
 Alternatives: Stable Audio for music in longer sections; ACE Studio when sung words must be controlled syllable by syllable. This is the tool for sound assets that must be fast and batchable.
-
-```audiolab
-{"type":"instrument","gm":"Music Box","synth":"struck","phrase":["C5","E5","G5","B5","G5","E5"],"label":"A short sting","label_en":"A short sting","hint":"Short assets of a few seconds are its usual grain; listen for whether the tail is complete","hint_en":"Short assets of a few seconds are its usual grain; listen for whether the tail is complete"}
-```
 :::
+

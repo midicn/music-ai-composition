@@ -1,35 +1,28 @@
 ---
-id: model-demucs
-site: ai
-cat: I
-title: Demucs 系分轨模型
+id: "model-demucs"
+site: "ai"
+cat: "I"
+title: "Demucs 系分轨模型"
 title_en: "Demucs-Family Stem Separation"
-summary: 开源分轨模型，离线批量拆出人声、鼓、贝斯与其他。
-summary_en: An open-source separation family that splits vocals, drums, bass and other offline, in batches.
-level: standard
-tags: [模型档案, 分轨, 开源, 离线, 源分离]
-tags_en: [model profile, stem separation, open source, offline, source separation]
-alias: [Demucs, 开源分轨, 本地分轨, htdemucs, source separation model]
+summary: "开源分轨模型，离线批量拆出人声、鼓、贝斯与其他。"
+summary_en: "An open-source separation family that splits vocals, drums, bass and other offline, in batches."
+level: "standard"
+tags: ["模型档案", "分轨", "开源", "离线", "源分离"]
+tags_en: ["model profile", "stem separation", "open source", "offline", "source separation"]
+alias: ["Demucs", "开源分轨", "本地分轨", "htdemucs", "source separation model"]
 order: 11
-model_vendor: Meta（Facebook Research）
-model_form: 本地模型
-model_input: [混音音频]
-model_output: [分轨]
-model_licence: 代码许可与预训练权重许可要分开核对，训练素材的授权范围以官方仓库与数据集说明为准
-model_verified: 2026-10-30
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:phase]]"
-  - "[[instrument:drum-kit]]"
-instances:
-  - oga-000001 | 编制拥挤的游戏管弦，声部多、频段重叠，是分离最难的一类素材（C1） | A crowded game orchestral score with many parts sharing bands, among the hardest material to separate (C1)
-  - pdmx-000087 | 手风琴与室内编制，中频密集，能听出哪条轨被削薄（C1） | Accordion and chamber parts packed into the midrange, to hear which stem thins (C1)
-  - m21-000000 | 四声部众赞歌，人声之间只差音区，串音最容易听出来（C1） | A four-part chorale whose voices differ only by register, where bleed is easiest to hear (C1)
-  - groove-000008 | 灵魂乐鼓组，底鼓与贝斯抢同一段低频，适合看分离后的低频（C1） | A soul kit where kick and bass share the low band, for checking the low end after separation (C1)
-sources:
-  - Demucs 的模型结构与推理方式，参考公开论文摘要与仓库说明。
-  - 分离残渣与低频损失的处理；混音实践惯例是主要依据。
-updated: 2026-10-30
+model_vendor: "Meta（Facebook Research）"
+model_form: "本地模型"
+model_input: ["混音音频"]
+model_output: ["分轨"]
+model_licence: "代码许可与预训练权重许可要分开核对，训练素材的授权范围以官方仓库与数据集说明为准"
+model_verified: "2026-10-30"
+links: ["[[glossary:stems]]", "[[glossary:phase]]", "[[instrument:drum-kit]]"]
+instances: []
+sources: ["https://github.com/facebookresearch/demucs", "https://arxiv.org/abs/2111.03600"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍Demucs源分离项目，需要核对官方代码、研究论文和相应版本功能；普通曲库MIDI没有经过模型分离，不能证明分离速度、声部质量或残余特征。"
 ---
 
 ::: zh
@@ -65,10 +58,6 @@ updated: 2026-10-30
 价格：软件本身免费，成本是显卡与时间；他人搭好的托管版本按订阅或按量，以官方页面为准。
 
 替代：LALAL.AI——不想装环境、要网页一键出结果时换它；UVR 一类带界面的工具——想试多种模型、不写命令时换它；iZotope RX——要在 DAW 里一边分离一边修的时候换它。
-
-```audiolab
-{"type":"instrument","gm":"Electric Bass (pick)","synth":"plucked","phrase":["E2","E2","G2","A2","A2","G2","E2","D2"],"label":"被拆出来的贝斯","label_en":"A bass part pulled from the mix","hint":"低频与底鼓共用一段频谱，分离后最先变薄的就是这里","hint_en":"Bass and kick share one band; this is where separation thins first"}
-```
 :::
 
 ::: en
@@ -104,8 +93,5 @@ Questions to check: do the code licence and the pretrained weight licence agree?
 Price: the software is free and the cost is hardware and time; hosted versions run by others are billed per subscription or per use, as stated on their official pages.
 
 Alternatives: LALAL.AI when you do not want to install anything and need a one-click web result; a GUI tool in the UVR family when you want to try many models without commands; iZotope RX when separation and repair should happen in one place inside the DAW.
-
-```audiolab
-{"type":"instrument","gm":"Electric Bass (pick)","synth":"plucked","phrase":["E2","E2","G2","A2","A2","G2","E2","D2"],"label":"A bass part pulled from the mix","label_en":"A bass part pulled from the mix","hint":"Bass and kick share one band; this is where separation thins first","hint_en":"Bass and kick share one band; this is where separation thins first"}
-```
 :::
+

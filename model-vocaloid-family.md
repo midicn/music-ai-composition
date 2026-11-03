@@ -1,34 +1,28 @@
 ---
-id: model-vocaloid-family
-site: ai
-cat: I
-title: 歌声合成：VOCALOID 系
+id: "model-vocaloid-family"
+site: "ai"
+cat: "I"
+title: "歌声合成：VOCALOID 系"
 title_en: "Singing Synthesis: VOCALOID and Synthesizer V"
-summary: 用音符与歌词拼出人声，音高可控，咬字与表情靠手调。
-summary_en: You draw notes and type words to get a singing voice; pitch is exact, diction and expression are hand-worked.
-level: standard
-tags: [模型档案, 歌声合成, 虚拟歌手, 人声, 合成]
-tags_en: [model profile, singing synthesis, virtual singer, vocals, synthesis]
-alias: [VOCALOID, Synthesizer V, 虚拟歌手, 歌声合成器, vocal synth, 洛天依]
+summary: "用音符与歌词拼出人声，音高可控，咬字与表情靠手调。"
+summary_en: "You draw notes and type words to get a singing voice; pitch is exact, diction and expression are hand-worked."
+level: "standard"
+tags: ["模型档案", "歌声合成", "虚拟歌手", "人声", "合成"]
+tags_en: ["model profile", "singing synthesis", "virtual singer", "vocals", "synthesis"]
+alias: ["VOCALOID", "Synthesizer V", "虚拟歌手", "歌声合成器", "vocal synth", "洛天依"]
 order: 10
-model_vendor: Yamaha · Dreamtonics
-model_form: 本地模型
-model_input: [MIDI, 歌词, 音符]
-model_output: [人声, 音频]
-model_licence: 声库与编辑器的商用条款、署名要求、声优同意范围需按各声库的 EULA 核对，录音与训练来源以厂商说明为准
-model_verified: 2026-10-30
-links:
-  - "[[glossary:vibrato]]"
-  - "[[glossary:timbre]]"
-  - "[[instrument:voice]]"
-instances:
-  - mutopia-000546 | 布拉姆斯艺术歌曲，长音与辅音交替，最考验合成人声的咬字（C1） | A Brahms art song alternating long notes with consonants, a hard test of synthetic diction (C1)
-  - mutopia-000001 | 分句短、换气明显，可对照合成人声的呼吸处理（C1） | Short phrases with audible breaths, for comparing how a synthetic voice handles breathing (C1)
-  - mutopia-000527 | 旋律简单、歌词重复，容易听清每个字的音头（C1） | A simple tune with repeated words, so each syllable onset is easy to hear (C1)
-sources:
-  - VOCALOID 与 Synthesizer V 的编辑方式——依据来自厂商公开说明。
-  - 歌声合成的咬字与表情处理，对照制作实践惯例整理。
-updated: 2026-10-30
+model_vendor: "Yamaha · Dreamtonics"
+model_form: "本地模型"
+model_input: ["MIDI", "歌词", "音符"]
+model_output: ["人声", "音频"]
+model_licence: "声库与编辑器的商用条款、署名要求、声优同意范围需按各声库的 EULA 核对，录音与训练来源以厂商说明为准"
+model_verified: "2026-10-30"
+links: ["[[glossary:vibrato]]", "[[glossary:timbre]]", "[[instrument:voice]]"]
+instances: []
+sources: ["https://www.vocaloid.com/en/vocaloid6/", "https://sv2.docs.dreamtonics.com/en/home"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍不同歌声合成编辑器，需要分别核对官方版本的歌词、音符及表达控制；普通GM合唱没有这些引擎和声库，不可用来判断真实发音与演唱参数。"
 ---
 
 ::: zh
@@ -64,10 +58,6 @@ updated: 2026-10-30
 价格以编辑器加声库的买断为主，也有按订阅提供的云端服务；地区可用性以官方页面为准。
 
 替代：ACE Studio——想少调参数、要更自然的中文咬字时换它；DiffSinger 一类开源方案——要完全离线或自己训练声库时换它；真人歌手——需要即兴、气口与真实情绪时，合成仍差一层。
-
-```audiolab
-{"type":"instrument","gm":"Lead 6 (voice)","synth":"vocal","phrase":["E4","G4","A4","B4","A4","G4","F#4","E4"],"label":"一条待填词的歌唱线","label_en":"A vocal line waiting for words","hint":"先听长音是否稳，再想每个辅音该落在哪一拍","hint_en":"Hear whether the long notes hold, then decide where each consonant lands"}
-```
 :::
 
 ::: en
@@ -103,8 +93,5 @@ Questions to check: does the voicebank licence cover commercial release? Is cred
 Pricing is mostly a one-off editor plus voicebanks, with some cloud services billed as subscriptions; regional availability is as stated on the official pages.
 
 Alternatives: ACE Studio when you want fewer hand-set parameters and more natural Chinese diction; an open-source system such as DiffSinger when you need full offline work or a voice you trained; a session singer when you need improvisation, breath and real emotion, where synthesis still falls a layer short.
-
-```audiolab
-{"type":"instrument","gm":"Lead 6 (voice)","synth":"vocal","phrase":["E4","G4","A4","B4","A4","G4","F#4","E4"],"label":"A vocal line waiting for words","label_en":"A vocal line waiting for words","hint":"Hear whether the long notes hold, then decide where each consonant lands","hint_en":"Hear whether the long notes hold, then decide where each consonant lands"}
-```
 :::
+

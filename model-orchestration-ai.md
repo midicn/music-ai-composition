@@ -1,35 +1,28 @@
 ---
-id: model-orchestration-ai
-site: ai
-cat: I
-title: 配器辅助模型
+id: "model-orchestration-ai"
+site: "ai"
+cat: "I"
+title: "配器辅助模型"
 title_en: "Orchestration Assistants"
-summary: 把钢琴草图分给各声部，省誊抄时间，平衡仍要人听。
-summary_en: It spreads a piano sketch across sections, saving copying time while balance remains an ear decision.
-level: standard
-tags: [模型档案, 配器, 编曲, 管弦, 记谱]
-tags_en: [model profile, orchestration, arranging, orchestra, notation]
-alias: [配器, 自动配器, 编配助手, orchestration AI, AIVA]
+summary: "把钢琴草图分给各声部，省誊抄时间，平衡仍要人听。"
+summary_en: "It spreads a piano sketch across sections, saving copying time while balance remains an ear decision."
+level: "standard"
+tags: ["模型档案", "配器", "编曲", "管弦", "记谱"]
+tags_en: ["model profile", "orchestration", "arranging", "orchestra", "notation"]
+alias: ["配器", "自动配器", "编配助手", "orchestration AI", "AIVA"]
 order: 17
-model_vendor: AIVA · 记谱软件的编配功能
-model_form: 网页服务
-model_input: [MIDI, 钢琴谱, 风格描述]
-model_output: [MIDI, 音频]
-model_licence: 生成式服务的产出归属与署名要求随档位变化，规则式功能的产出按软件许可，均需按官方条款核对
-model_verified: 2026-10-30
-links:
-  - "[[glossary:voicing]]"
-  - "[[instrument:violin]]"
-  - "[[period:romantic]]"
-instances:
-  - musicnet-000068 | 弦乐四重奏乐章，四个声部各有独立走向，适合看配器是否尊重声部（C1） | A quartet movement with four independent lines, to see whether orchestration respects the parts (C1)
-  - giantmidi-006813 | 莱茵贝格四重奏，织体厚、中频密，最容易听出配器后变浑（C1） | A Rheinberger quartet, thick in texture and crowded in the midrange, where orchestration muddies first (C1)
-  - pdmx-000002 | 长笛练习曲，单线条清楚，适合看一条旋律被分到哪件乐器（C1） | A solo flute etude with one clear line, for seeing which instrument a melody is given to (C1)
-  - mutopia-000498 | 交响曲乐章，动态与编制都大，适合比较草案与成品的差距（C1） | A symphony movement, large in dynamics and scoring, for comparing a draft with the finished work (C1)
-sources:
-  - 配器辅助的两类做法（规则式展开与生成式编配），参考公开说明。
-  - 配器中的音区与平衡问题；配器实践惯例是主要依据。
-updated: 2026-10-30
+model_vendor: "AIVA · 记谱软件的编配功能"
+model_form: "网页服务"
+model_input: ["MIDI", "钢琴谱", "风格描述"]
+model_output: ["MIDI", "音频"]
+model_licence: "生成式服务的产出归属与署名要求随档位变化，规则式功能的产出按软件许可，均需按官方条款核对"
+model_verified: "2026-10-30"
+links: ["[[glossary:voicing]]", "[[instrument:violin]]", "[[period:romantic]]"]
+instances: []
+sources: ["https://www.orch-idea.org/intro/", "https://www.orch-idea.org/tutorials/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍计算机辅助配器，需要核对工具机制与真实目标音频、乐器库和配器结果；固定曲库MIDI不是配器算法输入输出的对照，不能证明自动配器的平衡。"
 ---
 
 ::: zh
@@ -66,10 +59,6 @@ updated: 2026-10-30
 价格：生成式服务按订阅或按量，记谱软件买断或订阅，以官方页面为准；地区可用性以官方页面为准。
 
 替代：记谱软件的展开与编配功能——要确定、可复现、完全在本地时用它；AIVA 一类生成服务——要从零生成而不是配你的草图时换它；NotePerformer 一类回放工具——要更可信的试听而不是配器时换它。
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C3","G3","D4","A4","F4","C4","G3","C3"],"label":"一段被分到四个声部的和弦","label_en":"A chord spread across four parts","hint":"先听中音区是否挤在一起，配器最容易在这里变浑","hint_en":"Hear whether the middle register crowds; orchestration muddies there first"}
-```
 :::
 
 ::: en
@@ -106,8 +95,5 @@ Questions to check: who owns output from a generative service, and does the free
 Price: generative services bill per subscription or per use, notation software is bought outright or subscribed, as stated on the official pages; regional availability is as stated there too.
 
 Alternatives: the spread and arrange functions in notation software when you need deterministic, reproducible, fully local results; a generative service such as AIVA when you want music from scratch rather than your sketch orchestrated; a playback tool such as NotePerformer when you need a more convincing audition rather than orchestration.
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C3","G3","D4","A4","F4","C4","G3","C3"],"label":"A chord spread across four parts","label_en":"A chord spread across four parts","hint":"Hear whether the middle register crowds; orchestration muddies there first","hint_en":"Hear whether the middle register crowds; orchestration muddies there first"}
-```
 :::
+

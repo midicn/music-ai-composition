@@ -1,70 +1,61 @@
 ---
-id: workflow-from-idea-to-master
-site: ai
-cat: B
-title: 从想法到母带
-title_en: From Idea to Master
-summary: 一条可重复的流水线，比任何单点技巧都更能保证交付。
-summary_en: A repeatable pipeline delivers more reliably than any single trick.
-level: standard
-tags: [工作流, 流水线, 交付, 母带]
-tags_en: [workflow, pipeline, delivery, mastering]
-alias: [完整流程, 工作流, idea to master]
+id: "workflow-from-idea-to-master"
+site: "ai"
+cat: "B"
+title: "从想法到母带"
+title_en: "From Idea to Master"
+summary: "每个制作阶段保留明确产物与检查点，按问题类型回到合适步骤。"
+summary_en: "Keep a tangible output and checkpoint at each stage, returning to the appropriate step when needed."
+level: "standard"
+tags: ["工作流", "流水线", "交付", "母带"]
+tags_en: ["workflow", "pipeline", "delivery", "mastering"]
+alias: ["完整流程", "工作流", "idea to master"]
 order: 11
-links:
-  - "[[glossary:daw]]"
-  - "[[glossary:stems]]"
-  - "[[glossary:lufs]]"
-instances:
-  - atepp-001115 | 肖邦叙事曲，从构思到成品的打磨过程可作参照（C1）
-  - groove-000000 | 138 BPM 放克鼓组，节奏素材从生成到定稿的路径（C1）
-  - musicnet-000067 | 贝多芬四重奏，多声部作品从草稿到定稿的结构管理（C1）
-sources:
-  - 音乐制作的阶段划分，对照制作实践公开资料整理。
-  - 交付前的检查项（母带与发行惯例）。
-updated: 2026-10-30
+links: ["[[glossary:daw]]", "[[glossary:stems]]", "[[glossary:lufs]]"]
+sources: ["https://kb.stability.ai/knowledge-base/stable-audio-3-prompt-guide", "https://help.suno.com/en/articles/6141505", "https://www.ableton.com/en/manual/managing-files-and-sets/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页说明实际制作流程与文件核验方法，工作表示例为虚拟教学项目；须以工具说明和自己的输出文件核对，普通MIDI或合成试听不能证明生成服务的效果。"
 ---
 
 ::: zh
-## 问题
+## 让每一步都有产物
 
-用 AI 做音乐最容易卡在两个地方：开始时不知道从哪下手，结束时不知道算不算完成。一条清楚的流水线能同时解决这两个问题，它把创作拆成可检查的阶段，让每一步都有明确的出口。
+| 阶段 | 留下什么 | 检查后怎样继续 |
+|---|---|---|
+| 需求 | 用途、结构、交付与素材范围 | 核心能力缺失就先换路线 |
+| 试作 | 实际提示、参数与候选文件 | 结构合格后才投入细修 |
+| 选择 | 带时间点的试听记录 | 区分可修问题与根本不合适 |
+| 编辑 | 可回退的工程与修改版本 | 先检查接缝、节拍和尾音 |
+| 混音与母带 | 参考混音及约定的测量结果 | 对应具体用途检查声音 |
+| 交付 | 文件清单、版本与必要说明 | 在新位置打开再发送 |
 
-## 流水线
+## 虚拟案例：30秒片头
 
-七个阶段：定简报、写提示、生成候选、筛选、编辑、混音母带、交付。每个阶段都有产出物与检查点。简报写清交付物、风格、长度、用途与权利要求。候选阶段多生成少修改，筛选阶段按结构与质感排序。编辑阶段只修必要的问题。最后按交付标准导出。
+先写口播从第4秒进入，生成后把候选叠入口播试听。若音乐密度遮住文字，判断是否能通过编辑或可用分轨解决；不是一律加压缩或直接重生成。局部修复后从段落前端听接缝，确认结尾完整，再按确认规格导出。这是教学路径，并非一段可供试听的真实模型制作过程。
 
-## 做法
+## 给下一轮留下依据
 
-把每个阶段的产出存成文件，别只留在工具里。阶段之间设一个"是否继续"的判断：结构不对就回到生成，音色不对就在编辑解决。给自己定时间盒，避免在候选阶段无限抽卡。交付前跑一遍清单：结构、伪影、响度、单声道、元数据、权利说明。
-
-## 听什么
-
-在叙事曲里听打磨过程留下的痕迹，在鼓组素材里听从原始生成到定稿的变化，在四重奏里听结构管理的重要性。流水线的价值，在于让每一次交付都可解释。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","B4","G4","E4","C4"],"label":"从草稿到成品","label_en":"From draft to master","hint":"听同一段材料在不同阶段的变化，判断每一步是否必要","hint_en":"Hear the same material across stages and judge whether each step earned its place"}
-```
+把候选原件、选用理由、编辑工程和交付版本分开保存。记录问题所属阶段：结构问题回到选曲或生成，文件规格问题回到导出。不要用一次性漂亮结果代替可继续修改的资料，也不要因为流程写成了步骤就保证不会返工。配套的需求单、试听记录和交付清单可帮助保持版本对应。
 :::
 
 ::: en
-## The problem
+## Leave an output at each stage
 
-AI music work tends to stall in two places: not knowing where to start and not knowing when it is finished. A clear pipeline solves both by splitting creation into checkable stages, each with a defined exit.
+| Stage | Keep | Decision |
+|---|---|---|
+| Brief | Use, form, deliverables and input scope | Change route if an essential capability is missing |
+| Draft | Actual prompt, settings and candidate files | Accept structure before detailed repair |
+| Selection | Listening log with timestamps | Separate repairable issues from unsuitable material |
+| Editing | Reversible project and revision versions | Check seams, timing and tails |
+| Mix and master | Reference mix and agreed measurements | Assess for the intended use |
+| Delivery | File list, version and relevant notes | Reopen before sending |
 
-## The pipeline
+## Fictional example: a short intro
 
-Seven stages: brief, prompt, generate candidates, select, edit, mix and master, deliver. Each has an output and a checkpoint. The brief states deliverable, style, length, use and rights requirements. Generate widely and edit little at the candidate stage, then rank by structure and texture. Edit only what must be fixed. Export to the delivery standard.
+Set narration to enter at four seconds and audition candidates with that narration. If music masks the words, decide whether editing or available stems can solve the density issue. Compression or regeneration is not automatically the answer. After a local repair, listen from before the seam, preserve the ending and export to the agreed specification. This is a teaching route, not an audible record of an actual model session.
 
-## Practice
+## Keep reasons for the next revision
 
-Store each stage's output as a file instead of leaving it inside a tool. Put a continue-or-return decision between stages: wrong structure goes back to generation, wrong timbre is solved in editing. Set a time box so the candidate stage does not become endless sampling. Before delivery, run the checklist: form, artefacts, loudness, mono, metadata, rights notes.
-
-## What to listen for
-
-In the ballade, the traces polishing leaves; in the drum material, how the raw generation differs from the final; in the quartet, why structure needs managing. A pipeline is worth it when every delivery can be explained.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","B4","G4","E4","C4"],"label":"From draft to master","label_en":"From draft to master","hint":"Hear the same material across stages and judge whether each step earned its place","hint_en":"Hear the same material across stages and judge whether each step earned its place"}
-```
+Separate originals, selection notes, editing projects and delivery versions. Return a structural failure to candidate selection or generation, and a format error to export. A successful first output does not replace editable records, and a written workflow cannot guarantee zero rework. Use the companion brief, candidate log and delivery manifest to keep versions connected.
 :::

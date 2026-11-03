@@ -1,36 +1,28 @@
 ---
-id: model-netease-tianyin
-site: ai
-cat: I
-title: 网易天音
-title_en: NetEase Tianyin
-summary: 作词、编曲、演唱分三段做，中文初稿快，成品要自己收。
-summary_en: Lyrics, arrangement and singing in three stages; fast Chinese drafts, finish them yourself.
-level: standard
-tags: [模型档案, 中文歌曲, 作词, 编曲]
-tags_en: [model profile, Chinese songs, lyric writing, arrangement]
-alias: [天音, 网易天音, 天音 AI 写歌]
+id: "model-netease-tianyin"
+site: "ai"
+cat: "I"
+title: "网易天音"
+title_en: "NetEase Tianyin"
+summary: "作词、编曲、演唱分三段做，中文初稿快，成品要自己收。"
+summary_en: "Lyrics, arrangement and singing in three stages; fast Chinese drafts, finish them yourself."
+level: "standard"
+tags: ["模型档案", "中文歌曲", "作词", "编曲"]
+tags_en: ["model profile", "Chinese songs", "lyric writing", "arrangement"]
+alias: ["天音", "网易天音", "天音 AI 写歌"]
 order: 204
-model_vendor: 网易（网易云音乐）
-model_form: 网页服务
-model_input: [文本, 歌词, 参考音频]
-model_output: [音频, 分轨]
-model_licence: 词曲编唱的产出归属、商用与发行按网易天音与网易云音乐的服务条款；活动规则与付费档会变
-model_verified: 2026-10-31
-links:
-  - "[[glossary:strophic-form]]"
-  - "[[instrument:zheng]]"
-  - "[[glossary:mechanical-license]]"
-instances:
-  - cyberhymnal-003336 | 中文歌词的短赞美诗，看声调与旋律的贴合（C1） | A short hymn with Chinese words, to hear tones fitting the melody (C1)
-  - cyberhymnal-002209 | 十八秒的中国旋律，看一句里的字怎么排密（C1） | An eighteen second Chinese melody, to hear how syllables are packed into a line (C1)
-  - mutopia-000782 | 九十九秒的艺术歌曲，长句多，适合看换气与句尾（C1） | A ninety-nine second art song with long phrases, to hear breath and line endings (C1)
-  - mutopia-000527 | 六十三秒的分节歌，段落完整，适合对照编曲模板（C1） | A sixty-three second strophic song with complete sections, to compare arrangement templates (C1)
-sources:
-  - 网易天音官方产品页与网易云音乐创作入口（作词、编曲、演唱与导出）。
-  - 网易天音公开更新说明中的一键写歌、词曲协同与发行入口。
-  - 网易云音乐服务条款与 AI 创作活动规则（产出使用与商用）。
-updated: 2026-10-31
+model_vendor: "网易（网易云音乐）"
+model_form: "网页服务"
+model_input: ["文本", "歌词", "参考音频"]
+model_output: ["音频", "分轨"]
+model_licence: "词曲编唱的产出归属、商用与发行按网易天音与网易云音乐的服务条款；活动规则与付费档会变"
+model_verified: "2026-10-31"
+links: ["[[glossary:strophic-form]]", "[[instrument:zheng]]", "[[glossary:mechanical-license]]"]
+instances: []
+sources: ["https://tianyin.music.163.com/editor/", "https://tianyin.music.163.com/terms/user-agreement"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍网易天音服务，应以当前官方工作台和服务协议核对功能及可用范围；普通曲库MIDI并非天音输出，不能证明咬字、导出档位或服务许可状态。"
 ---
 
 ::: zh
@@ -60,10 +52,6 @@ updated: 2026-10-31
 ## 发行前要问的事
 
 要确认：AI 生成标识、词曲版权归属、能否发行到流媒体、分轨的商用范围、活动期间的额外授权。具体以网易天音与网易云音乐的服务条款为准。替代：要中文整曲与 API，换 MiniMax Music；要分轨与平台发行，换腾讯音乐天琴；要本地可控，换 YuE 或 DiffRhythm。
-
-```audiolab
-{"type":"instrument","gm":"Voice Oohs","synth":"vocal","phrase":["A4","C5","D5","C5","A4","G4","A4","E4"],"label":"一句带声调起伏的旋律","label_en":"A line with room for tonal movement","hint":"听每个字的音高走向，是否像说话，而不是一个字一个平音","hint_en":"Hear whether each syllable moves like speech instead of sitting on one flat pitch"}
-```
 :::
 
 ::: en
@@ -94,3 +82,4 @@ There are plenty of arrangement templates, which is fast but makes it easy to he
 
 Confirm: AI disclosure, ownership of words and music, whether streaming release is allowed, the commercial scope of stems, and any extra terms attached to campaigns. The current NetEase Tianyin and NetEase Cloud Music terms are the authority. Alternatives: MiniMax Music for stronger Mandarin full songs and an API; TME Tianqin for stems and platform release; YuE or DiffRhythm for local control.
 :::
+

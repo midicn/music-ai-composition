@@ -1,36 +1,29 @@
 ---
-id: tool-ai-stems-in-daw
-site: ai
-cat: J
-title: DAW 内分轨
-title_en: Stem Separation Inside the DAW
-summary: 在工程里把成品拆成可单独处理的轨，先问分离痕迹会不会毁掉这一版。
-summary_en: Splitting a finished mix into separately treatable tracks inside the session starts with whether the artefacts ruin this version.
-level: standard
-tags: [分轨, 分离, 混音, 采样]
-tags_en: [stems, separation, mixing, sampling]
-alias: [工程内分轨, 实时分离]
+id: "tool-ai-stems-in-daw"
+site: "ai"
+cat: "J"
+title: "DAW 内分轨"
+title_en: "Stem Separation Inside the DAW"
+summary: "在工程里把成品拆成可单独处理的轨，先问分离痕迹会不会毁掉这一版。"
+summary_en: "Splitting a finished mix into separately treatable tracks inside the session starts with whether the artefacts ruin this version."
+level: "standard"
+tags: ["分轨", "分离", "混音", "采样"]
+tags_en: ["stems", "separation", "mixing", "sampling"]
+alias: ["工程内分轨", "实时分离"]
 order: 4
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:phase]]"
-  - "[[glossary:mixdown]]"
-tool_kind: plugin
-tool_vendor: 分轨插件厂商
-tool_form: 插件
-tool_platforms: [macOS, Windows]
-tool_price: 买断
-tool_jobs: [混音, 剪辑, 声音设计]
-tool_verified: 2026-10-30
-instances:
-  - openscore-000443 | 艺术歌曲的人声与钢琴，两件乐器分离后是否还像同一间房（C1）
-  - musicnet-000288 | 莫扎特钢琴三重奏，三件乐器是检验分轨层次的合适参照（C1）
-  - pdmx-000183 | 莫扎特安魂曲，合唱与乐队叠在一起，分离后最容易剩下糊边（C1）
-  - groove-001115 | 112 BPM 摇滚鼓组，拆鼓时瞬态与镲片残响是否保住（C1）
-sources:
-  - 主流 DAW 内分轨功能的公开说明与格式限制（2026-10-30 复核）。
-  - 掩码分离的串音与相位问题；混音实践惯例是主要依据。
-updated: 2026-10-30
+links: ["[[glossary:stems]]", "[[glossary:phase]]", "[[glossary:mixdown]]"]
+tool_kind: "plugin"
+tool_vendor: "分轨插件厂商"
+tool_form: "插件"
+tool_platforms: ["macOS", "Windows"]
+tool_price: "买断"
+tool_jobs: ["混音", "剪辑", "声音设计"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://support.apple.com/en-lamr/guide/logicpro/lgcp61bae908/12.3/mac/15.6", "https://github.com/facebookresearch/demucs/blob/main/README.md?plain=1"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "DAW 内分轨需要实际宿主版本、硬件与分离轨结果的核对；未经分离的音乐播放无法证明串音、伪影或轨道重组后的相位关系。"
 ---
 
 ::: zh
@@ -53,10 +46,6 @@ updated: 2026-10-30
 ## 先学三件事
 
 先学三件事：用原曲做 A/B、检查单声道与相位、确认素材的授权边界。随后读这里的分轨级编辑、分轨分离工具与混 AI 分轨三篇，再决定哪些轨值得留下。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":112,"label":"拆出的鼓","label_en":"Separated drums","hint":"solo 鼓轨，听镲片是否变成噪声","hint_en":"Solo the drum stem and listen for noisy cymbals"}
-```
 :::
 
 ::: en
@@ -79,8 +68,5 @@ For cleaner results, use a standalone separation service, which usually offers m
 ## First three things
 
 Learn three things first: A/B against the original, check mono and phase, and confirm what the source material allows. Then read the site's pages on stem-level editing, separation tools and mixing AI stems before deciding which stems are worth keeping.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":112,"label":"Separated drums","label_en":"Separated drums","hint":"Solo the drum stem and listen for noisy cymbals","hint_en":"Solo the drum stem and listen for noisy cymbals"}
-```
 :::
+

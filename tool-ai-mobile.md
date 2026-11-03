@@ -1,37 +1,29 @@
 ---
-id: tool-ai-mobile
-site: ai
-cat: J
-title: 移动端音乐工具
-title_en: Mobile Music Apps
-summary: 手机最适合抓住刚冒出来的八小节，精修与交付仍要回到桌面。
-summary_en: A phone is best at catching the eight bars that just arrived; finishing and delivery still belong on a desk.
-level: standard
-tags: [移动端, 录音, 分享, 授权]
-tags_en: [mobile, recording, sharing, licensing]
-alias: [手机音乐, 移动编曲, 手机录音]
+id: "tool-ai-mobile"
+site: "ai"
+cat: "J"
+title: "移动端音乐工具"
+title_en: "Mobile Music Apps"
+summary: "手机最适合抓住刚冒出来的八小节，精修与交付仍要回到桌面。"
+summary_en: "A phone is best at catching the eight bars that just arrived; finishing and delivery still belong on a desk."
+level: "standard"
+tags: ["移动端", "录音", "分享", "授权"]
+tags_en: ["mobile", "recording", "sharing", "licensing"]
+alias: ["手机音乐", "移动编曲", "手机录音"]
 order: 247
-links:
-  - "[[glossary:latency]]"
-  - "[[glossary:microphone]]"
-  - "[[glossary:headphone-mix]]"
-  - "[[glossary:loudness-normalization]]"
-tool_kind: service
-tool_vendor: BandLab、GarageBand、Suno 移动版
-tool_form: 手机应用
-tool_platforms: [iOS, Android]
-tool_price: 免费 + 订阅
-tool_jobs: [录音, 编曲, 分享]
-tool_verified: 2026-10-31
-instances:
-  - nottingham-000943 | 人人都能哼的主题，哼唱转谱能不能跟上快速跑句（C1）
-  - groove-000926 | 六秒的独立摇滚鼓型，手机外放听底鼓与军鼓的比例（C1）
-  - emopia-000360 | 四十九秒的流行钢琴片段，手机端拼接与分享最常处理的长度（C1）
-sources:
-  - BandLab、GarageBand 与 Suno 移动版官方支持页所列录音、导出与订阅方式。
-  - Apple App Store 与 Google Play 关于订阅、退款与账号迁移的规则。
-  - AES 关于移动设备录音延迟与 USB 音频接口兼容性的技术讨论。
-updated: 2026-10-31
+links: ["[[glossary:latency]]", "[[glossary:microphone]]", "[[glossary:headphone-mix]]", "[[glossary:loudness-normalization]]"]
+tool_kind: "service"
+tool_vendor: "BandLab、GarageBand、Suno 移动版"
+tool_form: "手机应用"
+tool_platforms: ["iOS", "Android"]
+tool_price: "免费 + 订阅"
+tool_jobs: ["录音", "编曲", "分享"]
+tool_verified: "2026-10-31"
+instances: []
+sources: ["https://support.apple.com/en-gb/guide/garageband-iphone/chs39284d66/ios", "https://blog.bandlab.com/studio-quicktips-mobile/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "移动端工具要核对机型、导出路径和监听延迟，并在设备上实测；音乐能播放并不证明手机可以无延迟跟录或把可编辑工程完整迁移。"
 ---
 
 ::: zh
@@ -61,10 +53,6 @@ updated: 2026-10-31
 ## 上手顺序
 
 先测延迟与麦克风，再固定一套分享前的导出设置，最后读清循环与生成内容的授权。之后再看延迟、监听与短视频配乐的基础条目。
-
-```audiolab
-{"type":"instrument","gm":73,"phrase":["A4","C5","D5","E5","D5","C5","A4"],"label":"手机哼唱","label_en":"Phone hum","hint":"用手机外放听，旋律轮廓是否还站得住","hint_en":"Play it on a phone speaker: does the melodic outline still hold"}
-```
 :::
 
 ::: en
@@ -94,8 +82,5 @@ Dozens of tracks, precise automation, third-party plug-ins and long sessions are
 ## Order of learning
 
 Measure latency and test the mic, settle an export preset for sharing, then read the loop and generation terms. After that, look at latency, monitoring and short-video scoring.
-
-```audiolab
-{"type":"instrument","gm":73,"phrase":["A4","C5","D5","E5","D5","C5","A4"],"label":"Phone hum","label_en":"Phone hum","hint":"Play it on a phone speaker: does the melodic outline still hold","hint_en":"Play it on a phone speaker: does the melodic outline still hold"}
-```
 :::
+

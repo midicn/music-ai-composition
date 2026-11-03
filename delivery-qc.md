@@ -1,86 +1,57 @@
 ---
-id: delivery-qc
-site: ai
-cat: H
-title: 交付前检查
-title_en: Delivery QC
-summary: 交付前的错都能量出来，别靠再听一遍
-summary_en: Delivery errors are measurable; another listen will not catch them
-level: standard
-tags: [交付, 质检, 真峰值, 响度]
-tags_en: [delivery, QC, true peak, loudness]
-alias: [交付检查, 交付质检, delivery QC]
+id: "delivery-qc"
+site: "ai"
+cat: "H"
+title: "交付前检查"
+title_en: "Delivery QC"
+summary: "以接收方确认的规格检查实际文件，记录分轨、响度和完整性限制。"
+summary_en: "Check actual files against the agreed specification and document stem, loudness and integrity limitations."
+level: "standard"
+tags: ["交付", "质检", "真峰值", "响度"]
+tags_en: ["delivery", "QC", "true peak", "loudness"]
+alias: ["交付检查", "交付质检", "delivery QC"]
 order: 170
-links:
-  - "[[glossary:true-peak]]"
-  - "[[glossary:lufs]]"
-  - "[[glossary:stems]]"
-instances:
-  - pdmx-000153 | 二十六分钟的长文件，结尾淡出与分段在交付时最易漏（C1）
-  - groove-000000 | 三十七秒鼓循环，循环点的咔哒一测就出（C1）
-  - mutopia-000497 | 贝多芬第五的齐奏，密度会掩盖削波与真峰值超限（C1）
-  - cyberhymnal-000000 | 管风琴赞美诗，持续低音在单声道检查里最见相位（C1）
-sources:
-  - ITU-R BS.1770 响度与真峰值测量方法，由国际电信联盟发布。
-  - EBU R128 节目响度规范，由欧洲广播联盟发布。
-  - 流媒体与母带交付规范，来自平台与行业组织公开文件。
-updated: 2026-10-31
+links: ["[[glossary:true-peak]]", "[[glossary:lufs]]", "[[glossary:stems]]"]
+sources: ["https://www.ableton.com/en/manual/managing-files-and-sets/", "https://tech.ebu.ch/publications/r128", "https://www.itu.int/rec/R-REC-BS.1770-5-202311-I/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页说明实际制作流程与文件核验方法，工作表示例为虚拟教学项目；须以工具说明和自己的输出文件核对，普通MIDI或合成试听不能证明生成服务的效果。"
 ---
 
 ::: zh
-## 返工往往不是因为音乐
+## 验收依据是交付约定
 
-交付前从头听一遍，注意力都在音乐上，漏掉的恰好是听不出来的东西：结尾多两秒静音，真峰值超零点几 dB，分轨相加不等于混音，文件名带空格。客户不会因为这些否掉作品，但会因此退回重交。
+用途不同，文件与响度要求可能不同。先确认格式、声道、采样率、位深、时长、起点与尾音范围，再检查实际导出文件。不能把工程设置直接当作导出结果，也没有适合所有项目的固定1dB余量或统一响度值。
 
-## 勾选表
+## 四轮检查
 
-- [ ] 头尾：开头无多余静音，结尾淡出完整，不截断尾音
-- [ ] 峰值：真峰值低于目标上限，至少留 1 dB 余量
-- [ ] 响度：整体与短时响度贴近平台目标，段落之间不忽大忽小
-- [ ] 单声道：低频与主唱不塌，相位检查通过
-- [ ] 剪切点：逐段扫，无咔哒、爆音、直流偏移
-- [ ] 分轨：所有分轨相加能还原混音，增益补偿写在说明里
-- [ ] 规格：采样率与位深跟工程一致，不把 44.1 kHz 升到 96 kHz 充高清
-- [ ] 命名：项目_曲名_版本_分轨_速度_日期，ASCII，版本补零
-- [ ] 元数据：曲名、作者、ISRC、版权行、工具与版本齐全
-- [ ] 附件：交付清单、授权文件、联系人与日期
+1. 文件轮：清单中每项都能打开，命名与版本一致，实际规格符合约定。
+2. 时间轮：检查开头、结束、循环点和对白或画面同步；保留要求的尾音。
+3. 声音轮：完整试听并检查峰值、真峰值或响度等约定指标；同时听失真和伪影。
+4. 交接轮：注明输入来源、实际可编辑范围与缺失项，附上确认过的参考混音。
 
-## 三个数必须用表测
+分轨需要共同起点和清楚的导出说明，不应预设相加必能精确恢复混音。经过非线性母线处理或混音分离的文件尤其要记录差异。元数据按接收用途填写，不必把与项目无关的字段全部补齐。
 
-真峰值、整体响度、短时响度范围。测量口径按 ITU-R BS.1770 与 EBU R128，目标值按平台或客户规范，不凭耳朵猜。真峰值留余量，是因为转码会改变采样间峰值；短时响度看的是段落之间有没有突然变响，不是单看一个总数。测完把数值写进交付说明，客户复核时不用再问。
+## 独立复查
 
-## 清单管不到的地方
-
-清单证明你查过，不证明作品好。编曲、音色、客户口味不在表里；权利文件是否齐全要另做一次清权；插件兼容要在对方机器上开一次。源文件本身有伪影，检查只能发现，不能修复。把清单和听辨分开做，先测后听，避免耳朵被音乐带走。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5"],"label":"交付前最后一遍","label_en":"The last pass before delivery","hint":"响度与峰值先过，再谈音色","hint_en":"Loudness and peaks before tone"}
-```
-
+把交付包复制到新位置，照清单再打开一次。若附工程，检查外部依赖；若只提供混音，就明确没有原始工程。使用“交付清单”模板把每项实际文件和验收状态对应起来。
 :::
 
 ::: en
-## Rework rarely starts with the music
+## The agreement defines acceptance
 
-On a final listen your attention sits on the music, so the things you miss are exactly the ones you cannot hear: two extra seconds of silence at the end, a true peak a fraction over, stems that do not sum to the mix, a filename with a space in it. None of these makes a client reject the track artistically, but each one sends it back.
+Confirm file format, channels, sample rate, bit depth, duration, origin and tail range for the intended use. Inspect exported files rather than assuming they inherit the project settings. No fixed one-decibel margin or single loudness value suits every delivery.
 
-## The checklist
+## Four passes
 
-- [ ] Head and tail: no stray silence at the start, the fade ends cleanly, no tail is cut off
-- [ ] Peaks: true peak below the target ceiling, with at least 1 dB of margin
-- [ ] Loudness: integrated and short-term values close to the platform target, no sudden jumps between sections
-- [ ] Mono: low end and lead vocal hold up, phase check passes
-- [ ] Edits: scan every cut for clicks, pops and DC offset
-- [ ] Stems: all stems sum back to the mix, with gain offsets documented
-- [ ] Specs: sample rate and bit depth match the session; never upsample 44.1 kHz to 96 kHz and call it high resolution
-- [ ] Naming: project_title_version_stem_tempo_date, ASCII, zero-padded versions
-- [ ] Metadata: title, author, ISRC, copyright line, tool and version
-- [ ] Attachments: delivery note, licence files, contact and date
+1. Files: open each listed item, verify names and versions, and inspect actual properties.
+2. Timing: check starts, endings, loops and synchronization with dialogue or picture.
+3. Sound: hear the full result and measure agreed peaks, true peaks or loudness; listen for distortion and artefacts as well.
+4. Handoff: describe input sources, remaining editability and missing material, with an approved reference mix.
 
-## Three numbers to measure
+Stems need a common origin and export notes. Do not assume they reproduce the reference exactly when summed, particularly after nonlinear bus processing or mix separation. Supply metadata relevant to the recipient's use rather than filling unrelated fields.
 
-True peak, integrated loudness and the short-term range. Measure with ITU-R BS.1770 and EBU R128, and take the target from the platform or the client spec rather than from your ear. Peak margin matters because transcoding changes inter-sample peaks. Short-term loudness shows whether a section suddenly gets louder; a single integrated number hides that. Write the measured values into the delivery note so the client does not have to ask.
+## Reopen independently
 
-## What the checklist cannot cover
-
-The checklist proves you looked, not that the work is good. Arrangement, timbre and taste are not on it. Rights completeness needs a separate clearance pass. Plug-in compatibility has to be tested on the recipient's machine. If the source already contains artefacts, inspection finds them but cannot repair them. Test first and listen second, or the music will carry your ear away.
+Copy the package to another location and open it using the manifest. For a project, verify external dependencies. If only a mix is available, state that an original project is absent. The delivery-manifest template connects each file with its acceptance state.
 :::

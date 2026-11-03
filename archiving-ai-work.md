@@ -1,29 +1,22 @@
 ---
-id: archiving-ai-work
-site: ai
-cat: H
-title: 存档
-title_en: Archiving the Work
-summary: 存档要保证三年后还能重剪、授权与举证
-summary_en: Archive so a re-edit, a licence or a claim is still possible years later.
-level: standard
-tags: [存档, 无损, 权利, 保留期]
-tags_en: [archiving, lossless, rights, retention]
-alias: [存档, 长期保存, cold archive]
+id: "archiving-ai-work"
+site: "ai"
+cat: "H"
+title: "存档"
+title_en: "Archiving the Work"
+summary: "存档要保证三年后还能重剪、授权与举证"
+summary_en: "Archive so a re-edit, a licence or a claim is still possible years later."
+level: "standard"
+tags: ["存档", "无损", "权利", "保留期"]
+tags_en: ["archiving", "lossless", "rights", "retention"]
+alias: ["存档", "长期保存", "cold archive"]
 order: 10
-links:
-  - "[[glossary:bit-depth]]"
-  - "[[glossary:master-rights]]"
-  - "[[glossary:public-domain]]"
-instances:
-  - pdmx-000153 | 二十六分钟托卡塔，长母带的体积与分段都要留（C1）
-  - mutopia-000178 | 巴赫 d 小调托卡塔与赋格，多声部工程要留层（C1）
-  - groove-000000 | 短循环也要留来源与参数，否则无法再生成（C1）
-  - mutopia-000497 | 贝多芬第五，大型工程缺一层就无法重混（C1）
-sources:
-  - 数字音频长期保存的格式选择；档案与图书馆惯例是主要依据。
-  - 权利证据与保留期的做法——依据来自合同与公开保存指南。
-updated: 2026-10-30
+links: ["[[glossary:bit-depth]]", "[[glossary:master-rights]]", "[[glossary:public-domain]]"]
+instances: []
+sources: ["https://www.archives.gov/preservation/products/definitions/digital-format", "https://www.ableton.com/en/manual/managing-files-and-sets/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论原文件、工程依赖和可恢复归档，需要检查格式说明、收集外部媒体并重开项目；固定曲目试听不能证明档案完整或将来可恢复。"
 ---
 
 ::: zh
@@ -38,14 +31,6 @@ updated: 2026-10-30
 ## 格式与保留期
 
 冷存档用无损，WAV 或 FLAC，不用 MP3 与 AAC 当唯一副本。不要为了高清把四十四点一升到九十六，那只是变大。记录打开工程需要的 DAW 与插件版本，纯文本与 PDF 优先于专有格式。保留期按合同与法律走，客户项目与制作音乐常按财务记录的要求保存数年，权利证据要覆盖作品的使用周期，模型条款会变，所以交付当时就要留档。权利证据包括当时的工具条款、输入授权、人声同意与披露文本。
-
-## 听什么
-
-在二十六分钟的托卡塔里体会长母带的体积与分段，存档要考虑的正是这些。在巴赫 d 小调托卡塔与赋格的多声部版本里看多轨工程需要保留多少层。在放克循环里看短素材也需要保留来源与参数，不然无法再生成。在贝多芬第五交响曲里看大型工程的分轨与工程文件，缺一层就无法重混。
-
-```audiolab
-{"type":"instrument","gm":"Church Organ","synth":"blown","phrase":["C3","G3","C4","E4"],"label":"十年后还能打开吗","label_en":"Will it open in ten years","hint":"无损、开放、带元数据，才经得起时间","hint_en":"Lossless, open and documented is what survives time"}
-```
 :::
 
 ::: en
@@ -60,12 +45,5 @@ A 24-bit WAV master at the project sample rate, with no lossy compression. Stems
 ## Formats and retention
 
 Cold storage should be lossless, WAV or FLAC, never MP3 or AAC as the only copy. Do not upsample 44.1 kHz to 96 kHz to look high resolution; it only gets bigger. Record the DAW and plug-in versions needed to open the session, and prefer plain text and PDF over proprietary-only formats. Retention follows contract and law; client and production music work is often kept for years as financial records, while rights evidence must cover the life of the work. Model terms change, so snapshot them at delivery. Rights evidence includes the terms in force, input licences, voice consent and the disclosure text.
-
-## What to listen for
-
-In the twenty-six minute Toccata, the size and segmentation of a long master, exactly what archiving must plan for. In the Bach Toccata and Fugue for ensemble, how many layers a multi-part session needs. In the funk loop, why even short material needs its source and settings, or it cannot be regenerated. In the Beethoven Fifth, a large session where one missing stem blocks any remix.
-
-```audiolab
-{"type": "instrument", "gm": "Church Organ", "synth": "blown", "phrase": ["C3", "G3", "C4", "E4"], "label": "Will it open in ten years", "label_en": "Will it open in ten years", "hint": "无损、开放、带元数据，才经得起时间", "hint_en": "Lossless, open and documented is what survives time"}
-```
 :::
+

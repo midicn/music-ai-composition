@@ -1,40 +1,30 @@
 ---
-id: model-riffusion
-site: ai
-cat: I
-title: Riffusion（早期频谱模型）
-title_en: Riffusion (early spectrogram model)
-summary: 介绍早期riffusion-hobby的频谱扩散与音频还原
-summary_en: This entry covers early riffusion-hobby spectrogram diffusion and audio reconstruction, not later online products.
-level: standard
-tags: [模型档案, 频谱生成, 循环, 低保真]
-tags_en: [model profile, spectrogram, loops, lo-fi]
-alias: [Riffusion, 频谱生成, 循环生成]
+id: "model-riffusion"
+site: "ai"
+cat: "I"
+title: "Riffusion（早期频谱模型）"
+title_en: "Riffusion (early spectrogram model)"
+summary: "介绍早期riffusion-hobby的频谱扩散与音频还原"
+summary_en: "This entry covers early riffusion-hobby spectrogram diffusion and audio reconstruction, not later online products."
+level: "standard"
+tags: ["模型档案", "频谱生成", "循环", "低保真"]
+tags_en: ["model profile", "spectrogram", "loops", "lo-fi"]
+alias: ["Riffusion", "频谱生成", "循环生成"]
 order: 5
-model_vendor: Riffusion
-model_form: 早期本地研究项目（riffusion-hobby）
-model_form_en: Early local research project (riffusion-hobby)
-model_input: [文本, 该实现支持的初始化频谱与采样设置]
-model_input_en: [Text, Initialization spectrogram and sampling settings supported by that implementation]
-model_output: [频谱表示, 还原音频]
-model_output_en: [Spectrogram representations, Reconstructed audio]
-model_licence: riffusion-hobby 代码为 MIT；模型权重许可及后续在线条款分别核对
-model_licence_en: riffusion-hobby code is MIT; check model-weight licences and later online-service terms separately
-model_verified: 2026-11-02
-links:
-  - "[[glossary:sampler]]"
-  - "[[glossary:tempo]]"
-  - "[[instrument:electronic-drums]]"
-instances:
-  - groove-000005 | 87 BPM 嘻哈鼓组，看循环的节奏骨架（C1） | An 87 BPM hip-hop kit, to hear a loop's rhythmic skeleton (C1)
-  - groove-000002 | 86 BPM 灵魂乐鼓组，看低保真素材的松紧（C1） | An 86 BPM soul kit, to hear the looseness of lo-fi material (C1)
-  - oga-000031 | 一段氛围循环，看可反复播放的短素材（C1） | An ambient loop, to hear a short repeating asset (C1)
-  - groove-000007 | 65 BPM 摇滚鼓组，看慢速循环的呼吸（C1） | A 65 BPM rock kit, to hear the feel of a slow loop (C1)
-sources:
-  - "https://github.com/riffusion/riffusion-hobby"
-  - 产品能力与生成方式（官方公开说明与条款页）。
-  - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
-updated: 2026-11-02
+model_vendor: "Riffusion"
+model_form: "早期本地研究项目（riffusion-hobby）"
+model_form_en: "Early local research project (riffusion-hobby)"
+model_input: ["文本", "该实现支持的初始化频谱与采样设置"]
+model_input_en: ["Text", "Initialization spectrogram and sampling settings supported by that implementation"]
+model_output: ["频谱表示", "还原音频"]
+model_output_en: ["Spectrogram representations", "Reconstructed audio"]
+model_licence: "riffusion-hobby 代码为 MIT；模型权重许可及后续在线条款分别核对"
+model_licence_en: "riffusion-hobby code is MIT; check model-weight licences and later online-service terms separately"
+model_verified: "2026-11-02"
+links: ["[[glossary:sampler]]", "[[glossary:tempo]]", "[[instrument:electronic-drums]]"]
+instances: ["groove-000005", "groove-000002", "oga-000031", "groove-000007"]
+sources: ["https://github.com/riffusion/riffusion-hobby", "产品能力与生成方式（官方公开说明与条款页）。", "失败模式来自公开用户报告与创作实践，未引用具体评测数据。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -92,3 +82,4 @@ Check licences for earlier code and models separately from later online-service 
 {"type":"instrument","gm":"Electric Bass (finger)","synth":"plucked","phrase":["E2","E2","G2","A2","E2","D2","E2","G2"],"label":"Short bass phrase","label_en":"Short bass phrase","hint":"This fixed-note bass phrase is a loop reference, not output from Riffusion spectrogram generation or reconstruction.","hint_en":"This fixed-note bass phrase is a loop reference, not output from Riffusion spectrogram generation or reconstruction."}
 ```
 :::
+

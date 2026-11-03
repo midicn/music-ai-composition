@@ -1,28 +1,20 @@
 ---
-id: ai-for-film-scoring
-site: ai
-cat: F
-title: 影视配乐
-title_en: AI for Film Scoring
-summary: AI 能出 temp 和短 cue，长片的结构与主题仍要人来写
-summary_en: AI can draft temp scores and short cues; long arcs and themes still need a composer
-level: standard
-tags: [影视配乐, 临时音轨, 主题发展, 导演沟通]
-tags_en: [film scoring, temp score, thematic development, director notes]
-alias: [影视配乐, 电影配乐, film scoring]
+id: "ai-for-film-scoring"
+site: "ai"
+cat: "F"
+title: "影视配乐"
+title_en: "AI for Film Scoring"
+summary: "AI 能出 temp 和短 cue，长片的结构与主题仍要人来写"
+summary_en: "AI can draft temp scores and short cues; long arcs and themes still need a composer"
+level: "standard"
+tags: ["影视配乐", "临时音轨", "主题发展", "导演沟通"]
+tags_en: ["film scoring", "temp score", "thematic development", "director notes"]
+alias: ["影视配乐", "电影配乐", "film scoring"]
 order: 1
-links:
-  - "[[glossary:cue]]"
-  - "[[glossary:stems]]"
-instances:
-  - pdmx-000160 | 固定音型加独奏小提琴写场面，临时音轨常用的方向参考（C1）
-  - pdmx-000180 | 四音动机贯穿全曲，生成工具给不出这种长线（C1）
-  - pdmx-001524 | 同一材料靠速度与配器推进，短 cue 的范本（C1）
-  - pdmx-001010 | 一个乐章铺十分钟情绪，AI 很难维持这种长弧（C1）
-sources:
-  - 影视配乐流程的阶段划分，对照公开的配乐访谈与制作惯例整理。
-  - Film scoring workflow stages (public interviews and general practice).
-updated: 2026-10-30
+links: ["[[glossary:cue]]", "[[glossary:stems]]"]
+instances: ["pdmx-000160", "pdmx-000180", "pdmx-001524", "pdmx-001010"]
+sources: ["影视配乐流程的阶段划分，对照公开的配乐访谈与制作惯例整理。", "Film scoring workflow stages (public interviews and general practice)."]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -43,7 +35,7 @@ updated: 2026-10-30
 在《骷髅之舞》里听一个固定音型怎样撑住整段画面，在贝多芬第五开头听四音动机怎样被压缩和扩展，在格里格的《在山妖的洞窟中》里听同一材料靠速度和配器完成短 cue 的推进，在马勒第五里听一个乐章怎样把情绪铺到十分钟以上。前三个方向 AI 能给出可用的草稿，最后一个只能人来搭。
 
 ```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C4","E4","G4","A4","G4","E4","D4","C4"],"label":"一个动机的骨架","label_en":"The skeleton of a motif","hint":"问这四个音能不能撑四十分钟，而不是四小节","hint_en":"Ask whether these four notes can carry forty minutes, not four bars"}
+{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C4","E4","G4","A4","G4","E4","D4","C4"],"label":"音色与短句练习","label_en":"Timbre and phrase exercise","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -65,6 +57,7 @@ Split the work. Mark each scene's in point, out point and rough length on the ti
 In Danse macabre, how one ostinato holds a whole scene together; in the opening of Beethoven's Fifth, how a four-note cell is compressed and extended; in Grieg's In the Hall of the Mountain King, how a single idea is pushed by tempo and orchestration through a short cue; in Mahler's Fifth, how one movement sustains a mood past ten minutes. AI can draft the first three. The last one has to be built by a person.
 
 ```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C4","E4","G4","A4","G4","E4","D4","C4"],"label":"The skeleton of a motif","label_en":"The skeleton of a motif","hint":"Ask whether these four notes can carry forty minutes, not four bars","hint_en":"Ask whether these four notes can carry forty minutes, not four bars"}
+{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C4","E4","G4","A4","G4","E4","D4","C4"],"label":"Timbre and phrase exercise","label_en":"Timbre and phrase exercise","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

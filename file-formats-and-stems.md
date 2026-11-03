@@ -1,29 +1,22 @@
 ---
-id: file-formats-and-stems
-site: ai
-cat: H
-title: 文件与分轨
-title_en: Files and Stems
-summary: 交付包的目标不是给全，而是让对方能接着做
-summary_en: A delivery package exists so someone else can continue the work.
-level: standard
-tags: [分轨, 交付, 命名, 采样率]
-tags_en: [stems, delivery, naming, sample rate]
-alias: [文件交付, 分轨交付, stems delivery]
+id: "file-formats-and-stems"
+site: "ai"
+cat: "H"
+title: "文件与分轨"
+title_en: "Files and Stems"
+summary: "交付包的目标不是给全，而是让对方能接着做"
+summary_en: "A delivery package exists so someone else can continue the work."
+level: "standard"
+tags: ["分轨", "交付", "命名", "采样率"]
+tags_en: ["stems", "delivery", "naming", "sample rate"]
+alias: ["文件交付", "分轨交付", "stems delivery"]
 order: 4
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:sample-rate]]"
-  - "[[glossary:bit-depth]]"
-instances:
-  - musicnet-000067 | 贝多芬第十五弦乐四重奏，四声部正好对应四条分轨（C1）
-  - mutopia-000497 | 贝多芬第五，多组总线与大量分轨的交付样本（C1）
-  - groove-000000 | 单条鼓循环，用来检查单轨交付的循环点与尾音（C1）
-  - pdmx-000153 | 二十六分钟长文件，分段与体积在交付时最容易被忽略（C1）
-sources:
-  - 分轨与工程交付的常见结构，对照制作实务惯例整理。
-  - 采样率与位深的取舍（数字音频公开规范）。
-updated: 2026-10-30
+links: ["[[glossary:stems]]", "[[glossary:sample-rate]]", "[[glossary:bit-depth]]"]
+instances: []
+sources: ["https://www.ableton.com/en/manual/managing-files-and-sets/", "https://docs.acestudio.ai/project/file-management/export-files"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论混音、分轨、MIDI和工程导出，需要查看实际导出选项和文件组织；固定曲目试听不能证明已提供独立声部或完整工程依赖。"
 ---
 
 ::: zh
@@ -38,14 +31,6 @@ updated: 2026-10-30
 ## 规格与命名
 
 分轨用二十四位 WAV，采样率跟工程走，影视项目常用四十八千赫，纯音乐常用四十四点一千赫，不要把四十四点一的成品升到九十六冒充高清。所有分轨要能相加还原混音，做不到就写明增益补偿。命名统一为项目、曲名、版本、分轨名、速度、日期，用 ASCII，不用空格，版本号补零。同一项目的分轨名跨版本保持一致，对方的模板才不用重做。交付前用接收方的 DAW 打开一次，确认轨道数、起点与采样率一致，五分钟的检查能省掉对方一天的返工。
-
-## 听什么
-
-在贝多芬第十五弦乐四重奏里听四个声部如何分轨，四条就够，边界清楚。在贝多芬第五交响曲里听多组总线的分法。在放克鼓循环里听单轨交付时，循环点与尾音有没有交代。在二十六分钟的托卡塔里听长文件的分段与文件体积，命名和分段在这里最容易被忽略。
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C4","E4","G4","C5"],"label":"分轨里的弦乐","label_en":"Strings inside the stems","hint":"每件乐器单独一轨，混音才有退路","hint_en":"One part per stem gives the mix somewhere to go back to"}
-```
 :::
 
 ::: en
@@ -60,12 +45,5 @@ A full mix with the requested mastering headroom, and a note if a limiter is eng
 ## Specs and naming
 
 Deliver stems as 24-bit WAV at the project rate, 48 kHz for most video work, 44.1 kHz for music-only, and never upsample a 44.1 kHz render to 96 kHz and call it high resolution. Stems must sum back to the mix, or the gain offsets must be documented. Name files as project, track, version, stem, tempo and date, in ASCII without spaces, with zero-padded version numbers. Keep stem names identical across versions so the recipient's template still works. Open the package once in the recipient's DAW and confirm track count, start point and sample rate; a five-minute check prevents a day of reconstruction.
-
-## What to listen for
-
-In the Beethoven String Quartet No. 15, how four voices map onto four clean stems. In the Beethoven Fifth, how many bus groups a large score needs. In the funk loop, whether a single-stem delivery explains its loop point and tail. In the twenty-six minute Toccata, how segmentation and file size become the easily forgotten part of delivery.
-
-```audiolab
-{"type": "instrument", "gm": "String Ensemble 1", "synth": "bowed", "phrase": ["C4", "E4", "G4", "C5"], "label": "Strings inside the stems", "label_en": "Strings inside the stems", "hint": "每件乐器单独一轨，混音才有退路", "hint_en": "One part per stem gives the mix somewhere to go back to"}
-```
 :::
+

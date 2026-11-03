@@ -1,30 +1,22 @@
 ---
-id: prompt-debugging
-site: ai
-cat: B
-title: 提示排错
-title_en: Debugging a Prompt
-summary: 结果不对先分层定位，别急着往提示里加形容词。
-summary_en: Locate the faulty layer before rewriting adjectives, whether input, constraint, model or randomness.
-level: standard
-tags: [提示词, 排错, 可复现, 调试]
-tags_en: [prompting, debugging, reproducibility, troubleshooting]
-alias: [提示排错, 调试提示, prompt debugging]
+id: "prompt-debugging"
+site: "ai"
+cat: "B"
+title: "提示排错"
+title_en: "Debugging a Prompt"
+summary: "结果不对先分层定位，别急着往提示里加形容词。"
+summary_en: "Locate the faulty layer before rewriting adjectives, whether input, constraint, model or randomness."
+level: "standard"
+tags: ["提示词", "排错", "可复现", "调试"]
+tags_en: ["prompting", "debugging", "reproducibility", "troubleshooting"]
+alias: ["提示排错", "调试提示", "prompt debugging"]
 order: 135
-links:
-  - "[[glossary:reference-track]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:texture]]"
-instances:
-  - pdmx-000180 | 四音动机贯穿全曲，改提示后动机丢失说明约束层级错了（C1）
-  - pdmx-000153 | 二十六分钟长曲，偏差按时间码累积，先分段再排错（C1）
-  - groove-000000 | 138 BPM 放克鼓组，同一提示重跑才看得出随机性（C1）
-  - pdmx-001010 | 十分钟长弧，模型维持不住时换方法而不是加词（C1）
-sources:
-  - Suno 与 Udio 官方帮助中心关于随机性、种子与版本行为的说明。
-  - 实验设计与对照测试的公开教材章节，关于单变量原则。
-  - 音乐制作质量控制惯例，关于分段验收与 A/B 对照。
-updated: 2026-10-31
+links: ["[[glossary:reference-track]]", "[[glossary:tempo]]", "[[glossary:texture]]"]
+instances: []
+sources: ["https://facebookresearch.github.io/audiocraft/api_docs/audiocraft/models/musicgen.html", "https://huggingface.co/docs/diffusers/en/using-diffusers/reusing_seeds"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "提示排错需固定模型、输入与可控随机条件，再逐项改变参数；单个音乐结果无法区分提示冲突、采样波动与模型能力限制。"
 ---
 
 ::: zh
@@ -67,10 +59,6 @@ updated: 2026-10-31
 ## 修不好就换路
 
 长结构反复塌、目标语言咬字始终不过关、精确和声无法落地，这些不是提示问题。继续加词只会让约束更挤。改成分段生成、换符号工具，或把生成结果当素材重做，通常比继续调提示更快。排错的终点是换方法，不是写出一条更长的提示。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5"],"label":"排错用最小素材","label_en":"The smallest debug phrase","hint":"一次只改一个变量，才听得出是哪一步坏了","hint_en":"Change one variable at a time"}
-```
-
 :::
 
 ::: en
@@ -114,3 +102,4 @@ Without a log, debugging becomes memory. Anything compared more than three times
 
 Long forms that keep collapsing, diction that never passes in the target language, exact harmony that will not land: these are not prompt problems. More words only crowd the constraints. Generate in parts, switch to a symbolic tool, or treat the output as raw material. Debugging ends in a change of method, not a longer prompt.
 :::
+

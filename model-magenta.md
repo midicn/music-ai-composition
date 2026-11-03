@@ -1,36 +1,28 @@
 ---
-id: model-magenta
-site: ai
-cat: I
-title: Magenta
-title_en: Magenta
-summary: 研究工具箱：MIDI 与音频都能碰，产出可复现。
-summary_en: A research toolkit for MIDI and audio, built for reproducible experiments.
-level: standard
-tags: [模型档案, 开源工具, 符号音乐, 研究]
-tags_en: [model profile, open tools, symbolic music, research]
-alias: [Magenta, Magenta Studio, DDSP]
+id: "model-magenta"
+site: "ai"
+cat: "I"
+title: "Magenta"
+title_en: "Magenta"
+summary: "研究工具箱：MIDI 与音频都能碰，产出可复现。"
+summary_en: "A research toolkit for MIDI and audio, built for reproducible experiments."
+level: "standard"
+tags: ["模型档案", "开源工具", "符号音乐", "研究"]
+tags_en: ["model profile", "open tools", "symbolic music", "research"]
+alias: ["Magenta", "Magenta Studio", "DDSP"]
 order: 202
-model_vendor: Google Magenta
-model_form: 开源工具集
-model_input: [MIDI, 音频, 文本]
-model_output: [MIDI, 音频]
-model_licence: 代码以 Apache 2.0 为主，各模型与预训练权重分别标注，商用前看具体仓库
-model_verified: 2026-10-31
-links:
-  - "[[glossary:midi-protocol]]"
-  - "[[instrument:piano]]"
-  - "[[glossary:ternary-form]]"
-instances:
-  - abcmisc-001329 | 六十四秒的里尔舞曲，单声部、重复多，适合做旋律续写的对照（C1） | A sixty-four second reel, monophonic and repetitive, as a reference for melody continuation (C1)
-  - mutopia-001093 | 两分半的拉格泰姆钢琴，断奏与力度清楚，适合看演奏模型（C1） | A two-and-a-half-minute ragtime piano piece with clear articulation and dynamics, to hear a performance model (C1)
-  - groove-000002 | 86 BPM 灵魂乐鼓组，适合做鼓轨生成与变奏（C1） | An 86 BPM soul kit, for drum generation and variation (C1)
-  - mutopia-000546 | 一分多钟的艺术歌曲，声部关系清楚，适合看插值后的声部（C1） | An art song of over a minute with clear parts, to inspect voices after interpolation (C1)
-sources:
-  - Google Magenta 项目页与 Magenta Studio 文档（工具清单、输入输出与维护状态）。
-  - MusicVAE、Melody RNN 与 DDSP 的公开论文和代码说明。
-  - 主仓库归档与独立仓库开发的公开记录。
-updated: 2026-10-31
+model_vendor: "Google Magenta"
+model_form: "开源工具集"
+model_input: ["MIDI", "音频", "文本"]
+model_output: ["MIDI", "音频"]
+model_licence: "代码以 Apache 2.0 为主，各模型与预训练权重分别标注，商用前看具体仓库"
+model_verified: "2026-10-31"
+links: ["[[glossary:midi-protocol]]", "[[instrument:piano]]", "[[glossary:ternary-form]]"]
+instances: []
+sources: ["https://github.com/magenta/magenta", "https://magenta.tensorflow.org/studio/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍Magenta代码和Studio工具，需要核对官方项目文档、输入输出与维护状态；普通曲库MIDI不是该工具推理结果，不能用来测评插值、续写或可复现性。"
 ---
 
 ::: zh
@@ -60,10 +52,6 @@ Magenta 是 Google 的研究项目，不是“输入一句话出歌”的产品�
 ## 许可、维护与替代
 
 代码以 Apache 2.0 为主，模型与预训练权重各自标注，商用前看仓库。替代：要开箱出歌，换 Suno 或 YuE；要音频纹理与音效，换 Stable Audio Open；要符号级但维护更勤的工具，考虑 ACE-Step 这类新项目。Magenta 的优势是透明与可改，不是音质。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["E4","G4","B4","A4","G4","E4","D4","E4"],"label":"一个可做变奏的短动机","label_en":"A short motif that invites variation","hint":"把它输入接续或插值工具，比较生成结果有没有保住动机","hint_en":"Feed it to a continuation or interpolation tool and see whether the motif survives"}
-```
 :::
 
 ::: en
@@ -94,3 +82,4 @@ The main repository is now read-only and some tools have moved to separate repos
 
 Code is mostly Apache 2.0; models and pretrained weights are labelled separately, so read the repository before commercial use. Alternatives: Suno or YuE for finished songs; Stable Audio Open for textures and effects; newer symbolic projects such as ACE-Step if you need active maintenance. Magenta's advantage is transparency and modifiability, not audio quality.
 :::
+

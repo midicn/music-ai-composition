@@ -1,35 +1,28 @@
 ---
-id: model-midi-ai
-site: ai
-cat: I
-title: MIDI 生成模型
+id: "model-midi-ai"
+site: "ai"
+cat: "I"
+title: "MIDI 生成模型"
 title_en: "Symbolic MIDI Generation"
-summary: 生成音符而不是音频，能改能移调，但结构要人来收。
-summary_en: It writes notes rather than audio, editable and transposable, but the structure is yours to finish.
-level: standard
-tags: [模型档案, MIDI, 符号生成, 动机, 编曲]
-tags_en: [model profile, MIDI, symbolic generation, motif, arrangement]
-alias: [MuseNet, Magenta, Music Transformer, MIDI 生成, 符号音乐生成]
+summary: "生成音符而不是音频，能改能移调，但结构要人来收。"
+summary_en: "It writes notes rather than audio, editable and transposable, but the structure is yours to finish."
+level: "standard"
+tags: ["模型档案", "MIDI", "符号生成", "动机", "编曲"]
+tags_en: ["model profile", "MIDI", "symbolic generation", "motif", "arrangement"]
+alias: ["MuseNet", "Magenta", "Music Transformer", "MIDI 生成", "符号音乐生成"]
 order: 16
-model_vendor: OpenAI · Google Magenta
-model_form: 本地模型
-model_input: [MIDI, 风格提示, 乐器组合]
-model_output: [MIDI]
-model_licence: 各项目的代码与权重许可不同，训练 MIDI 的来源与商用范围需按仓库说明核对
-model_verified: 2026-10-30
-links:
-  - "[[glossary:midi-protocol]]"
-  - "[[glossary:phrase]]"
-  - "[[instrument:piano]]"
-instances:
-  - giantmidi-000004 | 主题与变奏，结构与重复关系清楚，适合看模型能不能接住动机（C1） | A theme and variations with clear repetition, to see whether a model can catch the motif (C1)
-  - m21-000003 | 四声部众赞歌，声部进行与和声约束密集，生成的错误最容易听出（C1） | A four-part chorale dense with voice-leading and harmonic constraints, where generated errors are audible (C1)
-  - oga-000005 | 游戏战斗配乐，多轨 MIDI 结构典型，适合做续写与配器试验（C1） | Typical multi-track game battle MIDI, useful for continuation and orchestration trials (C1)
-  - giantmidi-000001 | 沙龙风格小品，句法与终止式规整，便于判断生成段是否跑题（C1） | A salon-style miniature with regular phrasing and cadences, for judging whether generated bars wander (C1)
-sources:
-  - 符号音乐生成的代表项目与输出形态，对照公开仓库与论文摘要整理。
-  - MIDI 生成结果的后期修剪（编曲实践惯例）。
-updated: 2026-10-30
+model_vendor: "OpenAI · Google Magenta"
+model_form: "本地模型"
+model_input: ["MIDI", "风格提示", "乐器组合"]
+model_output: ["MIDI"]
+model_licence: "各项目的代码与权重许可不同，训练 MIDI 的来源与商用范围需按仓库说明核对"
+model_verified: "2026-10-30"
+links: ["[[glossary:midi-protocol]]", "[[glossary:phrase]]", "[[instrument:piano]]"]
+instances: []
+sources: ["https://magenta.tensorflow.org/studio/", "https://magenta.tensorflow.org/music-transformer"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍符号音乐生成，需要核对研究项目的输入、表示法与实际输出文件；本库现成MIDI未必来自这些模型，不能作为其生成质量或控制能力的证据。"
 ---
 
 ::: zh
@@ -66,10 +59,6 @@ updated: 2026-10-30
 价格：开源项目免费，算力自备；托管服务按订阅或按量，以官方页面为准。
 
 替代：AIVA——要成品音频与配器、不想自己写声部时换它；Scaler 一类和声工具——要可控的和弦进行而不是生成时换它；MuseNet 一类演示——只想试听风格走向时用它。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","A4","G4","E4","D4","G3"],"label":"一段可继续写的动机","label_en":"A motif to continue","hint":"先听它停在哪里，续写常从这个位置开始重复","hint_en":"Hear where it stops; continuation often starts repeating from there"}
-```
 :::
 
 ::: en
@@ -106,8 +95,5 @@ Questions to check: are the weights public, and under what licence? Does the tra
 Price: open projects are free with your own compute; hosted services bill per subscription or per use, as stated on the official pages.
 
 Alternatives: AIVA when you want finished audio and orchestration without writing parts; a harmony tool such as Scaler when you want a controlled chord progression rather than generation; a demo such as MuseNet when you only want to hear where a style goes.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","A4","G4","E4","D4","G3"],"label":"A motif to continue","label_en":"A motif to continue","hint":"Hear where it stops; continuation often starts repeating from there","hint_en":"Hear where it stops; continuation often starts repeating from there"}
-```
 :::
+

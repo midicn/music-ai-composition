@@ -1,30 +1,22 @@
 ---
-id: stem-naming
-site: ai
-cat: H
-title: 分轨命名规范
-title_en: Stem Naming
-summary: 三套名字要能互相对上，而不是各自好看
-summary_en: Three naming schemes have to map onto each other
-level: standard
-tags: [分轨, 命名, 交付, DAW]
-tags_en: [stems, naming, delivery, DAW]
-alias: [分轨命名, 文件命名, stem naming]
+id: "stem-naming"
+site: "ai"
+cat: "H"
+title: "分轨命名规范"
+title_en: "Stem Naming"
+summary: "三套名字要能互相对上，而不是各自好看"
+summary_en: "Three naming schemes have to map onto each other"
+level: "standard"
+tags: ["分轨", "命名", "交付", "DAW"]
+tags_en: ["stems", "naming", "delivery", "DAW"]
+alias: ["分轨命名", "文件命名", "stem naming"]
 order: 175
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:stem-mastering]]"
-  - "[[glossary:sample-rate]]"
-instances:
-  - musicnet-000067 | 贝多芬第十五弦乐四重奏，四声部正好对应四条分轨名（C1）
-  - mutopia-000497 | 贝多芬第五，多组总线需要一套能扩展的分轨命名（C1）
-  - groove-000000 | 单条鼓循环，循环点与尾音要在名字里交代版本（C1）
-  - pdmx-000153 | 二十六分钟长曲，分段编号比曲名更能防止覆盖（C1）
-sources:
-  - Netflix Sound Mix Specifications 与 Dolby 交付规范中关于分轨与工程命名的惯例。
-  - 数字音频文件命名与元数据建议，由行业组织公开。
-  - 平台上传的文件名限制，来自官方帮助文档。
-updated: 2026-10-31
+links: ["[[glossary:stems]]", "[[glossary:stem-mastering]]", "[[glossary:sample-rate]]"]
+instances: []
+sources: ["https://studiopartner.netflix.net/studio/branded-sound-mix-spec-and-best-practices", "https://www.ableton.com/en/manual/managing-files-and-sets/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "分轨命名属于交付与资产管理，具体规则须按接收方的声轨或章节文件要求核对；音乐播放不会显示文件名、起点、版本和元数据是否一致。"
 ---
 
 ::: zh
@@ -53,10 +45,6 @@ updated: 2026-10-31
 ## 名字救不了的情况
 
 分轨内容贴错，名字再整齐也没用，必须听一遍；客户把“伴奏”和“纯音乐”混用，先在邮件里定义；平台不接受某些字符，规则要提前测。命名解决的是可查找，不解决可理解，后者靠交付说明。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["G3","D4","G4","D5"],"label":"一套分轨，先能看懂","label_en":"A stem set you can read","hint":"命名清楚，交接才不会错层","hint_en":"Clear names prevent crossed layers"}
-```
-
 :::
 
 ::: en
@@ -86,3 +74,4 @@ Renaming breaks session references, plug-in automation and client templates. Exp
 
 If the stems themselves are swapped, tidy names will not help; someone has to listen. If a client uses "instrumental" and "backing track" interchangeably, define both in writing. If a platform rejects certain characters, test the rule early. Naming makes files findable, not understandable; the delivery note does the second job.
 :::
+

@@ -1,37 +1,29 @@
 ---
-id: work-wedding-video
-site: ai
-cat: K
-title: 婚礼视频配乐
-title_en: Wedding Video Score
-summary: 情绪曲线先于曲子，授权与版本决定能不能交付
-summary_en: The emotional curve comes before the cue; licence and versions decide delivery.
-level: standard
-tags: [婚礼, 情绪曲线, 授权, 版本]
-tags_en: [wedding, emotional curve, licensing, versions]
-alias: [婚礼视频配乐, 婚礼配乐, wedding video, 婚礼片子]
+id: "work-wedding-video"
+site: "ai"
+cat: "K"
+title: "婚礼视频配乐"
+title_en: "Wedding Video Score"
+summary: "情绪曲线先于曲子，授权与版本决定能不能交付"
+summary_en: "The emotional curve comes before the cue; licence and versions decide delivery."
+level: "standard"
+tags: ["婚礼", "情绪曲线", "授权", "版本"]
+tags_en: ["wedding", "emotional curve", "licensing", "versions"]
+alias: ["婚礼视频配乐", "婚礼配乐", "wedding video", "婚礼片子"]
 order: 275
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [婚礼影像, 情绪配乐, 授权确认]
-tool_verified: 2026-10-31
-links:
-  - "[[glossary:sync-license]]"
-  - "[[glossary:public-domain]]"
-  - "[[glossary:music-copyright]]"
-instances:
-  - giantmidi-000597 | 三分钟钢琴婚礼进行曲，入场段的句式完整（C1）
-  - lakh-001422 | 一分钟的合唱版婚礼旋律，仪式短版的参照（C1）
-  - lakh-008499 | 门德尔松婚礼进行曲，退场段要留出走动时间（C1）
-  - atepp-000392 | 六分钟的抒情钢琴，情绪渐强，适合致辞或相册段（C1）
-sources:
-  - ASCAP 与 PRS for Music 公开的婚礼与活动音乐授权说明。
-  - 婚礼影像制作的公开访谈，涉及情绪曲线与客户改片。
-  - 视频平台音乐识别与版权声明的公开说明。
-updated: 2026-10-31
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["婚礼影像", "情绪配乐", "授权确认"]
+tool_verified: "2026-10-31"
+links: ["[[glossary:sync-license]]", "[[glossary:public-domain]]", "[[glossary:music-copyright]]"]
+instances: []
+sources: ["https://www.britishcopyright.org/information/use-of-music-on-a-wedding-video/", "https://support.google.com/youtube/answer/2797370?hl=en"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "婚礼视频需区分现场音乐录制、后期配乐和公开视频的许可范围，按所在地核对；播放一首适合婚礼的音乐不能证明摄影师作品集或平台发布已获授权。"
 ---
 
 ::: zh
@@ -63,10 +55,6 @@ updated: 2026-10-31
 ## 最容易煽过头的段落
 
 誓言段弦乐推满，两个人说的话被吃掉。入场与退场用了同一首进行曲，仪式没有起落。整片只有一首歌，剪到第三分钟开始重复。授权只覆盖个人观看，摄影师发作品集时被投诉。精华片与社媒版响度不同，客户连续播放时跳音量。
-
-```audiolab
-{"type":"instrument","gm":"Violin","synth":"bowed","phrase":["D4","F#4","A4","D5","C#5","A4","F#4","D4"],"label":"誓言之后的旋律","label_en":"The melody after the vows","hint":"听它是在往上推，还是给画面留地方","hint_en":"Hear whether it pushes upward or leaves room for the picture"}
-```
 :::
 
 ::: en
@@ -98,8 +86,5 @@ Clients usually cry at the vows and the parents' shots, not at the loudest momen
 ## Where it tips into melodrama
 
 Strings fill the vows and swallow what the couple is saying. The same march is used for the entrance and the exit, so the ceremony has no arc. One song carries the whole film and starts repeating by the third minute. The licence covers private viewing only, and a complaint arrives when the photographer posts a portfolio clip. The highlight and the social cut sit at different loudness, so a continuous playback jumps.
-
-```audiolab
-{"type":"instrument","gm":"Violin","synth":"bowed","phrase":["D4","F#4","A4","D5","C#5","A4","F#4","D4"],"label":"The melody after the vows","label_en":"The melody after the vows","hint":"Hear whether it pushes upward or leaves room for the picture","hint_en":"Hear whether it pushes upward or leaves room for the picture"}
-```
 :::
+

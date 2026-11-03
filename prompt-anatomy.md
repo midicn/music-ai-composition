@@ -1,70 +1,59 @@
 ---
-id: prompt-anatomy
-site: ai
-cat: B
-title: 提示词结构
-title_en: The Anatomy of a Prompt
-summary: 好的提示像编曲说明：风格、编制、速度、情绪、结构，缺一不可。
-summary_en: A good prompt reads like an arrangement brief: style, instrumentation, tempo, mood and form.
-level: standard
-tags: [提示词, 结构, 生成, 工作流]
-tags_en: [prompt, structure, generation, workflow]
-alias: [提示词, prompt, 提示结构]
+id: "prompt-anatomy"
+site: "ai"
+cat: "B"
+title: "提示词结构"
+title_en: "The Anatomy of a Prompt"
+summary: "把风格、配器与段落写成可检验的制作说明，再用实际输出检查是否满足。"
+summary_en: "Describe testable musical requirements, then check the actual output."
+level: "standard"
+tags: ["提示词", "结构", "生成", "工作流"]
+tags_en: ["prompt", "structure", "generation", "workflow"]
+alias: ["提示词", "prompt", "提示结构"]
 order: 1
-links:
-  - "[[glossary:tempo]]"
-  - "[[glossary:timbre]]"
-  - "[[glossary:daw]]"
-instances:
-  - thesession-006629 | 爱尔兰曲调，简短提示能否抓住风格与乐器（C1）
-  - atepp-000124 | 德彪西三度练习曲，和声色彩的描述难度（C1）
-  - groove-000002 | 86 BPM 灵魂乐鼓组，速度与律动的描述方式（C1）
-sources:
-  - 文本条件的表达方式，参考生成模型公开说明。
-  - 编曲说明的常见要素；制作实践惯例是主要依据。
-updated: 2026-10-30
+links: ["[[glossary:tempo]]", "[[glossary:timbre]]", "[[glossary:daw]]"]
+sources: ["https://kb.stability.ai/knowledge-base/stable-audio-3-prompt-guide", "https://www.ableton.com/en/live-manual/12/audio-clips-tempo-and-warping/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页说明实际制作流程与文件核验方法，工作表示例为虚拟教学项目；须以工具说明和自己的输出文件核对，普通MIDI或合成试听不能证明生成服务的效果。"
 ---
 
 ::: zh
-## 问题
+## 先写关键要求
 
-"写一首好听的歌"这样的提示，模型只能猜。提示词的作用是把模糊的想象压缩成可执行的方向。写得太短，结果随机；写得太长，约束互相矛盾，模型只能挑一部分执行。
+一条提示可以包括用途、风格、主要乐器、速度方向和段落变化，但并非每个任务都需要填满相同字段。先列必须满足的两三项，再补偏好。工具若另有时长、歌词或参考音频控件，应按其说明设置，而不是全部挤在文字里。
 
-## 结构
+## 虚拟提示与验收
 
-一个可用的提示通常包含五层：风格与年代、编制与乐器、速度与节拍、情绪与力度、结构与长度。先写前两层确定骨架，再补后三层确定细节。参考曲目是有效的手段，但要说明参考的是哪一方面：音色、节奏还是编排。排除项单独写，别混在正面描述里。
+示例：“30秒器乐片头，木吉他与轻打击乐，约90 BPM，4秒后减少旋律活动以容纳口播，结尾完整收束。”这是教学需求，未代表任何一次模型生成。
 
-## 做法
+| 请求 | 实际核验 |
+|---|---|
+| 约90 BPM | 导入时间线检查拍点与漂移 |
+| 4秒后给口播留空间 | 叠入口播，听遮蔽与音乐密度 |
+| 30秒并完整收束 | 检查真实时长和结尾，必要时编辑 |
 
-一次只改一个变量，才能知道是哪一句起了作用。把有效提示存成模板，按项目复用。结构复杂的曲子分段生成，每段单独写提示。提示里少用抽象形容词，多用具体的乐器与节奏描述。生成后记录提示与结果的对应关系，积累自己的词表。
+## 修改一项，记录结果
 
-## 听什么
-
-在传统曲调里听简短提示的成败，在德彪西练习曲里听和声色彩能否被语言描述，在灵魂乐鼓组里听速度与律动的关系。提示写得好，结果的可预期性会明显提高。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"e e e e e e e e","bpm":86,"label":"提示里的速度","label_en":"Tempo inside a prompt","hint":"速度写清楚，生成结果才不会忽快忽慢","hint_en":"State the tempo and generations stop drifting in speed"}
-```
+保存完整提示、工具及版本和实际参数，再改变一个主要要求。若多次生成仍无法满足硬条件，检查工具能力或改用DAW编辑。写了速度并不能保证整段不漂移；写了某个和弦或禁止元素，也不能代替听音和结构检查。记录表见“候选试听记录表”，完整需求可先在首页整理。
 :::
 
 ::: en
-## The problem
+## Start with the important requirements
 
-A prompt like "write a good song" leaves the model guessing. A prompt compresses a vague idea into an executable direction. Too short and results are random; too long and constraints contradict, so the model follows only some of them.
+A prompt may describe use, style, instruments, tempo direction and section changes, but not every task needs the same fields. State the essential requirements before preferences. Use separate duration, lyric or audio controls when the product provides them.
 
-## Structure
+## A fictional prompt and its checks
 
-A workable prompt carries five layers: style and era, instrumentation, tempo and metre, mood and dynamics, form and length. Write the first two to fix the skeleton, then the rest to fix detail. Reference tracks help, but say which aspect you mean: timbre, rhythm or arrangement. Keep exclusions separate from positive description.
+“Thirty-second instrumental intro, acoustic guitar and light percussion, around 90 BPM; reduce melodic activity after four seconds for narration; finish with a complete ending.” This is a teaching brief, not a model result.
 
-## Practice
+| Request | Verify in the output |
+|---|---|
+| Around 90 BPM | Inspect beats and drift on a timeline |
+| Narration space after four seconds | Audition with the narration |
+| Thirty seconds and a complete ending | Measure duration and inspect the tail |
 
-Change one variable at a time so you learn which sentence did the work. Save working prompts as templates and reuse them across projects. Generate complex pieces section by section with a prompt for each. Prefer concrete instrument and rhythm words over abstract adjectives. Record prompt and result pairs to build your own vocabulary.
+## Revise and record
 
-## What to listen for
-
-In the traditional tune, whether a short prompt lands; in the Debussy étude, whether harmonic colour can be described in words; in the soul kit, how tempo and feel interact. Better prompts make results noticeably more predictable.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"e e e e e e e e","bpm":86,"label":"Tempo inside a prompt","label_en":"Tempo inside a prompt","hint":"State the tempo and generations stop drifting in speed","hint_en":"State the tempo and generations stop drifting in speed"}
-```
+Save the prompt, tool version and actual settings, then change one major requirement. If repeated candidates fail an essential constraint, check capability or use DAW editing. Naming a tempo does not guarantee stable timing; naming a chord or forbidden element does not replace listening and structural checks. Use the candidate log to connect each change to a result.
 :::

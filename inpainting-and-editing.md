@@ -1,29 +1,22 @@
 ---
-id: inpainting-and-editing
-site: ai
-cat: C
-title: 局部重绘与编辑
-title_en: Inpainting and Editing
-summary: 只重做一小节而不是整段，难的不是生成，是把接缝藏好
-summary_en: Regenerating one bar instead of everything is easy to ask for and hard to make seamless.
-level: standard
-tags: [局部重绘, 接缝, 编辑, 上下文]
-tags_en: [inpainting, seams, editing, context]
-alias: [局部重生成, 选区重绘, inpainting]
+id: "inpainting-and-editing"
+site: "ai"
+cat: "C"
+title: "局部重绘与编辑"
+title_en: "Inpainting and Editing"
+summary: "只重做一小节而不是整段，难的不是生成，是把接缝藏好"
+summary_en: "Regenerating one bar instead of everything is easy to ask for and hard to make seamless."
+level: "standard"
+tags: ["局部重绘", "接缝", "编辑", "上下文"]
+tags_en: ["inpainting", "seams", "editing", "context"]
+alias: ["局部重生成", "选区重绘", "inpainting"]
 order: 2
-links:
-  - "[[glossary:daw]]"
-  - "[[glossary:phrase]]"
-  - "[[glossary:midi-protocol]]"
-instances:
-  - atepp-000459 | 海顿回旋曲，主题每次回来都近乎同一句，接缝好辨认（C1）
-  - cyberhymnal-003456 | 四声部众赞歌，被替换的和弦是否还顺声部进行（C1）
-  - abcmisc-000288 | Kesh 吉格舞曲，替换半句后重音还落不落原位（C1）
-  - groove-000015 | 116 BPM 爵士放克 fill，听接缝处镲片是否突然变亮（C1）
-sources:
-  - 局部重绘的边界选择；音频编辑实践惯例是主要依据。
-  - 交叉淡化与增益匹配的做法——依据来自混音惯例。
-updated: 2026-10-30
+links: ["[[glossary:daw]]", "[[glossary:phrase]]", "[[glossary:midi-protocol]]"]
+instances: []
+sources: ["https://help.suno.com/en/articles/6141505", "https://kb.stability.ai/knowledge-base/tips-for-using-the-audio-to-audio-api"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论局部替换与上下文接续，需要依据实际局部编辑功能并检查输入输出边界；普通MIDI未经过局部生成，不能用它判断替换接缝或修复是否成功。"
 ---
 
 ::: zh
@@ -38,14 +31,6 @@ updated: 2026-10-30
 ## 具体做法
 
 先在 DAW 里把选区对齐到小节线，前后各留一拍做交叠。生成后先独听新片段，判断它是否解决了原来的问题，再听接缝前后两秒。响度不一致就做增益匹配，相位或音色不一致就做短交叉淡化。连续三次出现同一种接缝问题，说明上下文给少了，扩大范围重来比继续微调更省时间。记录每次的选区范围与上下文长度，下次遇到同类问题可以直接复用。
-
-## 耳朵要抓的点
-
-在海顿的回旋曲里，主题每次回来都是同一句，换掉其中一小节最容易听出接缝。在四声部众赞歌里，听被替换的和弦是否还顺着同一条声部进行，还是突然平行了。在 Kesh 吉格舞曲里，听替换半句之后重音是否还落在原来的位置。在 116 BPM 的爵士放克 fill 里，听接缝处镲片是否突然变亮。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","B4","A4","G4","E4"],"label":"被替换的一小节","label_en":"One bar that was replaced","hint":"听这一句与前后是否像同一次演奏","hint_en":"Hear whether this phrase belongs to the same performance as its neighbours"}
-```
 :::
 
 ::: en
@@ -60,12 +45,5 @@ A seam hides when the boundary lands somewhere musical. Bar lines, phrase ends a
 ## In practice
 
 Align the selection to bar lines in the DAW and leave a beat of overlap on each side. After generating, listen to the new fragment alone to see whether it solved the problem, then listen to two seconds across the join. Match level with gain, and fix phase or tone with a short crossfade. If the same seam problem appears three times, the context was too small; widening the range saves more time than more nudging. Log the selection and context length so the next repair starts from a known point.
-
-## What the ear catches
-
-In Haydn's rondo, the theme returns almost identically each time, so replacing one bar exposes the seam at once. In the four-part chorale, whether the substituted chord still follows the same voice leading or suddenly moves in parallel. In the Kesh jig, whether accents land where they did before half a phrase was replaced. In the 116 BPM jazz-funk fill, whether the cymbals turn bright at the join.
-
-```audiolab
-{"type": "instrument", "gm": "Acoustic Grand Piano", "synth": "struck", "phrase": ["C4", "E4", "G4", "C5", "B4", "A4", "G4", "E4"], "label": "One bar that was replaced", "label_en": "One bar that was replaced", "hint": "听这一句与前后是否像同一次演奏", "hint_en": "Hear whether this phrase belongs to the same performance as its neighbours"}
-```
 :::
+

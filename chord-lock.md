@@ -1,29 +1,20 @@
 ---
-id: chord-lock
-site: ai
-cat: C
-title: 和弦锁定
-title_en: Locking Harmony
-summary: 用级数锁走向，用低音核对转位，锁太死会压扁旋律
-summary_en: Lock the progression by scale degree and check the bass, knowing that too much locking flattens the melody.
-level: standard
-tags: [和弦, 级数, 转调, 借用和弦]
-tags_en: [chords, roman numerals, modulation, borrowed chords]
-alias: [和弦锁定, 锁定和声, chord lock]
+id: "chord-lock"
+site: "ai"
+cat: "C"
+title: "和弦锁定"
+title_en: "Locking Harmony"
+summary: "用级数锁走向，用低音核对转位，锁太死会压扁旋律"
+summary_en: "Lock the progression by scale degree and check the bass, knowing that too much locking flattens the melody."
+level: "standard"
+tags: ["和弦", "级数", "转调", "借用和弦"]
+tags_en: ["chords", "roman numerals", "modulation", "borrowed chords"]
+alias: ["和弦锁定", "锁定和声", "chord lock"]
 order: 133
-links:
-  - "[[glossary:borrowed-chord]]"
-  - "[[glossary:modulation]]"
-  - "[[glossary:pivot-chord]]"
-instances:
-  - pdmx-000575 | 维塔利《恰空》，低音循环撑住整曲，变奏再密也不离和声骨架（C1）
-  - giantmidi-000504 | 斯卡拉蒂《福利亚》，短小的固定低音主题，转位变化最容易听清（C1）
-  - giantmidi-004867 | 亨德尔《G 大调恰空》，大调版本的低音循环，可与小调福利亚对照（C1）
-  - pdmx-002370 | 《特里斯坦》钢琴改编，属和弦迟迟不落主音，听延宕怎样改变调性（C1）
-sources:
-  - Walter Piston, Harmony（Norton）与 Aldwell & Schachter, Harmony and Voice Leading 中关于级数、转位与转调的写法。
-  - 文本条件中的调性与和弦表达，依据公开模型文档。
-updated: 2026-10-31
+links: ["[[glossary:borrowed-chord]]", "[[glossary:modulation]]", "[[glossary:pivot-chord]]"]
+instances: ["pdmx-000575", "giantmidi-000504", "giantmidi-004867", "pdmx-002370"]
+sources: ["Walter Piston, Harmony（Norton）与 Aldwell & Schachter, Harmony and Voice Leading 中关于级数、转位与转调的写法。", "文本条件中的调性与和弦表达，依据公开模型文档。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -51,7 +42,7 @@ updated: 2026-10-31
 和声锁得越死，旋律越容易被压成和弦音，节奏也越容易变成每拍一个和弦。整首锁死还会让低音失去对位，副歌与主歌的差别只剩配器。可行的折中是只锁段落边界两小节和低音，其余留给模型；或者先锁和声生成，再单独改旋律。锁不住的时候，先检查提示里的调性是否前后一致，再检查是否同时给了互相冲突的参考。
 
 ```audiolab
-{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"被锁定的四小节","label_en":"Four locked bars","hint":"先听低音是否每小节都落在根音，再想把最后一个和弦换成小下属","hint_en":"Hear whether the bass lands on the root each bar, then imagine the last chord turned minor"}
+{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"合成和弦进行","label_en":"Synthesized chord sequence","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -80,6 +71,7 @@ The safest modulation is written as a transition: introduce a chord shared with 
 The tighter the harmony, the more the melody is pressed into chord tones and the more the rhythm becomes one chord per beat. Locking an entire song also costs the bass its counterpoint, until verse and chorus differ only in instrumentation. A workable compromise locks two bars at each section boundary plus the bass, and leaves the rest open; another is to lock harmony for the first pass and rewrite the melody separately. When locking fails, check that the stated key stays consistent, then check whether two conflicting references were supplied at once.
 
 ```audiolab
-{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"Four locked bars","label_en":"Four locked bars","hint":"Hear whether the bass lands on the root each bar, then imagine the last chord turned minor","hint_en":"Hear whether the bass lands on the root each bar, then imagine the last chord turned minor"}
+{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"Synthesized chord sequence","label_en":"Synthesized chord sequence","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

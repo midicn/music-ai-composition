@@ -1,35 +1,29 @@
 ---
-id: work-30s-ad
-site: ai
-cat: K
-title: 三十秒广告
-title_en: A Thirty-Second Ad
-summary: 广告音乐要在两秒内抓住人，还要能剪成十五秒和六秒
-summary_en: Ad music must hook in two seconds and survive cuts to fifteen and six.
-level: standard
-tags: [广告, 品牌, 剪辑, 交付]
-tags_en: [advertising, brand, editing, delivery]
-alias: [30秒广告, 广告配乐, TVC 音乐, 30s ad]
+id: "work-30s-ad"
+site: "ai"
+cat: "K"
+title: "三十秒广告"
+title_en: "A Thirty-Second Ad"
+summary: "广告音乐要在两秒内抓住人，还要能剪成十五秒和六秒"
+summary_en: "Ad music must hook in two seconds and survive cuts to fifteen and six."
+level: "standard"
+tags: ["广告", "品牌", "剪辑", "交付"]
+tags_en: ["advertising", "brand", "editing", "delivery"]
+alias: ["30秒广告", "广告配乐", "TVC 音乐", "30s ad"]
 order: 1
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [广告配乐, 品牌传播, 剪辑适配]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:sync-license]]"
-  - "[[glossary:loudness-normalization]]"
-  - "[[glossary:cue]]"
-instances:
-  - pdmx-001170 | 主题不加铺垫直接出现，广告开头要的就是这种进入方式（C1）
-  - giantmidi-007791 | 两秒内建立动机，钩子的长度可作参照（C1）
-  - pdmx-000120 | 铜管长音与定音鼓收尾，logo 段落的收法（C1）
-sources:
-  - 广告音频的时长与响度交付口径（广播与流媒体公开规范）。
-  - 广告音乐授权范围（媒介、地区、期限）的确认项，参考行业惯例。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["广告配乐", "品牌传播", "剪辑适配"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:sync-license]]", "[[glossary:loudness-normalization]]", "[[glossary:cue]]"]
+instances: []
+sources: ["https://tech.ebu.ch/docs/r/r128s1.pdf", "https://helpx.adobe.com/premiere/desktop/add-audio-effects/apply-audio-effects/remix-in-premiere.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "三十秒广告须对照准确画面时长与投放方响度规范，并检查切点；单独播放一段短音乐不能证明广告锁时、口播可懂度或多媒介授权合格。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 常见返工原因
 
 前奏占了四小节，钩子迟到。音乐在 1 到 4 kHz 压住旁白。十五秒版重新生成，和三十秒版不是同一首。按网络响度做完直接送电视。授权只写网络，客户追加贴片。改时长时没锁速度，剪辑点整体错位。
-
-```audiolab
-{"type":"instrument","gm":"Brass Section","synth":"brass","phrase":["C4","E4","G4","C5","G4","E4"],"label":"三秒内说完的品牌动机","label_en":"A brand motif that lands in three seconds","hint":"听最后一个音能不能停住，品牌落点靠它","hint_en":"Hear whether the last note can hold; the logo lands on it"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ The three versions run exactly thirty, fifteen and six seconds, within one frame
 ## Common rework causes
 
 A four-bar intro delays the hook. The music masks narration between 1 and 4 kHz. The fifteen is regenerated and no longer matches the thirty. A mix made for online goes straight to television. The licence names online only and the client adds pre-roll. Changing duration without locking tempo moves every cut.
-
-```audiolab
-{"type":"instrument","gm":"Brass Section","synth":"brass","phrase":["C4","E4","G4","C5","G4","E4"],"label":"A brand motif that lands in three seconds","label_en":"A brand motif that lands in three seconds","hint":"Hear whether the last note can hold; the logo lands on it","hint_en":"Hear whether the last note can hold; the logo lands on it"}
-```
 :::
+

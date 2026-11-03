@@ -1,36 +1,29 @@
 ---
-id: tool-ai-api-pipeline
-site: ai
-cat: J
-title: API 流水线
-title_en: API Pipelines
-summary: 把生成接进批量流程，省的是重复劳动，欠的是版本、成本与可复现。
-summary_en: Wiring generation into batch work saves repetition and owes you versions, cost and reproducibility.
-level: standard
-tags: [API, 批量, 自动化, 流水线]
-tags_en: [API, batch, automation, pipeline]
-alias: [生成 API, 批量生成管线]
+id: "tool-ai-api-pipeline"
+site: "ai"
+cat: "J"
+title: "API 流水线"
+title_en: "API Pipelines"
+summary: "把生成接进批量流程，省的是重复劳动，欠的是版本、成本与可复现。"
+summary_en: "Wiring generation into batch work saves repetition and owes you versions, cost and reproducibility."
+level: "standard"
+tags: ["API", "批量", "自动化", "流水线"]
+tags_en: ["API", "batch", "automation", "pipeline"]
+alias: ["生成 API", "批量生成管线"]
 order: 10
-links:
-  - "[[glossary:latency]]"
-  - "[[glossary:bit-depth]]"
-  - "[[glossary:sample-rate]]"
-tool_kind: service
-tool_vendor: 生成模型 API 提供方
-tool_form: 服务
-tool_platforms: [macOS, Windows, Linux]
-tool_price: 按量
-tool_jobs: [交付, 声音设计, 编曲]
-tool_verified: 2026-10-30
-instances:
-  - m21-000001 | 巴赫众赞歌，短小规整，最适合检验批量生成的一致性（C1）
-  - cyberhymnal-004023 | 一首短赞美诗，批量换配器时最容易被忽略的是声部平衡（C1）
-  - thesession-022551 | 一首爱尔兰曲调，批量变奏时旋律骨架能否保住是关键（C1）
-  - atepp-000034 | 斯克里亚宾前奏曲，批量渲染时的动态与踏板细节最容易丢（C1）
-sources:
-  - 主流生成音频 API 的公开文档所列异步任务、限流与数据条款（2026-10-30 复核）。
-  - 批处理与可复现性的工程通识；实践是主要依据。
-updated: 2026-10-30
+links: ["[[glossary:latency]]", "[[glossary:bit-depth]]", "[[glossary:sample-rate]]"]
+tool_kind: "service"
+tool_vendor: "生成模型 API 提供方"
+tool_form: "服务"
+tool_platforms: ["macOS", "Windows", "Linux"]
+tool_price: "按量"
+tool_jobs: ["交付", "声音设计", "编曲"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://platform.stability.ai/", "https://elevenlabs.io/docs/eleven-api/guides/cookbooks/sound-effects"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "接口流水线需要查看真实端点的请求、返回、鉴权与错误处理约定；一段音频能播放不代表任务轮询、重试、限流和成本记录已经实现。"
 ---
 
 ::: zh
@@ -53,10 +46,6 @@ updated: 2026-10-30
 ## 先学三件事
 
 先学三件事：固定模型版本与种子、记录每次调用的参数与成本、给输出建校验与归档。随后读这里的接口与应用、可复现与文件与分轨三篇，再决定哪些环节值得自动化。
-
-```audiolab
-{"type":"instrument","gm":20,"phrase":["C3","G3","C4","E4"],"label":"批量样本","label_en":"Batch sample","hint":"同一提示跑十次，听第十条是否还和第一条同质","hint_en":"Run one prompt ten times and compare the tenth with the first"}
-```
 :::
 
 ::: en
@@ -79,8 +68,5 @@ To keep data in-house, deploy an open model locally and pay in GPUs and maintena
 ## First three things
 
 Learn three things first: pin model version and seed, log parameters and cost for every call, and build validation and archiving for outputs. Then read the site's pages on API versus application, reproducibility and file formats and stems before deciding what is worth automating.
-
-```audiolab
-{"type":"instrument","gm":20,"phrase":["C3","G3","C4","E4"],"label":"Batch sample","label_en":"Batch sample","hint":"Run one prompt ten times and compare the tenth with the first","hint_en":"Run one prompt ten times and compare the tenth with the first"}
-```
 :::
+

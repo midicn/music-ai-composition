@@ -1,35 +1,29 @@
 ---
-id: work-youtube-bgm
-site: ai
-cat: K
-title: 视频背景乐
-title_en: Background Music for Video
-summary: 背景乐的任务是不抢戏，还要经得起十分钟重复
-summary_en: Background music has to stay out of the way and survive ten minutes of repeats.
-level: standard
-tags: [视频, 背景乐, 授权, 循环]
-tags_en: [video, background, licensing, loops]
-alias: [视频背景乐, YouTube 配乐, BGM, youtube bgm]
+id: "work-youtube-bgm"
+site: "ai"
+cat: "K"
+title: "视频背景乐"
+title_en: "Background Music for Video"
+summary: "背景乐的任务是不抢戏，还要经得起十分钟重复"
+summary_en: "Background music has to stay out of the way and survive ten minutes of repeats."
+level: "standard"
+tags: ["视频", "背景乐", "授权", "循环"]
+tags_en: ["video", "background", "licensing", "loops"]
+alias: ["视频背景乐", "YouTube 配乐", "BGM", "youtube bgm"]
 order: 3
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [视频配乐, 长视频, 授权确认]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:loudness-normalization]]"
-  - "[[glossary:sync-license]]"
-  - "[[glossary:stems]]"
-instances:
-  - oga-000287 | 电子循环靠增减元素维持律动，听层间关系（C1）
-  - mutopia-001411 | 三分钟的钢琴小品，短、单声部，适合做段落素材（C1）
-  - pdmx-001010 | 一个乐章铺十分钟情绪，长弧最难维持（C1）
-sources:
-  - 视频平台响度归一与版权声明机制；平台公开说明是主要依据。
-  - 背景乐与口播的比例——依据来自视频制作惯例。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["视频配乐", "长视频", "授权确认"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:loudness-normalization]]", "[[glossary:sync-license]]", "[[glossary:stems]]"]
+instances: []
+sources: ["https://support.google.com/youtube/answer/3376882?hl=en", "https://support.google.com/youtube/answer/2797370?hl=en"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "视频背景乐要同时检查口播关系、音乐来源许可与 Content ID 处理，具体视频才是验收对象；单独播放配乐不能保证视频不被声明或适用于广告。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 常见返工原因
 
 提示写了 instrumental，仍出现人声切片。同一段循环用满十分钟，观众听腻。段落硬切，鼓点断在半拍。响度做到 -9 LUFS，被平台压回去。风格过于接近某首曲子，收到版权声明。授权不含商业频道，广告开通后下架。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Guitar (nylon)","synth":"plucked","phrase":["C4","E4","G4","A4","G4","E4","D4","C4"],"label":"十分钟也站得住的循环","label_en":"A loop that survives ten minutes","hint":"听两遍，第二遍还剩下什么","hint_en":"Listen twice and ask what is left on the second pass"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ The finished track matches the video length and fades out over the last two seco
 ## Common rework causes
 
 The prompt says instrumental and vocal chops still appear. One loop runs for ten minutes and wears out. Sections are hard-cut and the drums stop mid-beat. The mix is pushed to -9 LUFS and the platform turns it down. The style sits too close to a known record and draws a claim. The licence excludes commercial channels, so ads force a takedown.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Guitar (nylon)","synth":"plucked","phrase":["C4","E4","G4","A4","G4","E4","D4","C4"],"label":"A loop that survives ten minutes","label_en":"A loop that survives ten minutes","hint":"Listen twice and ask what is left on the second pass","hint_en":"Listen twice and ask what is left on the second pass"}
-```
 :::
+

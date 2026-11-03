@@ -1,30 +1,22 @@
 ---
-id: opt-out-robots
-site: ai
-cat: G
-title: 退出、robots 与抓取
-title_en: Opt-Out, Robots and Crawling
-summary: robots 是请求不是锁，退出要落到合同与证据
-summary_en: robots.txt is a request, not a lock; opt out in writing and keep evidence
-level: standard
-tags: [训练退出, robots, 抓取, 授权边界]
-tags_en: [opt-out, robots, crawling, licensing boundaries]
-alias: [训练退出, robots.txt, 抓取限制]
+id: "opt-out-robots"
+site: "ai"
+cat: "G"
+title: "退出、robots 与抓取"
+title_en: "Opt-Out, Robots and Crawling"
+summary: "robots 是请求不是锁，退出要落到合同与证据"
+summary_en: "robots.txt is a request, not a lock; opt out in writing and keep evidence"
+level: "standard"
+tags: ["训练退出", "robots", "抓取", "授权边界"]
+tags_en: ["opt-out", "robots", "crawling", "licensing boundaries"]
+alias: ["训练退出", "robots.txt", "抓取限制"]
 order: 155
-links:
-  - "[[glossary:music-copyright]]"
-  - "[[glossary:sample-clearance]]"
-  - "[[glossary:public-domain]]"
-instances:
-  - abcmisc-001404 | 只标“传统”的克莱兹默曲调，想退出也找不到可联系的权利主体（C1）
-  - wikifonia-000434 | 采集者姓名留在标题里，说明“传统”之外还有具体的人（C1）
-  - cyberhymnal-002828 | 灵歌被配上四部合唱与管风琴，改编与录音各有一层授权（C1）
-  - groove-001118 | 一段 126 BPM 的 highlife 鼓循环，被剪成片段后很难追溯原始授权（C1）
-sources:
-  - robots.txt 的公开规范 RFC 9309，由互联网工程任务组发布。
-  - 生成式 AI 训练数据退出与保留机制，参考模型与平台公开说明。
-  - 版权许可与集体管理的公开资料，由行业组织发布。
-updated: 2026-10-31
+links: ["[[glossary:music-copyright]]", "[[glossary:sample-clearance]]", "[[glossary:public-domain]]"]
+instances: []
+sources: ["https://www.rfc-editor.org/rfc/rfc9309.html", "https://suno.com/privacy/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "退出抓取与平台数据处理依赖协议规则、账户设置和适用条款；一段音频的播放结果无法显示爬虫是否遵守规则或数据是否用于训练。"
 ---
 
 ::: zh
@@ -55,10 +47,6 @@ robots.txt 是请求，不是门锁。它写清哪些路径不希望被抓，但
 ## 退出之后还剩什么
 
 退出通常只对未来生效，已经进入训练的数据很难撤回；robots 改了，旧索引和第三方镜像还在；合同通常只约束签字的人。遇到争议，先看条款文本与适用法域，再决定要不要发函或找律师。把退出当成降低概率的动作，不要当成开关。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["A3","E4","C4","A3"],"label":"被索引与未被索引的素材","label_en":"Indexed and unindexed material","hint":"先确认这段素材是否可被检索到","hint_en":"Check whether this material can be found"}
-```
-
 :::
 
 ::: en
@@ -90,3 +78,4 @@ robots.txt is a request, not a lock. It states which paths you would rather not 
 
 Most opt-outs apply going forward only, and data already used in training is usually hard to withdraw. Changing robots.txt does not remove old indexes or third-party mirrors. A contract usually binds only its signatories. When a dispute appears, read the terms and the applicable jurisdiction first, then decide whether to send a notice or consult a lawyer. Treat opting out as lowering a probability, not as flipping a switch.
 :::
+

@@ -1,28 +1,20 @@
 ---
-id: adaptive-music-with-ai
-site: ai
-cat: F
-title: 自适应音乐
-title_en: Adaptive Music with AI
-summary: 分层与重排的前提是共享速度、调性和小节边界
-summary_en: Layering and resequencing only work when tempo, key and bar lines are shared
-level: standard
-tags: [自适应音乐, 分层, 重排, 过渡]
-tags_en: [adaptive music, layering, resequencing, transitions]
-alias: [自适应配乐, 动态音乐, adaptive music]
+id: "adaptive-music-with-ai"
+site: "ai"
+cat: "F"
+title: "自适应音乐"
+title_en: "Adaptive Music with AI"
+summary: "分层与重排的前提是共享速度、调性和小节边界"
+summary_en: "Layering and resequencing only work when tempo, key and bar lines are shared"
+level: "standard"
+tags: ["自适应音乐", "分层", "重排", "过渡"]
+tags_en: ["adaptive music", "layering", "resequencing", "transitions"]
+alias: ["自适应配乐", "动态音乐", "adaptive music"]
 order: 3
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:tempo]]"
-instances:
-  - pdmx-000031 | 一件件乐器加入，纵向分层的教科书（C1）
-  - m21-000000 | 四声部终止式清楚，水平重排的切点参考（C1）
-  - mutopia-001630 | 三拍子乐句规整，层切换落在小节线上（C1）
-  - oga-000088 | 循环素材的分层方式，听各层如何独立成立（C1）
-sources:
-  - 自适应音乐的纵向分层与横向重排——依据来自游戏音频惯例。
-  - Vertical layering and horizontal resequencing, following general game audio practice.
-updated: 2026-10-30
+links: ["[[glossary:stems]]", "[[glossary:tempo]]"]
+instances: ["pdmx-000031", "m21-000000", "mutopia-001630", "oga-000088"]
+sources: ["自适应音乐的纵向分层与横向重排——依据来自游戏音频惯例。", "Vertical layering and horizontal resequencing, following general game audio practice."]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -43,7 +35,7 @@ updated: 2026-10-30
 在《波莱罗》里听一件件乐器加入怎样在不改变和声的情况下加厚，在巴赫众赞歌里听四声部怎样在终止式处给出干净的切换点，在《蓝色多瑙河》里听三拍子的乐句怎样每四小节收一次，在 loop-house-in-a-forest 里听循环素材的分层方式。这些结构就是自适应系统要复制的东西。
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"q q q q q q q q","bpm":100,"label":"共享的小节网格","label_en":"A shared bar grid","hint":"所有层落在同一网格上，切换才不会错拍","hint_en":"With every layer on one grid, switches land on the beat"}
+{"type":"rhythm","sig":"4/4","pattern":"q q q q q q q q","bpm":100,"label":"合成节奏示意","label_en":"Synthesized rhythm","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -65,6 +57,7 @@ Build a four to eight bar skeleton of harmony and rhythm first, fixing key, temp
 In Bolero, how instruments enter one by one and thicken the texture without changing the harmony; in the Bach chorale, how four voices give clean switch points at cadences; in The Blue Danube, how the three-beat phrases close every four bars; in loop-house-in-a-forest, how a loop is built in layers. These are the structures an adaptive system has to reproduce.
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"q q q q q q q q","bpm":100,"label":"A shared bar grid","label_en":"A shared bar grid","hint":"With every layer on one grid, switches land on the beat","hint_en":"With every layer on one grid, switches land on the beat"}
+{"type":"rhythm","sig":"4/4","pattern":"q q q q q q q q","bpm":100,"label":"Synthesized rhythm","label_en":"Synthesized rhythm","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

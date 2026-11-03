@@ -1,29 +1,22 @@
 ---
-id: when-not-to-use-ai
-site: ai
-cat: H
-title: 何时不该用 AI
-title_en: When Not to Use AI
-summary: 有些活用真人更快、更好，或者根本不能生成
-summary_en: Some jobs are faster, better or only legal with a human.
-level: standard
-tags: [判断, 录音, 版权, 伦理]
-tags_en: [judgement, recording, copyright, ethics]
-alias: [不该用 AI, 工具边界, limits of AI]
+id: "when-not-to-use-ai"
+site: "ai"
+cat: "H"
+title: "何时不该用 AI"
+title_en: "When Not to Use AI"
+summary: "有些活用真人更快、更好，或者根本不能生成"
+summary_en: "Some jobs are faster, better or only legal with a human."
+level: "standard"
+tags: ["判断", "录音", "版权", "伦理"]
+tags_en: ["judgement", "recording", "copyright", "ethics"]
+alias: ["不该用 AI", "工具边界", "limits of AI"]
 order: 11
-links:
-  - "[[glossary:music-copyright]]"
-  - "[[glossary:public-domain]]"
-  - "[[glossary:master-rights]]"
-instances:
-  - thesession-006629 | 爱尔兰传统曲调《提琴手》，装饰音属于传统内部知识（C1）
-  - atepp-001115 | 肖邦第一叙事曲，大结构的自由速度需要演奏者决定（C1）
-  - musicnet-000067 | 贝多芬第十五弦乐四重奏，合奏音准与融合无法生成（C1）
-  - cyberhymnal-000000 | 管风琴赞美诗，礼仪场合需要真实空间与乐器（C1）
-sources:
-  - 生成与录音的取舍——依据来自制作实务惯例。
-  - 声音权利与同意的基本要求，对照公开法律资料与平台条款整理。
-updated: 2026-10-30
+links: ["[[glossary:music-copyright]]", "[[glossary:public-domain]]", "[[glossary:master-rights]]"]
+instances: []
+sources: ["https://elevenlabs.io/use-policy", "https://suno.com/privacy/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "是否使用 AI 要结合声音同意、上传数据边界和项目控制要求判断；一段听感良好的音乐不能证明客户允许上传素材或接受该服务的数据处理。"
 ---
 
 ::: zh
@@ -38,14 +31,6 @@ AI 在初稿上很便宜，在最后百分之十很贵。有些活看起来适�
 ## 该写与该停的
 
 权利不允许时不要绕，现有版权歌曲、在世艺人的声音、客户合同禁止 AI 的项目，生成一个像的版本不是解决方案。伦理上同样如此，逝者的声音、仪式音乐、特定文化的装饰音，没有授权就不要碰。还有一种情况是手艺，编曲能力靠写出来，不靠挑选；以真人演奏为卖点的现场专辑、比赛、考试，不能外包。生成之前先问三个问题，乐手能不能在更短时间内做到，客户或平台是否禁止，披露之后作品是否还成立。生成适合做变体、临时轨、音效、繁琐剪辑，以及给人听的参考小样，之后由人来替换。
-
-## 听什么
-
-在《提琴手》这样的传统曲调里听装饰音与律动，那是传统内部的知识，不是随机采样能给的。在肖邦第一叙事曲里听大结构的自由速度，需要演奏者做整体决定。在贝多芬第十五弦乐四重奏里听合奏的音准与融合。在管风琴赞美诗里听礼仪场合需要的真实空间与乐器。
-
-```audiolab
-{"type":"instrument","gm":"Violin","synth":"bowed","phrase":["G4","A4","B4","D5","B4","A4","G4"],"label":"一句需要真人运弓的旋律","label_en":"A line that needs a real bow","hint":"换弓、揉弦与呼吸，生成器给不了","hint_en":"Bow changes, vibrato and breath are not on the menu"}
-```
 :::
 
 ::: en
@@ -60,12 +45,5 @@ For a thirty-second solo, one specific sound, or a session with a fixed date, hi
 ## Write it, or stop
 
 When rights forbid it, do not route around them. An existing copyrighted song, a living artist's voice, a contract that bans AI, generating a soundalike is not a solution. The same applies ethically to dead artists' voices, ritual music and culturally specific ornamentation without permission. Then there is craft. Arranging is learned by writing, not by selecting, and a live album, a competition or an exam whose value is human performance cannot be outsourced. Ask three questions before generating, could a player do it sooner, do the client or platform forbid it, and would disclosure damage the work. Generation suits variants, temp tracks, sound design, tedious editing and reference mockups that a human later replaces.
-
-## What to listen for
-
-In a traditional tune such as The Fiddler, ornaments and swing that belong to knowledge inside the tradition, not to random sampling. In Chopin's First Ballade, large-scale rubato that needs a performer's overall decision. In Beethoven's String Quartet No. 15, ensemble intonation and blend. In the organ hymn, the real space and instrument that a liturgical occasion requires.
-
-```audiolab
-{"type": "instrument", "gm": "Violin", "synth": "bowed", "phrase": ["G4", "A4", "B4", "D5", "B4", "A4", "G4"], "label": "A line that needs a real bow", "label_en": "A line that needs a real bow", "hint": "换弓、揉弦与呼吸，生成器给不了", "hint_en": "Bow changes, vibrato and breath are not on the menu"}
-```
 :::
+

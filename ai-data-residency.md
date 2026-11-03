@@ -1,30 +1,22 @@
 ---
-id: ai-data-residency
-site: ai
-cat: A
-title: 数据驻留与隐私
-title_en: Data Residency and Privacy
-summary: 上传之前先分清：素材去哪、留多久、会不会进入训练。
-summary_en: Before uploading, establish where the material goes, how long it stays and whether it can enter training.
-level: standard
-tags: [数据驻留, 隐私, 训练数据, 上传]
-tags_en: [data residency, privacy, training data, uploads]
-alias: [数据驻留, 隐私检查, data residency]
+id: "ai-data-residency"
+site: "ai"
+cat: "A"
+title: "数据驻留与隐私"
+title_en: "Data Residency and Privacy"
+summary: "上传之前先分清：素材去哪、留多久、会不会进入训练。"
+summary_en: "Before uploading, establish where the material goes, how long it stays and whether it can enter training."
+level: "standard"
+tags: ["数据驻留", "隐私", "训练数据", "上传"]
+tags_en: ["data residency", "privacy", "training data", "uploads"]
+alias: ["数据驻留", "隐私检查", "data residency"]
 order: 125
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:licensing]]"
-  - "[[glossary:public-domain]]"
-instances:
-  - mutopia-001411 | 公有领域谱面，原作无需授权，上传与工具条款仍要分开确认（C1）
-  - wikifonia-000434 | 采集者署名的角笛舞曲，来源链清楚才敢上传（C1）
-  - pdmx-000326 | 标着采集来源的《黑是颜色》，民间记录也涉及具体演唱者（C1）
-  - mutopia-001412 | 稀疏钢琴曲，短片段同样能识别出作品（C1）
-sources:
-  - GDPR 第 28 条（处理者）与标准合同条款（SCC）关于子处理者、保留期与跨境传输的条文。
-  - 欧盟数据保护机构关于跨境传输与最小化原则的公开指南。
-  - 录音制作与档案管理惯例，关于未发行素材的访问控制。
-updated: 2026-10-31
+links: ["[[glossary:stems]]", "[[glossary:licensing]]", "[[glossary:public-domain]]"]
+instances: []
+sources: ["https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng", "https://replicate.com/docs/topics/predictions/data-retention"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论素材上传、保留和跨境处理，需要核对适用法规、服务保留政策及实际部署；普通MIDI回放不能证明数据存储地点或隐私措施。"
 ---
 
 ::: zh
@@ -56,10 +48,6 @@ updated: 2026-10-31
 ## 地区不等于辖区
 
 服务器在某个国家，不代表适用那里的法律；备份可能落在另一地；支持团队可能在第三地访问工单。跨境项目要把“数据在哪处理”和“由谁可访问”分开写进交付说明。遇到不能上传的素材，改用本地模型或只上传派生特征，比赌条款更稳。删除请求也要问清范围：主存储、备份、日志与训练副本是否同步清除，各自多久生效。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["A3","C4","E4","A4"],"label":"同一提示，两个地区","label_en":"One prompt, two regions","hint":"先确认输出是否相同，再谈数据留在哪里","hint_en":"Check whether the output differs before discussing where data lives"}
-```
-
 :::
 
 ::: en
@@ -92,3 +80,4 @@ Training and retention are the two most often skipped. The first affects rights,
 
 A server in one country does not mean that country's law applies; backups may sit elsewhere and support staff may open tickets from a third location. For cross-border work, state separately where processing happens and who can reach it. When material cannot be uploaded, a local model or derived features are safer than betting on a clause. Ask about deletion scope too: primary storage, backups, logs and training copies, and how long each takes to clear.
 :::
+

@@ -1,29 +1,22 @@
 ---
-id: metadata-and-credits
-site: ai
-cat: H
-title: 元数据与署名
-title_en: Metadata and Credits
-summary: 元数据是录音的身份，署名与披露都要具体
-summary_en: Metadata is the identity of a recording; credits and disclosure must be specific.
-level: standard
-tags: [元数据, ISRC, 署名, 披露]
-tags_en: [metadata, ISRC, credits, disclosure]
-alias: [元数据, 署名, credits and disclosure]
+id: "metadata-and-credits"
+site: "ai"
+cat: "H"
+title: "元数据与署名"
+title_en: "Metadata and Credits"
+summary: "元数据是录音的身份，署名与披露都要具体"
+summary_en: "Metadata is the identity of a recording; credits and disclosure must be specific."
+level: "standard"
+tags: ["元数据", "ISRC", "署名", "披露"]
+tags_en: ["metadata", "ISRC", "credits", "disclosure"]
+alias: ["元数据", "署名", "credits and disclosure"]
 order: 5
-links:
-  - "[[glossary:isrc]]"
-  - "[[glossary:music-copyright]]"
-  - "[[glossary:public-domain]]"
-instances:
-  - mutopia-000178 | 巴赫 d 小调托卡塔与赋格，曲名与作者齐全但缺编号（C1）
-  - thesession-000083 | 传统里尔舞曲，没有作曲家，字段该留空（C1）
-  - atepp-000238 | 肖斯塔科维奇 Op.87 第 23 首，作品号加序号定位明确（C1）
-  - atepp-001283 | 肖邦 Op.37 No.2，浪漫派作品的字段写法样本（C1）
-sources:
-  - ISRC 的十二位结构与登记方式——依据来自 ISO 3901 与发行实务。
-  - 录音署名与披露的写法，对照公开发行规范与平台条款整理。
-updated: 2026-10-30
+links: ["[[glossary:isrc]]", "[[glossary:music-copyright]]", "[[glossary:public-domain]]"]
+instances: []
+sources: ["https://isrc.ifpi.org/isrc-standard/isrc-handbook", "https://isrc.ifpi.org/why-use-isrc/using-isrc"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论录音标识、元数据与署名，需要核对ISRC规则、文件字段和实际制作贡献；音乐回放本身不能证明标识分配正确、版权行完整或署名符合约定。"
 ---
 
 ::: zh
@@ -38,14 +31,6 @@ AI 生成的文件最容易变成孤儿，名字叫 output_final.wav，没有工
 ## 署名与披露
 
 人该记的记全，概念、编曲、剪辑、混音、母带分别是谁，写清楚。工具也要署，写名称、版本与角色，例如人声由某工具生成，编曲与混音由某人完成。披露要短而具体，不写本作品由 AI 辅助这种空话，写清哪一部分是生成的，哪一部分是人工的。不要声称百分之百人工，也不要隐瞒，平台和客户的政策不一样，交付前查一遍。传统曲调没有作曲家，就留空，不要填传统当作者。交付时把元数据随文件一起发，不要只写在邮件正文里。
-
-## 听什么
-
-在巴赫 d 小调托卡塔与赋格里听曲名、调性与作曲家都在，但编号缺失会让同一作品的不同版本混在一起。在里尔舞曲里听完整段旋律也找不到作者，作者一栏就该留空。在肖斯塔科维奇 Op.87 第 23 首里听作品号加序号如何精确定位。在肖邦 Op.37 第二首夜曲里听同一套字段在浪漫派曲目上的写法。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","D4","E4","G4"],"label":"没有标签的音频","label_en":"Audio without a label","hint":"声音本身不告诉你作者、版本与授权","hint_en":"The sound itself will not tell you the author, version or licence"}
-```
 :::
 
 ::: en
@@ -60,12 +45,5 @@ Write at least four layers. Work, meaning title, composer, catalogue number and 
 ## Credits and disclosure
 
 Credit the people fully, concept, arrangement, editing, mix and master, each by name. Credit the tools too, with name, version and role, for example vocals generated with a named tool, arrangement and mix by a named person. Disclosure should be short and specific. Assisted by AI says nothing; state which part was generated and which was human. Do not claim one hundred percent human, and do not hide it either; platform and client policies differ, so check before delivery. A traditional tune has no composer, so leave the field empty rather than writing Traditional as the author. Send the metadata with the files, not only in the body of an email.
-
-## What to listen for
-
-In Bach's Toccata and Fugue in D minor, the title, key and composer are present but the catalogue number is missing, which lets versions of the same work merge. In the reel, the tune has no author, so the field should stay blank. In Shostakovich's Op. 87 No. 23, an opus plus number locates the movement precisely. In Chopin's Op. 37 No. 2, the same fields applied to a Romantic work.
-
-```audiolab
-{"type": "instrument", "gm": "Acoustic Grand Piano", "synth": "struck", "phrase": ["C4", "D4", "E4", "G4"], "label": "Audio without a label", "label_en": "Audio without a label", "hint": "声音本身不告诉你作者、版本与授权", "hint_en": "The sound itself will not tell you the author, version or licence"}
-```
 :::
+

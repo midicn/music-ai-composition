@@ -1,36 +1,29 @@
 ---
-id: choose-for-film-cue
-site: ai
-cat: K
-title: 影视 cue 选型
-title_en: Choosing a Tool for a Film Cue
-summary: 画面先定落点，工具只决定你用什么去填这几个落点。
-summary_en: The picture sets the hit points; the tool only decides what you fill them with.
-level: standard
-tags: [选型, 影视配乐, cue, 同步]
-tags_en: [selection, film scoring, cue, sync]
-alias: [配乐选型, 影视音乐工具, film cue]
+id: "choose-for-film-cue"
+site: "ai"
+cat: "K"
+title: "影视 cue 选型"
+title_en: "Choosing a Tool for a Film Cue"
+summary: "画面先定落点，工具只决定你用什么去填这几个落点。"
+summary_en: "The picture sets the hit points; the tool only decides what you fill them with."
+level: "standard"
+tags: ["选型", "影视配乐", "cue", "同步"]
+tags_en: ["selection", "film scoring", "cue", "sync"]
+alias: ["配乐选型", "影视音乐工具", "film cue"]
 order: 13
-links:
-  - "[[glossary:sync-license]]"
-  - "[[glossary:incidental-music]]"
-  - "[[glossary:lufs]]"
-tool_kind: guide
-tool_vendor: —
-tool_form: 网页
-tool_platforms: [浏览器]
-tool_price: 免费
-tool_jobs: [选型, 影视配乐]
-tool_verified: 2026-10-30
-instances:
-  - atepp-000398 | 门德尔松《仲夏夜之梦》戏剧配乐，场景转换处如何换气（C1）
-  - atepp-005536 | 穆索尔斯基《图画展览会》的侏儒，性格小品的配器密度参照（C1）
-  - pdmx-002038 | 圣桑《骷髅之舞》，悬念与推进的节奏参照（C1）
-  - mutopia-001411 | 萨蒂《裸体歌舞》第一首，稀疏底乐的留白参照（C1）
-sources:
-  - 影视配乐与同步授权的公开流程说明（2026-10-30 复核）。
-  - 响度与交付规格的行业通识（制作实践）。发行层面另说。
-updated: 2026-10-30
+links: ["[[glossary:sync-license]]", "[[glossary:incidental-music]]", "[[glossary:lufs]]"]
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "网页"
+tool_platforms: ["浏览器"]
+tool_price: "免费"
+tool_jobs: ["选型", "影视配乐"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://www.ableton.com/en/manual/working-with-video/", "https://www.wipo.int/web-publications/rights-clearance-a-guide-for-independent-filmmakers/en/3-rights-assessed-during-clearance.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论影视配乐工具选型，需要核对画面同步与所需权利范围，并测试实际交付文件；曲库试听不能证明工具能精确同步或许可覆盖使用。"
 ---
 
 ::: zh
@@ -63,10 +56,6 @@ updated: 2026-10-30
 ## 先学三件事
 
 先学三件事：把时间码与拍速对上、把落点标在工程里、把成品导出成与画面同长。然后读这里的影视配乐、同步与 cue 剪辑、响度目标三篇。
-
-```audiolab
-{"type":"instrument","gm":"Tremolo Strings","synth":"bowed","phrase":["D3","F3","A3","D3","C#4","A3","F3","D3"],"label":"一段绷紧的弦乐","label_en":"Tightened strings","hint":"配乐草稿先定张力，再定落点","hint_en":"Set the tension first, the hit points second"}
-```
 :::
 
 ::: en
@@ -99,8 +88,5 @@ For a pitch or a mood check, use Suno or Udio, because it is fast and cheap; for
 ## First three things
 
 Learn to match timecode with tempo, to place hit points as markers in the session, and to export at exactly the picture's length. Then read the pages on film scoring, sync and cue editing, and loudness targets.
-
-```audiolab
-{"type":"instrument","gm":"Tremolo Strings","synth":"bowed","phrase":["D3","F3","A3","D3","C#4","A3","F3","D3"],"label":"Tightened strings","label_en":"Tightened strings","hint":"Set the tension first, the hit points second","hint_en":"Set the tension first, the hit points second"}
-```
 :::
+

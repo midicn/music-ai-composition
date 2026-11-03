@@ -1,29 +1,20 @@
 ---
-id: melody-control
-site: ai
-cat: C
-title: 旋律控制
-title_en: Controlling Melody
-summary: 哼唱给轮廓，MIDI 给音符，参考音频会把风格一起借来
-summary_en: Humming gives contour, MIDI gives notes, and an audio reference lends its style along with the tune.
-level: standard
-tags: [旋律, 哼唱, MIDI 条件, 轮廓]
-tags_en: [melody, humming, MIDI conditioning, contour]
-alias: [旋律控制, 旋律参考, melody control]
+id: "melody-control"
+site: "ai"
+cat: "C"
+title: "旋律控制"
+title_en: "Controlling Melody"
+summary: "哼唱给轮廓，MIDI 给音符，参考音频会把风格一起借来"
+summary_en: "Humming gives contour, MIDI gives notes, and an audio reference lends its style along with the tune."
+level: "standard"
+tags: ["旋律", "哼唱", "MIDI 条件", "轮廓"]
+tags_en: ["melody", "humming", "MIDI conditioning", "contour"]
+alias: ["旋律控制", "旋律参考", "melody control"]
 order: 130
-links:
-  - "[[glossary:melody]]"
-  - "[[glossary:phrase]]"
-  - "[[glossary:counter-melody]]"
-instances:
-  - abcmisc-001334 | 《第十二街拉格》，切分主题反复出现，听两次的落点是否一致（C1）
-  - atepp-001283 | 肖邦夜曲 Op.37 No.2，装饰音与句尾最能看出旋律有没有被改顺（C1）
-  - pdmx-000575 | 维塔利《恰空》，低音循环不变，主题靠变奏推进，适合核对保留了多少（C1）
-  - giantmidi-004867 | 亨德尔《G 大调恰空》，大调固定低音，与维塔利对照主题变形（C1）
-sources:
-  - William Russo, Composing Music（Prentice-Hall）与 Hindemith, The Craft of Musical Composition 中关于旋律轮廓与句读的章节。
-  - 音频与符号两类旋律条件的差异，依据公开模型文档。
-updated: 2026-10-31
+links: ["[[glossary:melody]]", "[[glossary:phrase]]", "[[glossary:counter-melody]]"]
+instances: ["abcmisc-001334", "atepp-001283", "pdmx-000575", "giantmidi-004867"]
+sources: ["William Russo, Composing Music（Prentice-Hall）与 Hindemith, The Craft of Musical Composition 中关于旋律轮廓与句读的章节。", "音频与符号两类旋律条件的差异，依据公开模型文档。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -51,7 +42,7 @@ updated: 2026-10-31
 哼唱适合起步，不适合定稿。音准漂移、气声、滑音都会让模型做出不同于谱面的判断。参考音频则会把伴奏织体、混响一并带进来，最后得到的往往是一首像那首的新歌，而不是你要的旋律。旋律一旦成为整曲的识别点，交付前必须回到谱面核对：主题第一次出现在第几小节，两次副歌的旋律是否真的相同。
 
 ```audiolab
-{"type":"instrument","gm":"Flute","synth":"blown","phrase":["E4","G4","A4","G4","E4","D4","C4","D4"],"label":"一条可核对的旋律","label_en":"A melody you can check","hint":"先听轮廓，再把其中两个音改高半音，看句子是否还成立","hint_en":"Hear the contour, then raise two notes by a semitone and see whether the phrase still holds"}
+{"type":"instrument","gm":"Flute","synth":"blown","phrase":["E4","G4","A4","G4","E4","D4","C4","D4"],"label":"音色与短句练习","label_en":"Timbre and phrase exercise","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -80,6 +71,7 @@ An audio reference is the most misused input: it locks what something sounds lik
 Humming is good for starting and poor for signing off. Pitch drift, breath and slides all push the model toward a reading that is not in the score. An audio reference also drags in the arrangement texture and the reverb, so what comes back is a new song that resembles that one rather than your melody. Once the melody identifies the track, check it against the score before delivery: which bar the theme first appears in, and whether the two choruses really state the same tune.
 
 ```audiolab
-{"type":"instrument","gm":"Flute","synth":"blown","phrase":["E4","G4","A4","G4","E4","D4","C4","D4"],"label":"A melody you can check","label_en":"A melody you can check","hint":"Hear the contour, then raise two notes by a semitone and see whether the phrase still holds","hint_en":"Hear the contour, then raise two notes by a semitone and see whether the phrase still holds"}
+{"type":"instrument","gm":"Flute","synth":"blown","phrase":["E4","G4","A4","G4","E4","D4","C4","D4"],"label":"Timbre and phrase exercise","label_en":"Timbre and phrase exercise","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

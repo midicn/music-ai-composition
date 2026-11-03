@@ -1,37 +1,29 @@
 ---
-id: work-game-trailer
-site: ai
-cat: K
-title: 做游戏预告片
-title_en: Cut a Game Trailer
-summary: 先标 hit point 再写音乐，版本与授权一起交
-summary_en: Mark the hit points before writing, and ship versions with the licence.
-level: standard
-tags: [游戏预告片, 落点, 版本, 授权]
-tags_en: [game trailer, hit points, versions, licensing]
-alias: [游戏预告片, 预告片配乐, game trailer, trailer cut]
+id: "work-game-trailer"
+site: "ai"
+cat: "K"
+title: "做游戏预告片"
+title_en: "Cut a Game Trailer"
+summary: "先标 hit point 再写音乐，版本与授权一起交"
+summary_en: "Mark the hit points before writing, and ship versions with the licence."
+level: "standard"
+tags: ["游戏预告片", "落点", "版本", "授权"]
+tags_en: ["game trailer", "hit points", "versions", "licensing"]
+alias: ["游戏预告片", "预告片配乐", "game trailer", "trailer cut"]
 order: 263
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [预告片配乐, 版本裁切, 授权确认]
-tool_verified: 2026-10-31
-links:
-  - "[[glossary:cue]]"
-  - "[[glossary:sync-license]]"
-  - "[[glossary:true-peak]]"
-instances:
-  - pdmx-000789 | 强奏与合唱的爆发力，预告片第一个 hit 的力度参照（C1）
-  - pdmx-000120 | 铜管长音与定音鼓，logo 段落的收法（C1）
-  - pdmx-000580 | 大编制铺开前的留白，爆发才有对比（C1）
-  - pdmx-001524 | 同一动机加速加厚，riser 的写法（C1）
-sources:
-  - GDC Vault 的预告片剪辑与音频专题演讲（Game Developers Conference）。
-  - 平台对贴片广告与在线视频的响度与文件格式公开规范。
-  - 游戏音频行业组织 G.A.N.G. 的公开讨论。
-updated: 2026-10-31
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["预告片配乐", "版本裁切", "授权确认"]
+tool_verified: "2026-10-31"
+links: ["[[glossary:cue]]", "[[glossary:sync-license]]", "[[glossary:true-peak]]"]
+instances: []
+sources: ["https://helpx.adobe.com/premiere/desktop/add-audio-effects/apply-audio-effects/remix-in-premiere.html", "https://tech.ebu.ch/docs/r/r128s1.pdf"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "游戏预告片需要把音乐切点与实际镜头和多长度版本逐一对齐，再按发布规范验收；脱离画面播放音乐不能证明剪辑命中或广告版响度合格。"
 ---
 
 ::: zh
@@ -61,10 +53,6 @@ updated: 2026-10-31
 ## 预告片最容易假的地方
 
 整段都在响，logo 出现时已经没有余量。riser 每次都是四小节上行，第二遍就能预测。生成素材尾巴拖进下一个镜头，剪辑点露馅。四个版本各自生成，速度差半拍，平台换版时听得出来。授权写的是预告片使用，游戏发售与后续 DLC 又要重新谈。
-
-```audiolab
-{"type":"instrument","gm":"Brass Section","synth":"brass","phrase":["C3","G3","C3","E3","G3","C4","G3","C3"],"label":"预告片最后一段的落点","label_en":"The hit at the end of a trailer","hint":"落点前后的密度差要听得出来","hint_en":"The density change around the hit should be audible"}
-```
 :::
 
 ::: en
@@ -94,8 +82,5 @@ Every hit lands within one frame of picture, at the same tempo and key across ve
 ## Where trailers start to lie
 
 The whole cut is loud, so the logo arrives with nothing left. The riser climbs four bars every time and is predictable on a second viewing. Generated tails drag into the next shot and expose the edit. Each version is generated separately and drifts half a beat, which shows when a platform swaps them. The licence says trailer only, and the launch and DLC need a new negotiation.
-
-```audiolab
-{"type":"instrument","gm":"Brass Section","synth":"brass","phrase":["C3","G3","C3","E3","G3","C4","G3","C3"],"label":"The hit at the end of a trailer","label_en":"The hit at the end of a trailer","hint":"The density change around the hit should be audible","hint_en":"The density change around the hit should be audible"}
-```
 :::
+

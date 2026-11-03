@@ -1,29 +1,22 @@
 ---
-id: musician-livelihood
-site: ai
-cat: G
-title: 音乐人生计
-title_en: Musician Livelihood
-summary: 被替代的常常不是创作，是伴奏、配乐库与代录 demo 这些活
-summary_en: What gets displaced is rarely composition but session work, library cues and demo vocals
-level: standard
-tags: [生计, 录音棚, 配乐库, 现场]
-tags_en: [livelihood, session work, library music, live work]
-alias: [音乐人生计, 行业影响, musician livelihood]
+id: "musician-livelihood"
+site: "ai"
+cat: "G"
+title: "音乐人生计"
+title_en: "Musician Livelihood"
+summary: "被替代的常常不是创作，是伴奏、配乐库与代录 demo 这些活"
+summary_en: "What gets displaced is rarely composition but session work, library cues and demo vocals"
+level: "standard"
+tags: ["生计", "录音棚", "配乐库", "现场"]
+tags_en: ["livelihood", "session work", "library music", "live work"]
+alias: ["音乐人生计", "行业影响", "musician livelihood"]
 order: 9
-links:
-  - "[[glossary:sync-license]]"
-  - "[[glossary:artist-royalty]]"
-  - "[[glossary:work-for-hire]]"
-instances:
-  - mutopia-000546 | 《萨福颂》的声乐加钢琴谱，伴奏的判断在音符里，不在功劳簿上（C1）
-  - cyberhymnal-002684 | 蒙克据克吕格改编的赞美诗，配和声是一门可收费的手艺（C1）
-  - m21-000481 | 《枫叶拉格》的合奏改编，排练与配器是人的工作（C1）
-  - groove-001118 | 126 BPM 的 highlife 鼓循环，循环包最先吃掉鼓手的小活（C1）
-sources:
-  - 音乐职业结构的变化；公开行业访谈与报告是主要依据。不引具体统计。
-  - 配乐授权与雇工条款的常见做法——依据来自公开合同惯例。法律判断请咨询专业人士。
-updated: 2026-10-30
+links: ["[[glossary:sync-license]]", "[[glossary:artist-royalty]]", "[[glossary:work-for-hire]]"]
+instances: []
+sources: ["https://www.cisac.org/Newsroom/news-releases/global-economic-study-shows-human-creators-future-risk-generative-ai", "https://copyright.gov/engage/musicians/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "音乐人生计涉及委托、署名、收入来源与权利结构，需区分行业研究的预测和实际统计；任何示范音乐都不能证明某类岗位将被替代。"
 ---
 
 ::: zh
@@ -38,14 +31,6 @@ AI 对音乐人的冲击，先落在"可替换"的环节。广告配乐、短视
 ## 从哪开始
 
 把能力挪到工具做不到的位置。现场演出、即兴、与画面或演员实时配合、教学、声音设计、混音与母带、跨文化顾问，这些需要判断与在场。学会用工具，把它当草稿机与素材源，交付时提供工具给不了的部分，比如真人演奏的质感、可追溯的授权、能改的分轨。保留 credits，要求署名，把每次工作写进作品集。定价按价值而非时长，说明你卖的是判断与责任。用人方也该有明确做法，需要真人演奏就付真人费用，用生成素材就披露并核实授权，别用"试音"名义索取免费劳动。
-
-## 耳朵要抓的点
-
-在《萨福颂》的钢琴部分里听伴奏如何托住歌声，这是判断，不是填充；在蒙克改编的赞美诗里听配和声的手艺；在《枫叶拉格》的合奏版里听排练出来的整齐与呼吸；在 highlife 鼓循环里听被循环包替代的那部分鼓手工作，稳，但没有人的取舍。
-
-```audiolab
-{"type":"instrument","gm":"Electric Bass (finger)","synth":"plucked","phrase":["E2","G2","A2","B2","A2","G2","E2","D2"],"label":"伴奏里的判断","label_en":"Judgement inside an accompaniment","hint":"弹什么、留什么空，都是要付费的经验","hint_en":"What to play and what to leave out is paid experience"}
-```
 :::
 
 ::: en
@@ -60,12 +45,5 @@ The market sorts by good enough. Clients rarely want the best music, they want m
 ## Where to start
 
 Move toward what the tools cannot do. Live performance, improvisation, work that follows picture or a performer in real time, teaching, sound design, mixing and mastering, cross-cultural consulting, all of which require presence and judgement. Learn the tools and use them as sketchpads and material sources, but deliver what they cannot, including the touch of a real player, traceable rights and stems that can still be changed. Keep credits, ask to be named, and write every job into a portfolio. Price by value rather than hours, and say that you sell judgement and accountability. Employers have a corresponding duty. If a part needs a human, pay a human. If generated material is used, disclose it and verify the licence. Do not extract free labour under the label of a test.
-
-## What the ear catches
-
-In the piano part of Sapphische Ode, how an accompaniment holds the voice, which is judgement rather than filler. In the Monk adaptation, the craft of harmonisation. In the ensemble Maple Leaf Rag, the tightness and breathing that come from rehearsal. In the highlife loop, the drummer's small work replaced by a pack, steady, but with nobody choosing.
-
-```audiolab
-{"type":"instrument","gm":"Electric Bass (finger)","synth":"plucked","phrase":["E2","G2","A2","B2","A2","G2","E2","D2"],"label":"Judgement inside an accompaniment","label_en":"Judgement inside an accompaniment","hint":"What to play and what to leave out is paid experience","hint_en":"What to play and what to leave out is paid experience"}
-```
 :::
+

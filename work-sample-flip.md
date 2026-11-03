@@ -1,35 +1,29 @@
 ---
-id: work-sample-flip
-site: ai
-cat: K
-title: 采样再创作
-title_en: A Sample Flip
-summary: 先查许可再切片，采样包与老唱片是两套规则
-summary_en: Clear the sample before chopping; packs and old records follow different rules.
-level: standard
-tags: [采样, 切片, 授权, 编曲]
-tags_en: [sampling, chopping, clearance, beatmaking]
-alias: [采样再创作, 采样翻转, sample flip, 切片]
+id: "work-sample-flip"
+site: "ai"
+cat: "K"
+title: "采样再创作"
+title_en: "A Sample Flip"
+summary: "先查许可再切片，采样包与老唱片是两套规则"
+summary_en: "Clear the sample before chopping; packs and old records follow different rules."
+level: "standard"
+tags: ["采样", "切片", "授权", "编曲"]
+tags_en: ["sampling", "chopping", "clearance", "beatmaking"]
+alias: ["采样再创作", "采样翻转", "sample flip", "切片"]
 order: 8
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [采样制作, 编曲, 授权确认]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:rhythm]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:stems]]"
-instances:
-  - groove-000000 | 138 BPM 放克鼓组，军鼓落点决定切片位置（C1）
-  - groove-000005 | 87 BPM 嘻哈鼓组，hi-hat 的 swing 最难生成（C1）
-  - oga-000287 | 电子循环靠增减元素维持律动，听层间关系（C1）
-sources:
-  - 采样包许可与唱片清权的差别（采样与发行公开规则）。
-  - 切片与变调的做法，参考采样器与鼓组编配惯例。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["采样制作", "编曲", "授权确认"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:rhythm]]", "[[glossary:tempo]]", "[[glossary:stems]]"]
+instances: []
+sources: ["https://support.image-line.com/action/knowledgebase?ans=717", "https://www.copyright.gov/register/pa-sr.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "采样再创作需区分采样库许可和现成唱片权利，同时检查实际切片与变调；播放再创作成品不能证明采样来源或允许单独再分发原始素材。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 常见返工原因
 
 从流媒体抓的音频直接切，没有清权。采样包禁止再分发，却把原始 wav 一起交付。切片点落在噪声上，每次触发都带爆音。大幅变调后音色像玩具。鼓组盖住采样，辨识度没了。客户要求换采样，工程却已经混完。没记录来源，发行时无法证明授权。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":90,"label":"十六分切片的骨架","label_en":"A skeleton built from sixteenths","hint":"听每一刀落在哪，切点决定新节奏","hint_en":"Hear where each cut lands; the cut points write the new groove"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ Source and licence are written into the delivery document. Any recognisable reco
 ## Common rework causes
 
 Audio ripped from a streaming service is chopped with no clearance. A pack forbids redistribution and the raw wav ships with the project. Cuts land on noise and every trigger pops. Heavy pitch shifting turns the sample into a toy. Drums bury the sample and its identity disappears. The client asks for a different sample after the mix is finished. No source is recorded, so the licence cannot be proven at release.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":90,"label":"A skeleton built from sixteenths","label_en":"A skeleton built from sixteenths","hint":"Hear where each cut lands; the cut points write the new groove","hint_en":"Hear where each cut lands; the cut points write the new groove"}
-```
 :::
+

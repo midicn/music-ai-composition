@@ -1,41 +1,30 @@
 ---
-id: model-musicgen
-site: ai
-cat: I
-title: MusicGen
-title_en: MusicGen
-summary: 可本地运行的音乐生成模型；旋律条件需选对应检查点，官方权重为非商业许可。
-summary_en: Locally runnable music generation; melody conditioning requires a supported checkpoint and official weights carry a non-commercial licence.
-level: standard
-tags: [模型档案, 开源, 本地部署, 旋律条件]
-tags_en: [model profile, open source, local, melody conditioning]
-alias: [MusicGen, Meta MusicGen, 音乐生成模型]
+id: "model-musicgen"
+site: "ai"
+cat: "I"
+title: "MusicGen"
+title_en: "MusicGen"
+summary: "可本地运行的音乐生成模型；旋律条件需选对应检查点，官方权重为非商业许可。"
+summary_en: "Locally runnable music generation; melody conditioning requires a supported checkpoint and official weights carry a non-commercial licence."
+level: "standard"
+tags: ["模型档案", "开源", "本地部署", "旋律条件"]
+tags_en: ["model profile", "open source", "local", "melody conditioning"]
+alias: ["MusicGen", "Meta MusicGen", "音乐生成模型"]
 order: 4
-model_vendor: Meta
-model_form: 本地模型
-model_form_en: Local model
-model_input: [文本, 音频提示, melody版本的旋律条件]
-model_input_en: [Text, Audio prompts, Melody conditioning for the melody variant]
-model_output: [音频]
-model_output_en: [Audio]
-model_licence: AudioCraft 代码为 MIT；官方 MusicGen 权重为 CC BY-NC 4.0，衍生权重另查
-model_licence_en: AudioCraft code is MIT; official MusicGen weights are CC BY-NC 4.0; check derivatives separately
-model_verified: 2026-11-02
-links:
-  - "[[glossary:melody]]"
-  - "[[glossary:midi-protocol]]"
-  - "[[instrument:piano]]"
-instances:
-  - mutopia-000059 | 四十三秒的赞美诗旋律，看短片段的条件素材（C1） | A forty-three second hymn tune, to hear material for short conditioned clips (C1)
-  - abcmisc-001329 | 里尔舞曲，看可循环的短旋律（C1） | A reel, to hear a short loopable melody (C1)
-  - groove-000002 | 86 BPM 灵魂乐鼓组，看文本描述的节奏目标（C1） | An 86 BPM soul kit, to hear the rhythmic target a text prompt describes (C1)
-  - oga-000005 | 三十八秒的战斗配乐片段，看短促的器乐提示（C1） | A thirty-eight second battle cue, to hear a short instrumental prompt (C1)
-sources:
-  - "https://github.com/facebookresearch/audiocraft"
-  - "https://huggingface.co/facebook/musicgen-small"
-  - 模型能力、条件输入与权重发布形态，对照官方模型说明整理。
-  - 失败模式来自公开用户报告与本地实测经验，未引用具体评测数据。
-updated: 2026-11-02
+model_vendor: "Meta"
+model_form: "本地模型"
+model_form_en: "Local model"
+model_input: ["文本", "音频提示", "melody版本的旋律条件"]
+model_input_en: ["Text", "Audio prompts", "Melody conditioning for the melody variant"]
+model_output: ["音频"]
+model_output_en: ["Audio"]
+model_licence: "AudioCraft 代码为 MIT；官方 MusicGen 权重为 CC BY-NC 4.0，衍生权重另查"
+model_licence_en: "AudioCraft code is MIT; official MusicGen weights are CC BY-NC 4.0; check derivatives separately"
+model_verified: "2026-11-02"
+links: ["[[glossary:melody]]", "[[glossary:midi-protocol]]", "[[instrument:piano]]"]
+instances: ["mutopia-000059", "abcmisc-001329", "groove-000002", "oga-000005"]
+sources: ["https://github.com/facebookresearch/audiocraft", "https://huggingface.co/facebook/musicgen-small", "模型能力、条件输入与权重发布形态，对照官方模型说明整理。", "失败模式来自公开用户报告与本地实测经验，未引用具体评测数据。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -95,3 +84,4 @@ Check AudioCraft code and model weights separately: the code uses MIT, while off
 {"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["G4","A4","B4","D5","B4","A4","G4","E4"],"label":"Single-line melody","label_en":"Single-line melody","hint":"Hear pitch and duration as a conceptual conditioning reference; this block does not send audio into MusicGen to generate accompaniment.","hint_en":"Hear pitch and duration as a conceptual conditioning reference; this block does not send audio into MusicGen to generate accompaniment."}
 ```
 :::
+

@@ -1,30 +1,22 @@
 ---
-id: documentary-scoring
-site: ai
-cat: F
-title: 纪录片配乐
-title_en: Scoring Documentary
-summary: 纪录片音乐要能铺十分钟，也要在采访开口时立刻消失
-summary_en: Documentary music must sustain ten minutes and vanish the moment an interview begins.
-level: standard
-tags: [纪录片, 铺底, 采访, 历史质感]
-tags_en: [documentary, underscore, interview, period texture]
-alias: [纪录片音乐, 纪实配乐, documentary score]
+id: "documentary-scoring"
+site: "ai"
+cat: "F"
+title: "纪录片配乐"
+title_en: "Scoring Documentary"
+summary: "纪录片音乐要能铺十分钟，也要在采访开口时立刻消失"
+summary_en: "Documentary music must sustain ten minutes and vanish the moment an interview begins."
+level: "standard"
+tags: ["纪录片", "铺底", "采访", "历史质感"]
+tags_en: ["documentary", "underscore", "interview", "period texture"]
+alias: ["纪录片音乐", "纪实配乐", "documentary score"]
 order: 166
-links:
-  - "[[glossary:cue]]"
-  - "[[glossary:dynamics]]"
-  - "[[glossary:incidental-music]]"
-instances:
-  - pdmx-001010 | 马勒第五，一个乐章铺十分钟情绪，长段铺底的耐力参照（C1）
-  - mutopia-001411 | 萨蒂《裸体歌舞》，稀疏底乐的留白，采访段落的参照（C1）
-  - pdmx-000160 | 圣桑《骷髅之舞》，固定音型写场面，历史段落的质感参考（C1）
-  - atepp-000398 | 门德尔松《仲夏夜之梦》，场景转换处如何换气（C1）
-sources:
-  - Sheila Curran Bernard, Documentary Storytelling（Focal Press）中关于采访优先与音乐让位的章节。
-  - 纪录片作曲家的公开访谈，讨论长段铺底与历史质感的做法。
-  - 影视音乐编辑惯例中关于 cue 进出与画面同步的说明。
-updated: 2026-10-31
+links: ["[[glossary:cue]]", "[[glossary:dynamics]]", "[[glossary:incidental-music]]"]
+instances: []
+sources: ["https://www.ableton.com/en/manual/working-with-video/", "https://www.ableton.com/en/manual/mixing/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论对白与画面下的音乐编辑，需要在真实画面、对白和混音轨中确认进出点；普通MIDI没有采访录音和视频，不能证明纪录片对白被正确让位。"
 ---
 
 ::: zh
@@ -54,10 +46,6 @@ updated: 2026-10-31
 ## 让位与边界
 
 采访开口前一到两秒把音乐收到很低或直接停，句尾再回来，回来时不要从原音量突然出现。如果采访有背景噪声，音乐可以填它的缝，但不要盖过语音的辅音。多个受访者切换时，音乐保持一条线，别每换一个人就换一首。最常见的问题是音乐从头铺到尾，观众疲劳，真正的高潮也没了；另一种是情绪替观众下结论，画面还在陈述，音乐已经哭了。生成素材的长渐弱和循环尾巴要处理干净，不然采访一开始，音乐还在慢慢消失。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["A3","E4","D4","C4","B3","A3","G3","A3"],"label":"采访前的一层铺底","label_en":"A bed before the interview","hint":"听它退出的地方，比听旋律更重要","hint_en":"Hear where it gets out of the way; that matters more than the tune"}
-```
 :::
 
 ::: en
@@ -87,8 +75,5 @@ A historical section is not solved by adding generic old music. Period comes fro
 ## Yielding, and the limits
 
 Pull the music down or stop it one or two seconds before an interview begins, bring it back after the sentence, and never return at the previous level in one jump. If the interview has background noise, music can fill the gaps but must not cover the consonants. When the subject changes, keep one musical thread instead of changing tracks with each face. The commonest failure is wall-to-wall music that tires the audience and leaves the real climax with nowhere to go; the next is music that concludes before the picture does, already weeping while the film is still stating facts. Clean the long fades and loop tails in generated material, or the music will still be fading out as the interview starts.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["A3","E4","D4","C4","B3","A3","G3","A3"],"label":"A bed before the interview","label_en":"A bed before the interview","hint":"Hear where it gets out of the way; that matters more than the tune","hint_en":"Hear where it gets out of the way; that matters more than the tune"}
-```
 :::
+

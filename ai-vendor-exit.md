@@ -1,30 +1,22 @@
 ---
-id: ai-vendor-exit
-site: ai
-cat: A
-title: 退出与迁移
-title_en: Leaving a Vendor
-summary: 能不能走，取决于手里有没有可重建的素材、提示与记录。
-summary_en: Whether you can leave depends on owning rebuildable assets, prompts and records, not on export buttons alone.
-level: standard
-tags: [迁移, 导出, 供应商锁定, 归档]
-tags_en: [migration, export, vendor lock-in, archiving]
-alias: [退出供应商, 迁移, vendor exit]
+id: "ai-vendor-exit"
+site: "ai"
+cat: "A"
+title: "退出与迁移"
+title_en: "Leaving a Vendor"
+summary: "能不能走，取决于手里有没有可重建的素材、提示与记录。"
+summary_en: "Whether you can leave depends on owning rebuildable assets, prompts and records, not on export buttons alone."
+level: "standard"
+tags: ["迁移", "导出", "供应商锁定", "归档"]
+tags_en: ["migration", "export", "vendor lock-in", "archiving"]
+alias: ["退出供应商", "迁移", "vendor exit"]
 order: 127
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:midi-protocol]]"
-  - "[[glossary:termination-right]]"
-instances:
-  - groove-000001 | 105 BPM 放克鼓组，导出的分轨能在任何工具里继续用（C1）
-  - atepp-000122 | 德彪西练习曲，MIDI 与音频双份保存降低迁移风险（C1）
-  - giantmidi-004867 | 亨德尔恰空，固定低音是续写的硬约束，迁移时也最可重建（C1）
-  - pdmx-000497 | 大型多分轨作品，导出清单少一层就重建不了（C1）
-sources:
-  - GDPR 第 20 条（数据可携带）与主流生成服务帮助页关于项目导出、格式与账号删除的说明。
-  - 数字归档实践中关于无损音频、工程文件与校验和的通用规范。
-  - 软件采购与退出管理的公开指南，关于数据可携带与终止条款。
-updated: 2026-10-31
+links: ["[[glossary:stems]]", "[[glossary:midi-protocol]]", "[[glossary:termination-right]]"]
+instances: []
+sources: ["https://www.ableton.com/en/manual/managing-files-and-sets/", "https://replicate.com/docs/topics/predictions/data-retention"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论平台退出和文件可取回性，需要实际导出、保存媒体并离开原平台重开检查；MIDI试听不能验证服务保留期或工程迁移成功。"
 ---
 
 ::: zh
@@ -61,10 +53,6 @@ updated: 2026-10-31
 ## 退出前的红旗
 
 导出只给混合音频；分轨要额外付费且限时；删除账号即失去全部历史；许可随订阅终止而失效；没有批量导出或 API。出现两条以上，就该把这家当临时工具，而不是长期仓库。迁移成本高的真正原因通常不是音频，而是那些从未被当作资产保存的提示与工程记录。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C3","G3","C4","E4"],"label":"分轨能不能逐层取回","label_en":"Can each layer come back","hint":"迁移前先确认每一层都能单独导出","hint_en":"Before migrating, confirm every layer exports on its own"}
-```
-
 :::
 
 ::: en
@@ -102,3 +90,4 @@ Prompts are natural language, so they need rewriting for another model, but stru
 
 Mixed audio is the only export; stems cost extra and expire; deleting the account erases all history; the licence ends with the subscription; there is no bulk export or API. Two or more of these make the service a temporary tool, not a long-term archive. Migration is expensive less because of the audio than because prompts and project records were never treated as assets.
 :::
+

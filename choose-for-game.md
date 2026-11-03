@@ -1,37 +1,27 @@
 ---
-id: choose-for-game
-site: ai
-cat: K
-title: 游戏音频选型
-title_en: Choosing Tools for Game Audio
-summary: 循环、分层与运行时，决定游戏音频路线的是这三件事。
-summary_en: Loops, layers and runtime behaviour decide a game audio route far more than timbre.
-level: standard
-tags: [选型, 游戏音频, 循环, 中间件]
-tags_en: [selection, game audio, loops, middleware]
-alias: [游戏选型, 游戏音乐工具, game audio]
+id: "choose-for-game"
+site: "ai"
+cat: "K"
+title: "游戏音频选型"
+title_en: "Choosing Tools for Game Audio"
+summary: "循环、分层与运行时，决定游戏音频路线的是这三件事。"
+summary_en: "Loops, layers and runtime behaviour decide a game audio route far more than timbre."
+level: "standard"
+tags: ["选型", "游戏音频", "循环", "中间件"]
+tags_en: ["selection", "game audio", "loops", "middleware"]
+alias: ["游戏选型", "游戏音乐工具", "game audio"]
 order: 14
-links:
-  - "[[glossary:sound-design]]"
-  - "[[glossary:stems]]"
-  - "[[glossary:tempo]]"
-tool_kind: guide
-tool_vendor: —
-tool_form: 网页
-tool_platforms: [浏览器]
-tool_price: 免费
-tool_jobs: [选型, 游戏音频]
-tool_verified: 2026-10-30
-instances:
-  - oga-000011 | boss 01，一分半的战斗循环，常见长度与段落结构（C1）
-  - oga-000004 | battle 01，不足一分钟的短循环，接缝处理最难（C1）
-  - oga-000021 | cave 01，洞穴环境层，稀疏写法与留白（C1）
-  - oga-000009 | beach 01，三十一秒的场景循环，短到几乎没有发展空间（C1）
-  - oga-000013 | boss battle 10，八位机音源限制下的战斗段，配器取舍清楚（C1）
-sources:
-  - 游戏音频中间件与自适应音乐的公开文档（2026-10-30 复核）。
-  - 循环、分层与资产命名的行业实践，对照惯例整理。
-updated: 2026-10-30
+links: ["[[glossary:sound-design]]", "[[glossary:stems]]", "[[glossary:tempo]]"]
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "网页"
+tool_platforms: ["浏览器"]
+tool_price: "免费"
+tool_jobs: ["选型", "游戏音频"]
+tool_verified: "2026-10-30"
+instances: ["oga-000011", "oga-000004", "oga-000021", "oga-000009", "oga-000013"]
+sources: ["游戏音频中间件与自适应音乐的公开文档（2026-10-30 复核）。", "循环、分层与资产命名的行业实践，对照惯例整理。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -66,7 +56,7 @@ updated: 2026-10-30
 先学三件事：把循环点做在零交叉上、给每一层写清强度参数、按命名规范交付资产。然后读这里的游戏音频、交互分层、交付到引擎三篇。
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s e s s s e s s s e s s s e s","bpm":132,"label":"一段可循环的节奏层","label_en":"A loopable rhythmic layer","hint":"听接缝，不要只听话音色","hint_en":"Listen for the seam, not just the sound"}
+{"type":"rhythm","sig":"4/4","pattern":"s s e s s s e s s s e s s s e s","bpm":132,"label":"合成节奏示意","label_en":"Synthesized rhythm","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -102,6 +92,7 @@ For few levels that only need atmosphere, a library plus Wwise or FMOD is least 
 Learn to place loop points on zero crossings, to document each layer's intensity parameter, and to deliver assets under a naming convention. Then read the pages on game audio, interactive layers and delivering to an engine.
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s e s s s e s s s e s s s e s","bpm":132,"label":"A loopable rhythmic layer","label_en":"A loopable rhythmic layer","hint":"Listen for the seam, not just the sound","hint_en":"Listen for the seam, not just the sound"}
+{"type":"rhythm","sig":"4/4","pattern":"s s e s s s e s s s e s s s e s","bpm":132,"label":"Synthesized rhythm","label_en":"Synthesized rhythm","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

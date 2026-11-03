@@ -1,28 +1,22 @@
 ---
-id: dynamic-range-decisions
-site: ai
-cat: D
-title: 动态范围取舍
-title_en: Choosing a Dynamic Range
-summary: AI 素材天生偏平，留多少起伏是审美决定，不是参数默认
-summary_en: AI material is born flat, and how much contrast to keep is an aesthetic call rather than a setting.
-level: standard
-tags: [动态范围, 段落对比, 音量自动化, 峰均比]
-tags_en: [dynamic range, section contrast, volume automation, crest factor]
-alias: [动态取舍, 动态对比, dynamic range]
+id: "dynamic-range-decisions"
+site: "ai"
+cat: "D"
+title: "动态范围取舍"
+title_en: "Choosing a Dynamic Range"
+summary: "AI 素材天生偏平，留多少起伏是审美决定，不是参数默认"
+summary_en: "AI material is born flat, and how much contrast to keep is an aesthetic call rather than a setting."
+level: "standard"
+tags: ["动态范围", "段落对比", "音量自动化", "峰均比"]
+tags_en: ["dynamic range", "section contrast", "volume automation", "crest factor"]
+alias: ["动态取舍", "动态对比", "dynamic range"]
 order: 6
-links:
-  - "[[glossary:dynamics]]"
-  - "[[glossary:compressor]]"
-  - "[[glossary:loudness-war]]"
-instances:
-  - openscore-000269 | 马勒《当我的爱人举行婚礼》，人声从低语到爆发，宏观动态清楚（C1）
-  - giantmidi-008198 | 梅尔·博尼斯《受伤的大教堂》，听建筑感怎样一段段垒起来（C1）
-  - musicnet-000091 | 贝多芬第十二四重奏慢乐章，长音之间极小的力度差（C1）
-sources:
-  - 宏观与微观动态的区分——依据来自混音与母带惯例。
-  - Macro and micro dynamics, following general mixing and mastering practice.
-updated: 2026-10-30
+links: ["[[glossary:dynamics]]", "[[glossary:compressor]]", "[[glossary:loudness-war]]"]
+instances: []
+sources: ["https://www.ableton.com/en/manual/live-audio-effect-reference/", "https://tech.ebu.ch/publications/r128"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论实际音频的动态和响度描述，需要结合处理链、表计与真实段落检查；普通MIDI试听不能证明压缩量、母带动态或节目响度达标。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ AI 生成的音乐常常从头到尾一样满。主歌和副歌的差别只在�
 ## 具体做法
 
 先定每个段落的相对电平。主歌比副歌低 2 到 4 LU，桥段可以再低一点，用音量自动化写出来，不要用压缩器压出来。段落之间的过渡用两到四小节渐变，不要一步跳到位，耳朵对突变比对差距更敏感。鼓组保留 2 到 4 dB 的峰均比，别把所有击打压成同一高度。总线压缩只在需要收拢时用，增益衰减不超过 2 dB。用整体响度范围检查，流行歌 5 到 8 LU 算正常，古典与影视可以更宽，背景音乐可以更窄。做完把监听音量调低听一遍，动态还在，说明不是靠响度撑起来的。
-
-## 耳朵要抓的点
-
-在马勒《当我的爱人举行婚礼》里，听人声从低语到爆发的过程，这是宏观动态。在梅尔·博尼斯《受伤的大教堂》里，听建筑感是怎样一段段垒起来的，段落之间有没有台阶。在贝多芬第十二四重奏的慢乐章里，听长音之间极小的力度差，这是微观动态。三处都调到同一响度再比。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C2","G2","C3","G3","C4","G4","C5","G5"],"label":"从低到高","label_en":"Low to high","hint":"听每一段是否真的有力度差，而不只是音高不同","hint_en":"Hear whether each step differs in force, not only in pitch"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ Dynamics work on two levels. Macro dynamics are the level differences between se
 ## In practice
 
 Set a relative level for each section first. A verse 2 to 4 LU below the chorus, a bridge perhaps lower still, written with volume automation rather than squeezed out of a compressor. Shape transitions over two to four bars instead of stepping, since the ear notices a jump more than a gap. Leave the drum bus 2 to 4 dB of crest factor instead of flattening every hit to one height. Use bus compression only where you need to gather, with no more than 2 dB of gain reduction. Check the loudness range, where 5 to 8 LU is normal for pop, wider for classical and film, narrower for background music. Finally, turn the monitor level down; if the movement survives, it was not carried by loudness.
-
-## What the ear catches
-
-In Mahler's Wenn mein Schatz Hochzeit macht, hear the voice move from murmur to outcry, which is macro dynamics. In Mel Bonis's La Cathédrale blessée, hear the structure build step by step and whether the sections leave a stair. In the slow movement of Beethoven's String Quartet No. 12, hear the tiny differences of force between long notes, which is micro dynamics. Bring all three to the same loudness first.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C2","G2","C3","G3","C4","G4","C5","G5"],"label":"Low to high","label_en":"Low to high","hint":"Hear whether each step differs in force, not only in pitch","hint_en":"Hear whether each step differs in force, not only in pitch"}
-```
 :::
+

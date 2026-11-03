@@ -1,35 +1,29 @@
 ---
-id: work-short-film
-site: ai
-cat: K
-title: 短片配乐
-title_en: Scoring a Short Film
-summary: 先有 cue 表再写音乐，留白与对白位置决定成败
-summary_en: A cue sheet comes before the music; silence and dialogue placement decide the result.
-level: standard
-tags: [短片, 配乐, 对白, 时间码]
-tags_en: [short film, scoring, dialogue, timecode]
-alias: [短片配乐, 电影配乐, short film score]
+id: "work-short-film"
+site: "ai"
+cat: "K"
+title: "短片配乐"
+title_en: "Scoring a Short Film"
+summary: "先有 cue 表再写音乐，留白与对白位置决定成败"
+summary_en: "A cue sheet comes before the music; silence and dialogue placement decide the result."
+level: "standard"
+tags: ["短片", "配乐", "对白", "时间码"]
+tags_en: ["short film", "scoring", "dialogue", "timecode"]
+alias: ["短片配乐", "电影配乐", "short film score"]
 order: 5
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [影视配乐, 对白混音, 母带交付]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:cue]]"
-  - "[[glossary:sync-license]]"
-  - "[[glossary:dynamics]]"
-instances:
-  - pdmx-000160 | 固定音型加独奏小提琴写场面，临时音轨常用的方向（C1）
-  - pdmx-000580 | 大编制在空间里铺开，听爆发前的留白（C1）
-  - mutopia-000497 | 贝多芬第五第一乐章，长、密、多声部，生成与迭代都更贵（C1）
-sources:
-  - 影视响度与交付口径（广播与发行公开规范）。
-  - cue 表与 spotting 的做法，参考影视配乐惯例。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["影视配乐", "对白混音", "母带交付"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:cue]]", "[[glossary:sync-license]]", "[[glossary:dynamics]]"]
+instances: []
+sources: ["https://support.apple.com/en-ie/guide/logicpro/lgcpfff75e20/mac", "https://studiopartner.netflix.net/studio/branded-sound-mix-spec-and-best-practices"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "短片配乐须对照锁定画面的时间码、cue 表与具体接收方的混音规范；离开画面播放音乐不能验证逐帧同步，也不能代表影院或网络版都合格。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 常见返工原因
 
 临时音轨太合适，导演要一模一样。音乐铺满全片，没有留白。动作点没对上，打斗像配乐练习。对白被压，台词听不清。母带压得太狠，安静段落没有空间。授权只写展映，报名电影节时被拒。分轨与母带不是同一版，客户听到两个结果。
-
-```audiolab
-{"type":"instrument","gm":"Cello","synth":"bowed","phrase":["C3","G3","C4","E4","D4","C4","G3","C3"],"label":"一段留白里的大提琴","label_en":"A cello line with room around it","hint":"听句子之间空出来的地方，那里也属于配乐","hint_en":"Hear the gaps between phrases; they are part of the score too"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ Every cue starts and ends within one frame of its timecode. Under dialogue the m
 ## Common rework causes
 
 The temp track is too good and the director wants it matched. Music runs wall to wall with no silence. Action points are missed and a fight sounds like a scoring exercise. Dialogue is buried and lines are lost. The master is crushed and quiet scenes have no air. The licence covers screenings only and a festival submission is rejected. Stems and master come from different versions, so the client hears two results.
-
-```audiolab
-{"type":"instrument","gm":"Cello","synth":"bowed","phrase":["C3","G3","C4","E4","D4","C4","G3","C3"],"label":"A cello line with room around it","label_en":"A cello line with room around it","hint":"Hear the gaps between phrases; they are part of the score too","hint_en":"Hear the gaps between phrases; they are part of the score too"}
-```
 :::
+

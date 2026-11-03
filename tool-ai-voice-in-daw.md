@@ -1,36 +1,29 @@
 ---
-id: tool-ai-voice-in-daw
-site: ai
-cat: J
-title: 人声合成接入
-title_en: Synthetic Vocals in the Session
-summary: 把合成人声当乐器接进工程，先解决咬字、表情与授权三道关。
-summary_en: Bringing synthetic voice into the session means clearing three gates: diction, expression and rights.
-level: standard
-tags: [人声合成, 虚拟歌手, 插件, 授权]
-tags_en: [voice synthesis, virtual singer, plug-in, licensing]
-alias: [AI 人声, 虚拟歌手接入]
+id: "tool-ai-voice-in-daw"
+site: "ai"
+cat: "J"
+title: "人声合成接入"
+title_en: "Synthetic Vocals in the Session"
+summary: "把合成人声当乐器接进工程，先解决咬字、表情与授权三道关。"
+summary_en: "Bringing synthetic voice into the session means clearing three gates: diction, expression and rights."
+level: "standard"
+tags: ["人声合成", "虚拟歌手", "插件", "授权"]
+tags_en: ["voice synthesis", "virtual singer", "plug-in", "licensing"]
+alias: ["AI 人声", "虚拟歌手接入"]
 order: 6
-links:
-  - "[[glossary:vibrato]]"
-  - "[[glossary:portamento]]"
-  - "[[instrument:voice]]"
-tool_kind: plugin
-tool_vendor: 人声合成厂商
-tool_form: 插件
-tool_platforms: [macOS, Windows]
-tool_price: 订阅
-tool_jobs: [人声制作, 编曲, 样带]
-tool_verified: 2026-10-30
-instances:
-  - mutopia-000937 | 格鲁伯《平安夜》，简单的旋律最能暴露合成人声的咬字（C1）
-  - openscore-001173 | 格朗瓦法语艺术歌曲，法语的鼻元音与连诵是硬指标（C1）
-  - openscore-000929 | 金克尔戏剧性歌曲，强弱的突变考验表情曲线能否跟上（C1）
-  - mutopia-001394 | 桑切斯二重唱，两个合成声部能否互相听让（C1）
-sources:
-  - 主流人声合成软件与云端人声服务的公开文档（2026-10-30 复核）。
-  - 合成人声的咬字、表情与肖像授权问题（公开条款与实践）。
-updated: 2026-10-30
+links: ["[[glossary:vibrato]]", "[[glossary:portamento]]", "[[instrument:voice]]"]
+tool_kind: "plugin"
+tool_vendor: "人声合成厂商"
+tool_form: "插件"
+tool_platforms: ["macOS", "Windows"]
+tool_price: "订阅"
+tool_jobs: ["人声制作", "编曲", "样带"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://docs.acestudio.ai/daw-integration", "https://sv1.docs.dreamtonics.com/en/synthv/advanced-usage/note-properties"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "人声接入需核对宿主同步、音符与音素编辑以及渲染路径；播放现成歌声不能证明桥接插件能够同步，也不能代替声音模型授权核验。"
 ---
 
 ::: zh
@@ -53,10 +46,6 @@ updated: 2026-10-30
 ## 上手
 
 先学三件事：逐字改音素、画表情曲线、确认声音模型的授权范围。随后读这里的合成人声、声音克隆的同意与咬字清晰度三篇，再决定哪些段落交给合成、哪些留给真人。
-
-```audiolab
-{"type":"instrument","synth":"vocal","phrase":["C4","E4","G4","A4"],"label":"合成元音","label_en":"Synthesised vowels","hint":"听四个音的元音是否一致，气口是否自然","hint_en":"Listen for consistent vowels and natural breath"}
-```
 :::
 
 ::: en
@@ -79,8 +68,5 @@ For a release lead, hire a singer; synthetic voice suits guides, harmonies and d
 ## First three things
 
 Learn three things first: editing phonemes word by word, drawing expression curves, and checking what the voice model's licence allows. Then read the site's pages on synthetic vocals, voice-cloning consent and lyric intelligibility before deciding which passages to synthesise and which to leave to a singer.
-
-```audiolab
-{"type":"instrument","synth":"vocal","phrase":["C4","E4","G4","A4"],"label":"Synthesised vowels","label_en":"Synthesised vowels","hint":"Listen for consistent vowels and natural breath","hint_en":"Listen for consistent vowels and natural breath"}
-```
 :::
+

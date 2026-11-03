@@ -1,36 +1,29 @@
 ---
-id: tool-ai-sample-gen
-site: ai
-cat: J
-title: 采样生成器
-title_en: Sample Generators
-summary: 用文字或参考音生成一段可拖进采样器的素材，快，但要先问版权与可用性。
-summary_en: Text or audio prompts produce material for the sampler quickly, but rights and usability come first.
-level: standard
-tags: [采样, 音色设计, 循环, 版权]
-tags_en: [samples, sound design, loops, rights]
-alias: [AI 采样, 生成式采样]
+id: "tool-ai-sample-gen"
+site: "ai"
+cat: "J"
+title: "采样生成器"
+title_en: "Sample Generators"
+summary: "用文字或参考音生成一段可拖进采样器的素材，快，但要先问版权与可用性。"
+summary_en: "Text or audio prompts produce material for the sampler quickly, but rights and usability come first."
+level: "standard"
+tags: ["采样", "音色设计", "循环", "版权"]
+tags_en: ["samples", "sound design", "loops", "rights"]
+alias: ["AI 采样", "生成式采样"]
 order: 7
-links:
-  - "[[glossary:sampler]]"
-  - "[[glossary:timbre]]"
-  - "[[instrument:samplers]]"
-tool_kind: service
-tool_vendor: 生成式音频厂商
-tool_form: 服务
-tool_platforms: [macOS, Windows]
-tool_price: 订阅
-tool_jobs: [声音设计, 编曲, 采样]
-tool_verified: 2026-10-30
-instances:
-  - groove-000487 | 96 BPM 拉丁 bomba 鼓型，生成 loop 时最容易被抹平的是重音位置（C1）
-  - groove-000267 | 130 BPM 放克 shuffle 加花，切分与鬼音是可用性的分水岭（C1）
-  - groove-000392 | 122 BPM 非洲古巴 bembe，多层打击乐最考验生成的层次感（C1）
-  - groove-001115 | 112 BPM 摇滚鼓组，两分多钟的循环里重复感藏不住（C1）
-sources:
-  - 主流生成式采样工具的公开文档所列输入、输出与授权方式（2026-10-30 复核）。
-  - 生成音频的循环接缝与调性对齐问题（声音设计实践）。
-updated: 2026-10-30
+links: ["[[glossary:sampler]]", "[[glossary:timbre]]", "[[instrument:samplers]]"]
+tool_kind: "service"
+tool_vendor: "生成式音频厂商"
+tool_form: "服务"
+tool_platforms: ["macOS", "Windows"]
+tool_price: "订阅"
+tool_jobs: ["声音设计", "编曲", "采样"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://stability.ai/guides/stable-audio-3-prompt-guide", "https://kb.stability.ai/knowledge-base/stable-audio-commerical-and-usage-licensing"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "采样生成器需要查清生成方式与采样包再分发许可，随后验证实际循环接缝；播放现成音乐不能证明模型遵守时长调性或允许素材单独出售。"
 ---
 
 ::: zh
@@ -53,10 +46,6 @@ updated: 2026-10-30
 ## 上手
 
 先学三件事：确认商用与再分发条款、把素材切在零交叉并对齐调性、用变体与滤波打散重复。随后读这里的样本生成、AI 声音设计与授权 AI 输出三篇，再决定哪些层可以全生成。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":130,"label":"生成的鼓 loop","label_en":"Generated drum loop","hint":"循环四遍，听重音与鬼音是否每次一样","hint_en":"Loop it four times and listen for identical accents and ghost notes"}
-```
 :::
 
 ::: en
@@ -79,8 +68,5 @@ For full control, record or synthesise and build layers and round-robins in the 
 ## First three things
 
 Learn three things first: check commercial use and redistribution terms, cut at zero crossings and align key, and break repetition with variants and filtering. Then read the site's pages on sample generation, AI sound design and licensing output before deciding which layers can be fully generated.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":130,"label":"Generated drum loop","label_en":"Generated drum loop","hint":"Loop it four times and listen for identical accents and ghost notes","hint_en":"Loop it four times and listen for identical accents and ghost notes"}
-```
 :::
+

@@ -1,28 +1,22 @@
 ---
-id: sound-effects-generation
-site: ai
-cat: F
-title: 音效生成
-title_en: Sound Effects Generation
-summary: 生成的音效像不等于能用，瞬态、尾巴、单声道都要查
-summary_en: A generated sound that seems right may still fail on transients, tails and mono
-level: standard
-tags: [音效, 拟音, 品控, 单声道]
-tags_en: [sound effects, foley, QC, mono]
-alias: [音效设计, 拟音, sound design]
+id: "sound-effects-generation"
+site: "ai"
+cat: "F"
+title: "音效生成"
+title_en: "Sound Effects Generation"
+summary: "生成的音效像不等于能用，瞬态、尾巴、单声道都要查"
+summary_en: "A generated sound that seems right may still fail on transients, tails and mono"
+level: "standard"
+tags: ["音效", "拟音", "品控", "单声道"]
+tags_en: ["sound effects", "foley", "QC", "mono"]
+alias: ["音效设计", "拟音", "sound design"]
 order: 6
-links:
-  - "[[glossary:sample-rate]]"
-  - "[[glossary:timbre]]"
-instances:
-  - groove-000000 | 鼓的瞬态硬，对照生成音效的软起音（C1）
-  - pdmx-002820 | 定音鼓滚奏的起音与衰减，判断尾巴长短（C1）
-  - giantmidi-007947 | 噪声类素材的频段分布，检查生成音效的位置（C1）
-  - atepp-000381 | 钟的泛音结构，检验高频是否被处理坏（C1）
-sources:
-  - 音效与拟音的可用性标准；后期制作惯例是主要依据。
-  - Usability criteria for sound effects and foley — based on general post-production practice.
-updated: 2026-10-30
+links: ["[[glossary:sample-rate]]", "[[glossary:timbre]]"]
+instances: []
+sources: ["https://elevenlabs.io/docs/eleven-api/guides/cookbooks/sound-effects", "https://stability.ai/guides/stable-audio-3-prompt-guide"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "音效生成应对应具体动作、持续时间和输出格式，并检查生成结果与画面事件的关系；器乐曲播放不能作为拟音真实性或同步精度的证据。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ updated: 2026-10-30
 ## 具体做法
 
 先分类。脚步、衣物、门、机械这类有明确动作的，优先录，几十条素材就能用很久。爆炸、魔法、科幻这类没有现实对应的，可以生成，但更适合做层次而不是主体。生成的素材一律检查单声道、尾巴长度、直流偏移和峰值。需要贴画面时，切掉生成混响，自己加房间。批量交付前做 QC，命名、采样率、电平、静音头统一，每条都听开头三秒和结尾三秒。同一个动作录三遍，比生成十条更像同一个世界。
-
-## 耳朵要抓的点
-
-在 funk-groove1 里听鼓的瞬态有多硬，这是生成音效最难保住的部分。在泰勒曼的三支小号与定音鼓协奏曲里听滚奏的起音和衰减，在布利茨坦的《打击乐音乐》里听噪声类素材的频段分布，在格里格的《钟声》里听钟的泛音结构。对比生成版本，差别通常在起音的前几毫秒。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s","bpm":60,"label":"一次起音和它的尾巴","label_en":"One attack and its tail","hint":"先听前几毫秒的接触点，再听尾巴有没有拖住下一个声音","hint_en":"Hear the contact in the first milliseconds, then whether the tail holds the next sound"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ Usability comes down to three things, how clear the transient is, how controllab
 ## In practice
 
 Sort by type first. Footsteps, cloth, doors and machinery have a clear action, so record them; a few dozen files last a long time. Explosions, magic and science fiction have no real counterpart and can be generated, but they work better as layers than as the main event. Check every generated file for mono compatibility, tail length, DC offset and peak. When it has to sit on picture, cut the generated reverb and add your own room. Before batch delivery, run QC on naming, sample rate, level and silence at the head, and listen to the first and last three seconds of each file. Three takes of one action sound more like one world than ten generated variants.
-
-## What the ear catches
-
-In funk-groove1, how hard the drum transient is, which is the part generation struggles to keep. In Telemann's concerto for three trumpets and timpani, the attack and decay of the rolls; in Blitzstein's Percussion Music, where noise-based material sits in the spectrum; in Grieg's Bell Ringing, the overtone structure of a bell. Against a generated version, the difference is usually in the first few milliseconds.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s","bpm":60,"label":"One attack and its tail","label_en":"One attack and its tail","hint":"Hear the contact in the first milliseconds, then whether the tail holds the next sound","hint_en":"Hear the contact in the first milliseconds, then whether the tail holds the next sound"}
-```
 :::
+

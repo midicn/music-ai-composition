@@ -1,70 +1,61 @@
 ---
-id: reference-audio-conditioning
-site: ai
-cat: B
-title: 参考音频条件
-title_en: Reference Audio Conditioning
-summary: 给一段音频当参照，比写十句形容词更能定住音色与律动。
-summary_en: One reference clip pins timbre and groove better than ten adjectives.
-level: standard
-tags: [参考音频, 条件生成, 风格迁移, 控制]
-tags_en: [reference audio, conditioning, style transfer, control]
-alias: [参考音频, 音频条件, reference audio, 风格迁移]
+id: "reference-audio-conditioning"
+site: "ai"
+cat: "B"
+title: "参考音频条件"
+title_en: "Reference Audio Conditioning"
+summary: "先区分旋律条件、音频变换与风格参考，再核对输入范围和参数含义。"
+summary_en: "Distinguish melody conditioning, audio transformation and style reference before choosing settings."
+level: "standard"
+tags: ["参考音频", "条件生成", "风格迁移", "控制"]
+tags_en: ["reference audio", "conditioning", "style transfer", "control"]
+alias: ["参考音频", "音频条件", "reference audio", "风格迁移"]
 order: 7
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:stems]]"
-instances:
-  - groove-000002 | 86 BPM 灵魂乐鼓组，作为律动参照最直接（C1）
-  - cyberhymnal-008729 | 管风琴赞美诗，作为音色与空间参照（C1）
-  - thesession-005995 | 吉普赛风格曲调，作为演奏法参照（C1）
-sources:
-  - 音频条件生成的技术方式——依据来自公开研究摘要。
-  - 参考素材的权利问题，对照版权惯例整理。
-updated: 2026-10-30
+links: ["[[glossary:timbre]]", "[[glossary:tempo]]", "[[glossary:stems]]"]
+sources: ["https://kb.stability.ai/knowledge-base/tips-for-using-the-audio-to-audio-api", "https://kb.stability.ai/knowledge-base/stable-audio-3-prompt-guide"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页说明实际制作流程与文件核验方法，工作表示例为虚拟教学项目；须以工具说明和自己的输出文件核对，普通MIDI或合成试听不能证明生成服务的效果。"
 ---
 
 ::: zh
-## 为什么会用到
+## 参考音频不是一种统一功能
 
-文字描述音色总有隔阂，"温暖的模拟感"每个人理解不同。参考音频直接把目标声音放给模型听，音色、律动与空间感一次到位。代价是权利与可控性的问题。
+旋律条件可能主要提供音高或轮廓，audio-to-audio会以输入声音参与生成，风格参考则按产品自己的定义提供方向。这些接口不能仅凭“参考音频”四个字视为相同能力，也不能保证同时保留配器、旋律、节奏和混音。
 
-## 工作机制
+## 输入前核对四项
 
-参考音频作为条件输入，模型从中提取音色、节奏密度与混音特征，再生成新的内容。相似度由参数控制，太高会接近复制，太低则等于没用。参考的时长、清晰度与代表性都会影响效果，一段干净的三秒循环常常比三十秒杂乱录音更有效。
+| 项目 | 核对内容 |
+|---|---|
+| 功能 | 当前入口到底处理旋律、声音还是风格 |
+| 文件 | 支持格式、长度和声道，按该版本文档填写 |
+| 参数 | 强度的方向、范围与默认值，不跨产品照搬 |
+| 使用范围 | 自己是否有权把这份录音用于该服务与任务 |
 
-## 从哪开始
+## 做一个可比较的小实验
 
-选代表作而不是整张专辑，选干净片段而不是现场嘈杂录音。明确参考的维度：只学音色，还是也学律动。控制相似度在自己能接受的范围，避免生成结果与原作难以区分。确认参考素材的使用权利，公开发行前尤其谨慎。把参考与提示结合，提示负责结构，参考负责质感。
+以同一份有权使用的短素材和同一制作需求，保存默认设置的候选，再仅修改一个主要参数。用本地文件比较旋律、节拍、音色与结构分别保留了什么。素材时长按服务规定与任务需要确定；没有适用于所有模型的“三秒最好”规则。若工具没有声明相似度承诺，就把结果当作需要检查的候选。
 
-## 耳朵要抓的点
-
-在灵魂乐鼓组里听律动是否被抓住，在管风琴里听空间感是否保留，在吉普赛曲调里听演奏法是否接近。参考用得好，结果会像同一间屋子里录的。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":86,"label":"作为参照的律动","label_en":"A groove used as reference","hint":"参考音频先定住律动，再看生成结果跟得多近","hint_en":"The reference fixes the groove; hear how closely the result follows"}
-```
+将输入版本、完整参数与实际输出一同存档。普通MIDI回放不构成这个条件生成过程的证据。
 :::
 
 ::: en
-## Why you reach for it
+## Audio reference is not one universal feature
 
-Words for timbre always lose something; "warm analogue feel" means different things to different people. A reference clip plays the target sound to the model, fixing timbre, groove and space at once. The price is rights and control.
+Melody conditioning may emphasize pitches or contour; audio-to-audio generation uses input sound in a different way; style reference follows the product's own definition. A shared label does not establish identical controls or guarantee preservation of instrumentation, melody, rhythm and mix together.
 
-## The working mechanism
+## Check before supplying a file
 
-The reference enters as conditioning, from which the model extracts timbre, rhythmic density and mix character before generating new material. A similarity parameter sets how close it stays: too high approaches copying, too low makes the reference useless. Length, clarity and typicality all matter, and a clean three-second loop often works better than thirty noisy seconds.
+| Item | Verify |
+|---|---|
+| Feature | Melody, sound transformation or style reference |
+| File | Supported format, length and channels |
+| Parameter | Meaning, direction, range and default for this version |
+| Permission | Whether this recording may be used for this service and task |
 
-## Where to start
+## Run a small comparison
 
-Pick a representative passage rather than a whole album, and a clean fragment rather than a noisy live recording. State which dimension is being referenced: timbre only, or groove as well. Keep similarity where the result is clearly not the original. Confirm the right to use the reference, especially before public release. Combine reference with prompt so the prompt handles structure and the reference handles texture.
+Keep the same authorized input and brief. Save a candidate at the initial settings, then change one main control. Compare downloaded files for melody, timing, texture and form separately. Choose input duration from the service's limits and the task; there is no universal best three-second input. Treat an unspecified similarity claim as something to test, not a guarantee.
 
-## What the ear catches
-
-On the soul kit, whether the groove is captured; on the organ, whether the space survives; on the gypsy tune, whether the playing style comes close. A good reference makes the result sound like it was recorded in the same room.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":86,"label":"A groove used as reference","label_en":"A groove used as reference","hint":"The reference fixes the groove; hear how closely the result follows","hint_en":"The reference fixes the groove; hear how closely the result follows"}
-```
+Archive input version, full settings and actual output together. Playback of an unrelated MIDI file cannot document this generation process.
 :::

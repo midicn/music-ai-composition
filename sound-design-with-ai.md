@@ -1,29 +1,22 @@
 ---
-id: sound-design-with-ai
-site: ai
-cat: E
-title: AI 声音设计
-title_en: Sound Design with AI
-summary: 生成纹理容易，能用难，先过单声道和电平这两关
-summary_en: Generating texture is easy; making it usable means passing the mono and level checks first.
-level: standard
-tags: [声音设计, 纹理, 氛围, 电平]
-tags_en: [sound design, texture, ambience, levels]
-alias: [音效生成, 氛围设计, texture generation]
+id: "sound-design-with-ai"
+site: "ai"
+cat: "E"
+title: "AI 声音设计"
+title_en: "Sound Design with AI"
+summary: "生成纹理容易，能用难，先过单声道和电平这两关"
+summary_en: "Generating texture is easy; making it usable means passing the mono and level checks first."
+level: "standard"
+tags: ["声音设计", "纹理", "氛围", "电平"]
+tags_en: ["sound design", "texture", "ambience", "levels"]
+alias: ["音效生成", "氛围设计", "texture generation"]
 order: 7
-links:
-  - "[[glossary:reverb]]"
-  - "[[glossary:phase-check]]"
-  - "[[glossary:monitoring]]"
-instances:
-  - atepp-005385 | 拉威尔绞刑架，固定音型如何撑起整段空间（C1）
-  - atepp-000127 | 德彪西塔，听钟声层如何叠出远景（C1）
-  - oga-000021 | 游戏洞穴环境，听底噪宽度与单声道表现（C1）
-  - oga-000031 | 惊悚环境循环，听循环接点是否可无缝（C1）
-sources:
-  - 生成纹理的可用性检查——依据来自声音设计与混音实践。
-  -  — based on Usability checks for generated textures.
-updated: 2026-10-30
+links: ["[[glossary:reverb]]", "[[glossary:phase-check]]", "[[glossary:monitoring]]"]
+instances: []
+sources: ["https://stability.ai/guides/stable-audio-3-prompt-guide", "https://elevenlabs.io/docs/eleven-api/guides/cookbooks/sound-effects"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "声音设计要核对声音来源、动作、时长和生成参数，再检查所需素材；普通旋律播放缺少纹理或音效的目标约束，不能证明工具满足设计要求。"
 ---
 
 ::: zh
@@ -38,14 +31,6 @@ updated: 2026-10-30
 ## 怎么调整
 
 先写功能，是转场、底噪、空间还是冲击。长度留两倍余量再剪，riser 的终点对齐剪辑点，不要对齐小节线。导出前做单声道检查，低频用一百赫兹左右的高通切掉，避免和音乐低频打架。峰值留六分贝给对白和人声。把成品和参考音效各放一轨，音量对齐再比。保存原始生成、提示词、模型版本和处理链，方便回头改。循环类素材要单独检查接缝，接缝处的电平跳变比噪声更明显。
-
-## 耳朵要抓的点
-
-在拉威尔的 Le gibet 里听一个固定音型怎么撑起整段空间，在德彪西的 Pagodes 里听钟声层怎么叠出远近，在 cave 01 里听环境底噪的宽度，在 creepy ambient loop 里听循环点落在哪。纹理好不好，先听它能不能退到背景里。
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["D3","A3","D4","E4","D4","A3","D3","A2"],"label":"一层持续音床","label_en":"A sustained texture bed","hint":"单声道检查时，低频最容易先塌","hint_en":"In mono, the low end is usually the first thing to collapse"}
-```
 :::
 
 ::: en
@@ -60,12 +45,5 @@ A generative model returns a finished waveform with space, distortion and dynami
 ## How to adjust
 
 Define the function first: transition, room tone, space or impact. Generate twice the length you need and cut it down. Align the end of a riser to the edit point, not to the bar line. Run a mono check before export, high-pass the low end around 100 Hz so it does not fight the music, and leave six decibels of peak headroom for dialogue and vocals. Keep the raw generation, the prompt, the model version and the processing chain so the sound can be revised later. Check loops separately; a level jump at the seam is more audible than noise.
-
-## What the ear catches
-
-In Ravel's Le gibet, listen to a single ostinato holding the whole space. In Debussy's Pagodes, listen to bell layers creating distance. In cave 01, listen to the width of the ambience. In the creepy ambient loop, listen to where the loop point falls. A texture works when it can step back into the background.
-
-```audiolab
-{"type": "instrument", "gm": "String Ensemble 1", "synth": "bowed", "phrase": ["D3", "A3", "D4", "E4", "D4", "A3", "D3", "A2"], "label": "A sustained texture bed", "label_en": "A sustained texture bed", "hint": "单声道检查时，低频最容易先塌", "hint_en": "In mono, the low end is usually the first thing to collapse"}
-```
 :::
+

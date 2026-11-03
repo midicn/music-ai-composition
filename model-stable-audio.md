@@ -1,40 +1,30 @@
 ---
-id: model-stable-audio
-site: ai
-cat: I
-title: Stable Audio
-title_en: Stable Audio
-summary: 涵盖音乐、音效与编辑的模型系列；输入、时长和部署方式按具体版本核对。
-summary_en: A family for music, effects and editing; verify input, duration and deployment for the specific version.
-level: standard
-tags: [模型档案, 文本生成, 器乐, 音效]
-tags_en: [model profile, text to music, instrumental, sound design]
-alias: [Stable Audio, 稳定音频, 器乐生成]
+id: "model-stable-audio"
+site: "ai"
+cat: "I"
+title: "Stable Audio"
+title_en: "Stable Audio"
+summary: "涵盖音乐、音效与编辑的模型系列；输入、时长和部署方式按具体版本核对。"
+summary_en: "A family for music, effects and editing; verify input, duration and deployment for the specific version."
+level: "standard"
+tags: ["模型档案", "文本生成", "器乐", "音效"]
+tags_en: ["model profile", "text to music", "instrumental", "sound design"]
+alias: ["Stable Audio", "稳定音频", "器乐生成"]
 order: 3
-model_vendor: Stability AI
-model_form: 网页、API及可下载权重（按模型）
-model_form_en: Web, API and downloadable weights depending on model
-model_input: [文本, 支持版本的音频条件与编辑素材]
-model_input_en: [Text, Audio conditioning and editing material for supported variants]
-model_output: [音频（时长及编辑功能按版本）]
-model_output_en: [Audio with version-specific duration and editing features]
-model_licence: 托管服务、开放权重和企业合同分别核对许可；以具体模型和入口为准
-model_licence_en: Check hosted-service, open-weight and enterprise terms separately for the exact model and interface
-model_verified: 2026-11-02
-links:
-  - "[[glossary:sampler]]"
-  - "[[instrument:polysynth]]"
-  - "[[glossary:reverb]]"
-instances:
-  - oga-000031 | 一段氛围循环，看铺底类素材的层次（C1） | An ambient loop, to hear the layering of bed material (C1)
-  - groove-000001 | 105 BPM 放克鼓组，看循环的律动密度（C1） | A 105 BPM funk kit, to hear the density of a loop (C1)
-  - oga-000009 | 海滩场景的短铺底，看环境声与器乐怎么混（C1） | A short beach cue, to hear ambience mixed with instruments (C1)
-  - mutopia-000059 | 赞美诗旋律，看两小节就能成立的短动机（C1） | A hymn tune, to hear a motif that works in two bars (C1)
-sources:
-  - "https://stability.ai/stable-audio"
-  - 产品能力、时长设置与导出形态（官方公开说明与条款页）。
-  - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
-updated: 2026-11-02
+model_vendor: "Stability AI"
+model_form: "网页、API及可下载权重（按模型）"
+model_form_en: "Web, API and downloadable weights depending on model"
+model_input: ["文本", "支持版本的音频条件与编辑素材"]
+model_input_en: ["Text", "Audio conditioning and editing material for supported variants"]
+model_output: ["音频（时长及编辑功能按版本）"]
+model_output_en: ["Audio with version-specific duration and editing features"]
+model_licence: "托管服务、开放权重和企业合同分别核对许可；以具体模型和入口为准"
+model_licence_en: "Check hosted-service, open-weight and enterprise terms separately for the exact model and interface"
+model_verified: "2026-11-02"
+links: ["[[glossary:sampler]]", "[[instrument:polysynth]]", "[[glossary:reverb]]"]
+instances: ["oga-000031", "groove-000001", "oga-000009", "mutopia-000059"]
+sources: ["https://stability.ai/stable-audio", "产品能力、时长设置与导出形态（官方公开说明与条款页）。", "失败模式来自公开用户报告与创作实践，未引用具体评测数据。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -94,3 +84,4 @@ Check the model and service licence, input rights, output redistribution and cur
 {"type":"instrument","gm":"Pad 2 (warm)","synth":"bowed","phrase":["D3","A3","F4","E4","D4","A3"],"label":"Sustained-texture reference","label_en":"Sustained-texture reference","hint":"Use this synthesized texture to describe instrumentation and density; it is not Stable Audio output or a stability test.","hint_en":"Use this synthesized texture to describe instrumentation and density; it is not Stable Audio output or a stability test."}
 ```
 :::
+

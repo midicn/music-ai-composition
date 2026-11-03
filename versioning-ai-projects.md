@@ -1,28 +1,22 @@
 ---
-id: versioning-ai-projects
-site: ai
-cat: H
-title: 版本管理
-title_en: Versioning AI Projects
-summary: 版本不只是一个文件，而是提示词、种子与后期的组合
-summary_en: A version is a prompt, a seed and a set of edits, not just an audio file.
-level: standard
-tags: [版本, 命名, 种子, 归档]
-tags_en: [versioning, naming, seeds, archive]
-alias: [版本管理, 版本命名, version control]
+id: "versioning-ai-projects"
+site: "ai"
+cat: "H"
+title: "版本管理"
+title_en: "Versioning AI Projects"
+summary: "版本不只是一个文件，而是提示词、种子与后期的组合"
+summary_en: "A version is a prompt, a seed and a set of edits, not just an audio file."
+level: "standard"
+tags: ["版本", "命名", "种子", "归档"]
+tags_en: ["versioning", "naming", "seeds", "archive"]
+alias: ["版本管理", "版本命名", "version control"]
 order: 6
-links:
-  - "[[glossary:daw]]"
-  - "[[glossary:diffusion]]"
-instances:
-  - atepp-002441 | 哥德堡主题与前五段变奏，同一素材的多种版本并置（C1）
-  - atepp-000591 | 舒伯特即兴曲主题与变奏，主题每次回来仍可辨认（C1）
-  - atepp-001114 | 肖邦叙事曲现场版，文件名必须区分场次（C1）
-  - atepp-002966 | 标着“重制版”却长了三分多钟，名字不能代替核对（C1）
-sources:
-  - 版本命名与基线冻结的常见做法（软件工程惯例）。
-  - 生成参数与种子的记录方式，参考公开工具文档。
-updated: 2026-10-30
+links: ["[[glossary:daw]]", "[[glossary:diffusion]]"]
+instances: []
+sources: ["https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository", "https://huggingface.co/docs/diffusers/en/using-diffusers/reusing_seeds"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "生成项目版本管理需要保存参数、模型版本、输出和提交记录，以便回退与比对；只播放一份成品无法重建生成过程或证明版本可复现。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ final、final2、final_final、final_真的最后一版，这些名字说明一�
 ## 与渲染同存
 
 每条渲染旁边放一个同名文本，写提示词原文、负面提示、种子、模型版本、时长、速度、调性。工具不给种子，就记录它给的一切，模型名、日期、参考音频的校验值，并注明无法精确回溯。用一个表把文件、提示词、种子、结论连起来，一行一条，写完再关机。聊天记录不算记录，它会被清掉，也无法搜索。
-
-## 听什么
-
-在哥德堡变奏曲的主题与前五段变奏里听同一素材的多种处理如何各自成立，版本命名也该这样清楚。在舒伯特即兴曲的主题与变奏里听主题每次回来仍然可辨，好的版本名也让人一眼认出来。在肖邦叙事曲的现场版里听同一作品的不同演奏，文件名必须区分场次。在巴赫托卡塔的重制版里听标签与内容不符，时长差了三分多钟，说明名字不能代替核对。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":96,"label":"同一素材的又一次导出","label_en":"Another export of the same material","hint":"文件名带上日期与序号，才分得清哪次是哪次","hint_en":"Date and sequence in the filename keep the exports apart"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ A version is not just an audio file; it is prompt, seed, model and version, sett
 ## Storing with the render
 
 Put a text file of the same name beside every render, holding the prompt verbatim, negative prompt, seed, model version, duration, tempo and key. If the tool exposes no seed, record everything it does expose, model name, date, hash of the reference audio, and state that exact recall is impossible. Keep a table linking file, prompt, seed and conclusion, one row per generation, written before shutting down. Chat history is not a record; it gets cleared and cannot be searched.
-
-## What to listen for
-
-In the Goldberg Aria with Variations 1 to 5, how several treatments of one idea each stand on their own, which is how versions should be named. In Schubert's Impromptu theme and variations, how the theme stays recognisable on each return. In the live Chopin Ballade, a different performance of the same work, which the filename must distinguish. In the remastered Bach Toccata, a label that does not match its content, since it runs more than three minutes longer, proof that names cannot replace checks.
-
-```audiolab
-{"type": "rhythm", "sig": "4/4", "pattern": "s s s s s s s s s s s s s s s s", "bpm": 96, "label": "Another export of the same material", "label_en": "Another export of the same material", "hint": "文件名带上日期与序号，才分得清哪次是哪次", "hint_en": "Date and sequence in the filename keep the exports apart"}
-```
 :::
+

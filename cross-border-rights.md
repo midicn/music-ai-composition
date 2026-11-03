@@ -1,30 +1,22 @@
 ---
-id: cross-border-rights
-site: ai
-cat: G
-title: 跨境使用与权利
-title_en: Cross-Border Rights
-summary: 同一份授权换了地区，可能连谁收钱都说不清
-summary_en: The same licence may not answer who gets paid across a border
-level: standard
-tags: [跨境, 授权地域, 出口管制, 配音发行]
-tags_en: [cross-border, territory, export control, dubbing]
-alias: [跨境授权, 全球授权, territory rights]
+id: "cross-border-rights"
+site: "ai"
+cat: "G"
+title: "跨境使用与权利"
+title_en: "Cross-Border Rights"
+summary: "同一份授权换了地区，可能连谁收钱都说不清"
+summary_en: "The same licence may not answer who gets paid across a border"
+level: "standard"
+tags: ["跨境", "授权地域", "出口管制", "配音发行"]
+tags_en: ["cross-border", "territory", "export control", "dubbing"]
+alias: ["跨境授权", "全球授权", "territory rights"]
 order: 165
-links:
-  - "[[glossary:sync-license]]"
-  - "[[glossary:mechanical-license]]"
-  - "[[glossary:neighboring-rights]]"
-instances:
-  - openscore-000269 | 德语一字一音，配音跨境先撞上音节与音符的对齐（C1）
-  - mutopia-001309 | 拉丁文合唱，辅音同步与地区发行版本要分开处理（C1）
-  - abcmisc-000906 | 保加利亚民歌，非英语元音与装饰在译配里最容易丢（C1）
-  - openscore-000538 | 法语连诵与重音，合成语音换语种后常出错（C1）
-sources:
-  - 《伯尔尼公约》公开文本，由世界知识产权组织发布。
-  - 集体管理组织的跨境互惠说明，来自公开年报与政策页。
-  - 出口管制与制裁清单，来自官方公开说明。
-updated: 2026-10-31
+links: ["[[glossary:sync-license]]", "[[glossary:mechanical-license]]", "[[glossary:neighboring-rights]]"]
+instances: []
+sources: ["https://www.wipo.int/en/web/treaties/ip/berne/index", "https://www.wipo.int/web-publications/rights-clearance-a-guide-for-independent-filmmakers/en/3-rights-assessed-during-clearance.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论不同地区的音乐权利与许可，需要核对条约框架、具体使用方式及适用法律；曲目回放不能证明跨境授权、地域范围或权利已清理。"
 ---
 
 ::: zh
@@ -54,10 +46,6 @@ updated: 2026-10-31
 ## 最容易断的地方
 
 以为全球授权真的覆盖全球；以为集体管理组织之间自动互惠；配音演员的授权只写了本国；平台条款与当地法冲突时没人看。跨境项目把清权表按地区拆开，每一行写清授权来源、期限、联系人与待确认项。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["D4","G4","B4","G4"],"label":"同一首歌的地区版本","label_en":"The same song, region by region","hint":"版本差异先听编曲，再查授权","hint_en":"Hear the arrangement first, then check rights"}
-```
-
 :::
 
 ::: en
@@ -88,3 +76,4 @@ Software, model weights and cloud processing can cross borders, and export contr
 
 Assuming worldwide means worldwide; assuming collecting societies reciprocate automatically; a voice actor's consent that names only one country; platform terms that conflict with local law and nobody checks. Split the clearance sheet by region, with source, term, contact and open question in every row.
 :::
+

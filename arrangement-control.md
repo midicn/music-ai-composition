@@ -1,29 +1,22 @@
 ---
-id: arrangement-control
-site: ai
-cat: C
-title: 编曲控制
-title_en: Controlling Arrangement
-summary: 密度靠分配音区与角色，不靠一层层往上加
-summary_en: Density comes from assigning register and roles, not from stacking more layers on top.
-level: standard
-tags: [编曲, 密度, 音区, 段落对比]
-tags_en: [arrangement, density, register, section contrast]
-alias: [编曲控制, 配器密度, arrangement control]
+id: "arrangement-control"
+site: "ai"
+cat: "C"
+title: "编曲控制"
+title_en: "Controlling Arrangement"
+summary: "密度靠分配音区与角色，不靠一层层往上加"
+summary_en: "Density comes from assigning register and roles, not from stacking more layers on top."
+level: "standard"
+tags: ["编曲", "密度", "音区", "段落对比"]
+tags_en: ["arrangement", "density", "register", "section contrast"]
+alias: ["编曲控制", "配器密度", "arrangement control"]
 order: 8
-links:
-  - "[[glossary:texture]]"
-  - "[[glossary:register]]"
-  - "[[glossary:voicing]]"
-instances:
-  - pdmx-000031 | 《波莱罗》钢琴改编，听密度靠声部逐段进场累积（C1）
-  - atepp-000127 | 德彪西《塔》，宽音区里每层各占一段，低端很空（C1）
-  - atepp-002452 | 巴赫第十二变奏卡农，模仿制造密度而不叠八度（C1）
-  - cyberhymnal-001486 | 四声部赞美诗，内声部填满和声，听加厚的正路（C1）
-sources:
-  - 密度与音区分配的关系，参考配器惯例。
-  - 段落对比的做法；编曲实践是主要依据。
-updated: 2026-10-30
+links: ["[[glossary:texture]]", "[[glossary:register]]", "[[glossary:voicing]]"]
+instances: []
+sources: ["https://www.orch-idea.org/intro/", "https://www.ableton.com/en/manual/editing-midi/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论音区、声部角色和可修改编配，需要对照配器方法与实际音符工程；普通MIDI不能证明生成器遵守编配指令或完成分层控制。"
 ---
 
 ::: zh
@@ -38,14 +31,6 @@ updated: 2026-10-30
 ## 怎么修
 
 先把段落写成一张表，每段列出低频、和声层、旋律、点缀四行，各填一到两个乐器。写提示时给具体分工，比如低音只走根音、每小节一次，中音区用长音铺底，高频只在前八小节出现。要加厚时先换音区，再换音色，最后才加声部。每段只留一个主角，其余声部退到背景，这是最省力的对比。段落之间做减法比做加法有效，撤掉一层再放回来，同一层会显得更有分量。提示里也写明不要什么，比如不要铺满中频、不要连续八分音符的弦乐。生成后逐段数声部，超过四层就删。
-
-## 耳朵要抓的点
-
-在《波莱罗》里听密度怎样靠声部逐段进场累积，在《塔》里听宽音区中每层各守一段，在卡农里听模仿如何不靠叠八度变厚，在四声部赞美诗里听内声部怎样填满和声。厚不是数量，是分工，同一材料按角色分开，声音自然就宽。
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C3","G3","E4","C4","G4","E5"],"label":"音区铺开的四层","label_en":"Four layers spread by register","hint":"同一材料拉开音区，比叠八度更厚","hint_en":"Spreading one idea across registers thickens more than octaves"}
-```
 :::
 
 ::: en
@@ -60,12 +45,5 @@ Thickness is decided by three things. Register occupancy, meaning who owns the l
 ## How to fix it
 
 Write each section as a table with four rows, low end, harmonic layer, melody and decoration, and fill one or two instruments into each. Give the prompt explicit jobs, for instance the bass plays roots once per bar, the middle range sustains long notes, the top appears only in the first eight bars. To thicken, change register first, then timbre, and add a part last. Subtraction between sections works better than addition, since a layer removed and brought back carries more weight. Say what you do not want as well, no wall of midrange and no continuous eighth-note strings, and keep one lead per section with everything else behind it, which is the cheapest contrast available. After generation, count the parts section by section and delete anything beyond four.
-
-## What the ear catches
-
-In Bolero, how density accumulates as parts enter; in Pagodes, how each layer keeps its own register while the low end stays open; in the canon, how imitation thickens without octave doubling; in the four-part hymn, how inner voices fill the harmony. Thickness is division of labour, not quantity, and the same material separated by role simply sounds wider.
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C3","G3","E4","C4","G4","E5"],"label":"Four layers spread by register","label_en":"Four layers spread by register","hint":"Spreading one idea across registers thickens more than octaves","hint_en":"Spreading one idea across registers thickens more than octaves"}
-```
 :::
+

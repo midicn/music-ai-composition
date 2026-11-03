@@ -1,35 +1,29 @@
 ---
-id: tool-ai-mastering
-site: ai
-cat: J
-title: 自动母带服务
-title_en: Automated Mastering Services
-summary: 上传混音换一版可发布的母带，快而稳，但混音里的问题它救不了。
-summary_en: Upload a mix and get a releasable master: fast and consistent, but it cannot rescue a mix.
-level: standard
-tags: [母带, 响度, 交付, 服务]
-tags_en: [mastering, loudness, delivery, service]
-alias: [AI 母带, 在线母带]
+id: "tool-ai-mastering"
+site: "ai"
+cat: "J"
+title: "自动母带服务"
+title_en: "Automated Mastering Services"
+summary: "上传混音换一版可发布的母带，快而稳，但混音里的问题它救不了。"
+summary_en: "Upload a mix and get a releasable master: fast and consistent, but it cannot rescue a mix."
+level: "standard"
+tags: ["母带", "响度", "交付", "服务"]
+tags_en: ["mastering", "loudness", "delivery", "service"]
+alias: ["AI 母带", "在线母带"]
 order: 5
-links:
-  - "[[glossary:mastering]]"
-  - "[[glossary:lufs]]"
-  - "[[glossary:limiter]]"
-tool_kind: service
-tool_vendor: 在线母带服务商
-tool_form: 服务
-tool_platforms: [macOS, Windows]
-tool_price: 按量
-tool_jobs: [母带, 交付]
-tool_verified: 2026-10-30
-instances:
-  - pdmx-000183 | 莫扎特安魂曲，强弱跨度大，母带后弱段是否还有呼吸（C1）
-  - atepp-000239 | 肖斯塔科维奇赋格，织体密，限幅器最容易在这里发硬（C1）
-  - giantmidi-001338 | 阿西奥利大提琴奏鸣曲，独奏与钢琴的动态对比是否被抹平（C1）
-sources:
-  - 主流自动母带服务公开文档所列流程、交付格式与计费方式（2026-10-30 复核）。
-  - 平台响度归一与限幅伪影的通识；母带实践是主要依据。
-updated: 2026-10-30
+links: ["[[glossary:mastering]]", "[[glossary:lufs]]", "[[glossary:limiter]]"]
+tool_kind: "service"
+tool_vendor: "在线母带服务商"
+tool_form: "服务"
+tool_platforms: ["macOS", "Windows"]
+tool_price: "按量"
+tool_jobs: ["母带", "交付"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://www.izotope.com/community/blog/how-to-use-master-assistant-in-ozone", "https://www.itu.int/rec/R-REC-BS.1770-5-202311-I/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "自动母带需检查具体服务的处理范围，再测量同一混音处理后的响度与真峰值；普通曲目播放不能证明助手改善了该混音或满足目标交付标准。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 上手
 
 先学三件事：给不同平台留不同响度、用参考曲而不是滑杆判断、检查限幅后的瞬态与低频。然后读这里的自动母带工具、响度目标与盲听测试三篇，再决定哪些作品可以全自动。
-
-```audiolab
-{"type":"instrument","gm":43,"phrase":["C3","G3","D4","A4"],"label":"动态对比","label_en":"Dynamic contrast","hint":"母带后听弱段是否还被压得发紧","hint_en":"After mastering, check whether quiet passages still breathe"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ For full control, build the chain in the host and trade time for control. For sp
 ## First three things
 
 Learn three things first: leave different loudness for different platforms, judge with a reference rather than a slider, and check transients and low end after limiting. Then read the site's pages on automatic mastering tools, loudness targets and blind listening tests before deciding which work can go fully automatic.
-
-```audiolab
-{"type":"instrument","gm":43,"phrase":["C3","G3","D4","A4"],"label":"Dynamic contrast","label_en":"Dynamic contrast","hint":"After mastering, check whether quiet passages still breathe","hint_en":"After mastering, check whether quiet passages still breathe"}
-```
 :::
+

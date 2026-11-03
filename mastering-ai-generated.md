@@ -1,28 +1,22 @@
 ---
-id: mastering-ai-generated
-site: ai
-cat: D
-title: 母带处理
-title_en: Mastering AI-Generated Material
-summary: 自动母带能修电平和亮度，判断不了结构、呼吸与取舍
-summary_en: Automated mastering can fix level and brightness but cannot judge structure, breathing or intent.
-level: standard
-tags: [母带, 自动母带, 余量, 人工检查]
-tags_en: [mastering, automated mastering, headroom, human checks]
-alias: [AI 母带, 自动母带, automated mastering]
+id: "mastering-ai-generated"
+site: "ai"
+cat: "D"
+title: "母带处理"
+title_en: "Mastering AI-Generated Material"
+summary: "自动母带能修电平和亮度，判断不了结构、呼吸与取舍"
+summary_en: "Automated mastering can fix level and brightness but cannot judge structure, breathing or intent."
+level: "standard"
+tags: ["母带", "自动母带", "余量", "人工检查"]
+tags_en: ["mastering", "automated mastering", "headroom", "human checks"]
+alias: ["AI 母带", "自动母带", "automated mastering"]
 order: 5
-links:
-  - "[[glossary:mastering]]"
-  - "[[glossary:headroom]]"
-  - "[[glossary:limiter]]"
-instances:
-  - giantmidi-003263 | 萨蒂三首《裸体歌舞》，整首很轻，听母带后弱段是否还有退路（C1）
-  - atepp-000239 | 肖斯塔科维奇第十号赋格，织体密，限幅器最容易在这里失真（C1）
-  - musicnet-000090 | 贝多芬第十二四重奏首乐章，慢引子接快板，听对比是否被抹平（C1）
-sources:
-  - 自动母带的能力边界；公开工具文档与母带惯例是主要依据。
-  - Automated mastering limits, summarized from public tool documentation and general mastering practice
-updated: 2026-10-30
+links: ["[[glossary:mastering]]", "[[glossary:headroom]]", "[[glossary:limiter]]"]
+instances: []
+sources: ["https://downloads.izotope.com/guides/iZotopeMasteringGuide_MasteringWithOzone.pdf", "https://tech.ebu.ch/publications/r128"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论母带处理与测量目标，需要核对实际处理链、客户规格和处理前后音频；曲库MIDI没有该母带过程，不能证明动态或真峰值处理效果。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ updated: 2026-10-30
 ## 从哪开始
 
 送进去之前先把混音定稿。总线上不挂限幅器，留 4 到 6 dB 余量，单声道与真峰值都查过。导出 24 bit，不要先做响。给它一条同类型的参考曲，同时自己留一版未处理的。拿回两三个版本后做人工检查，开头十秒的电平、人声在手机上的清晰度、低频在小音箱上是否还在、段落转换有没有被压平、淡出是否自然。通过后再看表，真峰值不超过 -1 dBTP。不通过就回混音，不要用第二个母带插件去补第一个的坑。
-
-## 耳朵要抓的点
-
-萨蒂《裸体歌舞》整首很轻，母带容易把它推得没有退路，听弱段是否还留得住。肖斯塔科维奇《前奏曲与赋格》第十号的赋格织体密，限幅器在这里最容易产生失真。贝多芬第十二四重奏第一乐章开头是慢引子接快板，听自动母带有没有把这段对比抹平。三处都拿未处理版做对照。
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["D3","A3","D4","F4","A4","F4","D4","A3"],"label":"母带前的长音余量","label_en":"Headroom on a sustained line","hint":"听长音的尾部有没有被压扁，余量越少尾音越短","hint_en":"Hear whether the tail is squashed; less headroom shortens the decay"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ Automated mastering matches a target curve and loudness using broadband EQ, comp
 ## Where to start
 
 Finish the mix before sending anything. Leave no limiter on the bus, keep 4 to 6 dB of headroom, and check mono and true peak. Export at 24 bit without pre-mastering loudness. Supply one reference of the same genre and keep an unprocessed version yourself. When two or three versions come back, do the human checks, starting with the first ten seconds, vocal intelligibility on a phone, whether the low end survives a small speaker, whether transitions were flattened, and whether the fade still works. Then look at the meters, with true peak at or below -1 dBTP. If a version fails, return to the mix rather than stacking a second mastering plugin on the first.
-
-## What the ear catches
-
-Satie's Gymnopedies are quiet throughout, and a master can push them past the point of no return, so hear whether the soft passages still have somewhere to go. Shostakovich's Fugue No. 10 is dense, the place where a limiter distorts first. Beethoven's String Quartet No. 12 opens with a slow introduction into an allegro, so hear whether automated mastering flattened that contrast. Compare all three against your unprocessed version.
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["D3","A3","D4","F4","A4","F4","D4","A3"],"label":"Headroom on a sustained line","label_en":"Headroom on a sustained line","hint":"Hear whether the tail is squashed; less headroom shortens the decay","hint_en":"Hear whether the tail is squashed; less headroom shortens the decay"}
-```
 :::
+

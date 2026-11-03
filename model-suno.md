@@ -1,41 +1,30 @@
 ---
-id: model-suno
-site: ai
-cat: I
-title: Suno
-title_en: Suno
-summary: 根据风格与歌词生成歌曲，Studio支持混音、分轨与部分MIDI导出
-summary_en: Generate song candidates from style and lyrics; Studio supports mix, stem and supported MIDI exports.
-level: standard
-tags: [模型档案, 文本生成, 人声, 歌曲结构]
-tags_en: [model profile, text to music, vocals, song structure]
-alias: [Suno, 文生歌曲, text to song]
+id: "model-suno"
+site: "ai"
+cat: "I"
+title: "Suno"
+title_en: "Suno"
+summary: "根据风格与歌词生成歌曲，Studio支持混音、分轨与部分MIDI导出"
+summary_en: "Generate song candidates from style and lyrics; Studio supports mix, stem and supported MIDI exports."
+level: "standard"
+tags: ["模型档案", "文本生成", "人声", "歌曲结构"]
+tags_en: ["model profile", "text to music", "vocals", "song structure"]
+alias: ["Suno", "文生歌曲", "text to song"]
 order: 1
-model_vendor: Suno
-model_form: 网页服务
-model_form_en: Web service
-model_input: [文本, 歌词, 支持的音频素材]
-model_input_en: [Text, Lyrics, Supported audio material]
-model_output: [音频, Studio 分轨, 分轨转 MIDI（按入口与额度）]
-model_output_en: [Audio, Studio stems, Stem-to-MIDI subject to access and allowance]
-model_licence: 按所用档位、输出取得时间与当前条款核对商业使用和下载权限
-model_licence_en: Check commercial use and permitted downloads against plan, output date and current terms
-model_verified: 2026-11-02
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:stems]]"
-  - "[[period:contemporary]]"
-instances:
-  - groove-000006 | 流行鼓组的节奏参照，不是 Suno 输出或复现测试（C1） | Pop-drum rhythmic reference, not Suno output or a reproducibility test (C1)
-  - groove-000007 | 慢速摇滚节拍的参照，不用于评价生成器的推力（C1） | Slow-rock pulse reference, not an assessment of generator drive (C1)
-  - mutopia-000622 | 歌声与钢琴声部的结构参照，不包含模型演唱（C1） | Voice-and-piano structural reference without model-generated singing (C1)
-  - abcmisc-001329 | 重复乐句的旋律参照，不证明生成模型保留了结构（C1） | Repeated-phrase melodic reference, not proof of model structure retention (C1)
-sources:
-  - "https://suno.com/terms/"
-  - "https://help.suno.com/en/articles/13925249"
-  - 产品能力与导出形态；官方公开说明与条款页是主要依据。
-  - 失败模式来自公开用户报告与创作实践，未引用具体评测数据。
-updated: 2026-11-02
+model_vendor: "Suno"
+model_form: "网页服务"
+model_form_en: "Web service"
+model_input: ["文本", "歌词", "支持的音频素材"]
+model_input_en: ["Text", "Lyrics", "Supported audio material"]
+model_output: ["音频", "Studio 分轨", "分轨转 MIDI（按入口与额度）"]
+model_output_en: ["Audio", "Studio stems", "Stem-to-MIDI subject to access and allowance"]
+model_licence: "按所用档位、输出取得时间与当前条款核对商业使用和下载权限"
+model_licence_en: "Check commercial use and permitted downloads against plan, output date and current terms"
+model_verified: "2026-11-02"
+links: ["[[glossary:timbre]]", "[[glossary:stems]]", "[[period:contemporary]]"]
+instances: ["groove-000006", "groove-000007", "mutopia-000622", "abcmisc-001329"]
+sources: ["https://suno.com/terms/", "https://help.suno.com/en/articles/13925249", "产品能力与导出形态；官方公开说明与条款页是主要依据。", "失败模式来自公开用户报告与创作实践，未引用具体评测数据。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -101,3 +90,4 @@ For commercial use, check current terms, the applicable plan and permitted downl
 {"type":"instrument","gm":"Electric Guitar (clean)","synth":"plucked","phrase":["E3","G#3","B3","C#4","B3","G#3","E3","B2"],"label":"Short motif reference","label_en":"Short motif reference","hint":"Hear the contour and repetition of this motif. It is not Suno output and does not test motif retention by a model.","hint_en":"Hear the contour and repetition of this motif. It is not Suno output and does not test motif retention by a model."}
 ```
 :::
+

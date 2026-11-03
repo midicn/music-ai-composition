@@ -1,35 +1,29 @@
 ---
-id: work-game-loop
-site: ai
-cat: K
-title: 游戏循环
-title_en: A Game Loop
-summary: 循环点、分层与状态切换，比音乐本身更容易出问题
-summary_en: Loop points, layers and state changes break more often than the music itself.
-level: standard
-tags: [游戏, 循环, 分层, 中间件]
-tags_en: [game, loops, layers, middleware]
-alias: [游戏循环, 游戏配乐, game loop, 无缝循环]
+id: "work-game-loop"
+site: "ai"
+cat: "K"
+title: "游戏循环"
+title_en: "A Game Loop"
+summary: "循环点、分层与状态切换，比音乐本身更容易出问题"
+summary_en: "Loop points, layers and state changes break more often than the music itself."
+level: "standard"
+tags: ["游戏", "循环", "分层", "中间件"]
+tags_en: ["game", "loops", "layers", "middleware"]
+alias: ["游戏循环", "游戏配乐", "game loop", "无缝循环"]
 order: 4
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [游戏音频, 循环制作, 交互分层]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:reverb]]"
-instances:
-  - oga-000089 | 游戏用循环段落，长度与循环点必须写进验收标准（C1）
-  - oga-000088 | 循环素材分层，听各层如何独立成立（C1）
-  - groove-000037 | 八小节桑巴鼓循环，最小可复用单位，适合批量（C1）
-sources:
-  - 游戏音频的状态划分与循环做法，对照引擎文档与制作惯例整理。
-  - 循环点与采样率的技术要求（中间件公开文档）。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["游戏音频", "循环制作", "交互分层"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:stems]]", "[[glossary:tempo]]", "[[glossary:reverb]]"]
+instances: []
+sources: ["https://www.fmod.com/docs/2.04/studio/authoring-events.html", "https://www.fmod.com/docs/2.04/studio/glossary.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "游戏循环须在运行时验证循环区域、过渡和尾音行为，不能只听单遍；普通线性播放无法证明首尾无缝、状态切换或引擎事件配置正确。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 常见返工原因
 
 尾音被硬切，循环点有咔哒。速度有漂移，十遍之后开始错拍。层与层没对齐，切换时鼓点跳一下。混响尾太长，接缝处越叠越厚。接缝处留了静音，循环听起来断一拍。采样率不匹配，导入后整体变调。授权只写宣传片，游戏本体不能用。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":124,"label":"一整小节，循环二十遍","label_en":"One bar, looped twenty times","hint":"听第二十遍的接缝，问题总在第三次之后出现","hint_en":"Listen to the seam on the twentieth pass; faults show up after the third"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ The loop is a whole number of bars at the agreed tempo. Twenty consecutive passe
 ## Common rework causes
 
 A tail is hard-cut and the loop point clicks. Tempo drifts and the tenth pass is off the beat. Layers are not aligned and the drums jump on a switch. Reverb tails stack up at the seam. Export files carry silence before the downbeat and the loop stumbles. A sample-rate mismatch shifts pitch on import. The licence covers a trailer only and the game itself cannot use it.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":124,"label":"One bar, looped twenty times","label_en":"One bar, looped twenty times","hint":"Listen to the seam on the twentieth pass; faults show up after the third","hint_en":"Listen to the seam on the twentieth pass; faults show up after the third"}
-```
 :::
+

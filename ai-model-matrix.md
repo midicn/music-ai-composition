@@ -1,30 +1,22 @@
 ---
-id: ai-model-matrix
-site: ai
-cat: A
-title: 模型横向对照
-title_en: A Model Comparison Matrix
-summary: 按输入、输出、可控性、授权四轴比较，先排除不合格再谈音质。
-summary_en: Compare inputs, outputs, control and licensing before sound quality; a matrix narrows the field, it does not crown a winner.
-level: standard
-tags: [模型对照, 选型, 可控性, 授权]
-tags_en: [model comparison, selection, control, licensing]
-alias: [模型矩阵, 横向对照, model matrix]
+id: "ai-model-matrix"
+site: "ai"
+cat: "A"
+title: "模型横向对照"
+title_en: "A Model Comparison Matrix"
+summary: "按输入、输出、可控性、授权四轴比较，先排除不合格再谈音质。"
+summary_en: "Compare inputs, outputs, control and licensing before sound quality; a matrix narrows the field, it does not crown a winner."
+level: "standard"
+tags: ["模型对照", "选型", "可控性", "授权"]
+tags_en: ["model comparison", "selection", "control", "licensing"]
+alias: ["模型矩阵", "横向对照", "model matrix"]
 order: 121
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:stems]]"
-  - "[[glossary:midi-protocol]]"
-instances:
-  - pdmx-000580 | 柏辽兹《安魂曲》大编制，检验整曲生成对多声部与力度的掌控（C1）
-  - pdmx-000002 | 长笛练习曲单线条，旋律输入在符号工具里最直接（C1）
-  - groove-000006 | 138 BPM 流行鼓组，节奏输入能否稳定复现（C1）
-  - pdmx-000153 | 二十六分钟长曲，检验输出长度与分段控制（C1）
-sources:
-  - Suno、Udio、Stability AI 的模型卡与 API 文档，关于输入、输出与许可字段的定义。
-  - 生成服务的内容许可与训练数据条款公开文本。
-  - 音乐制作交付惯例，关于分轨与工程文件的可编辑性要求。
-updated: 2026-10-31
+links: ["[[glossary:timbre]]", "[[glossary:stems]]", "[[glossary:midi-protocol]]"]
+instances: []
+sources: ["https://huggingface.co/facebook/musicgen-small", "https://elevenlabs.io/docs/overview/capabilities/music"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页比较不同产品的输入、输出、许可和控制，应以对应版本模型卡与接口说明填写；本站固定MIDI不是这些服务的共同测试结果。"
 ---
 
 ::: zh
@@ -56,10 +48,6 @@ updated: 2026-10-31
 ## 矩阵会失效的地方
 
 演示曲挑的是模型最擅长的片段；版本更新会悄悄改掉旧行为；授权条款按地区与档位分叉。把矩阵当排除工具，用自己的一小段素材复测，结论才站得住。真正需要精确和声或长结构时，矩阵只能告诉你哪类工具值得试，不能替你完成验收。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","B4","G4","E4"],"label":"同一段旋律，换三种模型","label_en":"One phrase, three models","hint":"先听旋律是否被记住，再比较音色","hint_en":"Hear whether the line survives before comparing timbre"}
-```
-
 :::
 
 ::: en
@@ -92,3 +80,4 @@ Do not reverse the order. Listening before checking rights wastes work, and skip
 
 Demos showcase a model's best fragments, updates change old behaviour without notice, and licence terms split by region and tier. Treat the matrix as an exclusion tool. Retest with a small piece of your own material before trusting the conclusion. When exact harmony or long-form structure matters, the matrix can only point to a category worth trying; acceptance still belongs to you.
 :::
+

@@ -1,96 +1,78 @@
 ---
-id: model-minimax-music
-site: ai
-cat: I
-title: MiniMax Music
-title_en: MiniMax Music
-summary: API 优先的整曲生成，中文歌能批量出，版本要锁。
-summary_en: API-first full-song generation; Chinese songs at batch scale, with versions pinned.
-level: standard
-tags: [模型档案, 中文歌曲, API, 整曲生成]
-tags_en: [model profile, Chinese songs, API, full-song generation]
-alias: [MiniMax Music, MiniMax 音乐, 海螺音乐]
+id: "model-minimax-music"
+site: "ai"
+cat: "I"
+title: "MiniMax Music"
+title_en: "MiniMax Music"
+summary: "按账户权限选择服务或开放权重路线，核对版本与导出。"
+summary_en: "Check access separately for existing API accounts, MiniMax Audio and open-weight Music 3."
+level: "standard"
+tags: ["模型档案", "中文歌曲", "API", "整曲生成"]
+tags_en: ["model profile", "Chinese songs", "API", "full-song generation"]
+alias: ["MiniMax Music", "MiniMax 音乐", "海螺音乐"]
 order: 206
-model_vendor: MiniMax
-model_form: 服务
-model_input: [歌词, 文本, 参考音频]
-model_output: [音频]
-model_licence: 产出商用、署名与再分发按 MiniMax 开放平台条款；不同模型版本的许可与配额可能不同
-model_verified: 2026-10-31
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:tempo]]"
-  - "[[instrument:polysynth]]"
-instances:
-  - cyberhymnal-002209 | 十八秒的中国旋律，短而完整，适合做批量生成的对照（C1） | An eighteen second Chinese melody, short but complete, as a control for batch generation (C1)
-  - mutopia-000527 | 六十三秒的分节歌，看长音与句尾（C1） | A sixty-three second strophic song, to hear long notes and line endings (C1)
-  - cyberhymnal-003336 | 中文歌词的短赞美诗，适合看字与音的对应（C1） | A short hymn with Chinese words, to hear syllables mapped to notes (C1)
-  - groove-000006 | 138 BPM 流行鼓组，看生成曲的节拍是否稳（C1） | A 138 BPM pop kit, to check whether a generated song holds tempo (C1)
-sources:
-  - MiniMax 开放平台的音乐生成 API 文档（歌词、描述、返回格式与限制）。
-  - MiniMax Music 模型说明与版本列表（时长、采样率与可用模式）。
-  - MiniMax 开放平台服务条款（产出商用、数据使用与配额）。
-updated: 2026-10-31
+model_vendor: "MiniMax"
+model_form: "服务 / 开放权重"
+model_input: ["歌词", "文本（其他输入依入口核对）"]
+model_output: ["音频"]
+model_licence: "在线服务、代码和模型权重分别适用对应条款，使用前核对所选版本"
+model_verified: "2026-11-03"
+links: ["[[glossary:stems]]", "[[glossary:tempo]]", "[[instrument:polysynth]]"]
+instances: []
+sources: ["https://platform.minimax.io/docs/guides/models-intro", "https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍MiniMax音乐服务，需要核对模型版本、API账户开放范围与部署路线；普通MIDI不是服务输出，也不能证明当前接口可向新用户开放或实际生成规格。"
 ---
 
 ::: zh
-## 先看 API，再看网页
+## 先确认能用哪条路线
 
-对开发者和批量场景，MiniMax Music 的主形态是接口：一次请求，歌词加音乐描述，返回一首带人声的成品。网页与第三方平台也能用，但批量、自动化、接进自己的产品，走 API 更顺。它不管编曲工程，也不给分轨；要改一轨，得回到生成或另找分离工具。对内容团队来说，它的价值是把“出歌”变成一个可排队、可重试、可计费的任务。
+官方模型页注明：自 2026 年 8 月 20 日起，音乐和歌词的付费 API 不再向新用户开放；已有付费用户可继续使用，所列免费音乐 API 停用。新用户应先核对 MiniMax Audio 或开源 Music 3 路线，不能把 API 当作默认可用入口。
 
-## 歌词、描述与段落标记
+| 路线 | 开始前核对 |
+|---|---|
+| 存量付费 API | 当前账号是否仍有访问权限、端点和模型标识、计费与返回文件 |
+| MiniMax Audio | 实际界面的生成与编辑功能、账号可用范围、导出和服务条款 |
+| Music 3 开放权重 | 模型卡、代码与权重许可、部署说明和运行资源 |
 
-请求里最要紧的是两个字段：歌词与 prompt。歌词可以带 [Verse]、[Chorus]、[Bridge] 这类段落标记，prompt 写曲风、情绪、人声、配器与制作质感。返回的是音频数据或下载链接，格式、采样率与时长上限按当前模型版本。提示写得越像制作 brief，结果越稳；只写“好听的流行歌”，得到的是平均值。
+三个入口不共用一张功能表。某个接口接受参考音频，不代表另一个入口也接受；网页能导出的文件，也不能直接推定为 API 返回内容。
 
-| 字段 | 作用 | 常见错误 |
-|---|---|---|
-| lyrics | 唱什么、怎么分段 | 一行太长、段标记缺失 |
-| prompt | 风格、人声、编曲 | 形容词堆叠、没有具体乐器 |
-| 参考音频 | 锁音色或风格 | 与文字描述冲突 |
-| 版本 | 能力与上限 | 不锁版本，结果漂移 |
+## 用一个小项目验收
 
-## 中文歌的批量生产
+准备有权使用的歌词和一份项目需求单，写明用途、时长、段落及交付。先做短样，保存实际模型标识、歌词、描述和生成时间。逐句核对人声，标出段落进入、漏字和尾音的问题，再决定继续生成还是接回 DAW 修改。
 
-中文咬字、声调与句尾的处理，是它在国内场景里的主要卖点；同样的歌词，听起来更接近本地歌手的念法。批量出歌时，固定歌词与版本，只改 prompt 里的一个变量，能较快找到可用方向。短视频、广告、有声内容的配乐，用它做初稿比人工编曲快得多。当前版本标称可到约五分钟，实际长度与返回格式以文档为准。
+拿到文件后检查格式、实际时长、采样率、尾音和可编辑范围。若交付要求包括分轨或 MIDI，必须确认当前入口确实支持并逐个打开检查，不能把立体声成品当成分轨工程。
 
-## 返回值、重试与版本漂移
+## 接口与归档记录
 
-接口同步返回，长歌要等；高峰期超时与限流是常态，重试要带退避，别把并发打满。同一请求两次结果不同，人声音色与混音会有差别，跨次拼接像换人。模型版本升级后，旧 prompt 的效果会变，生产环境要锁版本，并把歌词、prompt、版本号一起存档。返回链接通常有时效，落地后立刻转存。
+已有 API 权限的团队应按当前端点文档实现请求、错误处理和保存，不预设所有版本都同步返回或允许相同并发。重试前确认任务状态与计费规则，避免重复创建任务。把原始返回文件、请求参数和修改后的交付文件分开保存。
 
-## 商用边界与替代
-
-要确认：产出能否商用与发行、是否需要署名、数据保留与训练使用、并发与配额、不同版本的许可差异。具体以 MiniMax 开放平台文档与条款为准。替代：要分轨与后期，换腾讯音乐天琴；要网页端即开即用，换 Suno；要本地可控，换 YuE 或 DiffRhythm。
-
-```audiolab
-{"type":"instrument","gm":"Electric Guitar (clean)","synth":"plucked","phrase":["E3","B3","C#4","B3","A3","G#3","E3","B2"],"label":"一段适合做副歌钩子的动机","label_en":"A motif built for a chorus hook","hint":"批量生成时，先听钩子有没有被记住，再听音色","hint_en":"In batch work, hear whether the hook is memorable before judging the tone"}
-```
+在线服务条款与开放权重许可分别核对；账号能生成，不等于所有输入素材和输出用途都已获得许可。
 :::
 
 ::: en
-## The API first, the browser second
+## Establish which route is available
 
-For developers and batch work, MiniMax Music is primarily an API: one request with lyrics and a music description returns a finished track with vocals. The web app and third-party platforms work too, but batch runs, automation and product integration are smoother through the API. It does not provide a session file or stems; changing one part means regenerating or reaching for a separation tool. For a content team, its value is turning song production into a queueable, retryable, billable job.
+The official models page states that from August 20, 2026, paid Music Generation and Lyrics Generation APIs are no longer offered to new users. Existing paying users can continue, while the listed free music APIs are discontinued. New users should check MiniMax Audio or the open-weight Music 3 route instead of assuming API access.
 
-## Lyrics, description, section tags
+| Route | Check before starting |
+|---|---|
+| Existing paid API access | Account eligibility, current endpoint and model identifier, billing and returned files |
+| MiniMax Audio | Actual generation and editing controls, account availability, exports and service terms |
+| Music 3 open weights | Model card, code and weight licences, deployment instructions and resources |
 
-Two fields matter most: lyrics and prompt. Lyrics can carry tags such as [Verse], [Chorus] and [Bridge]; the prompt describes genre, mood, voice, instrumentation and production. The response is audio data or a download link, with format, sample rate and duration ceiling set by the model version. The more the prompt reads like a production brief, the steadier the result; "a nice pop song" gets you the average.
+Do not share one capability table across all three routes. An audio-reference input on one endpoint does not establish that another entry accepts it, and browser exports do not define API responses.
 
-| Field | Role | Common mistake |
-|---|---|---|
-| lyrics | What is sung and how it is split | Lines too long, tags missing |
-| prompt | Style, voice, arrangement | Stacked adjectives, no instruments |
-| reference audio | Locks timbre or style | Conflicts with the text |
-| version | Capability and limits | No pin, so results drift |
+## Test one small project
 
-## Chinese songs at batch scale
+Use lyrics you have permission to use and a project brief stating the purpose, duration, sections and deliverables. Generate a short sample first and save the actual model identifier, lyrics, description and date. Check the vocal line by line, noting section entries, missing words and tails before choosing between another generation and editing in a DAW.
 
-Mandarin diction, tones and sentence endings are its main advantage in the domestic market; the same lyric sits closer to how a local singer would phrase it. In batch work, fix lyrics and version, change one prompt variable at a time, and a usable direction appears quickly. For short video, ads and spoken-word beds, drafts come far faster than manual arranging. Current versions state a ceiling around five minutes; actual length and response format belong to the docs.
+Inspect the downloaded format, measured duration, sample rate, tails and editing scope. If delivery requires stems or MIDI, confirm that the selected entry supports them and open every file. A stereo mix is not a multitrack session.
 
-## Responses, retries and version drift
+## API and archive records
 
-The call is synchronous, so long songs wait; timeouts and rate limits are normal at peak, and retries need backoff rather than full concurrency. Two calls from one request differ in vocal timbre and mix, so stitching across runs sounds like a change of singer. A model upgrade changes how old prompts behave; pin the version in production and archive lyrics, prompt and version together. Download links usually expire, so store the file immediately.
+Teams with existing API access should implement requests, errors and saving from the current endpoint documentation. Do not assume every version is synchronous or has the same concurrency allowance. Check task state and billing before retrying to avoid duplicate jobs. Keep original responses, request parameters and edited delivery files separately.
 
-## Commercial limits and alternatives
-
-Confirm: commercial use and release, credit requirements, data retention and training use, concurrency and quota, and licence differences between versions. The MiniMax platform docs and terms are the authority. Alternatives: TME Tianqin for stems and post-production; Suno for a browser service; YuE or DiffRhythm for local control.
+Check online service terms separately from open-weight licences. Account access alone does not clear input material or every intended use of the output.
 :::

@@ -1,29 +1,20 @@
 ---
-id: structure-control
-site: ai
-cat: C
-title: 段落结构控制
-title_en: Controlling Song Structure
-summary: 段落要写小节数和进出方式，只写主歌副歌等于没写
-summary_en: Sections need bar counts and entry points; naming verse and chorus alone specifies nothing.
-level: standard
-tags: [段落, 主副歌, 桥段, 转场]
-tags_en: [sections, verse and chorus, bridge, transitions]
-alias: [结构控制, 段落控制, song structure]
+id: "structure-control"
+site: "ai"
+cat: "C"
+title: "段落结构控制"
+title_en: "Controlling Song Structure"
+summary: "段落要写小节数和进出方式，只写主歌副歌等于没写"
+summary_en: "Sections need bar counts and entry points; naming verse and chorus alone specifies nothing."
+level: "standard"
+tags: ["段落", "主副歌", "桥段", "转场"]
+tags_en: ["sections", "verse and chorus", "bridge", "transitions"]
+alias: ["结构控制", "段落控制", "song structure"]
 order: 131
-links:
-  - "[[glossary:ternary-form]]"
-  - "[[glossary:strophic-form]]"
-  - "[[glossary:cadence]]"
-instances:
-  - thesession-015842 | 《Birds Have Gone》，短曲两段就收，段落少反而容易守住（C1）
-  - atepp-007103 | 莫扎特 K.511 回旋曲，主题每次回来都换伴奏，适合核对段落的识别度（C1）
-  - mutopia-000498 | 贝多芬第五第二乐章，变奏段落各有写法，适合对照段长与能量（C1）
-  - cyberhymnal-001486 | 四声部赞美诗，主歌反复、每段收在同一终止式（C1）
-sources:
-  - Walter Piston, Harmony 与 William Caplin, Classical Form（Oxford）中关于段落划分与终止式的判断。
-  - 文本提示里的段落标记与结构控制，依据公开模型文档与制作实践。
-updated: 2026-10-31
+links: ["[[glossary:ternary-form]]", "[[glossary:strophic-form]]", "[[glossary:cadence]]"]
+instances: ["thesession-015842", "atepp-007103", "mutopia-000498", "cyberhymnal-001486"]
+sources: ["Walter Piston, Harmony 与 William Caplin, Classical Form（Oxford）中关于段落划分与终止式的判断。", "文本提示里的段落标记与结构控制，依据公开模型文档与制作实践。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -52,7 +43,7 @@ updated: 2026-10-31
 三分钟要装五段，每段平均只有三十六秒，桥段剩四小节，发展不起来。与其硬塞，不如减少段落，或者把桥段写成四小节的间奏。生成后再裁切通常比一次写对更可靠，但裁切会切掉尾音与混响，接缝处要做短交叉淡化，并确认拍点没有半拍偏移。段落数超过六个而总长不足四分钟时，先怀疑结构本身，而不是继续加提示词。
 
 ```audiolab
-{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"副歌前的四小节循环","label_en":"Four bars before the chorus","hint":"循环听两遍，注意第四小节的 IV 回到第一小节 I 时接缝最安静","hint_en":"Loop it twice and notice the seam is quietest when IV returns to I"}
+{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"合成和弦进行","label_en":"Synthesized chord sequence","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -82,6 +73,7 @@ A transition is not a natural flow but a specific action: a drum fill, the bass 
 Five sections in three minutes leaves thirty-six seconds each, and the bridge gets four bars, too short to develop. Cut a section or make the bridge a four-bar interlude instead of forcing everything in. Editing after generation is usually safer than getting it right in one pass, but cutting removes tails and reverb, so crossfade briefly at the seam and confirm the downbeat has not slipped half a beat. When a piece has more than six sections and runs under four minutes, question the structure before adding more prompt text.
 
 ```audiolab
-{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"Four bars before the chorus","label_en":"Four bars before the chorus","hint":"Loop it twice and notice the seam is quietest when IV returns to I","hint_en":"Loop it twice and notice the seam is quietest when IV returns to I"}
+{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"Synthesized chord sequence","label_en":"Synthesized chord sequence","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

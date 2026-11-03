@@ -1,29 +1,20 @@
 ---
-id: quantization-of-generated-parts
-site: ai
-cat: C
-title: 生成结果的量化
-title_en: Quantizing Generated Parts
-summary: 量化只修对不齐的音符，整轨全量量化会把演奏感一起修没
-summary_en: Quantise only the notes that miss the grid; a blanket pass removes the playing along with the error.
-level: standard
-tags: [量化, 网格, 律动, 强度]
-tags_en: [quantization, grid, groove, strength]
-alias: [对网格, 量化强度, quantize]
+id: "quantization-of-generated-parts"
+site: "ai"
+cat: "C"
+title: "生成结果的量化"
+title_en: "Quantizing Generated Parts"
+summary: "量化只修对不齐的音符，整轨全量量化会把演奏感一起修没"
+summary_en: "Quantise only the notes that miss the grid; a blanket pass removes the playing along with the error."
+level: "standard"
+tags: ["量化", "网格", "律动", "强度"]
+tags_en: ["quantization", "grid", "groove", "strength"]
+alias: ["对网格", "量化强度", "quantize"]
 order: 6
-links:
-  - "[[glossary:tempo]]"
-  - "[[glossary:rubato]]"
-  - "[[glossary:midi-protocol]]"
-instances:
-  - groove-000013 | 116 BPM 爵士放克鼓组，反拍容易被拉到正拍（C1）
-  - abcmisc-000179 | Garofitsa 吉格舞曲，六八拍重音要成组（C1）
-  - atepp-000367 | 格里格挪威进行曲，规整节奏本来就不需要量化（C1）
-  - atepp-000501 | 李斯特夜曲即兴，自由速度一旦量化就没了（C1）
-sources:
-  - 量化的网格选择与强度设置（音序器公开文档）。
-  - 量化对律动的影响，参考制作实践惯例。
-updated: 2026-10-30
+links: ["[[glossary:tempo]]", "[[glossary:rubato]]", "[[glossary:midi-protocol]]"]
+instances: ["groove-000013", "abcmisc-000179", "atepp-000367", "atepp-000501"]
+sources: ["量化的网格选择与强度设置（音序器公开文档）。", "量化对律动的影响，参考制作实践惯例。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -41,10 +32,10 @@ updated: 2026-10-30
 
 ## 耳朵要抓的点
 
-在 116 BPM 的爵士放克鼓组里，听反拍有没有被拉到正拍上。在 Garofitsa 吉格舞曲里，听六八拍的重音是否还成组。在格里格的挪威进行曲里，听规整的节奏本来就不需要量化，量化只是让它更死。在李斯特的夜曲即兴里，听自由速度一旦被量化会失去什么。
+保留自己 MIDI 素材的原时序，在副本上尝试量化，再比较重音、装饰音与自由速度。本页合成练习只呈现长短时值分配，没有执行量化或提供处理后的对照。
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"T t T t T t T t","bpm":116,"label":"摇摆八分","label_en":"Swung eighths","hint":"量化到十六分网格后，这种摆动会被抹平","hint_en":"Quantised to a sixteenth grid, this swing flattens out"}
+{"type":"rhythm","sig":"4/4","pattern":"T t T t T t T t","bpm":116,"label":"合成节奏示意","label_en":"Synthesized rhythm","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -63,9 +54,10 @@ Listen before quantising and never select all on import. Quantise only the notes
 
 ## What the ear catches
 
-In the 116 BPM jazz-funk kit, whether the offbeats get pulled onto the beat. In the Garofitsa jig, whether the six-eight accents still group correctly. In Grieg's Norwegian march, how the already regular rhythm needs no quantising, so a pass only makes it stiffer. In Liszt's impromptu nocturne, what free tempo loses once it is snapped to a grid.
+Keep the original timing of your MIDI material and try quantization on a copy, then compare accents, ornaments and rubato. The synthesized exercise here presents a long-short subdivision; it does not apply quantization or provide an edited comparison.
 
 ```audiolab
-{"type": "rhythm", "sig": "4/4", "pattern": "T t T t T t T t", "bpm": 116, "label": "Swung eighths", "label_en": "Swung eighths", "hint": "量化到十六分网格后，这种摆动会被抹平", "hint_en": "Quantised to a sixteenth grid, this swing flattens out"}
+{"type":"rhythm","sig":"4/4","pattern":"T t T t T t T t","bpm":116,"label":"Synthesized rhythm","label_en":"Synthesized rhythm","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

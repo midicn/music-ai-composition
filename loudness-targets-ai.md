@@ -1,28 +1,20 @@
 ---
-id: loudness-targets-ai
-site: ai
-cat: D
-title: 响度目标
-title_en: Loudness Targets
-summary: 先对齐响度再比较，平台标准与真峰值决定你能留多少动态
-summary_en: Match levels before comparing, and let platform targets and true peak decide how much dynamics you can keep.
-level: standard
-tags: [响度, 真峰值, 平台标准, 归一化]
-tags_en: [loudness, true peak, platform targets, normalization]
-alias: [响度标准, LUFS, loudness targets]
+id: "loudness-targets-ai"
+site: "ai"
+cat: "D"
+title: "响度目标"
+title_en: "Loudness Targets"
+summary: "先对齐响度再比较，平台标准与真峰值决定你能留多少动态"
+summary_en: "Match levels before comparing, and let platform targets and true peak decide how much dynamics you can keep."
+level: "standard"
+tags: ["响度", "真峰值", "平台标准", "归一化"]
+tags_en: ["loudness", "true peak", "platform targets", "normalization"]
+alias: ["响度标准", "LUFS", "loudness targets"]
 order: 4
-links:
-  - "[[glossary:lufs]]"
-  - "[[glossary:true-peak]]"
-  - "[[glossary:loudness-normalization]]"
-instances:
-  - atepp-001283 | 肖邦夜曲 Op.37 No.2，整体偏窄，适合检查目标响度下的呼吸（C1）
-  - groove-000000 | 138 BPM 放克鼓组，电平对齐后比瞬态与底鼓重量（C1）
-  - openscore-000270 | 马勒《我有一把灼热的刀》，爆发段最容易顶到真峰值（C1）
-sources:
-  - 流媒体与播送的响度目标——依据来自公开标准与平台文档。
-  - Streaming and broadcast loudness targets, summarized from public standards and platform documentation
-updated: 2026-10-30
+links: ["[[glossary:lufs]]", "[[glossary:true-peak]]", "[[glossary:loudness-normalization]]"]
+instances: ["atepp-001283", "groove-000000", "openscore-000270"]
+sources: ["流媒体与播送的响度目标——依据来自公开标准与平台文档。", "Streaming and broadcast loudness targets, summarized from public standards and platform documentation"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -40,10 +32,10 @@ updated: 2026-10-30
 
 ## 耳朵要抓的点
 
-肖邦夜曲 Op.37 No.2 整体偏窄，适合检查目标响度下是否还有呼吸。138 BPM 放克鼓组用来对齐电平后比瞬态，底鼓的重量在响度竞赛里最先丢失。马勒《我有一把灼热的刀》的爆发段最容易顶到真峰值，听限制器是否把字头削平。三处都先降到同一响度再判断。
+若要比较响度与限制器的影响，请使用自己实际导出的处理前后音频，并先对齐试听增益，再检查响度表与真峰值。本页 MIDI 和合成短句没有原始演唱或母带处理前后版本，不能用来验证字头是否被限制器削平。
 
 ```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"同一段在不同响度下","label_en":"One phrase at two levels","hint":"把音量调到一样再比音色，响的会先骗过耳朵","hint_en":"Match the level before comparing tone; louder fools the ear first"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"音色与短句练习","label_en":"Timbre and phrase exercise","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -62,9 +54,10 @@ Mix at -18 to -20 LUFS with 4 to 6 dB of headroom and no limiter on the bus. Dec
 
 ## What the ear catches
 
-Chopin's Nocturne Op. 37 No. 2 is narrow throughout, which makes it a good check for whether breathing survives at the target. The 138 BPM funk groove tests transients after level matching, and kick weight is the first thing lost in a loudness push. In Mahler's Ich hab' ein glühend Messer, the outburst is where true peak is exceeded first, so hear whether the limiter shaves the attacks. Bring all three to the same level before judging.
+To compare loudness or limiter effects, use your actual unprocessed and processed exports, match listening gain and inspect the loudness and true-peak meters. The MIDI references and synthesized phrase here contain neither an original vocal recording nor a before-and-after mastering pair, so they cannot demonstrate a limiter changing consonant attacks.
 
 ```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"One phrase at two levels","label_en":"One phrase at two levels","hint":"Match the level before comparing tone; louder fools the ear first","hint_en":"Match the level before comparing tone; louder fools the ear first"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4","C4","G3"],"label":"Timbre and phrase exercise","label_en":"Timbre and phrase exercise","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

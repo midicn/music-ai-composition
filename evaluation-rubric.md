@@ -1,30 +1,22 @@
 ---
-id: evaluation-rubric
-site: ai
-cat: H
-title: 生成结果评估量表
-title_en: An Evaluation Rubric
-summary: 四个维度分开打分，别让总分遮住一个一分
-summary_en: Score four dimensions separately; a total hides the one that failed
-level: standard
-tags: [评估, 量表, 可改性, 权利]
-tags_en: [evaluation, rubric, editability, rights]
-alias: [评估量表, 评分表, generation rubric]
+id: "evaluation-rubric"
+site: "ai"
+cat: "H"
+title: "生成结果评估量表"
+title_en: "An Evaluation Rubric"
+summary: "四个维度分开打分，别让总分遮住一个一分"
+summary_en: "Score four dimensions separately; a total hides the one that failed"
+level: "standard"
+tags: ["评估", "量表", "可改性", "权利"]
+tags_en: ["evaluation", "rubric", "editability", "rights"]
+alias: ["评估量表", "评分表", "generation rubric"]
 order: 185
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:stems]]"
-  - "[[glossary:music-copyright]]"
-instances:
-  - atepp-000459 | 海顿 C 大调奏鸣曲回旋曲，主题每次回来都可对照“可用性”的形式分（C1）
-  - atepp-001875 | 巴赫三声部创意曲，三个声部各自成立，是可改性判断的底线（C1）
-  - atepp-001283 | 肖邦夜曲 Op.37 No.2，自由速度与触键是“一致性”最难量化的部分（C1）
-  - mutopia-000497 | 贝多芬第五的齐奏密度，提醒音色与混音会互相掩护（C1）
-sources:
-  - ITU-R BS.1116 与 BS.1534（MUSHRA）关于主观听测与评分量表的设计方法。
-  - 音频质量与可用性评估的行业实践，来自公开制作与评测资料。
-  - 生成内容权利尽调清单，来自行业组织与平台公开文件。
-updated: 2026-10-31
+links: ["[[glossary:timbre]]", "[[glossary:stems]]", "[[glossary:music-copyright]]"]
+instances: []
+sources: ["https://www.itu.int/rec/R-REC-BS.1116-3-201502-I/en", "https://www.itu.int/rec/r-rec-bs.1534/en"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论分维度评价与主观听测，需要设定任务目标、对照样本和一致播放条件；普通MIDI回放不能替代真实候选的盲听记录或交付评分。"
 ---
 
 ::: zh
@@ -48,10 +40,6 @@ updated: 2026-10-31
 ## 量表不适合判断的事
 
 新鲜感、艺术家匹配、受众喜好、商业成败都不在四个维度里。权利分打的是文件与授权是否齐全，不是法律意见；有授权文件也可能有范围问题，需要另行清权。量表是筛子，把明显不能用的版本挡住，剩下的仍要人听、人判断。四个维度都过线，也只说明它可以进入下一轮，不说明它该被发布。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["A3","C4","E4","A4"],"label":"评分前先盲听","label_en":"Blind-listen before scoring","hint":"先不看来源，再按四项打分","hint_en":"Hide the source before rating"}
-```
-
 :::
 
 ::: en
@@ -76,3 +64,4 @@ Listen blind. Have two raters score independently, then discuss the gaps. Requir
 
 Novelty, artist fit, audience taste and commercial success are outside these four dimensions. The rights score measures whether files and permissions are complete, not a legal opinion; documents can exist and still leave a scope question that needs separate clearance. The rubric is a sieve that stops versions which clearly cannot be used. What passes still needs a person to listen and decide. Four passing scores mean it earns another round, not that it should be released.
 :::
+

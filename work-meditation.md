@@ -1,35 +1,29 @@
 ---
-id: work-meditation
-site: ai
-cat: K
-title: 长时氛围
-title_en: Long-Form Ambience
-summary: 二十分钟不出现事件，循环接缝与授权才是难点
-summary_en: Twenty minutes without an event; the loop seam and the licence are the hard parts.
-level: standard
-tags: [氛围, 冥想, 长音, 循环]
-tags_en: [ambient, meditation, drones, loops]
-alias: [长时氛围, 冥想音乐, 睡眠音乐, ambient]
+id: "work-meditation"
+site: "ai"
+cat: "K"
+title: "长时氛围"
+title_en: "Long-Form Ambience"
+summary: "二十分钟不出现事件，循环接缝与授权才是难点"
+summary_en: "Twenty minutes without an event; the loop seam and the licence are the hard parts."
+level: "standard"
+tags: ["氛围", "冥想", "长音", "循环"]
+tags_en: ["ambient", "meditation", "drones", "loops"]
+alias: ["长时氛围", "冥想音乐", "睡眠音乐", "ambient"]
 order: 10
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [氛围音乐, 长时素材, 应用配乐]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:reverb]]"
-  - "[[glossary:lufs]]"
-  - "[[glossary:true-peak]]"
-instances:
-  - oga-000021 | 游戏洞穴环境，听底噪宽度与单声道表现（C1）
-  - cyberhymnal-008729 | 管风琴赞美诗，作为氛围类模板的素材（C1）
-  - mutopia-001412 | 萨蒂《裸体歌舞》第二首，稀疏织体在单声道下还剩多少空间（C1）
-sources:
-  - 长时氛围的电平与接缝要求，参考应用音频与母带惯例。
-  - 睡眠与冥想场景的响度范围；发行实践是主要依据。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["氛围音乐", "长时素材", "应用配乐"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:reverb]]", "[[glossary:lufs]]", "[[glossary:true-peak]]"]
+instances: []
+sources: ["https://www.ableton.com/en/live-manual/12/audio-clips-tempo-and-warping/", "https://www.itu.int/rec/R-REC-BS.1770-5-202311-I/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "长时氛围需检查完整时长内的响度变化、循环边界和突发瞬态；播放短小音乐片段不能证明长时间循环平稳，更不能据此作睡眠疗效判断。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 常见返工原因
 
 生成结果里冒出人声哼唱。循环接缝有呼吸感，安静时就听见。低频堆太多，耳机里发闷。响度做到 -14 LUFS，睡眠场景显得吵。文件太大，应用加载慢。授权只写个人使用，上架被拒。
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C3","G3","C4","G3","C3","F3","C4","F3"],"label":"二十分钟不出现事件","label_en":"Twenty minutes without an event","hint":"听有没有东西突然抓住注意力，那就是要删的","hint_en":"Hear whether anything grabs attention; that is what has to go"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ Total length matches the brief within two seconds. There are no sudden transient
 ## Common rework causes
 
 A hummed vocal appears in the generation. The seam breathes and is audible the moment the room is quiet. Too much low end makes headphones feel stuffy. The mix sits at -14 LUFS and feels loud for sleep. The file is so large that the app loads slowly. The licence covers personal use only and the store rejects it.
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["C3","G3","C4","G3","C3","F3","C4","F3"],"label":"Twenty minutes without an event","label_en":"Twenty minutes without an event","hint":"Hear whether anything grabs attention; that is what has to go","hint_en":"Hear whether anything grabs attention; that is what has to go"}
-```
 :::
+

@@ -1,35 +1,29 @@
 ---
-id: work-cover
-site: ai
-cat: K
-title: 翻唱
-title_en: A Cover Version
-summary: 词曲许可与录音许可分开算，改歌词就变成另一件事
-summary_en: Composition and master licences are separate; changing lyrics makes it a different job.
-level: standard
-tags: [翻唱, 授权, 人声, 编曲]
-tags_en: [cover, licensing, vocals, arrangement]
-alias: [翻唱, cover, 翻唱授权, 二次演唱]
+id: "work-cover"
+site: "ai"
+cat: "K"
+title: "翻唱"
+title_en: "A Cover Version"
+summary: "词曲许可与录音许可分开算，改歌词就变成另一件事"
+summary_en: "Composition and master licences are separate; changing lyrics makes it a different job."
+level: "standard"
+tags: ["翻唱", "授权", "人声", "编曲"]
+tags_en: ["cover", "licensing", "vocals", "arrangement"]
+alias: ["翻唱", "cover", "翻唱授权", "二次演唱"]
 order: 6
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [翻唱制作, 人声合成, 授权确认]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:melody]]"
-  - "[[glossary:key]]"
-  - "[[glossary:timbre]]"
-instances:
-  - thesession-015842 | 传统曲调的演唱版本，咬字与呼吸是合成人声的弱点（C1）
-  - openscore-000014 | 英语艺术歌曲，辅音起音决定词的边界（C1）
-  - mutopia-001093 | 乔普林《枫叶拉格》，切分与左手跳进是可指认的创作选择（C1）
-sources:
-  - 翻唱涉及的词曲与录音两类权利（发行与平台公开规则）。
-  - 翻唱的署名与改编边界，参考行业惯例。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["翻唱制作", "人声合成", "授权确认"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:melody]]", "[[glossary:key]]", "[[glossary:timbre]]"]
+instances: []
+sources: ["https://support.distrokid.com/hc/en-us/articles/360013648953-Uploading-Cover-Songs-to-DistroKid", "https://www.copyright.gov/register/pa-sr.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "翻唱需要区分重录的词曲许可与引用原录音，并按发行地区和服务规则核对；播放一首翻唱不能证明歌词改写、采样或视频用途已获授权。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 常见返工原因
 
 用了原曲伴奏，却没拿录音许可。歌词改了几个字，性质变成改编。合成人声咬字含糊，副歌听不清。升调后高音挤，修音痕迹明显。平台识别出原曲，视频被静音。署名漏了作者，发行被退回。清唱与伴奏电平不匹配，混起来人声发飘。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["G4","A4","B4","D5","B4","A4","G4","E4"],"label":"翻唱要保留的旋律骨架","label_en":"The melodic skeleton a cover must keep","hint":"换编曲可以，骨架一散就不是翻唱","hint_en":"Rearrange freely, but once the skeleton dissolves it is no longer a cover"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ Lyrics and melody match the original; changed lyrics require a derivative licenc
 ## Common rework causes
 
 The original backing is used without a master licence. A few words are changed and the work becomes a derivative. Synthesized diction is mushy and the chorus is unintelligible. A key lift makes the top notes tight and the tuning audible. The platform recognises the song and mutes the video. A writer is missing from the credits and distribution is rejected. The a cappella and backing are not level-matched, so the voice floats when they are combined.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["G4","A4","B4","D5","B4","A4","G4","E4"],"label":"The melodic skeleton a cover must keep","label_en":"The melodic skeleton a cover must keep","hint":"Rearrange freely, but once the skeleton dissolves it is no longer a cover","hint_en":"Rearrange freely, but once the skeleton dissolves it is no longer a cover"}
-```
 :::
+

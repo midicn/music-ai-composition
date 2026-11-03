@@ -1,30 +1,20 @@
 ---
-id: sample-realism
-site: ai
-cat: E
-title: 让采样听起来真实
-title_en: Making Samples Sound Real
-summary: 采样假在三处，每次一样、力度一样、连奏一样
-summary_en: Samples give themselves away in three places: every hit identical, every velocity equal, every join clean.
-level: standard
-tags: [采样, 轮替, 力度层, 连奏]
-tags_en: [samples, round robin, velocity layers, legato]
-alias: [采样真实感, 人性化, sample realism]
+id: "sample-realism"
+site: "ai"
+cat: "E"
+title: "让采样听起来真实"
+title_en: "Making Samples Sound Real"
+summary: "采样假在三处，每次一样、力度一样、连奏一样"
+summary_en: "Samples give themselves away in three places: every hit identical, every velocity equal, every join clean."
+level: "standard"
+tags: ["采样", "轮替", "力度层", "连奏"]
+tags_en: ["samples", "round robin", "velocity layers", "legato"]
+alias: ["采样真实感", "人性化", "sample realism"]
 order: 147
-links:
-  - "[[glossary:velocity]]"
-  - "[[glossary:sampler]]"
-  - "[[glossary:legato]]"
-instances:
-  - groove-000000 | 放克鼓组，同一军鼓连击时听轮替，机械感最先从这里露出来（C1）
-  - groove-000005 | 嘻哈鼓组，hi-hat 的力度与摇摆，平直就露馅（C1）
-  - groove-000015 | 爵士放克过门，fill 的收尾每一下都不该相同（C1）
-  - musicnet-000091 | 贝多芬四重奏慢乐章，换弓的缝与呼吸，是采样最难做的部分（C1）
-sources:
-  - Native Instruments Kontakt 手册与 Spitfire Audio 产品文档中关于轮替、力度层与连奏触发的工作方式。
-  - 管弦乐配器与录音教材中关于换弓、换气与自然衰减的描述。
-  - Sampler documentation on round robin and velocity layers, with reference to orchestration and recording texts.
-updated: 2026-10-31
+links: ["[[glossary:velocity]]", "[[glossary:sampler]]", "[[glossary:legato]]"]
+instances: ["groove-000000", "groove-000005", "groove-000015", "musicnet-000091"]
+sources: ["Native Instruments Kontakt 手册与 Spitfire Audio 产品文档中关于轮替、力度层与连奏触发的工作方式。", "管弦乐配器与录音教材中关于换弓、换气与自然衰减的描述。", "Sampler documentation on round robin and velocity layers, with reference to orchestration and recording texts."]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -56,7 +46,7 @@ updated: 2026-10-31
 过度人性化会把节奏弄散，尤其是鼓和低音，该准的地方必须准。轮替太多会吃掉动态，因为每次取到的样本强弱不一。用生成工具做 one-shot 时，先确认长度、调音和尾巴，再谈轮替；素材本身不齐，后面怎么调都补不回来。管弦乐里，采样再真也替代不了真乐队的融合，重要段落该录就录。
 
 ```audiolab
-{"type":"instrument","drum":38,"synth":"perc","phrase":[38,38,38,38,38,38,38,38],"label":"同一个军鼓连打八次","label_en":"The same snare hit eight times","hint":"每次一模一样，就是采样露馅的地方","hint_en":"Eight identical hits are exactly where a sample gives itself away"}
+{"type":"instrument","drum":38,"synth":"perc","phrase":[38,38,38,38,38,38,38,38],"label":"音色与短句练习","label_en":"Timbre and phrase exercise","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -89,6 +79,7 @@ Legato samples trigger when notes overlap, and the usual fault is the overlap le
 Too much humanisation pulls the rhythm apart, especially in drums and bass, where accuracy is the point. Too many round robins eat the dynamics, because each take was recorded at a different level. When generating one-shots, check length, tuning and tail before worrying about alternates; material that is uneven at the source cannot be repaired later. And no sample library replaces the blend of a real orchestra, so record the important passages when the budget allows.
 
 ```audiolab
-{"type":"instrument","drum":38,"synth":"perc","phrase":[38,38,38,38,38,38,38,38],"label":"The same snare hit eight times","label_en":"The same snare hit eight times","hint":"Eight identical hits are exactly where a sample gives itself away","hint_en":"Eight identical hits are exactly where a sample gives itself away"}
+{"type":"instrument","drum":38,"synth":"perc","phrase":[38,38,38,38,38,38,38,38],"label":"Timbre and phrase exercise","label_en":"Timbre and phrase exercise","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

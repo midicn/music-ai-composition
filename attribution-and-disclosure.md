@@ -1,28 +1,22 @@
 ---
-id: attribution-and-disclosure
-site: ai
-cat: G
-title: 署名与披露
-title_en: Attribution and Disclosure
-summary: 署名说谁做了什么，披露说怎么做的，两句都要短而具体
-summary_en: Credit says who did what, disclosure says how; both should be short and specific
-level: standard
-tags: [署名, 披露, 标注, 客户要求]
-tags_en: [attribution, disclosure, labelling, client requirements]
-alias: [AI 署名, 使用披露, attribution]
+id: "attribution-and-disclosure"
+site: "ai"
+cat: "G"
+title: "署名与披露"
+title_en: "Attribution and Disclosure"
+summary: "署名说谁做了什么，披露说怎么做的，两句都要短而具体"
+summary_en: "Credit says who did what, disclosure says how; both should be short and specific"
+level: "standard"
+tags: ["署名", "披露", "标注", "客户要求"]
+tags_en: ["attribution", "disclosure", "labelling", "client requirements"]
+alias: ["AI 署名", "使用披露", "attribution"]
 order: 5
-links:
-  - "[[glossary:music-copyright]]"
-  - "[[glossary:work-for-hire]]"
-instances:
-  - wikifonia-000434 | 标题里带采集者姓名的角笛舞曲，来源直接写进了名字（C1）
-  - cyberhymnal-002684 | 标明"蒙克据克吕格合唱曲改编"的赞美诗，改编者的手被写进署名（C1）
-  - mutopia-001411 | 萨蒂《裸体歌舞》的公有领域谱面，原作无需授权，工具仍需说明（C1）
-  - giantmidi-003011 | 标题直接叫《致敬萨蒂》的钢琴曲，致敬在命名时就交代了（C1）
-sources:
-  - 采集者与改编者的署名惯例；公开曲目信息是主要依据。
-  - 生成内容的标注要求——依据来自平台公开规则与客户合同通例。法律判断请咨询专业人士。
-updated: 2026-10-30
+links: ["[[glossary:music-copyright]]", "[[glossary:work-for-hire]]"]
+instances: []
+sources: ["https://www.govinfo.gov/app/details/FR-2023-03-16/2023-05321", "https://support.google.com/youtube/answer/14328491?hl=en"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论AI参与说明与署名，需要按适用登记制度、平台披露要求和真实制作记录核对；普通曲目不能用声音证明署名或披露已经合规。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ updated: 2026-10-30
 ## 具体做法
 
 先查三处，平台规则、发行方要求、客户合同。再定披露层级，对内写进项目文档，对外写在片尾、简介或元数据，视场景取舍。措辞给事实，不给评价，例如"人声为合成，旋律与编曲由本人完成""使用生成工具制作初稿，后期由团队重写与录制"。避免"AI 辅助"这种含糊说法，它既没说清哪部分，也没说清哪部分不是。团队固定一句模板，减少每次争论。若客户要求不披露，先确认这不违反平台规则与当地广告法，再决定接不接。
-
-## 耳朵要抓的点
-
-在采集者署名的角笛舞曲里看来源怎样进入标题；在蒙克改编的赞美诗里听改编者做了什么，和声与声部走向是可听的劳动；在《裸体歌舞》的谱面里听原作本身，再想清楚你的渲染该标什么；在《致敬萨蒂》里听"致敬"如何被写成一个明确说法，而不是暗示。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Guitar (nylon)","synth":"plucked","phrase":["G3","B3","D4","G4","F#4","D4","B3","G3"],"label":"一句能写清楚的说明","label_en":"A sentence that says it plainly","hint":"说清哪部分是人做的，比笼统的 AI 标签有用","hint_en":"Naming the human part beats a vague AI label"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ Credit answers who did which part. Disclosure answers how that part came about. 
 ## In practice
 
 Check three places first, the platform rules, the distributor's requirements and the client contract. Then set the level of disclosure, internally in the project file, externally in end credits, the description or metadata, as the context allows. State facts, not judgements, for example "synthetic voice, melody and arrangement by me" or "generated drafts, rewritten and recorded by the team". Avoid "AI-assisted", which says neither what was assisted nor what was not. Keep one template across the team so it is not renegotiated every job. If a client asks for silence, confirm that this does not breach platform rules or local advertising law before accepting.
-
-## What the ear catches
-
-In the hornpipe, how provenance enters the title. In the Monk adaptation, what the arranger did, audible in the harmony and voice leading. In the Gymnopedie score, the original itself, and then what your rendering should be labelled as. In Homage to Satie, how a tribute is stated outright rather than implied.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Guitar (nylon)","synth":"plucked","phrase":["G3","B3","D4","G4","F#4","D4","B3","G3"],"label":"A sentence that says it plainly","label_en":"A sentence that says it plainly","hint":"Naming the human part beats a vague AI label","hint_en":"Naming the human part beats a vague AI label"}
-```
 :::
+

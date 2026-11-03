@@ -1,35 +1,27 @@
 ---
-id: work-jingle
-site: ai
-cat: K
-title: 品牌音效
-title_en: A Brand Sonic Logo
-summary: 三到五秒要能记住，还要在手机外放上站得住
-summary_en: Three to five seconds must be memorable and still work on a phone speaker.
-level: standard
-tags: [品牌, 音效, 广告歌, 买断]
-tags_en: [brand, sonic logo, jingle, buyout]
-alias: [品牌音效, 声音标识, sonic logo, 广告歌]
+id: "work-jingle"
+site: "ai"
+cat: "K"
+title: "品牌音效"
+title_en: "A Brand Sonic Logo"
+summary: "三到五秒要能记住，还要在手机外放上站得住"
+summary_en: "Three to five seconds must be memorable and still work on a phone speaker."
+level: "standard"
+tags: ["品牌", "音效", "广告歌", "买断"]
+tags_en: ["brand", "sonic logo", "jingle", "buyout"]
+alias: ["品牌音效", "声音标识", "sonic logo", "广告歌"]
 order: 9
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [品牌声音, 广告歌, 音频标识]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:loudness-normalization]]"
-  - "[[glossary:true-peak]]"
-instances:
-  - pdmx-000120 | 铜管长音与定音鼓，logo 段落的收法（C1）
-  - oga-000053 | 两秒的 fanfare，方向阶段第一个短选项（C1）
-  - oga-000054 | 同长度的第二个 fanfare，正好做 A/B 对照（C1）
-sources:
-  - 品牌声音标识的时长与买断范围，参考品牌与广告制作惯例。
-  - 广播与网络响度口径；公开规范是主要依据。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["品牌声音", "广告歌", "音频标识"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:timbre]]", "[[glossary:loudness-normalization]]", "[[glossary:true-peak]]"]
+instances: ["pdmx-000120", "oga-000053", "oga-000054"]
+sources: ["品牌声音标识的时长与买断范围，参考品牌与广告制作惯例。", "广播与网络响度口径；公开规范是主要依据。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -54,7 +46,7 @@ updated: 2026-10-30
 动机太复杂，五秒记不住。品牌名被和声盖住，听不清。低频做太多，手机外放只剩噗噗声。三个版本像三首歌，品牌不统一。授权只覆盖电视，App 启动音要另签。棚里好听，客户手机上一团。
 
 ```audiolab
-{"type":"instrument","gm":"Brass Section","synth":"brass","phrase":["C4","G4","A4","C5"],"label":"五秒品牌动机","label_en":"A five-second brand motif","hint":"只听一遍，看能不能哼回来","hint_en":"Listen once and see whether you can hum it back"}
+{"type":"instrument","gm":"Brass Section","synth":"brass","phrase":["C4","G4","A4","C5"],"label":"音色与短句练习","label_en":"Timbre and phrase exercise","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -80,6 +72,7 @@ The logo runs exactly three to five seconds and the jingles exactly fifteen and 
 The motif is too busy to remember in five seconds. Harmonies bury the brand name. Too much low end leaves only thumps on a phone. The three versions sound like three different songs and the brand stops being consistent. The licence covers television only and an app launch needs a new deal. It sounds good in the studio and turns to mush on the client's phone.
 
 ```audiolab
-{"type":"instrument","gm":"Brass Section","synth":"brass","phrase":["C4","G4","A4","C5"],"label":"A five-second brand motif","label_en":"A five-second brand motif","hint":"Listen once and see whether you can hum it back","hint_en":"Listen once and see whether you can hum it back"}
+{"type":"instrument","gm":"Brass Section","synth":"brass","phrase":["C4","G4","A4","C5"],"label":"Timbre and phrase exercise","label_en":"Timbre and phrase exercise","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

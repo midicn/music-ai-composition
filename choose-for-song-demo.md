@@ -1,36 +1,27 @@
 ---
-id: choose-for-song-demo
-site: ai
-cat: K
-title: 做歌 Demo 选型
-title_en: Choosing a Tool for a Song Demo
-summary: 一晚要出三版，还是要一版能改到单音的稿，选的是路线不是软件。
-summary_en: Three versions by tonight or one that can be edited note by note decides the route, not the software.
-level: standard
-tags: [选型, 做歌, Demo, 编曲]
-tags_en: [selection, songwriting, demo, arrangement]
-alias: [做歌选型, Demo 工具, song demo]
+id: "choose-for-song-demo"
+site: "ai"
+cat: "K"
+title: "做歌 Demo 选型"
+title_en: "Choosing a Tool for a Song Demo"
+summary: "一晚要出三版，还是要一版能改到单音的稿，选的是路线不是软件。"
+summary_en: "Three versions by tonight or one that can be edited note by note decides the route, not the software."
+level: "standard"
+tags: ["选型", "做歌", "Demo", "编曲"]
+tags_en: ["selection", "songwriting", "demo", "arrangement"]
+alias: ["做歌选型", "Demo 工具", "song demo"]
 order: 17
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:daw]]"
-  - "[[glossary:tempo]]"
-tool_kind: guide
-tool_vendor: —
-tool_form: 网页
-tool_platforms: [浏览器]
-tool_price: 免费
-tool_jobs: [选型, 做歌]
-tool_verified: 2026-10-30
-instances:
-  - wikifonia-000362 | 谢南多厄，主歌副歌分明的民谣，是做歌 Demo 最常对照的结构形态（C1）
-  - mutopia-000818 | 焦尔达尼《我亲爱的》，一条主旋律加一件伴奏，Demo 阶段的标配编制（C1）
-  - pdmx-000208 | 奇异恩典，同一旋律的多种编配，用来对照换配器后的差别（C1）
-  - groove-000006 | 138 BPM 流行鼓组，Demo 里最先被要求改的就是鼓的密度（C1）
-sources:
-  - 文本生成、歌声合成与编曲软件公开文档所列能力（2026-10-30 复核）。
-  - Demo 制作流程的成本与返工经验（制作实践惯例）。
-updated: 2026-10-30
+links: ["[[glossary:stems]]", "[[glossary:daw]]", "[[glossary:tempo]]"]
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "网页"
+tool_platforms: ["浏览器"]
+tool_price: "免费"
+tool_jobs: ["选型", "做歌"]
+tool_verified: "2026-10-30"
+instances: ["wikifonia-000362", "mutopia-000818", "pdmx-000208", "groove-000006"]
+sources: ["文本生成、歌声合成与编曲软件公开文档所列能力（2026-10-30 复核）。", "Demo 制作流程的成本与返工经验（制作实践惯例）。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -65,7 +56,7 @@ updated: 2026-10-30
 先用同一段词做三个版本：一次文本生成、一次编曲草稿、一次弹唱录音，比较改起来的难易。然后读这里的选型方法、分段生成、编曲控制三篇，把「哪一步必须自己写」定下来。
 
 ```audiolab
-{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"主歌常用的四个和弦","label_en":"A common verse progression","hint":"Demo 阶段先把这个循环弹稳，再谈配器","hint_en":"Get this loop solid before adding arrangement"}
+{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"合成和弦进行","label_en":"Synthesized chord sequence","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -101,6 +92,7 @@ If you need editable harmony and orchestration, move from Suno to the arrangemen
 Make three versions of the same lyric, one generated, one arrangement draft, one played and sung, and compare how hard each is to revise. Then read the pages on choosing a tool, section-by-section generation and arrangement control, and decide which steps you must write yourself.
 
 ```audiolab
-{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"A common verse progression","label_en":"A common verse progression","hint":"Get this loop solid before adding arrangement","hint_en":"Get this loop solid before adding arrangement"}
+{"type":"progression","key":"C4","degrees":["I","V","vi","IV"],"beat":0.9,"label":"Synthesized chord sequence","label_en":"Synthesized chord sequence","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

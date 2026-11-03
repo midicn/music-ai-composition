@@ -1,34 +1,28 @@
 ---
-id: model-adobe-enhance
-site: ai
-cat: I
-title: Adobe 人声增强
+id: "model-adobe-enhance"
+site: "ai"
+cat: "I"
+title: "Adobe 人声增强"
 title_en: "Adobe Enhance Speech"
-summary: 一键去掉房间声与底噪，把手机录音修到能播的程度。
-summary_en: One click removes room sound and noise, bringing phone recordings up to broadcastable quality.
-level: standard
-tags: [模型档案, 人声, 降噪, 播客, 修复]
-tags_en: [model profile, voice, denoise, podcast, restoration]
-alias: [Adobe Podcast, Enhance Speech, Adobe 降噪, 语音增强, podcast enhance]
+summary: "一键去掉房间声与底噪，把手机录音修到能播的程度。"
+summary_en: "One click removes room sound and noise, bringing phone recordings up to broadcastable quality."
+level: "standard"
+tags: ["模型档案", "人声", "降噪", "播客", "修复"]
+tags_en: ["model profile", "voice", "denoise", "podcast", "restoration"]
+alias: ["Adobe Podcast", "Enhance Speech", "Adobe 降噪", "语音增强", "podcast enhance"]
 order: 14
-model_vendor: Adobe
-model_form: 网页服务
-model_input: [语音, 视频音轨]
-model_output: [语音]
-model_licence: 免费额度、上传音频的保留与使用、商用条款需按 Adobe 账户条款核对
-model_verified: 2026-10-30
-links:
-  - "[[glossary:noise-floor]]"
-  - "[[glossary:signal-to-noise]]"
-  - "[[instrument:popular-voice]]"
-instances:
-  - mutopia-000038 | 无伴奏合唱，长音多、房间感明显，适合看增强后的尾音（C1） | Unaccompanied choral singing with long notes and clear room sound, for hearing the tail after enhancement (C1)
-  - mutopia-000053 | 众赞歌，声部密集、辅音集中，适合听齿音与字头是否被保住（C1） | A chorale with dense parts and clustered consonants, to hear whether sibilance and onsets survive (C1)
-  - mutopia-000062 | 短小的合唱圣咏，句尾收得干净，便于对比处理前后的底噪（C1） | A short choral hymn with clean phrase endings, for comparing the noise floor before and after (C1)
-sources:
-  - 语音增强的输入输出与额度，对照 Adobe 官方页面整理。
-  - 语音清理的听感取舍（播客制作惯例）。
-updated: 2026-10-30
+model_vendor: "Adobe"
+model_form: "网页服务"
+model_input: ["语音", "视频音轨"]
+model_output: ["语音"]
+model_licence: "免费额度、上传音频的保留与使用、商用条款需按 Adobe 账户条款核对"
+model_verified: "2026-10-30"
+links: ["[[glossary:noise-floor]]", "[[glossary:signal-to-noise]]", "[[instrument:popular-voice]]"]
+instances: []
+sources: ["https://podcast.adobe.com/en/guides/what-is-enhance-speech", "https://helpx.adobe.com/uk/podcast/adobe-podcast-faq.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页为Adobe语音增强工具档案，应依据官方用途和帮助说明核对输入及处理流程；本库MIDI没有原始语音录音，不能作为增强或降噪的前后测评。"
 ---
 
 ::: zh
@@ -65,10 +59,6 @@ updated: 2026-10-30
 价格是免费额度加订阅档位，额度与导出选项按档位区分；地区可用性以官方页面为准。
 
 替代：iZotope RX——要离线、要逐段精细控制时换它；Auphonic——要批量统一响度、做多轨节目时换它；Demucs——要拆音乐而不是修语音时换它。
-
-```audiolab
-{"type":"instrument","gm":"Voice Oohs","synth":"vocal","phrase":["A3","C4","E4","A4","G4","E4","D4","A3"],"label":"一段带房间声的语音素材","label_en":"A voice take with room sound","hint":"先听尾音里的房间声，再想增强后会剩下什么","hint_en":"Hear the room under the tail, then ask what is left after enhancement"}
-```
 :::
 
 ::: en
@@ -105,8 +95,5 @@ Questions to check: is uploaded audio used to improve models? How long is it kep
 Pricing is a free allowance plus subscription tiers, differing in allowance and export options; regional availability is as stated on the official pages.
 
 Alternatives: iZotope RX when you need offline work and per-section control; Auphonic when you need batch loudness matching for multi-track programmes; Demucs when the job is splitting music rather than cleaning speech.
-
-```audiolab
-{"type":"instrument","gm":"Voice Oohs","synth":"vocal","phrase":["A3","C4","E4","A4","G4","E4","D4","A3"],"label":"A voice take with room sound","label_en":"A voice take with room sound","hint":"Hear the room under the tail, then ask what is left after enhancement","hint_en":"Hear the room under the tail, then ask what is left after enhancement"}
-```
 :::
+

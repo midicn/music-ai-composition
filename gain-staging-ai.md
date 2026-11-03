@@ -1,85 +1,61 @@
 ---
-id: gain-staging-ai
-site: ai
-cat: D
-title: AI 分轨的增益结构
-title_en: Gain Staging AI Stems
-summary: 分轨电平不齐时先修峰值与响度，再动推子和插件
-summary_en: When stem levels disagree, fix peaks and loudness before touching faders or plugins.
-level: standard
-tags: [增益结构, 分轨, 峰值, 响度]
-tags_en: [gain staging, stems, peaks, loudness]
-alias: [分轨增益, 电平结构, gain staging AI stems]
+id: "gain-staging-ai"
+site: "ai"
+cat: "D"
+title: "AI 分轨的增益结构"
+title_en: "Gain Staging AI Stems"
+summary: "区分峰值、试听增益和内部动态；保留分轨之间的参考电平关系。"
+summary_en: "Separate peaks, listening gain and internal dynamics, preserving relative stem levels."
+level: "standard"
+tags: ["增益结构", "分轨", "峰值", "响度"]
+tags_en: ["gain staging", "stems", "peaks", "loudness"]
+alias: ["分轨增益", "电平结构", "gain staging AI stems"]
 order: 140
-links:
-  - "[[glossary:gain-staging]]"
-  - "[[glossary:headroom]]"
-  - "[[glossary:stems]]"
-instances:
-  - groove-000000 | 138 BPM 放克鼓组，底鼓与军鼓的峰值差最能说明分轨电平不齐（C1）
-  - musicnet-000090 | 贝多芬第十二四重奏，四把琴同时进来，分轨电平差会先毁掉声部层次（C1）
-  - atepp-000239 | 肖斯塔科维奇第十号赋格，织体密，分轨叠加最容易顶穿总线（C1）
-  - atepp-005385 | 拉威尔《绞刑架》，低音钟声与铺底争同一段电平余量（C1）
-sources:
-  - Bobby Owsinski, The Mixing Engineer’s Handbook 与 Eargle, Handbook of Recording Engineering 中关于峰值、余量与响度的章节。
-  - 分轨电平与总线余量的处理顺序，依据混音实践惯例。
-updated: 2026-10-31
+links: ["[[glossary:gain-staging]]", "[[glossary:headroom]]", "[[glossary:stems]]"]
+sources: ["https://www.ableton.com/en/manual/managing-files-and-sets/", "https://www.itu.int/rec/R-REC-BS.1770-5-202311-I/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页说明实际制作流程与文件核验方法，工作表示例为虚拟教学项目；须以工具说明和自己的输出文件核对，普通MIDI或合成试听不能证明生成服务的效果。"
 ---
 
 ::: zh
-## 分轨一进来电平就不齐
+## 先区分三件事
 
-同一次生成导出的分轨，人声峰值到 +2 dBFS，铺底在 -20 dBFS，底鼓在 -4 dBFS。推子还没动，总线已经没有余量。这不是混音问题，是增益结构问题：每条轨带着自己的电平标准进来，先修这个，再谈平衡。
+静态增益把整段一起升高或降低，不会单独改变该段内部各时刻的相对动态；压缩和限制则可能改变动态或瞬态。响度归一化通常通过播放或文件增益调整来对齐目标，不能直接称为“把动态压扁”。峰值、真峰值与响度也不是同一个指标。
 
-## 先峰值，后响度
+## 按处理链检查
 
-峰值决定还有多少余量，响度决定推子该放哪里，两者混着调会来回改。先用片段增益把峰值压到 -6 dBFS 左右，鼓与贝斯留 6 dB 余量；再看短时响度，把同类素材放在相近的响度上。人声与主奏按峰值统一，不按响度统一，因为它们的瞬态差异大，按响度会把字头压掉。片段增益改的是素材本身，推子留给平衡，这样回头改平衡时不会破坏已经定好的电平。
+| 场景 | 合适的检查 |
+|---|---|
+| 候选A/B试听 | 匹配试听响度，保存原文件 |
+| 原始分轨接回 | 保留相对增益，避免每轨独立归一化后再求和 |
+| 插件处理 | 按该插件的输入、输出和过载表现检查 |
+| 最终导出 | 按接收用途检查响度、峰值与真实听感 |
 
-## 检查表
+没有适用于所有工程的“-6dBFS就正确”或“必须留6–10dB”规则。为后续处理留余量是工作方法，具体电平应结合素材、插件与接收方要求；较低峰值也不自动意味着声音更干净。
 
-- 每条分轨单独播，记录峰值与短时响度
-- 峰值高于 -3 dBFS 的先做片段增益，不动推子
-- 鼓与贝斯峰值统一到 -6 dBFS，留 6 dB 余量
-- 人声与主奏按峰值统一，不按响度统一
-- 铺底与效果轨比主奏低 6 到 10 dB
-- 总线峰值不超过 -3 dBFS，进混音前不挂限制器
-- 波形顶部已经平直的分轨，说明生成时已限幅，不要再压
-- 记录每条的处理量，重生成后能照着复现
+## 一个可复核的小比较
 
-## 动过头的地方
-
-把每条分轨都归一化到同一响度，看起来整齐，实际上把鼓的瞬态和铺底的起伏一起抹平了。已经带限幅的分轨再压一次，只会多一层失真。还有一类错误是在总线上先挂限制器求响，后面所有平衡判断都建立在被压扁的素材上。分轨阶段的响度只需要相对合理，绝对响度留到母带。
-
-```audiolab
-{"type":"instrument","gm":"Electric Bass (finger)","synth":"plucked","phrase":["A2","A2","C3","E3","D3","C3","A2","G2"],"label":"一条需要留余量的贝斯","label_en":"A bass line that needs headroom","hint":"先听峰值是否贴顶，再听它与底鼓重叠时总线还有没有空间","hint_en":"Hear whether the peaks touch the ceiling, then whether the bus still has room where it meets the kick"}
-```
+用同一份有权使用的音频做副本，一份仅改变固定增益，另一份按明确参数压缩。在相近试听响度下比较瞬态和段落对比，并把处理参数与输出一起保存。普通MIDI短句没有这两个实际处理结果，不能被当作AI母带前后的证据。
 :::
 
 ::: en
-## Levels disagree before the first fader moves
+## Separate three ideas
 
-Stems from one generation arrive with the vocal peaking at +2 dBFS, the pad at -20 dBFS and the kick at -4 dBFS. The bus has no headroom left and nothing has been mixed yet. This is not a mixing problem but a gain-structure problem: every track brings its own level reference, and that has to be fixed before balance is discussed.
+Static gain raises or lowers a segment together, preserving its internal level differences. Compression and limiting can change dynamics or transients. Loudness normalization commonly applies playback or file gain and should not simply be described as flattening dynamics. Peaks, true peaks and loudness are also different measurements.
 
-## Peaks first, loudness second
+## Check the actual chain
 
-Peaks decide how much headroom remains; loudness decides where the fader sits. Adjusting both at once means chasing your own changes. Use clip gain to bring peaks to roughly -6 dBFS, leaving 6 dB on drums and bass, then look at short-term loudness and place similar material at similar loudness. Vocals and leads should be matched by peak rather than loudness, because their transients differ widely and loudness matching shaves the attacks. Clip gain changes the source; faders stay for balance, so later balance moves do not undo the levels already set.
+| Situation | Check |
+|---|---|
+| Candidate comparison | Match listening loudness and retain originals |
+| Stem import | Preserve relative gain; avoid normalizing every stem separately |
+| Plug-in processing | Inspect the processor's input, output and overload behaviour |
+| Delivery | Check agreed loudness and peaks alongside listening |
 
-## Checklist
+There is no universal correct minus-six-dBFS peak or mandatory six-to-ten-decibel margin for every project. Headroom depends on material, processing and delivery requirements. A lower peak does not automatically mean cleaner sound.
 
-- Play each stem alone and log peak and short-term loudness
-- Clip-gain anything peaking above -3 dBFS instead of pulling the fader
-- Bring kick and bass peaks to -6 dBFS with 6 dB of headroom
-- Match vocals and leads by peak, not by loudness
-- Set pads and effect returns 6 to 10 dB below the lead
-- Keep the bus below -3 dBFS and leave the limiter off before mixing
-- Treat a flat-topped waveform as already limited and do not compress it again
-- Write down the amount of every move so a regenerated stem can repeat it
+## Make a documented comparison
 
-## Where it goes too far
-
-Normalising every stem to the same loudness looks tidy and flattens both the drum transients and the swells of the pad. Compressing an already limited stem only adds another layer of distortion. Another common mistake is putting a limiter on the bus to chase loudness first, after which every balance decision is made on squashed material. At the stem stage loudness only needs to be relatively sensible; absolute loudness belongs to mastering.
-
-```audiolab
-{"type":"instrument","gm":"Electric Bass (finger)","synth":"plucked","phrase":["A2","A2","C3","E3","D3","C3","A2","G2"],"label":"A bass line that needs headroom","label_en":"A bass line that needs headroom","hint":"Hear whether the peaks touch the ceiling, then whether the bus still has room where it meets the kick","hint_en":"Hear whether the peaks touch the ceiling, then whether the bus still has room where it meets the kick"}
-```
+Use copies of the same authorized audio. Apply only fixed gain to one and explicitly recorded compression settings to another. Compare transients and section contrast at similar listening loudness, keeping settings and outputs. An ordinary MIDI phrase without those processing results cannot document a before-and-after AI mastering test.
 :::

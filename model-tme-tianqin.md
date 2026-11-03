@@ -1,36 +1,28 @@
 ---
-id: model-tme-tianqin
-site: ai
-cat: I
-title: 腾讯音乐天琴
-title_en: TME Tianqin
-summary: 平台里的工具链：分轨、分析、修音与曲谱，不是一键整曲。
-summary_en: A toolchain inside a music platform: stems, analysis, repair and scores, not one-click songs.
-level: standard
-tags: [模型档案, 中文歌曲, 分轨, 平台工具]
-tags_en: [model profile, Chinese songs, stems, platform tools]
-alias: [天琴, 天琴实验室, TME Studio]
+id: "model-tme-tianqin"
+site: "ai"
+cat: "I"
+title: "腾讯音乐天琴"
+title_en: "TME Tianqin"
+summary: "平台里的工具链：分轨、分析、修音与曲谱，不是一键整曲。"
+summary_en: "A toolchain inside a music platform: stems, analysis, repair and scores, not one-click songs."
+level: "standard"
+tags: ["模型档案", "中文歌曲", "分轨", "平台工具"]
+tags_en: ["model profile", "Chinese songs", "stems", "platform tools"]
+alias: ["天琴", "天琴实验室", "TME Studio"]
 order: 203
-model_vendor: 腾讯音乐娱乐（天琴实验室）
-model_form: 网页服务
-model_input: [音频, 文本]
-model_output: [分轨, 音频]
-model_licence: 上传素材、产出与商用范围按腾讯音乐相关产品条款；账号类型与授权范围需逐项确认
-model_verified: 2026-10-31
-links:
-  - "[[glossary:stems]]"
-  - "[[instrument:erhu]]"
-  - "[[glossary:sample-rate]]"
-instances:
-  - pdmx-000048 | 波萨诺瓦编制，人声与吉他贝斯贴得近，适合看分离残渣（C1） | A bossa arrangement with voice close to guitar and bass, to inspect separation residue (C1)
-  - cyberhymnal-002209 | 十八秒的中国旋律，适合看 MIR 能否抓住五声调式（C1） | An eighteen second Chinese melody, to see whether MIR captures a pentatonic mode (C1)
-  - cyberhymnal-003336 | 中文歌词的短赞美诗，看字与音的对应（C1） | A short hymn with Chinese words, to hear syllables mapped to notes (C1)
-  - groove-000001 | 105 BPM 放克鼓组，看鼓轨分离与节拍分析（C1） | A 105 BPM funk kit, to check drum separation and beat analysis (C1)
-sources:
-  - 腾讯音乐天琴实验室与 TME Studio 的公开产品页（功能入口与工具清单）。
-  - TME Studio 官方说明中的音乐分离、MIR 计算、辅助写词与智能曲谱范围。
-  - 腾讯音乐相关产品条款与账号权限说明（上传素材、产出使用与商用）。
-updated: 2026-10-31
+model_vendor: "腾讯音乐娱乐（天琴实验室）"
+model_form: "网页服务"
+model_input: ["音频", "文本"]
+model_output: ["分轨", "音频"]
+model_licence: "上传素材、产出与商用范围按腾讯音乐相关产品条款；账号类型与授权范围需逐项确认"
+model_verified: "2026-10-31"
+links: ["[[glossary:stems]]", "[[instrument:erhu]]", "[[glossary:sample-rate]]"]
+instances: []
+sources: ["https://y.qq.com/tme_studio/index.html", "https://ir-tc.tencentmusic.com/image/2023%20ESG%E5%A0%B1%E5%91%8A.pdf"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍腾讯音乐天琴工具链，应核对官方入口和公司公开说明中的功能范围；普通MIDI不是平台分离、分析或修音输出，不能验证当前工具效果或导出能力。"
 ---
 
 ::: zh
@@ -60,10 +52,6 @@ updated: 2026-10-31
 ## 授权与替代路线
 
 要确认：上传素材的保留期与用途、分轨能否商用、产出的归属、账号类型对应的权限。具体以腾讯音乐相关产品条款为准。替代：要一键出整曲，换 Suno 或 MiniMax Music；要更干净的分轨，换 Demucs 或 LALAL.AI；要可编程的分离，换开源模型自己部署。
-
-```audiolab
-{"type":"instrument","gm":"Fiddle","synth":"bowed","phrase":["D4","E4","G4","A4","G4","E4","D4","A3"],"label":"一句带滑音感的五声旋律","label_en":"A pentatonic line with room for slides","hint":"分离工具该保住连弓与滑音，而不是把每个音切成块","hint_en":"A separator should keep the bow and slides, not chop every note into blocks"}
-```
 :::
 
 ::: en
@@ -94,3 +82,4 @@ The tools live in a browser, and account, quota and export format are all contro
 
 Confirm: retention and use of uploaded material, whether stems may be used commercially, who owns the output, and what your account tier permits. The current Tencent Music product terms are the authority. Alternatives: Suno or MiniMax Music for finished songs; Demucs or LALAL.AI for cleaner separation; an open model you deploy yourself if you need programmatic access.
 :::
+

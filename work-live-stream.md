@@ -1,36 +1,29 @@
 ---
-id: work-live-stream
-site: ai
-cat: K
-title: 直播配乐与音效
-title_en: Music and SFX for Live Streams
-summary: 循环要能一直转，触发要短，版权要覆盖直播与回放
-summary_en: Loops must run indefinitely, triggers stay short, and the licence must cover the feed and the replay.
-level: standard
-tags: [直播, 循环, 触发, 版权]
-tags_en: [live stream, loops, triggers, licensing]
-alias: [直播配乐, 直播音效, stream music, live stream audio]
+id: "work-live-stream"
+site: "ai"
+cat: "K"
+title: "直播配乐与音效"
+title_en: "Music and SFX for Live Streams"
+summary: "循环要能一直转，触发要短，版权要覆盖直播与回放"
+summary_en: "Loops must run indefinitely, triggers stay short, and the licence must cover the feed and the replay."
+level: "standard"
+tags: ["直播", "循环", "触发", "版权"]
+tags_en: ["live stream", "loops", "triggers", "licensing"]
+alias: ["直播配乐", "直播音效", "stream music", "live stream audio"]
 order: 266
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [直播音频, 循环制作, 音效触发]
-tool_verified: 2026-10-31
-links:
-  - "[[glossary:sync-license]]"
-  - "[[glossary:music-copyright]]"
-  - "[[glossary:loudness-normalization]]"
-instances:
-  - oga-000287 | 电子循环靠增减层维持律动，直播垫乐可直接借用这种结构（C1）
-  - oga-000088 | 二十五秒的短循环，适合等待与转场（C1）
-  - groove-000037 | 两小节鼓循环，最小触发单位，便于现场拼接（C1）
-  - oga-000293 | 九十秒的菜单循环，听首尾接缝能不能反复用（C1）
-sources:
-  - Twitch 公开的音乐与版权指南，涉及直播与回放的音频识别。
-  - 直播制作中循环、闪避与触发音效的公开访谈。
-updated: 2026-10-31
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["直播音频", "循环制作", "音效触发"]
+tool_verified: "2026-10-31"
+links: ["[[glossary:sync-license]]", "[[glossary:music-copyright]]", "[[glossary:loudness-normalization]]"]
+instances: []
+sources: ["https://legal.twitch.com/en/legal/music/20233107/", "https://obsproject.com/kb/filters-guide"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "直播配乐涉及现场音源路由、闪避设置及直播和回放的许可范围，需在直播工程中测试；普通音乐播放不能证明直播路由或 VOD 使用权正确。"
 ---
 
 ::: zh
@@ -61,10 +54,6 @@ updated: 2026-10-31
 ## 版权与现场失灵
 
 用个人订阅账号放歌，直播可能没事，回放会被静音或下架。触发音太长，盖住主播的第一句话。循环接缝在安静段落特别明显。警报音比人声高 15 dB，观众戴耳机被吓到。网络断了以后没有离线备份，整场只剩麦克风。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s q s s q s s q s s q","bpm":126,"label":"直播垫乐的四小节循环","label_en":"Four bars of a stream bed","hint":"听第四遍有没有疲劳，层要能单独抽掉","hint_en":"Listen for fatigue on the fourth pass; layers must lift out cleanly"}
-```
 :::
 
 ::: en
@@ -95,8 +84,5 @@ Check once on headphones and once on a phone speaker; it passes only when both a
 ## Rights and on-air failures
 
 A personal subscription plays fine live and gets muted or swapped in the replay. A trigger runs long and covers the streamer's first sentence. The loop seam is obvious in a quiet segment. An alert sits 15 dB above the voice and startles headphone listeners. The connection drops with no offline backup, and only the microphone is left.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s q s s q s s q s s q","bpm":126,"label":"Four bars of a stream bed","label_en":"Four bars of a stream bed","hint":"Listen for fatigue on the fourth pass; layers must lift out cleanly","hint_en":"Listen for fatigue on the fourth pass; layers must lift out cleanly"}
-```
 :::
+

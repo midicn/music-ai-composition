@@ -1,30 +1,22 @@
 ---
-id: model-cards
-site: ai
-cat: G
-title: 模型卡怎么读
-title_en: Reading a Model Card
-summary: 先看限制与训练数据，再看分数是谁评的
-summary_en: Read the limitations and training data before the scores
-level: standard
-tags: [模型卡, 训练数据, 评测口径, 能力边界]
-tags_en: [model cards, training data, evaluation, limitations]
-alias: [模型卡, model card, 模型说明]
+id: "model-cards"
+site: "ai"
+cat: "G"
+title: "模型卡怎么读"
+title_en: "Reading a Model Card"
+summary: "先看限制与训练数据，再看分数是谁评的"
+summary_en: "Read the limitations and training data before the scores"
+level: "standard"
+tags: ["模型卡", "训练数据", "评测口径", "能力边界"]
+tags_en: ["model cards", "training data", "evaluation", "limitations"]
+alias: ["模型卡", "model card", "模型说明"]
 order: 160
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:midi-protocol]]"
-  - "[[instrument:voice]]"
-instances:
-  - mutopia-000059 | 四十三秒的赞美诗旋律，短片段测试能看出卡上没写的音准问题（C1）
-  - abcmisc-001329 | 可循环的里尔舞曲，用来试模型在重复段里的稳定性（C1）
-  - groove-000002 | 86 BPM 灵魂乐鼓组，节奏目标是文本提示最容易含糊的部分（C1）
-  - oga-000005 | 三十八秒战斗配乐，短促器乐提示的边界样本（C1）
-sources:
-  - Mitchell et al., Model Cards for Model Reporting（2019）与 Gebru et al., Datasheets for Datasets（2018）。
-  - 生成式音频主观评测方法，参考公开研究综述。
-  - 模型许可与用途限制，来自官方条款。
-updated: 2026-10-31
+links: ["[[glossary:timbre]]", "[[glossary:midi-protocol]]", "[[instrument:voice]]"]
+instances: []
+sources: ["https://arxiv.org/abs/1810.03993", "https://arxiv.org/abs/1803.09010"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍模型卡与数据说明的阅读方式，需要核对研究原文对用途、数据及局限的定义；普通曲目试听不能验证某模型训练信息、许可或评测口径。"
 ---
 
 ::: zh
@@ -50,10 +42,6 @@ updated: 2026-10-31
 ## 模型卡管不到的地方
 
 “未评估”不是缺陷，是提示。拿五到十条自己的素材做小基准，固定提示、固定种子、固定听辨人，记录坏在哪。模型卡是筛选器，不是验收单；它帮你排除明显不合适的模型，剩下的必须用自己的材料试。读完卡再试听，顺序反了，耳朵会替分数找理由。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["E4","A4","C5","A4"],"label":"同一段听感，不同评测口径","label_en":"One excerpt, two evaluation frames","hint":"先写下判断标准，再听","hint_en":"Write the criterion before listening"}
-```
-
 :::
 
 ::: en
@@ -80,3 +68,4 @@ The same claim of beating the previous version can come from an internal listeni
 
 "Not evaluated" is a prompt, not a defect. Build a small benchmark from five to ten of your own pieces, with fixed prompts, fixed seeds and a fixed listener, and write down how each one fails. A model card is a filter, not an acceptance test. It removes clearly unsuitable models; the rest has to be tried on your own material. Listen after reading the card, not before, or your ears will start arguing for the score.
 :::
+

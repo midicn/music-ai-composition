@@ -1,35 +1,28 @@
 ---
-id: model-lalal
-site: ai
-cat: I
-title: LALAL.AI 在线分轨
+id: "model-lalal"
+site: "ai"
+cat: "I"
+title: "LALAL.AI 在线分轨"
 title_en: "LALAL.AI Online Stem Separation"
-summary: 上传即拆的在线分轨服务，人声、伴奏与多种乐器分开。
-summary_en: A web separation service that splits a track into vocals, backing and individual instruments after upload.
-level: standard
-tags: [模型档案, 分轨, 在线服务, 人声分离, 翻唱]
-tags_en: [model profile, stem separation, web service, vocal isolation, cover]
-alias: [LALAL, LALAL.AI, 在线分轨, 人声分离服务, lalal ai]
+summary: "上传即拆的在线分轨服务，人声、伴奏与多种乐器分开。"
+summary_en: "A web separation service that splits a track into vocals, backing and individual instruments after upload."
+level: "standard"
+tags: ["模型档案", "分轨", "在线服务", "人声分离", "翻唱"]
+tags_en: ["model profile", "stem separation", "web service", "vocal isolation", "cover"]
+alias: ["LALAL", "LALAL.AI", "在线分轨", "人声分离服务", "lalal ai"]
 order: 12
-model_vendor: LALAL.AI
-model_form: 网页服务
-model_input: [音频, 视频]
-model_output: [分轨, 人声]
-model_licence: 上传内容的保留与使用、产出商用、各档位差异需按官方条款核对，训练数据未公开
-model_verified: 2026-10-30
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:sample-clearance]]"
-  - "[[instrument:popular-voice]]"
-instances:
-  - pdmx-000048 | 波萨诺瓦编制，人声与吉他、贝斯贴得近，适合看人声轨的残渣（C1） | A bossa arrangement with the voice close to guitar and bass, for checking residue in the vocal stem (C1)
-  - pdmx-000135 | 小编制歌曲，乐器少但混响多，人声轨容易留住空间感（C1） | A small-ensemble song, few instruments but plenty of reverb, where the vocal stem keeps its space (C1)
-  - pdmx-000107 | 手风琴与弦乐为主的舞曲，中频拥挤，适合看乐器分离（C1） | A dance piece led by accordion and strings with a crowded midrange, for checking instrument separation (C1)
-  - oga-000006 | 游戏战斗配乐，鼓与铜管密集，适合看瞬态是否被保留（C1） | Dense game battle music with drums and brass, for checking whether transients survive (C1)
-sources:
-  - 在线分轨的输入输出与档位（服务官方页面）。
-  - 上传素材的隐私与版权处理，参考服务条款与惯例。
-updated: 2026-10-30
+model_vendor: "LALAL.AI"
+model_form: "网页服务"
+model_input: ["音频", "视频"]
+model_output: ["分轨", "人声"]
+model_licence: "上传内容的保留与使用、产出商用、各档位差异需按官方条款核对，训练数据未公开"
+model_verified: "2026-10-30"
+links: ["[[glossary:stems]]", "[[glossary:sample-clearance]]", "[[instrument:popular-voice]]"]
+instances: []
+sources: ["https://www.lalal.ai/guides/faq/", "https://www.lalal.ai/terms-of-service/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍LALAL分离服务，需要核对官方功能、使用条款与实际上传和导出文件；普通贝斯MIDI不是从混音分离的音频，不能证明分离效果或上传政策。"
 ---
 
 ::: zh
@@ -65,10 +58,6 @@ updated: 2026-10-30
 价格按分钟包或套餐计，档位差别在时长、声部数量与下载格式；地区可用性以官方页面为准。
 
 替代：Demucs——要离线、批量、可复现时换它；iZotope RX——要把分离与修复放在同一个工程里时换它；Adobe Enhance——只需要把对白修干净、不拆音乐时换它。
-
-```audiolab
-{"type":"instrument","gm":"Choir Aahs","synth":"vocal","phrase":["C4","E4","G4","A4","G4","E4","D4","C4"],"label":"从混音里留下的人声","label_en":"The vocal left after separation","hint":"听混响尾音是否跟着人声一起被留下","hint_en":"Hear whether the reverb tail comes along with the voice"}
-```
 :::
 
 ::: en
@@ -104,8 +93,5 @@ Questions to check: do you still own what you upload? Is uploaded material used 
 Pricing runs on minute packages or plans, differing in length, number of parts and download formats; regional availability is as stated on the official pages.
 
 Alternatives: Demucs when you need offline, batch and reproducible runs; iZotope RX when separation and repair belong in one project; Adobe Enhance when you only need dialogue cleaned and no music split.
-
-```audiolab
-{"type":"instrument","gm":"Choir Aahs","synth":"vocal","phrase":["C4","E4","G4","A4","G4","E4","D4","C4"],"label":"The vocal left after separation","label_en":"The vocal left after separation","hint":"Hear whether the reverb tail comes along with the voice","hint_en":"Hear whether the reverb tail comes along with the voice"}
-```
 :::
+

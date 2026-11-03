@@ -1,35 +1,29 @@
 ---
-id: work-slides
-site: ai
-cat: K
-title: 给演示文稿配乐
-title_en: Music for Presentations
-summary: 音乐只负责开场、换段和收尾，歌词与长旋律都会分心
-summary_en: Music only opens, bridges and closes; lyrics and long melodies pull attention away.
-level: standard
-tags: [演示文稿, 开场, 淡出, 无歌词]
-tags_en: [presentation, opening, fades, instrumental]
-alias: [演示配乐, PPT 配乐, 演讲音乐, presentation music]
+id: "work-slides"
+site: "ai"
+cat: "K"
+title: "给演示文稿配乐"
+title_en: "Music for Presentations"
+summary: "音乐只负责开场、换段和收尾，歌词与长旋律都会分心"
+summary_en: "Music only opens, bridges and closes; lyrics and long melodies pull attention away."
+level: "standard"
+tags: ["演示文稿", "开场", "淡出", "无歌词"]
+tags_en: ["presentation", "opening", "fades", "instrumental"]
+alias: ["演示配乐", "PPT 配乐", "演讲音乐", "presentation music"]
 order: 269
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [演示配乐, 会议开场, 音频嵌入]
-tool_verified: 2026-10-31
-links:
-  - "[[glossary:loudness-normalization]]"
-  - "[[glossary:dynamics]]"
-  - "[[glossary:reference-track]]"
-instances:
-  - mutopia-001411 | 三分钟钢琴小品，句子短、留白多，讲话时不会抢注意力（C1）
-  - aria-039011 | 一百秒的钢琴前奏，句法干净，适合开场与等待（C1）
-  - pdmx-001010 | 七分半的连续乐章，长弧可作分段演示的参照（C1）
-sources:
-  - 微软 PowerPoint 官方支持文档中关于嵌入音频与跨幻灯片播放的说明。
-  - 会议演讲与演示制作的公开音频指南。
-updated: 2026-10-31
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["演示配乐", "会议开场", "音频嵌入"]
+tool_verified: "2026-10-31"
+links: ["[[glossary:loudness-normalization]]", "[[glossary:dynamics]]", "[[glossary:reference-track]]"]
+instances: []
+sources: ["https://support.microsoft.com/en-gb/powerpoint/play-music-across-multiple-slides-in-your-slide-show-in-powerpoint?nochrome=true", "https://support.microsoft.com/en-us/powerpoint/tips-for-improving-audio-and-video-playback-and-compatibility-in-powerpoint"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "演示文稿配乐要测试音频嵌入、跨页播放与换机后的文件可用性；只播放音乐无法证明幻灯片会自动播放、按页停止或在演讲电脑上正常运行。"
 ---
 
 ::: zh
@@ -59,10 +53,6 @@ updated: 2026-10-31
 ## 音乐什么时候该消失
 
 幻灯片翻得比音乐快，说明段落写长了。开场还在响，主讲人已经开始说话。结尾淡出没做完，放映员直接切黑。嵌入的音频在别人的电脑上变成红色叉号。歌词是外语，观众开始听词而不是听内容。授权只覆盖现场，录播上传后收到声明。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","B4","G4","E4","C4"],"label":"开场三十秒的钢琴","label_en":"Thirty seconds of piano for an opening","hint":"听它有没有歌词和抓人的旋律，两样都不该有","hint_en":"Listen for lyrics or a hook; neither belongs here"}
-```
 :::
 
 ::: en
@@ -92,8 +82,5 @@ Listen once on the room system and once on the laptop speakers. Under speech the
 ## When the music should vanish
 
 Slides advance faster than the music, which means a section was written too long. The opening is still playing when the speaker starts. The closing fade is unfinished and the operator cuts to black. An embedded file turns into a red cross on someone else's computer. The lyric is in a language the audience understands, and they follow the words instead of the argument. The licence covers the room only, and an uploaded recording brings a claim.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","B4","G4","E4","C4"],"label":"Thirty seconds of piano for an opening","label_en":"Thirty seconds of piano for an opening","hint":"Listen for lyrics or a hook; neither belongs here","hint_en":"Listen for lyrics or a hook; neither belongs here"}
-```
 :::
+

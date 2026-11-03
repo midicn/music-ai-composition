@@ -1,29 +1,22 @@
 ---
-id: tempo-drift-fix
-site: ai
-cat: C
-title: 速度漂移修复
-title_en: Fixing Tempo Drift
-summary: 先分清拼接错位与演奏伸缩，再决定拉伸还是重生成
-summary_en: Tell a bad splice from expressive timing before choosing between stretching and regenerating.
-level: standard
-tags: [速度, 漂移, 对齐, 拼接]
-tags_en: [tempo, drift, alignment, splicing]
-alias: [速度漂移, 对速, tempo drift]
+id: "tempo-drift-fix"
+site: "ai"
+cat: "C"
+title: "速度漂移修复"
+title_en: "Fixing Tempo Drift"
+summary: "先分清拼接错位与演奏伸缩，再决定拉伸还是重生成"
+summary_en: "Tell a bad splice from expressive timing before choosing between stretching and regenerating."
+level: "standard"
+tags: ["速度", "漂移", "对齐", "拼接"]
+tags_en: ["tempo", "drift", "alignment", "splicing"]
+alias: ["速度漂移", "对速", "tempo drift"]
 order: 132
-links:
-  - "[[glossary:tempo]]"
-  - "[[glossary:rubato]]"
-  - "[[glossary:meter]]"
-instances:
-  - groove-000013 | 116 BPM 爵士放克鼓组，稳定的网格用来判断漂移从哪小节开始（C1）
-  - abcmisc-000288 | 凯什吉格舞曲，六八拍的重音成组，漂移会先毁掉分组（C1）
-  - abcmisc-000179 | Garofitsa 吉格舞曲，复合拍里每个分组的第一拍都要对齐（C1）
-  - atepp-000501 | 李斯特夜曲即兴，渐慢与抢拍是演奏信息，不该被 tempo map 拉平（C1）
-sources:
-  - Ableton Live 手册与 Walter Piston, Harmony 中关于速度、拍号与复合拍的记法与听辨。
-  - 音频拼接与时间拉伸的取舍，依据数字音频编辑惯例。
-updated: 2026-10-31
+links: ["[[glossary:tempo]]", "[[glossary:rubato]]", "[[glossary:meter]]"]
+instances: []
+sources: ["https://www.ableton.com/en/live-manual/12/audio-clips-tempo-and-warping/", "https://www.ableton.com/en/live-manual/11/audio-fact-sheet/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "速度漂移修复需要测出实际节拍位置，并记录拉伸算法与标记移动；播放稳定节拍的其他曲目不能证明原始音频已被修复或没有伪影。"
 ---
 
 ::: zh
@@ -49,10 +42,6 @@ updated: 2026-10-31
 ## 不该修的情形
 
 三连音、复合拍、真正的渐慢都不该被拉直。把吉格舞曲的六八拍塞进四四，把夜曲的自由速度对齐到网格，得到的是准确而死的演奏。判断标准很简单：偏离是否每次都一样。每次都一样是误差，每次不同是表达。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"q q q q q q q q","bpm":120,"label":"八拍里的第一拍","label_en":"The downbeat across eight beats","hint":"跟着数一到四，再把整条节奏往后挪半拍，听接缝处哪里变了","hint_en":"Count one to four, then shift the whole pattern half a beat late and hear what changes at the seam"}
-```
 :::
 
 ::: en
@@ -78,8 +67,5 @@ The cheapest repair is regenerating the two bars around the boundary so the mode
 ## When not to fix it
 
 Triplets, compound metre and genuine ritardando should not be straightened. Forcing a jig in six-eight into 4/4, or snapping a nocturne's free timing to a grid, yields a performance that is accurate and dead. The test is simple: does the deviation repeat identically? The same offset every time is an error; a different one each time is expression.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"q q q q q q q q","bpm":120,"label":"The downbeat across eight beats","label_en":"The downbeat across eight beats","hint":"Count one to four, then shift the whole pattern half a beat late and hear what changes at the seam","hint_en":"Count one to four, then shift the whole pattern half a beat late and hear what changes at the seam"}
-```
 :::
+

@@ -1,30 +1,22 @@
 ---
-id: archive-formats
-site: ai
-cat: H
-title: 归档格式
-title_en: Archiving Formats
-summary: 归档选格式看的是十年后还能不能打开
-summary_en: Choose archive formats by whether they still open in ten years
-level: standard
-tags: [归档, 无损, 工程文件, 生成记录]
-tags_en: [archiving, lossless, session files, generation logs]
-alias: [归档格式, 长期保存, archive formats]
+id: "archive-formats"
+site: "ai"
+cat: "H"
+title: "归档格式"
+title_en: "Archiving Formats"
+summary: "归档选格式看的是十年后还能不能打开"
+summary_en: "Choose archive formats by whether they still open in ten years"
+level: "standard"
+tags: ["归档", "无损", "工程文件", "生成记录"]
+tags_en: ["archiving", "lossless", "session files", "generation logs"]
+alias: ["归档格式", "长期保存", "archive formats"]
 order: 180
-links:
-  - "[[glossary:bit-depth]]"
-  - "[[glossary:sample-rate]]"
-  - "[[glossary:master-rights]]"
-instances:
-  - pdmx-000153 | 二十六分钟托卡塔，长母带的分段与体积要一起归档（C1）
-  - mutopia-000178 | 巴赫 d 小调托卡塔与赋格，多声部工程缺一层就无法重混（C1）
-  - groove-000000 | 短循环也要存提示词与参数，否则无法再生成（C1）
-  - mutopia-000497 | 贝多芬第五，大型工程要留冻结分轨与插件清单（C1）
-sources:
-  - Library of Congress, Sustainability of Digital Formats 与 IASA TC-04 关于长期保存格式的建议。
-  - 母带与分轨交付的位深与采样率实务，参考行业公开资料。
-  - 校验值与异地备份实践，来自公开档案标准。
-updated: 2026-10-31
+links: ["[[glossary:bit-depth]]", "[[glossary:sample-rate]]", "[[glossary:master-rights]]"]
+instances: []
+sources: ["https://loc.gov/preservation/digital/formats/fdd/fdd000001.shtml", "https://www.loc.gov/preservation/digital/formats/content/sound_preferences.shtml"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论音频归档容器、编码和保存选择，需要依据档案机构格式文档与实际文件检查；普通MIDI回放不能证明长期保存格式可用。"
 ---
 
 ::: zh
@@ -50,10 +42,6 @@ updated: 2026-10-31
 ## 无损也救不了的情况
 
 插件厂商消失，冻结音频是唯一退路；云账号关闭，本地没有副本就全丢；权利证据缺失，音质再好也说不清能不能用；创建时元数据就写错，归档只会把错误一起保存。归档的目标不是文件齐全，是十年后还能回答这是什么、怎么做的、能不能用。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","G4","D4","G3"],"label":"归档前听一遍格式痕迹","label_en":"Hear the format before archiving","hint":"转换是否留下痕迹，耳朵先知道","hint_en":"The ear notices conversion artefacts first"}
-```
-
 :::
 
 ::: en
@@ -80,3 +68,4 @@ Hash every file with SHA-256 and put the manifest at the top level. Keep two cop
 
 If the plug-in maker disappears, frozen audio is the only way back. If a cloud account closes and no local copy exists, everything is gone. If rights evidence is missing, perfect audio still cannot answer whether the work may be used. If metadata was wrong at creation, the archive preserves the error. The goal is not a complete folder; it is being able to answer what this is, how it was made and whether it can be used, ten years from now.
 :::
+

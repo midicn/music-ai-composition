@@ -1,28 +1,22 @@
 ---
-id: iterative-refinement
-site: ai
-cat: B
-title: 迭代修改
-title_en: Iterative Refinement
-summary: 一次生成靠运气，迭代靠方法：每次只改一个变量，并保留上一版。
-summary_en: One generation is luck; iteration is method, changing one variable at a time and keeping the last version.
-level: standard
-tags: [迭代, 修改, 版本, 工作流]
-tags_en: [iteration, revision, versioning, workflow]
-alias: [迭代, 往复修改, iteration]
+id: "iterative-refinement"
+site: "ai"
+cat: "B"
+title: "迭代修改"
+title_en: "Iterative Refinement"
+summary: "一次生成靠运气，迭代靠方法：每次只改一个变量，并保留上一版。"
+summary_en: "One generation is luck; iteration is method, changing one variable at a time and keeping the last version."
+level: "standard"
+tags: ["迭代", "修改", "版本", "工作流"]
+tags_en: ["iteration", "revision", "versioning", "workflow"]
+alias: ["迭代", "往复修改", "iteration"]
 order: 6
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:daw]]"
-instances:
-  - atepp-001115 | 肖邦叙事曲，主题需要逐步打磨才成形（C1）
-  - groove-000004 | 84 BPM 放克鼓组，鼓型可以通过逐次微调逼近目标（C1）
-  - thesession-006629 | 爱尔兰曲调，装饰音的加入需要反复试（C1）
-sources:
-  - 迭代式创作的常见流程，对照设计实践公开资料整理。
-  - 版本管理的基本方法（工程实践惯例）。
-updated: 2026-10-30
+links: ["[[glossary:timbre]]", "[[glossary:tempo]]", "[[glossary:daw]]"]
+instances: []
+sources: ["https://help.suno.com/en/articles/6141505", "https://huggingface.co/docs/diffusers/en/using-diffusers/reusing_seeds"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论修改决策与候选记录，需要查看真实编辑过程、模型设置和不同版本文件；重复播放同一MIDI不是迭代前后对照，不能说明修改造成的变化。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ updated: 2026-10-30
 ## 从哪开始
 
 建立一个简单的版本表，记录编号、改动与结论。每次只改一个变量，听完再决定保留还是回退。结构问题用重新生成解决，音色问题用后期处理解决，别混在一起。连续三次没有改善就停下来，重新审视需求而不是继续抽卡。
-
-## 耳朵要抓的点
-
-在叙事曲里听主题如何逐版成形，在鼓组里听每次微调带来的变化，在传统曲调里听装饰音加入的时机。迭代的价值在于每一步都可解释。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","D4","E4","F4","G4","F4","E4","D4"],"label":"逐版微调的旋律","label_en":"A line refined version by version","hint":"每次只改一个音或一处力度，听差别是否朝目标靠近","hint_en":"Change one note or dynamic per pass, and hear whether it moves toward the target"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ Generation couples many parameters, so one changed sentence can alter timbre, st
 ## Where to start
 
 Keep a simple version table recording number, change and conclusion. Change one variable per pass and decide whether to keep or revert after listening. Solve structural problems by regenerating and timbral problems in post, never mixed together. After three passes without improvement, stop and re-examine the brief instead of drawing more samples.
-
-## What the ear catches
-
-In the ballade, how a theme takes shape across versions; in the kit, what each nudge changes; in the folk tune, when ornaments enter. Iteration is worth it when every step can be explained.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","D4","E4","F4","G4","F4","E4","D4"],"label":"A line refined version by version","label_en":"A line refined version by version","hint":"Change one note or dynamic per pass, and hear whether it moves toward the target","hint_en":"Change one note or dynamic per pass, and hear whether it moves toward the target"}
-```
 :::
+

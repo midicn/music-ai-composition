@@ -1,29 +1,20 @@
 ---
-id: rhythm-control
-site: ai
-cat: C
-title: 节奏控制
-title_en: Controlling Rhythm
-summary: 律动靠重音与微差，量化网格会把它压成直尺
-summary_en: Groove lives in accents and micro-timing; a quantised grid flattens it into a ruler.
-level: standard
-tags: [律动, 摇摆, 切分, 量化]
-tags_en: [groove, swing, syncopation, quantisation]
-alias: [节奏控制, 律动控制, rhythm control]
+id: "rhythm-control"
+site: "ai"
+cat: "C"
+title: "节奏控制"
+title_en: "Controlling Rhythm"
+summary: "律动靠重音与微差，量化网格会把它压成直尺"
+summary_en: "Groove lives in accents and micro-timing; a quantised grid flattens it into a ruler."
+level: "standard"
+tags: ["律动", "摇摆", "切分", "量化"]
+tags_en: ["groove", "swing", "syncopation", "quantisation"]
+alias: ["节奏控制", "律动控制", "rhythm control"]
 order: 10
-links:
-  - "[[glossary:syncopation]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:midi-protocol]]"
-instances:
-  - groove-000000 | 138 BPM 放克鼓组，听十六分里的重音与鬼音（C1）
-  - groove-000002 | 86 BPM 灵魂乐鼓组，听军鼓落在拍后那一点（C1）
-  - abcmisc-000288 | 凯什吉格舞曲，复合拍的顿挫，量化到四四会散（C1）
-  - abcmisc-001334 | 《第十二街拉格》，切分旋律压在稳定低音上（C1）
-sources:
-  - 律动的构成要素，参考流行音乐制作惯例。
-  - 量化与人性化的取舍；编曲实践是主要依据。
-updated: 2026-10-30
+links: ["[[glossary:syncopation]]", "[[glossary:tempo]]", "[[glossary:midi-protocol]]"]
+instances: ["groove-000000", "groove-000002", "abcmisc-000288", "abcmisc-001334"]
+sources: ["律动的构成要素，参考流行音乐制作惯例。", "量化与人性化的取舍；编曲实践是主要依据。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -44,7 +35,7 @@ updated: 2026-10-30
 在放克鼓组里听十六分的重音与鬼音是否成形，在灵魂乐鼓组里听军鼓是否落在拍后，在吉格舞曲里听复合拍的顿挫，在拉格舞曲里听切分旋律怎样压在稳定低音上。网格留下的痕迹，在这四处都听得见。
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":96,"label":"直的十六分","label_en":"Straight sixteenths","hint":"先听直的，再想把同样的型前后挪几毫秒会怎样","hint_en":"Hear it straight, then imagine the same pattern shifted a few milliseconds"}
+{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":96,"label":"合成节奏示意","label_en":"Synthesized rhythm","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -66,6 +57,7 @@ Write the skeleton first, marking which positions in each bar must sound and whi
 On the funk kit, whether sixteenth accents and ghost notes take shape; on the soul kit, whether the snare sits behind the beat; in the jig, the lilt of compound time; in the rag, how the syncopated melody rides a steady bass. The marks of the grid are audible in all four.
 
 ```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":96,"label":"Straight sixteenths","label_en":"Straight sixteenths","hint":"Hear it straight, then imagine the same pattern shifted a few milliseconds","hint_en":"Hear it straight, then imagine the same pattern shifted a few milliseconds"}
+{"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":96,"label":"Synthesized rhythm","label_en":"Synthesized rhythm","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

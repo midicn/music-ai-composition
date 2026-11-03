@@ -1,29 +1,22 @@
 ---
-id: common-mix-problems-ai
-site: ai
-cat: D
-title: 常见混音问题
-title_en: Common Mix Problems
-summary: 闷、刺、飘、抽、平，五种症状各有先动的那一下
-summary_en: Dull, harsh, unstable, pumping, flat, five symptoms and the first move for each.
-level: standard
-tags: [诊断, 低频堆积, 齿音, 抽吸]
-tags_en: [diagnosis, low-mid build-up, harshness, pumping]
-alias: [混音诊断, 常见问题, mix troubleshooting]
+id: "common-mix-problems-ai"
+site: "ai"
+cat: "D"
+title: "常见混音问题"
+title_en: "Common Mix Problems"
+summary: "闷、刺、飘、抽、平，五种症状各有先动的那一下"
+summary_en: "Dull, harsh, unstable, pumping, flat, five symptoms and the first move for each."
+level: "standard"
+tags: ["诊断", "低频堆积", "齿音", "抽吸"]
+tags_en: ["diagnosis", "low-mid build-up", "harshness", "pumping"]
+alias: ["混音诊断", "常见问题", "mix troubleshooting"]
 order: 10
-links:
-  - "[[glossary:eq]]"
-  - "[[glossary:compressor]]"
-  - "[[glossary:phase-check]]"
-instances:
-  - cyberhymnal-003612 | 管风琴赞美诗，持续音最能暴露 200 到 500 Hz 的堆积（C1）
-  - atepp-000239 | 肖斯塔科维奇第十号赋格，高把位密集音最容易刺耳（C1）
-  - groove-000007 | 65 BPM 摇滚鼓组，听压缩是否让每一拍都往下坐（C1）
-  - atepp-005385 | 拉威尔《绞刑架》，钟声定位是否稳定，飘先从持续音开始（C1）
-sources:
-  - 混音症状与首要动作的对应（混音诊断惯例）。
-  - Symptom-to-first-move mapping — based on general mix diagnosis practice.
-updated: 2026-10-30
+links: ["[[glossary:eq]]", "[[glossary:compressor]]", "[[glossary:phase-check]]"]
+instances: []
+sources: ["https://www.ableton.com/en/manual/mixing/", "https://www.ableton.com/en/manual/live-audio-effect-reference/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论混音症状及处理顺序，需要对实际音频的路由和处理前后作检查；固定MIDI回放不包含压缩抽吸、降噪或均衡对照证据。"
 ---
 
 ::: zh
@@ -46,14 +39,6 @@ AI 混音出问题，症状通常只有几个。低频闷、高频刺、声像�
 - 平，先写音量自动化，再考虑压缩
 
 如果两个动作之后症状还在，停下来重听编曲，很多问题在素材本身，插件只能掩盖。每次只改一个变量，改完回到整体听十秒。
-
-## 耳朵要抓的点
-
-在管风琴赞美诗里，听低频是否糊成一块，持续音最能暴露堆积。在肖斯塔科维奇的赋格里，听高把位密集音是否刺耳。在 65 BPM 摇滚鼓组里，听压缩是否让每一拍都往下坐。在拉威尔《绞刑架》里，听钟声的定位是否稳定，飘往往先从持续音开始。四处都是先确认症状，再动手。
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s q s s s s s s s q q q q","bpm":100,"label":"抽吸的节奏感","label_en":"The feel of pumping","hint":"听每一拍是否都被压下去又弹回来","hint_en":"Hear whether every beat is pushed down and springs back"}
-```
 :::
 
 ::: en
@@ -76,12 +61,5 @@ Five symptoms, one first move each.
 - Flatness, write volume automation before considering compression
 
 If the symptom survives two moves, stop and listen to the arrangement, since many problems live in the material and plugins only hide them. Change one variable at a time and return to the full mix for ten seconds.
-
-## What the ear catches
-
-In the organ hymn, hear whether the low end has become one lump, since sustained notes expose a pile-up best. In Shostakovich's fugue, hear whether the dense high register turns harsh. In the 65 BPM rock groove, hear whether compression makes every beat sit down. In Ravel's Le gibet, hear whether the bell stays in place, because instability starts with sustained tones. In all four, confirm the symptom before touching anything.
-
-```audiolab
-{"type":"rhythm","sig":"4/4","pattern":"s s s s q s s s s s s s q q q q","bpm":100,"label":"The feel of pumping","label_en":"The feel of pumping","hint":"Hear whether every beat is pushed down and springs back","hint_en":"Hear whether every beat is pushed down and springs back"}
-```
 :::
+

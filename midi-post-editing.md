@@ -1,29 +1,20 @@
 ---
-id: midi-post-editing
-site: ai
-cat: C
-title: MIDI 后期编辑
-title_en: MIDI Post-Editing
-summary: 音高对了还不够，力度、微时序与时值才决定它像不像演奏
-summary_en: Correct pitches are only the start; velocity, microtiming and note length make it sound played.
-level: standard
-tags: [MIDI, 力度, 微时序, 连断]
-tags_en: [MIDI, velocity, microtiming, articulation]
-alias: [音符编辑, MIDI 精修, MIDI editing]
+id: "midi-post-editing"
+site: "ai"
+cat: "C"
+title: "MIDI 后期编辑"
+title_en: "MIDI Post-Editing"
+summary: "音高对了还不够，力度、微时序与时值才决定它像不像演奏"
+summary_en: "Correct pitches are only the start; velocity, microtiming and note length make it sound played."
+level: "standard"
+tags: ["MIDI", "力度", "微时序", "连断"]
+tags_en: ["MIDI", "velocity", "microtiming", "articulation"]
+alias: ["音符编辑", "MIDI 精修", "MIDI editing"]
 order: 5
-links:
-  - "[[glossary:velocity]]"
-  - "[[glossary:rubato]]"
-  - "[[glossary:legato]]"
-instances:
-  - atepp-001283 | 肖邦夜曲，听自由速度有没有被写进音符时值（C1）
-  - abcmisc-000554 | Atholl Highlanders 吉格舞曲，装饰音与断连要分明（C1）
-  - giantmidi-004005 | 李斯特罗西尼改编，密集织体抽音后是否还成立（C1）
-  - musicnet-000090 | 贝多芬第十二四重奏，四声部力度层次容易被拉平（C1）
-sources:
-  - MIDI 演奏信息的处理方法（音序器公开文档）。
-  - 力度曲线与微时序的经验规则，参考制作惯例。
-updated: 2026-10-30
+links: ["[[glossary:velocity]]", "[[glossary:rubato]]", "[[glossary:legato]]"]
+instances: ["atepp-001283", "abcmisc-000554", "giantmidi-004005", "musicnet-000090"]
+sources: ["MIDI 演奏信息的处理方法（音序器公开文档）。", "力度曲线与微时序的经验规则，参考制作惯例。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -41,10 +32,10 @@ updated: 2026-10-30
 
 ## 耳朵要抓的点
 
-在肖邦夜曲里，听自由速度有没有被写进时值，而不是靠音源自动处理。在 Atholl Highlanders 吉格舞曲里，听装饰音与断连是否清楚，连成一片就失去舞曲性格。在李斯特的罗西尼改编里，听抽掉内声部之后和声是否还站得住。在贝多芬第十二四重奏里，听四个声部的力度有没有被拉平。
+在外部 DAW 中打开一份可编辑的 MIDI，保留原件并另存副本，分别改变力度、音长或微时序，再比较结果。本页合成短句仅作固定音符与等力度回放参照，没有已经抽掉内声部或调整过力度的第二个版本。
 
 ```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","D4","E4","G4","E4","D4","C4","G3"],"label":"一条没有起伏的旋律","label_en":"A line with no rise or fall","hint":"同一力度弹完一句，听它有多平","hint_en":"One dynamic for the whole phrase; hear how flat it sits"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","D4","E4","G4","E4","D4","C4","G3"],"label":"音色与短句练习","label_en":"Timbre and phrase exercise","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -63,9 +54,10 @@ Work part by part rather than painting one curve across the whole track. For the
 
 ## What the ear catches
 
-In Chopin's nocturne, whether rubato is written into note lengths rather than left to the sampler. In the Atholl Highlanders jig, whether ornaments and detached notes are distinct, since a slurred reading loses the dance character. In Liszt's Rossini transcriptions, whether the harmony survives after inner voices are thinned. In Beethoven's String Quartet No. 12, whether the four parts keep their dynamic layers.
+Open an editable MIDI file in a DAW, preserve the original and make a separate copy for changes to velocity, note length or microtiming. Compare those versions. The synthesized phrase here is a fixed-note, fixed-velocity reference; it does not supply a second version with inner parts removed or velocities edited.
 
 ```audiolab
-{"type": "instrument", "gm": "Acoustic Grand Piano", "synth": "struck", "phrase": ["C4", "D4", "E4", "G4", "E4", "D4", "C4", "G3"], "label": "A line with no rise or fall", "label_en": "A line with no rise or fall", "hint": "同一力度弹完一句，听它有多平", "hint_en": "One dynamic for the whole phrase; hear how flat it sits"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","D4","E4","G4","E4","D4","C4","G3"],"label":"Timbre and phrase exercise","label_en":"Timbre and phrase exercise","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

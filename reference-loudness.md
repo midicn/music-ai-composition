@@ -1,29 +1,20 @@
 ---
-id: reference-loudness
-site: ai
-cat: D
-title: 参考响度对齐
-title_en: Matching Reference Loudness
-summary: 先把参考降到同一响度，再谈音色，否则比的是音量
-summary_en: Bring the reference down to the same loudness first, or the ear is only comparing volume.
-level: standard
-tags: [参考曲, 响度, 电平匹配, 比较]
-tags_en: [reference, loudness, level matching, comparison]
-alias: [响度对齐, 参考对齐, reference loudness]
+id: "reference-loudness"
+site: "ai"
+cat: "D"
+title: "参考响度对齐"
+title_en: "Matching Reference Loudness"
+summary: "先把参考降到同一响度，再谈音色，否则比的是音量"
+summary_en: "Bring the reference down to the same loudness first, or the ear is only comparing volume."
+level: "standard"
+tags: ["参考曲", "响度", "电平匹配", "比较"]
+tags_en: ["reference", "loudness", "level matching", "comparison"]
+alias: ["响度对齐", "参考对齐", "reference loudness"]
 order: 142
-links:
-  - "[[glossary:reference-track]]"
-  - "[[glossary:lufs]]"
-  - "[[glossary:loudness-normalization]]"
-instances:
-  - atepp-001114 | 肖邦第一叙事曲，现场版的弱奏很轻，对齐后听弱段是否仍有细节（C1）
-  - groove-000000 | 138 BPM 放克鼓组，对齐后比瞬态与底鼓重量，别被响度骗（C1）
-  - openscore-000270 | 马勒《我有一把灼热的刀》，对齐响度时先看爆发段的真峰值（C1）
-  - atepp-001283 | 肖邦夜曲 Op.37 No.2，织体窄，对齐后听左手低音与右手旋律的层次（C1）
-sources:
-  - ITU-R BS.1770 与 EBU R128 关于整合响度、真峰值与平台归一化的定义。
-  - 电平对齐后的参考比较方法，依据听感训练与混音实践。
-updated: 2026-10-31
+links: ["[[glossary:reference-track]]", "[[glossary:lufs]]", "[[glossary:loudness-normalization]]"]
+instances: ["atepp-001114", "groove-000000", "openscore-000270", "atepp-001283"]
+sources: ["ITU-R BS.1770 与 EBU R128 关于整合响度、真峰值与平台归一化的定义。", "电平对齐后的参考比较方法，依据听感训练与混音实践。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -53,7 +44,7 @@ updated: 2026-10-31
 参考曲的编配、演奏、录音空间都与你的素材不同，对齐响度只能排除音量偏见，不能把不同编制变成同一把尺。参考被压得很平时，它的动态不能当目标；参考是现场录音时，它的空间感也不该被复制。还有一种常见错误是拿参考的母带去反推混音的电平，顺序反了，只会越做越紧。
 
 ```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","B4","G4","E4","C4"],"label":"同一句在两档音量下","label_en":"One phrase at two levels","hint":"连听两遍，第二遍把音量降一点，看判断是否改变","hint_en":"Listen twice, lower the level on the second pass, and see whether the judgement changes"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","B4","G4","E4","C4"],"label":"音色与短句练习","label_en":"Timbre and phrase exercise","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -84,6 +75,7 @@ Compare one dimension at a time, ten seconds per excerpt, returning to the same 
 The reference differs in arrangement, performance and recording space, so matching loudness only removes the volume bias; it cannot turn different forces into one ruler. A heavily compressed reference cannot set your dynamic target, and a live recording cannot dictate your sense of space. Another common error is reading the reference master backwards to set mix levels, which reverses the order of work and only makes the result tighter.
 
 ```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","B4","G4","E4","C4"],"label":"One phrase at two levels","label_en":"One phrase at two levels","hint":"Listen twice, lower the level on the second pass, and see whether the judgement changes","hint_en":"Listen twice, lower the level on the second pass, and see whether the judgement changes"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","B4","G4","E4","C4"],"label":"Timbre and phrase exercise","label_en":"Timbre and phrase exercise","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

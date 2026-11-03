@@ -1,34 +1,28 @@
 ---
-id: model-musiclm
-site: ai
-cat: I
-title: MusicLM 研究线
+id: "model-musiclm"
+site: "ai"
+cat: "I"
+title: "MusicLM 研究线"
 title_en: "The MusicLM Research Line"
-summary: 从音频续写到文本生成音乐的研究脉络，方法与限制比产品更有用。
-summary_en: A research line from audio continuation to text-to-music, where the method and its limits matter more than any product.
-level: standard
-tags: [模型档案, 研究, 生成模型, 音频, 论文]
-tags_en: [model profile, research, generative model, audio, paper]
-alias: [MusicLM, AudioLM, MusicFX, 谷歌音乐生成, 研究模型]
+summary: "从音频续写到文本生成音乐的研究脉络，方法与限制比产品更有用。"
+summary_en: "A research line from audio continuation to text-to-music, where the method and its limits matter more than any product."
+level: "standard"
+tags: ["模型档案", "研究", "生成模型", "音频", "论文"]
+tags_en: ["model profile", "research", "generative model", "audio", "paper"]
+alias: ["MusicLM", "AudioLM", "MusicFX", "谷歌音乐生成", "研究模型"]
 order: 15
-model_vendor: Google Research
-model_form: 研究模型
-model_input: [文本, 音频提示]
-model_output: [音频]
-model_licence: 无公开权重与通用 API，论文许可与演示服务条款各自独立，训练音频的授权需按公开说明核对
-model_verified: 2026-10-30
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:reference-track]]"
-  - "[[period:impressionist]]"
-instances:
-  - oga-000002 | 短小的游戏场景配乐，情绪与场景绑定，适合看文本描述能否抓住功能（C1） | A short game cue tied to a scene, to see whether a text description captures its function (C1)
-  - pdmx-000206 | 探戈改编，旋律与伴奏层次清楚，适合看生成模型能不能保住声部关系（C1） | A tango arrangement with clear melody and accompaniment layers, to see whether part relations survive (C1)
-  - oga-000000 | 二十几秒的小品，短、完整、目标明确，接近研究模型的生成长度（C1） | A twenty-second miniature, short, complete and focused, close to a research model's output length (C1)
-sources:
-  - AudioLM 与 MusicLM 的建模思路（公开论文摘要）。
-  - 研究模型与商用服务的差别，参考公开文档与惯例。
-updated: 2026-10-30
+model_vendor: "Google Research"
+model_form: "研究模型"
+model_input: ["文本", "音频提示"]
+model_output: ["音频"]
+model_licence: "无公开权重与通用 API，论文许可与演示服务条款各自独立，训练音频的授权需按公开说明核对"
+model_verified: "2026-10-30"
+links: ["[[glossary:timbre]]", "[[glossary:reference-track]]", "[[period:impressionist]]"]
+instances: []
+sources: ["https://arxiv.org/abs/2301.11325", "https://huggingface.co/datasets/google/MusicCaps"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍MusicLM研究与MusicCaps数据，需要依据作者论文和发布数据说明核对研究范围；普通MIDI不是该研究模型输出，不能证明文本条件生成或研究评测结果。"
 ---
 
 ::: zh
@@ -64,10 +58,6 @@ updated: 2026-10-30
 研究阶段没有价格；消费级演示是否收费、是否有地区限制，以官方页面为准。
 
 替代：MusicGen——要能本地跑的开源权重时换它；Stable Audio——要有明确商用条款的服务时换它；MusicFX 一类演示——只想试听文本生成音乐的效果时用它。
-
-```audiolab
-{"type":"instrument","gm":"Pad 2 (warm)","synth":"bowed","phrase":["D3","A3","E4","F4","E4","A3","D3","A2"],"label":"一段氛围铺底","label_en":"An atmospheric bed","hint":"文本模型擅长这种没有明确旋律的材料","hint_en":"Text models do best with material that has no firm melody"}
-```
 :::
 
 ::: en
@@ -103,8 +93,5 @@ Questions to check: what uses does the paper licence allow? Do demo terms permit
 There is no price at research stage; whether the consumer demo charges or is region-limited is as stated on the official pages.
 
 Alternatives: MusicGen when you need open weights that run locally; Stable Audio when you need a service with explicit commercial terms; a demo such as MusicFX when you only want to hear what text-to-music sounds like.
-
-```audiolab
-{"type":"instrument","gm":"Pad 2 (warm)","synth":"bowed","phrase":["D3","A3","E4","F4","E4","A3","D3","A2"],"label":"An atmospheric bed","label_en":"An atmospheric bed","hint":"Text models do best with material that has no firm melody","hint_en":"Text models do best with material that has no firm melody"}
-```
 :::
+

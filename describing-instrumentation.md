@@ -1,28 +1,22 @@
 ---
-id: describing-instrumentation
-site: ai
-cat: B
-title: 描述配器
-title_en: Describing Instrumentation
-summary: 说清谁在演奏、怎么演奏、占多大比重，比说"丰富"有用得多。
-summary_en: Say who plays, how they play and how much space they take, which beats saying "rich".
-level: standard
-tags: [配器, 提示, 织体, 描述]
-tags_en: [instrumentation, prompt, texture, description]
-alias: [描述配器, 编制描述, instrumentation]
+id: "describing-instrumentation"
+site: "ai"
+cat: "B"
+title: "描述配器"
+title_en: "Describing Instrumentation"
+summary: "说清谁在演奏、怎么演奏、占多大比重，比说\"丰富\"有用得多。"
+summary_en: "Say who plays, how they play and how much space they take, which beats saying \"rich\"."
+level: "standard"
+tags: ["配器", "提示", "织体", "描述"]
+tags_en: ["instrumentation", "prompt", "texture", "description"]
+alias: ["描述配器", "编制描述", "instrumentation"]
 order: 3
-links:
-  - "[[glossary:timbre]]"
-  - "[[glossary:register]]"
-  - "[[instrument:violin]]"
-instances:
-  - musicnet-000067 | 弦乐四重奏，四件乐器的分工是配器描述的最好范例（C1）
-  - atepp-005385 | 拉威尔《绞刑架》，钢琴织体的层次如何被语言还原（C1）
-  - cyberhymnal-008729 | 管风琴赞美诗，单件乐器的多声部织体（C1）
-sources:
-  - 配器描述的常用维度，对照配器教材公开说明整理。
-  - 织体密度与音区的关系（管弦乐法惯例）。
-updated: 2026-10-30
+links: ["[[glossary:timbre]]", "[[glossary:register]]", "[[instrument:violin]]"]
+instances: []
+sources: ["https://kb.stability.ai/knowledge-base/stable-audio-3-prompt-guide", "https://www.orch-idea.org/intro/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论把乐器角色与声音目标写入提示，需要对照具体生成器说明和配器方法；固定MIDI没有执行这些提示，不能证明模型遵守乐器分工。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ updated: 2026-10-30
 ## 做法
 
 先写骨架再写细节：先定几件乐器，再加演奏法与音区。避免同时列出十几件乐器，模型会平均分配导致没有重点。用"逐渐加入"描述层次推进。写完后自己读一遍，看能否在脑中听到大概的样子。生成后对照描述逐项检查，缺哪层补哪层。
-
-## 听什么
-
-在四重奏里听四件乐器如何分工，在《绞刑架》里听钢琴织体的层次，在管风琴里听单件乐器的多声部。配器描述越具体，生成结果越接近想象。
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 2","synth":"bowed","phrase":["A3","E4","A4","C5","B4","A4","E4","A3"],"label":"弦乐铺底与上方旋律","label_en":"A string bed with a line above","hint":"分层描述时，听底层与旋律层是否各占其位","hint_en":"With layered description, hear whether bed and melody each hold their place"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ Three layers are enough: lead, support, and decorative or rhythmic. For each, na
 ## Practice
 
 Write the skeleton before detail: fix a few instruments, then add technique and register. Avoid listing a dozen instruments at once, since the model spreads them evenly and loses focus. Use "enters gradually" to describe layering. Read the prompt back and check whether you can hear roughly what you meant. After generation, compare layer by layer and add what is missing.
-
-## What to listen for
-
-In the quartet, how four instruments divide roles; in Le gibet, the layers of piano texture; in the organ, many voices from one instrument. The more concrete the description, the closer the result.
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 2","synth":"bowed","phrase":["A3","E4","A4","C5","B4","A4","E4","A3"],"label":"A string bed with a line above","label_en":"A string bed with a line above","hint":"With layered description, hear whether bed and melody each hold their place","hint_en":"With layered description, hear whether bed and melody each hold their place"}
-```
 :::
+

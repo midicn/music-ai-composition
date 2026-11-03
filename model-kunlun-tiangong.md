@@ -1,36 +1,28 @@
 ---
-id: model-kunlun-tiangong
-site: ai
-cat: I
-title: 昆仑万维天工 SkyMusic
-title_en: Kunlun Tiangong SkyMusic
-summary: 中文整曲的早期玩家，八十秒规格，版本与入口要看清。
-summary_en: An early Chinese full-song model with an eighty-second format; check version and entry.
-level: standard
-tags: [模型档案, 中文歌曲, 多模态, 整曲生成]
-tags_en: [model profile, Chinese songs, multimodal, full-song generation]
-alias: [天工, SkyMusic, 天工 SkyMusic]
+id: "model-kunlun-tiangong"
+site: "ai"
+cat: "I"
+title: "昆仑万维天工 SkyMusic"
+title_en: "Kunlun Tiangong SkyMusic"
+summary: "中文整曲的早期玩家，八十秒规格，版本与入口要看清。"
+summary_en: "An early Chinese full-song model with an eighty-second format; check version and entry."
+level: "standard"
+tags: ["模型档案", "中文歌曲", "多模态", "整曲生成"]
+tags_en: ["model profile", "Chinese songs", "multimodal", "full-song generation"]
+alias: ["天工", "SkyMusic", "天工 SkyMusic"]
 order: 205
-model_vendor: 昆仑万维
-model_form: 网页服务
-model_input: [文本, 歌词, 参考音频]
-model_output: [音频]
-model_licence: 生成歌曲的使用、商用与发行按天工与 Mureka 的当前条款；公测期的免费策略不代表现在的授权
-model_verified: 2026-10-31
-links:
-  - "[[glossary:timbre]]"
-  - "[[instrument:pipa]]"
-  - "[[glossary:binary-form]]"
-instances:
-  - cyberhymnal-002209 | 十八秒的中国旋律，适合看短曲的收束（C1） | An eighteen second Chinese melody, to hear how a short piece closes (C1)
-  - mutopia-000527 | 六十三秒的分节歌，句幅整齐，适合看段落与重复（C1） | A sixty-three second strophic song with even phrases, to hear sections and repetition (C1)
-  - oga-000002 | 九十秒的战斗配乐，节奏密，适合看短视频卡点（C1） | A ninety second battle cue with dense rhythm, to check short-video sync points (C1)
-  - groove-000007 | 65 BPM 摇滚鼓组，看慢速说唱的底盘（C1） | A 65 BPM rock kit, to hear the bed under slower rap (C1)
-sources:
-  - 昆仑万维天工 SkyMusic 官方发布页与产品说明（时长、采样率与歌词段落控制）。
-  - 天工 SkyMusic 公测与后续 Mureka 系列的公开演进说明。
-  - 天工与 Mureka 的当前条款与入口说明（生成歌曲的使用与商用范围）。
-updated: 2026-10-31
+model_vendor: "昆仑万维"
+model_form: "网页服务"
+model_input: ["文本", "歌词", "参考音频"]
+model_output: ["音频"]
+model_licence: "生成歌曲的使用、商用与发行按天工与 Mureka 的当前条款；公测期的免费策略不代表现在的授权"
+model_verified: "2026-10-31"
+links: ["[[glossary:timbre]]", "[[instrument:pipa]]", "[[glossary:binary-form]]"]
+instances: []
+sources: ["https://platform.mureka.ai/docs/", "https://platform.mureka.ai/service_terms.pdf"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页介绍天工相关音乐服务，应区分历史SkyMusic与当前Mureka接口及条款版本；普通MIDI并非服务输出，无法验证当前生成规格、编辑能力或产出使用范围。"
 ---
 
 ::: zh
@@ -60,10 +52,6 @@ updated: 2026-10-31
 ## 版本与条款
 
 要确认：当前入口是哪一个、可用时长与采样率、生成歌曲能否商用与发行、参考曲的版权责任、是否需要标注 AI 生成。具体以天工与 Mureka 的当前条款为准。替代：要更长的整曲，换 YuE 或 MiniMax Music；要分轨，换腾讯音乐天琴；要网页端多风格快速试听，换 Suno。
-
-```audiolab
-{"type":"instrument","gm":"Shamisen","synth":"plucked","phrase":["D4","D4","F4","G4","A4","G4","F4","D4"],"label":"一段短促的古风动机","label_en":"A short, plucked guofeng motif","hint":"听咬字与鼓点是否咬合，而不是各走各的","hint_en":"Hear whether the vocal and the beat lock together instead of drifting apart"}
-```
 :::
 
 ::: en
@@ -94,3 +82,4 @@ Eighty seconds holds one verse and one chorus, with intro, interlude and outro s
 
 Confirm: which entry is current, available duration and sample rate, whether generated songs may be used commercially and released, who is responsible for reference-track rights, and whether AI disclosure is required. The current Tiangong and Mureka terms are the authority. Alternatives: YuE or MiniMax Music for longer songs; TME Tianqin for stems; Suno for quick multi-style auditions in a browser.
 :::
+

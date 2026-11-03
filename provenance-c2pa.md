@@ -1,30 +1,22 @@
 ---
-id: provenance-c2pa
-site: ai
-cat: G
-title: 来源凭证与 C2PA
-title_en: Provenance and Content Credentials
-summary: 文件里的标记说明怎么做的，不说明归谁
-summary_en: A manifest records how a file was made, not who owns it
-level: standard
-tags: [来源凭证, C2PA, 生成标记, 元数据]
-tags_en: [provenance, C2PA, content credentials, metadata]
-alias: [C2PA, 内容凭证, provenance]
+id: "provenance-c2pa"
+site: "ai"
+cat: "G"
+title: "来源凭证与 C2PA"
+title_en: "Provenance and Content Credentials"
+summary: "文件里的标记说明怎么做的，不说明归谁"
+summary_en: "A manifest records how a file was made, not who owns it"
+level: "standard"
+tags: ["来源凭证", "C2PA", "生成标记", "元数据"]
+tags_en: ["provenance", "C2PA", "content credentials", "metadata"]
+alias: ["C2PA", "内容凭证", "provenance"]
 order: 150
-links:
-  - "[[glossary:music-copyright]]"
-  - "[[glossary:isrc]]"
-  - "[[glossary:master-rights]]"
-instances:
-  - wikifonia-000434 | 采集者姓名直接进了标题，来源靠命名而不是文件记录（C1）
-  - cyberhymnal-002684 | 一行“蒙克据克吕格改编”保住了改编链，换个人重写就会断（C1）
-  - mutopia-001411 | 公有领域只覆盖萨蒂原作，录成什么样是另一层凭证（C1）
-  - giantmidi-003011 | 《致敬萨蒂》把风格来源写进标题，文件里却未必留得下（C1）
-sources:
-  - C2PA 内容凭证的技术规范，由行业联盟公开。
-  - 合成内容标注的平台规则，来自主要发行与社交平台的公开政策。
-  - 广播与发行中的音频元数据字段，参考行业组织公开资料。
-updated: 2026-10-31
+links: ["[[glossary:music-copyright]]", "[[glossary:isrc]]", "[[glossary:master-rights]]"]
+instances: []
+sources: ["https://spec.c2pa.org/specifications/specifications/2.5/specs/C2PA_Specification.html", "https://spec.c2pa.org/specifications/specifications/2.3/explainer/_attachments/Explainer.pdf"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "来源凭证依靠签名、清单与资产绑定关系验证，须区分来源记录和内容真实性；单纯播放音频不会验证凭证链或证明素材获合法授权。"
 ---
 
 ::: zh
@@ -49,10 +41,6 @@ C2PA 是一套把操作记录与签名装进文件的技术规范。manifest 里
 ## 凭证靠不住的地方
 
 签名只证明某个主体声明了这些操作，不证明素材已获授权，也不证明输出与既有作品无关。元数据可以手填，manifest 可以被剥离，截图更不是原始文件。反过来，没有凭证也不等于有问题。把凭证当成证据链的一环：原始导出、manifest、工具版本、编辑记录放在一起，才经得起追问。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","G4","E4","C4"],"label":"带元数据的导出与裸音频","label_en":"Export with metadata vs bare audio","hint":"听感可能一样，来源信息不一样","hint_en":"They may sound alike; the provenance differs"}
-```
-
 :::
 
 ::: en
@@ -78,3 +66,4 @@ File metadata is read by tools, while a platform label is read by people. Neithe
 
 A signature proves only that some party asserted these actions. It does not prove that the source material was licensed, nor that the output avoids existing works. Metadata can be typed by hand, a manifest can be stripped, and a screenshot is not the original file. The reverse also holds: no credentials does not mean a problem. Treat provenance as one link in a chain, kept together with the original export, the manifest, the tool version and the edit log.
 :::
+

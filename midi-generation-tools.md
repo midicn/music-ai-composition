@@ -1,28 +1,20 @@
 ---
-id: midi-generation-tools
-site: ai
-cat: A
-title: MIDI 生成工具
-title_en: MIDI Generation Tools
-summary: 出 MIDI 而不是音频，意味着每个音都能改，也意味着音色要自己找。
-summary_en: Getting MIDI rather than audio means every note is editable, and every sound is your problem.
-level: standard
-tags: [MIDI, 生成, 可控性, 编曲]
-tags_en: [MIDI, generation, control, arranging]
-alias: [MIDI 生成, 符号生成, MIDI generation]
+id: "midi-generation-tools"
+site: "ai"
+cat: "A"
+title: "MIDI 生成工具"
+title_en: "MIDI Generation Tools"
+summary: "出 MIDI 而不是音频，意味着每个音都能改，也意味着音色要自己找。"
+summary_en: "Getting MIDI rather than audio means every note is editable, and every sound is your problem."
+level: "standard"
+tags: ["MIDI", "生成", "可控性", "编曲"]
+tags_en: ["MIDI", "generation", "control", "arranging"]
+alias: ["MIDI 生成", "符号生成", "MIDI generation"]
 order: 4
-links:
-  - "[[glossary:midi-protocol]]"
-  - "[[glossary:velocity]]"
-  - "[[glossary:daw]]"
-instances:
-  - atepp-007103 | 莫扎特回旋曲，看生成工具能否写出清晰的主题与伴奏分工（C1）
-  - musicnet-000090 | 贝多芬四重奏，四声部写作对符号生成是硬考验（C1）
-  - thesession-006629 | 爱尔兰曲调，单声部旋律与装饰音的生成空间（C1）
-sources:
-  - 符号音乐生成的表示方式——依据来自公开研究摘要。
-  - MIDI 生成与音频生成的取舍，对照制作实践惯例整理。
-updated: 2026-10-30
+links: ["[[glossary:midi-protocol]]", "[[glossary:velocity]]", "[[glossary:daw]]"]
+instances: ["atepp-007103", "musicnet-000090", "thesession-006629"]
+sources: ["符号音乐生成的表示方式——依据来自公开研究摘要。", "MIDI 生成与音频生成的取舍，对照制作实践惯例整理。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -43,7 +35,7 @@ updated: 2026-10-30
 在回旋曲里听主题与伴奏是否分得开，在四重奏里听四个声部是否各说各话，在民谣里听装饰音是否自然。MIDI 生成的好坏，听的是结构与演奏感，而不是音色。
 
 ```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","D4","E4","G4","E4","D4","C4","G3"],"label":"一段可编辑的音符","label_en":"Notes you can still edit","hint":"每个音都能改，听的是结构与力度，而不是音色","hint_en":"Every note stays editable; judge structure and dynamics, not tone"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","D4","E4","G4","E4","D4","C4","G3"],"label":"音色与短句练习","label_en":"Timbre and phrase exercise","hint":"浏览器合成示意；不是模型输出或处理前后对比。","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
 
@@ -65,6 +57,7 @@ Treat it as a sketching assistant: generate a theme, a harmonic skeleton or a dr
 In the rondo, whether theme and accompaniment separate; in the quartet, whether four voices each speak; in the folk tune, whether ornaments feel natural. Judging MIDI means judging structure and performance, not tone.
 
 ```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","D4","E4","G4","E4","D4","C4","G3"],"label":"Notes you can still edit","label_en":"Notes you can still edit","hint":"Every note stays editable; judge structure and dynamics, not tone","hint_en":"Every note stays editable; judge structure and dynamics, not tone"}
+{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","D4","E4","G4","E4","D4","C4","G3"],"label":"Timbre and phrase exercise","label_en":"Timbre and phrase exercise","hint":"A browser-synthesized exercise, not model output or a processing comparison.","hint_en":"A browser-synthesized exercise, not model output or a processing comparison."}
 ```
 :::
+

@@ -1,36 +1,29 @@
 ---
-id: tool-ai-notation
-site: ai
-cat: J
-title: 记谱与音频转谱
-title_en: Notation and Audio-to-Score
-summary: 把演奏或录音变成可编辑的谱面，省下打谱时间，校订仍要逐小节过。
-summary_en: Turning a performance into an editable score saves engraving time, but proofreading still happens bar by bar.
-level: standard
-tags: [记谱, 转谱, 制谱, 校订]
-tags_en: [notation, transcription, engraving, proofreading]
-alias: [音频转谱, AI 记谱]
+id: "tool-ai-notation"
+site: "ai"
+cat: "J"
+title: "记谱与音频转谱"
+title_en: "Notation and Audio-to-Score"
+summary: "把演奏或录音变成可编辑的谱面，省下打谱时间，校订仍要逐小节过。"
+summary_en: "Turning a performance into an editable score saves engraving time, but proofreading still happens bar by bar."
+level: "standard"
+tags: ["记谱", "转谱", "制谱", "校订"]
+tags_en: ["notation", "transcription", "engraving", "proofreading"]
+alias: ["音频转谱", "AI 记谱"]
 order: 3
-links:
-  - "[[glossary:score]]"
-  - "[[glossary:ornaments]]"
-  - "[[glossary:midi-protocol]]"
-tool_kind: notation
-tool_vendor: 记谱软件厂商
-tool_form: 桌面应用
-tool_platforms: [macOS, Windows]
-tool_price: 买断
-tool_jobs: [记谱, 编曲, 交付]
-tool_verified: 2026-10-30
-instances:
-  - atepp-007103 | 莫扎特回旋曲，装饰音与自由速度是转谱最容易漏掉的部分（C1）
-  - musicnet-000067 | 贝多芬四重奏，四个声部能否被拆开决定谱面能不能用（C1）
-  - atepp-002148 | 巴赫英国组曲吉格，快速音群考验音符切分与连音线（C1）
-  - giantmidi-003224 | 众赞歌前奏曲，密集和声最容易在转谱时糊成一片（C1）
-sources:
-  - 主流记谱与音频转谱软件公开文档所列输入输出与限制（2026-10-30 复核）。
-  - 装饰音、连音线与声部划分的制谱通识——依据来自实践。
-updated: 2026-10-30
+links: ["[[glossary:score]]", "[[glossary:ornaments]]", "[[glossary:midi-protocol]]"]
+tool_kind: "notation"
+tool_vendor: "记谱软件厂商"
+tool_form: "桌面应用"
+tool_platforms: ["macOS", "Windows"]
+tool_price: "买断"
+tool_jobs: ["记谱", "编曲", "交付"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://basicpitch.spotify.com/about?wptouch_preview_theme=enabled", "https://www.engineering.atspotify.com/2022/6/meet-basic-pitch"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "音频转谱应检查检测出的音高、起音与音符，再与原录音逐段校订；播放原曲不能证明自动声部分配、节奏记谱或导出结果准确。"
 ---
 
 ::: zh
@@ -53,10 +46,6 @@ updated: 2026-10-30
 ## 上手路径
 
 先学三件事：给录音做 tempo map、检查声部拆分、逐小节对照原音校订。然后读这里的音频转谱、MIDI 后期编辑与文件与分轨三篇，再决定哪些段落值得自动转、哪些直接手打。
-
-```audiolab
-{"type":"instrument","gm":1,"phrase":["C4","E4","G4","C5"],"label":"谱面音型","label_en":"Notated figure","hint":"转谱后听音高与连奏是否与原演奏一致","hint_en":"After transcription, compare pitch and legato with the take"}
-```
 :::
 
 ::: en
@@ -79,8 +68,5 @@ For a monophonic line, exporting MIDI from a tuning application and notating by 
 ## First three things to learn
 
 Learn three things first: making a tempo map for the recording, checking how voices were split, and proofreading bar by bar against the audio. Then read the site's pages on audio transcription, MIDI post-editing and file formats and stems before deciding which passages to automate and which to type.
-
-```audiolab
-{"type":"instrument","gm":1,"phrase":["C4","E4","G4","C5"],"label":"Notated figure","label_en":"Notated figure","hint":"After transcription, compare pitch and legato with the take","hint_en":"After transcription, compare pitch and legato with the take"}
-```
 :::
+

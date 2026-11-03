@@ -1,35 +1,28 @@
 ---
-id: model-lyric-ai
-site: ai
-cat: I
-title: 歌词辅助模型
+id: "model-lyric-ai"
+site: "ai"
+cat: "I"
+title: "歌词辅助模型"
 title_en: "Lyric Assistants"
-summary: 按主题、韵脚和结构给候选，可唱性与语气仍要人来定。
-summary_en: It offers candidates by theme, rhyme and form; singability and tone remain a human call.
-level: standard
-tags: [模型档案, 歌词, 写作, 押韵, 语言模型]
-tags_en: [model profile, lyrics, writing, rhyme, language model]
-alias: [歌词生成, 写词, AI 作词, 押韵工具, lyric generator]
+summary: "按主题、韵脚和结构给候选，可唱性与语气仍要人来定。"
+summary_en: "It offers candidates by theme, rhyme and form; singability and tone remain a human call."
+level: "standard"
+tags: ["模型档案", "歌词", "写作", "押韵", "语言模型"]
+tags_en: ["model profile", "lyrics", "writing", "rhyme", "language model"]
+alias: ["歌词生成", "写词", "AI 作词", "押韵工具", "lyric generator"]
 order: 18
-model_vendor: 通用大语言模型服务
-model_form: 网页服务
-model_input: [文本, 主题, 韵脚约束]
-model_output: [文本]
-model_licence: 输出可否商用、输入是否用于训练、模仿在世词作者的限制需按各服务条款核对，训练语料中的歌词授权亦需确认
-model_verified: 2026-10-30
-links:
-  - "[[glossary:text-painting]]"
-  - "[[glossary:melody]]"
-  - "[[instrument:voice]]"
-instances:
-  - mutopia-000066 | 分节叙事歌曲，词句与旋律重音贴合，适合对照生成的词能不能唱（C1） | A strophic narrative song where words and melodic stress align, for testing whether generated words sing (C1)
-  - mutopia-000622 | 分节歌，每段词格相同，适合看音节数与韵脚能否保持一致（C1） | A strophic song with an identical verse shape, for checking syllable counts and rhyme consistency (C1)
-  - mutopia-000686 | 短句多、停顿清楚，适合检查换气点是否够用（C1） | Short lines and clear pauses, for checking whether there is room to breathe (C1)
-  - mutopia-000004 | 长句与跳进并存，词的重音一旦错位立刻听得出来（C1） | Long lines and leaps, where a misplaced word stress is immediately audible (C1)
-sources:
-  - 歌词与旋律的配合关系，参考歌曲写作惯例。
-  - 语言模型的输出限制；公开文档与使用经验是主要依据。
-updated: 2026-10-30
+model_vendor: "通用大语言模型服务"
+model_form: "网页服务"
+model_input: ["文本", "主题", "韵脚约束"]
+model_output: ["文本"]
+model_licence: "输出可否商用、输入是否用于训练、模仿在世词作者的限制需按各服务条款核对，训练语料中的歌词授权亦需确认"
+model_verified: "2026-10-30"
+links: ["[[glossary:text-painting]]", "[[glossary:melody]]", "[[instrument:voice]]"]
+instances: []
+sources: ["https://docs.acestudio.ai/ai-vocal-synth/creating-ai-vocals/editing-lyrics.md", "https://help.suno.com/en/articles/6141505"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论歌词辅助与演唱编辑，需要查看实际歌词输入、修改和音素设置并试唱；固定MIDI不含生成歌词，不能证明候选文字、韵脚或可唱性质量。"
 ---
 
 ::: zh
@@ -66,10 +59,6 @@ updated: 2026-10-30
 价格：订阅或按量计费，免费档通常有额度与模型档位限制；地区可用性以官方页面为准。
 
 替代：押韵词典——只要韵脚候选、不要整句时用它；歌曲生成平台的歌词功能——要在同一界面里直接出成品时用它；人工合写——要可信的语气、叙事与个人经验时，仍然得找人。
-
-```audiolab
-{"type":"instrument","gm":"Lead 6 (voice)","synth":"vocal","phrase":["G3","G3","A3","B3","B3","A3","G3","E3"],"label":"一句重复音多的旋律","label_en":"A line with many repeated notes","hint":"先听重音落在哪一拍，再想词的重音能不能对上","hint_en":"Hear which beat carries the stress, then ask whether the words agree"}
-```
 :::
 
 ::: en
@@ -106,8 +95,5 @@ Questions to check: may output be used commercially, and is credit required? Are
 Price: subscription or metered use, with free tiers usually limited in allowance and model tier; regional availability is as stated on the official pages.
 
 Alternatives: a rhyming dictionary when you only need rhyme candidates rather than whole lines; the lyric features inside a song-generation platform when you want a finished track from one interface; a human co-writer when you need a credible voice, narrative and lived detail.
-
-```audiolab
-{"type":"instrument","gm":"Lead 6 (voice)","synth":"vocal","phrase":["G3","G3","A3","B3","B3","A3","G3","E3"],"label":"A line with many repeated notes","label_en":"A line with many repeated notes","hint":"Hear which beat carries the stress, then ask whether the words agree","hint_en":"Hear which beat carries the stress, then ask whether the words agree"}
-```
 :::
+

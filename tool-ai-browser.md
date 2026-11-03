@@ -1,37 +1,29 @@
 ---
-id: tool-ai-browser
-site: ai
-cat: J
-title: 网页生成工具
-title_en: Browser-Based Generators
-summary: 打开浏览器就能出歌，省掉安装；卡人的地方在导出格式、额度与账号条款。
-summary_en: A browser tab produces a song without an install; the friction sits in export formats, credits and account terms.
-level: standard
-tags: [网页工具, 生成, 导出, 账号]
-tags_en: [browser, generation, export, accounts]
-alias: [网页端生成, 浏览器生成器, 在线生成]
+id: "tool-ai-browser"
+site: "ai"
+cat: "J"
+title: "网页生成工具"
+title_en: "Browser-Based Generators"
+summary: "打开浏览器就能出歌，省掉安装；卡人的地方在导出格式、额度与账号条款。"
+summary_en: "A browser tab produces a song without an install; the friction sits in export formats, credits and account terms."
+level: "standard"
+tags: ["网页工具", "生成", "导出", "账号"]
+tags_en: ["browser", "generation", "export", "accounts"]
+alias: ["网页端生成", "浏览器生成器", "在线生成"]
 order: 241
-links:
-  - "[[glossary:stems]]"
-  - "[[glossary:bit-depth]]"
-  - "[[glossary:master-rights]]"
-tool_kind: service
-tool_vendor: Suno、Udio 网页版
-tool_form: 网页应用
-tool_platforms: [浏览器]
-tool_price: 免费额度 + 订阅
-tool_jobs: [生成, 编曲, 样带]
-tool_verified: 2026-10-31
-instances:
-  - emopia-000744 | 三十七秒的流行钢琴片段，网页端最容易把它压成一段短循环（C1）
-  - nottingham-000285 | 单声部民谣，导出 MIDI 后连音与装饰音是否还在（C1）
-  - groove-001062 | 两分钟拉丁鼓循环，下载文件的接缝与速度标记最容易出问题（C1）
-  - aria-165423 | 四十三秒的车尔尼小品，网页预览常把密集音符简化，导出才听得出来（C1）
-sources:
-  - Suno 与 Udio 官方帮助中心关于生成、下载、分轨与额度的说明。
-  - 各服务条款中生成内容的商用范围、公开曲库与账号删除规则。
-  - W3C Web Audio API 规范中浏览器音频渲染与缓冲的约束。
-updated: 2026-10-31
+links: ["[[glossary:stems]]", "[[glossary:bit-depth]]", "[[glossary:master-rights]]"]
+tool_kind: "service"
+tool_vendor: "Suno、Udio 网页版"
+tool_form: "网页应用"
+tool_platforms: ["浏览器"]
+tool_price: "免费额度 + 订阅"
+tool_jobs: ["生成", "编曲", "样带"]
+tool_verified: "2026-10-31"
+instances: []
+sources: ["https://help.suno.com/en/articles/6141505", "https://suno.com/terms"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "网页生成工具的编辑范围、导出与商用条件需查具体产品文档和现行条款；播放成品不能证明账户额度、可见范围或可下载格式。"
 ---
 
 ::: zh
@@ -61,10 +53,6 @@ updated: 2026-10-31
 ## 先做的三件事
 
 先确认导出格式与采样率，再把公开范围改成私有，最后读一遍商用条款。接着看分离、母带与授权三篇，决定哪些环节留在网页，哪些搬进 DAW。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4"],"label":"导出试听","label_en":"Export check","hint":"下载后听尾音与高频，是否比网页里更闷","hint_en":"After download, listen for dulled tails and highs compared with the browser preview"}
-```
 :::
 
 ::: en
@@ -94,8 +82,5 @@ Continuous structure beyond a few minutes, bar-accurate edits and a mix that nee
 ## Three things first
 
 Confirm export format and sample rate, switch visibility to private, then read the commercial terms. From there, look at separation, mastering and licensing before deciding what stays in the browser and what moves into a DAW.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["C4","E4","G4","C5","G4","E4"],"label":"Export check","label_en":"Export check","hint":"After download, listen for dulled tails and highs compared with the browser preview","hint_en":"After download, listen for dulled tails and highs compared with the browser preview"}
-```
 :::
+

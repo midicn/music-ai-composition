@@ -1,29 +1,22 @@
 ---
-id: hybrid-human-ai-performance
-site: ai
-cat: E
-title: 人机混合演奏
-title_en: Hybrid Human and AI Performance
-summary: 真人加生成声部，先定谁定拍，再谈音色
-summary_en: With a human performance plus generated parts, decide who owns the beat before discussing tone.
-level: standard
-tags: [人机协作, 时间, 律动, 演奏]
-tags_en: [human and AI, timing, groove, performance]
-alias: [混合演奏, 人机合奏, hybrid performance]
+id: "hybrid-human-ai-performance"
+site: "ai"
+cat: "E"
+title: "人机混合演奏"
+title_en: "Hybrid Human and AI Performance"
+summary: "真人加生成声部，先定谁定拍，再谈音色"
+summary_en: "With a human performance plus generated parts, decide who owns the beat before discussing tone."
+level: "standard"
+tags: ["人机协作", "时间", "律动", "演奏"]
+tags_en: ["human and AI", "timing", "groove", "performance"]
+alias: ["混合演奏", "人机合奏", "hybrid performance"]
 order: 9
-links:
-  - "[[glossary:rubato]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:dynamics]]"
-instances:
-  - musicnet-000288 | 莫扎特钢琴三重奏，听钢琴与弦乐谁定拍（C1）
-  - musicnet-000069 | 贝多芬四重奏慢乐章，听四个人的集体呼吸（C1）
-  - giantmidi-002992 | 格里格钢琴协奏曲，听独奏与乐队交换主导（C1）
-  - groove-000002 | 86 BPM soul 鼓组，听 laid-back 的落点在哪（C1）
-sources:
-  - 合奏时间基准与速度图的做法，参考演奏与制作实践。
-  -  (Ensemble timing and tempo maps).
-updated: 2026-10-30
+links: ["[[glossary:rubato]]", "[[glossary:tempo]]", "[[glossary:dynamics]]"]
+instances: []
+sources: ["https://www.ableton.com/en/manual/audio-clips-tempo-and-warping/", "https://www.ableton.com/en/manual/editing-midi/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论真人演奏与生成声部的时间衔接，需要核对实际速度图、音符和演奏录音；普通曲库回放不是人机合奏，不能证明跟随演奏或同步成功。"
 ---
 
 ::: zh
@@ -38,14 +31,6 @@ updated: 2026-10-30
 ## 怎么修
 
 让真人先录一版不带节拍器的参考，从录音里提取 tempo map。生成声部按速度图走，不用固定 BPM。先对齐重音，再对齐音符起点，顺序反了会越调越乱。保留真人十到三十毫秒的提前与延后，不要量化到网格。生成部分音量低三到六分贝，加同样的房间声，放进同一个混响。生成声部不要抢独奏的换气口。检查乐句的呼吸是否同步，尤其段尾和转句。最后由演奏者听一遍，觉得“被拖着走”就重来，不要用压缩或延迟去掩盖。
-
-## 耳朵要抓的点
-
-在莫扎特的钢琴三重奏里听钢琴与弦乐谁让谁，在贝多芬四重奏的慢乐章里听四个人的集体呼吸，在格里格协奏曲里听独奏与乐队怎么交换主导，在 soul 86 的鼓组里听 laid-back 的落点。人机混合的成败，全在这几处。
-
-```audiolab
-{"type":"instrument","gm":"Violin","synth":"bowed","phrase":["E4","G4","A4","B4","A4","G4","E4","D4"],"label":"一条生成的小提琴声部","label_en":"A generated violin part","hint":"跟着真人的速度图走，不要锁死 BPM","hint_en":"Follow the human tempo map instead of locking to a fixed BPM"}
-```
 :::
 
 ::: en
@@ -60,12 +45,5 @@ Ensemble timing follows one of two models. Either the soloist sets the pace and 
 ## How to fix it
 
 Record the human first without a click, then extract a tempo map from that take. Drive the generated part from the map, not from a fixed tempo. Keep the player's ten to thirty milliseconds of push and drag instead of quantising to the grid. Set the generated part three to six decibels lower, give it the same room sound, and place both in one reverb. Check that breaths line up, especially at the end of sections and at turns. Finally, have the player listen. If it feels like being dragged, start again rather than hiding it with compression or delay.
-
-## What the ear catches
-
-In Mozart's piano trio, listen to who yields between piano and strings. In the slow movement of Beethoven's quartet, listen to four players breathing together. In Grieg's piano concerto, listen to soloist and orchestra trading the lead. In the soul groove at 86, listen to where the laid-back feel actually lands. Hybrid performance succeeds or fails in these details.
-
-```audiolab
-{"type": "instrument", "gm": "Violin", "synth": "bowed", "phrase": ["E4", "G4", "A4", "B4", "A4", "G4", "E4", "D4"], "label": "A generated violin part", "label_en": "A generated violin part", "hint": "跟着真人的速度图走，不要锁死 BPM", "hint_en": "Follow the human tempo map instead of locking to a fixed BPM"}
-```
 :::
+

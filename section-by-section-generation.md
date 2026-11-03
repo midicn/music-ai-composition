@@ -1,28 +1,22 @@
 ---
-id: section-by-section-generation
-site: ai
-cat: B
-title: 分段生成
-title_en: Section-by-Section Generation
-summary: 长曲难以一次生成，分段写提示、再缝合，结构才守得住。
-summary_en: Long pieces rarely survive one generation; prompt section by section and stitch, or the form collapses.
-level: standard
-tags: [分段, 结构, 拼接, 工作流]
-tags_en: [sections, form, stitching, workflow]
-alias: [分段生成, 分段提示, section generation]
+id: "section-by-section-generation"
+site: "ai"
+cat: "B"
+title: "分段生成"
+title_en: "Section-by-Section Generation"
+summary: "长曲难以一次生成，分段写提示、再缝合，结构才守得住。"
+summary_en: "Long pieces rarely survive one generation; prompt section by section and stitch, or the form collapses."
+level: "standard"
+tags: ["分段", "结构", "拼接", "工作流"]
+tags_en: ["sections", "form", "stitching", "workflow"]
+alias: ["分段生成", "分段提示", "section generation"]
 order: 8
-links:
-  - "[[glossary:tempo]]"
-  - "[[glossary:key]]"
-  - "[[glossary:ternary-form]]"
-instances:
-  - mutopia-000498 | 贝多芬第五第二乐章，变奏段落各不相同，整曲一次性生成难以稳住（C1）
-  - atepp-007103 | 莫扎特回旋曲，主题与插部交替，段落边界清楚（C1）
-  - thesession-020649 | 里尔舞曲，短小重复的段落适合逐段生成再拼（C1）
-sources:
-  - 分段生成与拼接的常见做法，参考生成实践公开资料。
-  - 段落边界的和声与节拍处理；曲式学惯例是主要依据。
-updated: 2026-10-30
+links: ["[[glossary:tempo]]", "[[glossary:key]]", "[[glossary:ternary-form]]"]
+instances: []
+sources: ["https://help.suno.com/en/articles/6141505", "https://help.suno.com/en/articles/2409601"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "分段生成应检查同一项目的扩展位置、歌词修改和接缝处理；无关曲目的播放无法证明平台保留了前段内容或延长后结构仍然连贯。"
 ---
 
 ::: zh
@@ -37,14 +31,6 @@ updated: 2026-10-30
 ## 怎么接
 
 先画段落表：每段的小节数、调性、配器、情绪。写提示时带上相邻段的信息，例如「90 BPM，D 小调，弦乐铺底，结尾停在 A 和弦」。拼接留 2 小节重叠，交叉淡化 200–500 毫秒；氛围段落可以放到 1 秒。硬切只用于明确对比，比如从室内乐切到电子鼓。
-
-## 听什么
-
-在变奏乐章里听段落性格的差异，在回旋曲里听主题与插部的边界，在里尔舞曲里听重复段落的接缝。分段做得好，听不出哪一段是单独生成的；做得不好，每次进副歌都像换台。
-
-```audiolab
-{"type":"progression","key":"C","chords":["C","Am","F","G"],"label":"段落边界的和声","label_en":"Harmony at a section boundary","hint":"边界落在稳定和弦上，接缝才不刺耳","hint_en":"A seam is quietest when it lands on a stable chord"}
-```
 :::
 
 ::: en
@@ -59,12 +45,5 @@ Three parameters give a seam away: tempo, key and reverb. Two BPM of drift is au
 ## How to stitch
 
 Draw a section table first: bars, key, instrumentation, mood. Include the neighbouring section in each prompt, for example "90 BPM, D minor, strings underneath, ending on an A chord". Overlap two bars at the join and crossfade 200–500 ms; atmospheric sections can take a full second. Save hard cuts for deliberate contrast, such as chamber music into electronic drums.
-
-## What to listen for
-
-In a variation movement, the change of character between sections; in a rondo, the boundaries of theme and episode; in a reel, the joins between repeats. Good section work leaves no clue about which part was generated alone. Bad section work sounds like changing stations at every chorus.
-
-```audiolab
-{"type":"progression","key":"C","chords":["C","Am","F","G"],"label":"段落边界的和声","label_en":"Harmony at a section boundary","hint":"边界落在稳定和弦上，接缝才不刺耳","hint_en":"A seam is quietest when it lands on a stable chord"}
-```
 :::
+

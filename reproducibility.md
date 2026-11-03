@@ -1,29 +1,20 @@
 ---
-id: reproducibility
-site: ai
-cat: H
-title: 可复现
-title_en: Reproducibility
-summary: 能复现的是流程与决策，不是波形
-summary_en: What reproduces is the process and the decisions, not the waveform.
-level: standard
-tags: [复现, 种子, 模型版本, 配方]
-tags_en: [reproducibility, seeds, model version, recipe]
-alias: [可复现, 复现测试, reproducibility]
+id: "reproducibility"
+site: "ai"
+cat: "H"
+title: "可复现"
+title_en: "Reproducibility"
+summary: "能复现的是流程与决策，不是波形"
+summary_en: "What reproduces is the process and the decisions, not the waveform."
+level: "standard"
+tags: ["复现", "种子", "模型版本", "配方"]
+tags_en: ["reproducibility", "seeds", "model version", "recipe"]
+alias: ["可复现", "复现测试", "reproducibility"]
 order: 9
-links:
-  - "[[glossary:diffusion]]"
-  - "[[glossary:sample-rate]]"
-instances:
-  - pdmx-000153 | 长篇 MIDI 文件，可用于保存文件校验值的练习（C1） | A long MIDI file for an exercise in retaining file checksums (C1)
-  - atepp-002965 | 托卡塔的固定音符文件，不是模型重跑结果（C1） | A fixed toccata note file, not repeated model inference (C1)
-  - groove-000000 | 固定速度鼓循环，可区分重复播放与重新生成（C1） | A fixed-tempo drum loop for distinguishing replay from regeneration (C1)
-  - atepp-000075 | 含自由速度的演奏记录，不能用于判定模型种子效果（C1） | Performance data with tempo variation, not a test of model seeds (C1)
-sources:
-  - "https://docs.pytorch.org/docs/2.15/notes/randomness.html"
-  - 生成式模型的随机性与版本漂移（机器学习公开资料）。
-  - 复现测试的容差与记录方式，参考工程实践惯例。
-updated: 2026-11-02
+links: ["[[glossary:diffusion]]", "[[glossary:sample-rate]]"]
+instances: ["pdmx-000153", "atepp-002965", "groove-000000", "atepp-000075"]
+sources: ["https://docs.pytorch.org/docs/2.15/notes/randomness.html", "生成式模型的随机性与版本漂移（机器学习公开资料）。", "复现测试的容差与记录方式，参考工程实践惯例。"]
+updated: "2026-11-03"
 ---
 
 ::: zh
@@ -69,3 +60,4 @@ Run one clearly specified generation task three times, retain the files, and com
 {"type":"rhythm","sig":"4/4","pattern":"s s s s s s s s s s s s s s s s","bpm":120,"label":"Fixed-pattern reference","label_en":"Fixed-pattern reference","hint":"Repeating a fixed pattern shows playback of fixed data, not identical output from repeated model inference.","hint_en":"Repeating a fixed pattern shows playback of fixed data, not identical output from repeated model inference."}
 ```
 :::
+

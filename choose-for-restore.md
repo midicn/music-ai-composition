@@ -1,36 +1,29 @@
 ---
-id: choose-for-restore
-site: ai
-cat: K
-title: 修复选型
-title_en: Choosing Tools for Restoration
-summary: 修复的上限是原始素材，不是软件；先定修到什么程度，再选工具。
-summary_en: Restoration stops at the source material, not the software; decide how far to go before choosing a tool.
-level: standard
-tags: [选型, 修复, 降噪, 老录音]
-tags_en: [selection, restoration, noise reduction, archival]
-alias: [修复选型, 降噪工具, restoration]
+id: "choose-for-restore"
+site: "ai"
+cat: "K"
+title: "修复选型"
+title_en: "Choosing Tools for Restoration"
+summary: "修复的上限是原始素材，不是软件；先定修到什么程度，再选工具。"
+summary_en: "Restoration stops at the source material, not the software; decide how far to go before choosing a tool."
+level: "standard"
+tags: ["选型", "修复", "降噪", "老录音"]
+tags_en: ["selection", "restoration", "noise reduction", "archival"]
+alias: ["修复选型", "降噪工具", "restoration"]
 order: 15
-links:
-  - "[[glossary:headroom]]"
-  - "[[glossary:monitoring]]"
-  - "[[glossary:mastering]]"
-tool_kind: guide
-tool_vendor: —
-tool_form: 网页
-tool_platforms: [浏览器]
-tool_price: 免费
-tool_jobs: [选型, 修复]
-tool_verified: 2026-10-30
-instances:
-  - cyberhymnal-000001 | 桑基《九十九只羊》，十九世纪福音赞美诗，窄带老录音的典型素材（C1）
-  - pdmx-002646 | 《纽约的人行道》，十九世纪末的流行歌曲，方整短小，修完容易听出处理痕迹（C1）
-  - giantmidi-004939 | 格什温《斯瓦尼》，早期流行歌曲，人声与乐队争频段的参照（C1）
-  - cyberhymnal-001734 | 勃拉姆斯《伯利恒摇篮曲》，弱奏管风琴，底噪与动态的边界（C1）
-sources:
-  - 谱修复、降噪与语音增强的公开技术说明（2026-10-30 复核）。
-  - 档案保存与再发行的通行做法，对照惯例整理。法律层面以现行法规为准。
-updated: 2026-10-30
+links: ["[[glossary:headroom]]", "[[glossary:monitoring]]", "[[glossary:mastering]]"]
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "网页"
+tool_platforms: ["浏览器"]
+tool_price: "免费"
+tool_jobs: ["选型", "修复"]
+tool_verified: "2026-10-30"
+instances: []
+sources: ["https://podcast.adobe.com/en/guides/what-is-enhance-speech", "https://helpx.adobe.com/uk/podcast/adobe-podcast-faq.html"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "本页讨论语音增强与修复取舍，需要查看当前产品用途和实际原件处理对照；合成MIDI不含原录音底噪，不能据此评判降噪质量。"
 ---
 
 ::: zh
@@ -63,10 +56,6 @@ updated: 2026-10-30
 ## 上手路径
 
 先学三件事：留一份未处理的原件、每一步只做一件事、每次处理前后做 A/B。然后读这里的修复伪影、分轨分离工具、响度目标三篇。
-
-```audiolab
-{"type":"instrument","gm":"Reed Organ","synth":"reed","phrase":["G3","B3","D4","G4","F4","D4","B3","G3"],"label":"老录音里的管风琴","label_en":"An organ from an old recording","hint":"先听底噪，再决定要修掉多少","hint_en":"Hear the noise floor first, then decide how much to remove"}
-```
 :::
 
 ::: en
@@ -99,8 +88,5 @@ If the voice must be clear and the music can go, separate with Demucs or LALAL.A
 ## First three things to learn
 
 Learn to keep an untouched original, to change one thing per pass, and to A/B before and after every step. Then read the pages on fixing artifacts, stem separation tools and loudness targets.
-
-```audiolab
-{"type":"instrument","gm":"Reed Organ","synth":"reed","phrase":["G3","B3","D4","G4","F4","D4","B3","G3"],"label":"An organ from an old recording","label_en":"An organ from an old recording","hint":"Hear the noise floor first, then decide how much to remove","hint_en":"Hear the noise floor first, then decide how much to remove"}
-```
 :::
+

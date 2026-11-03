@@ -1,29 +1,22 @@
 ---
-id: mono-check-ai
-site: ai
-cat: D
-title: AI 混音的单声道兼容
-title_en: Mono Compatibility for AI Mixes
-summary: 生成的宽度多数靠相位差撑着，单声道求和就现原形
-summary_en: Most generated width leans on phase difference, and the mono sum exposes it.
-level: standard
-tags: [单声道, 相位, 声场, 兼容]
-tags_en: [mono, phase, stereo field, compatibility]
-alias: [单声道检查, 相位兼容, mono check]
+id: "mono-check-ai"
+site: "ai"
+cat: "D"
+title: "AI 混音的单声道兼容"
+title_en: "Mono Compatibility for AI Mixes"
+summary: "生成的宽度多数靠相位差撑着，单声道求和就现原形"
+summary_en: "Most generated width leans on phase difference, and the mono sum exposes it."
+level: "standard"
+tags: ["单声道", "相位", "声场", "兼容"]
+tags_en: ["mono", "phase", "stereo field", "compatibility"]
+alias: ["单声道检查", "相位兼容", "mono check"]
 order: 141
-links:
-  - "[[glossary:phase-check]]"
-  - "[[glossary:stereo-technique]]"
-  - "[[glossary:comb-filtering]]"
-instances:
-  - groove-000005 | 87 BPM 嘻哈鼓组，底鼓与军鼓居中，求和后低频不能少一块（C1）
-  - musicnet-000248 | 坎比尼第一木管五重奏，五件管乐挤在中频，单声道下最考验声部分离（C1）
-  - mutopia-001412 | 萨蒂《裸体歌舞》第二首，织体稀疏，单声道下听混响尾巴是否还在（C1）
-  - groove-000000 | 138 BPM 放克鼓组，踩镲与打击乐铺得很宽，适合检查高频抵消（C1）
-sources:
-  - Bobby Owsinski, The Mixing Engineer’s Handbook 与 Bartlett, Practical Recording Techniques 中关于单声道求和与相位的章节。
-  - 生成式立体声的宽度来源，依据公开工具文档与听辨实践。
-updated: 2026-10-31
+links: ["[[glossary:phase-check]]", "[[glossary:stereo-technique]]", "[[glossary:comb-filtering]]"]
+instances: []
+sources: ["https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/", "https://www.ableton.com/en/live-manual/11/audio-fact-sheet/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "单声道检查要核对左右声道求和、极性与宽度设置，并比较同一文件处理前后；播放一段普通曲库音乐无法证明生成素材的相位兼容。"
 ---
 
 ::: zh
@@ -48,10 +41,6 @@ updated: 2026-10-31
 ## 修不回来的部分
 
 低频转单声道、宽度收窄、延迟时间改短，能救回大部分问题。但如果生成素材本身在某段是反相的，怎么调都救不回来，换一版生成比在相位上硬掰更快。另一方面，单声道兼容不是唯一标准：有些氛围音乐靠宽声场成立，强行收窄会失去空间。判断顺序是先保关键元素，再保宽度，最后才谈空气感。
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["D4","F4","A4","D5","A4","F4","D4","A3"],"label":"一条会被求和检验的弦乐","label_en":"A string line the mono sum will test","hint":"先听这条线的清晰度，再想把左右各延迟几毫秒后哪些泛音会抵消","hint_en":"Hear how clear the line is, then imagine which overtones cancel once one side is delayed a few milliseconds"}
-```
 :::
 
 ::: en
@@ -76,8 +65,5 @@ Width can come from level difference, time difference or phase difference; only 
 ## What cannot be repaired
 
 Mono-ing the low end, narrowing the width and shortening delays recover most problems. But if the generated material is genuinely out of phase in a section, no adjustment brings it back, and a fresh generation is faster than fighting the phase. Mono compatibility is also not the only standard: some ambient music exists because of a wide field, and forcing it narrow costs the space. Judge in this order: keep the key elements first, the width second, and the air last.
-
-```audiolab
-{"type":"instrument","gm":"String Ensemble 1","synth":"bowed","phrase":["D4","F4","A4","D5","A4","F4","D4","A3"],"label":"A string line the mono sum will test","label_en":"A string line the mono sum will test","hint":"Hear how clear the line is, then imagine which overtones cancel once one side is delayed a few milliseconds","hint_en":"Hear how clear the line is, then imagine which overtones cancel once one side is delayed a few milliseconds"}
-```
 :::
+

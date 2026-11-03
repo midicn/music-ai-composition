@@ -1,30 +1,22 @@
 ---
-id: vertical-video-scoring
-site: ai
-cat: F
-title: 竖屏视频配乐
-title_en: Scoring Vertical Video
-summary: 竖屏先争三秒，字幕占掉下半屏，音乐只能在缝里做功
-summary_en: Vertical video wins or loses in three seconds, captions own the lower half, and music works in the gaps.
-level: standard
-tags: [竖屏, 前奏, 字幕, 循环]
-tags_en: [vertical video, hook, captions, loops]
-alias: [竖屏配乐, 短视频配乐, vertical scoring]
+id: "vertical-video-scoring"
+site: "ai"
+cat: "F"
+title: "竖屏视频配乐"
+title_en: "Scoring Vertical Video"
+summary: "竖屏先争三秒，字幕占掉下半屏，音乐只能在缝里做功"
+summary_en: "Vertical video wins or loses in three seconds, captions own the lower half, and music works in the gaps."
+level: "standard"
+tags: ["竖屏", "前奏", "字幕", "循环"]
+tags_en: ["vertical video", "hook", "captions", "loops"]
+alias: ["竖屏配乐", "短视频配乐", "vertical scoring"]
 order: 161
-links:
-  - "[[glossary:loudness-normalization]]"
-  - "[[glossary:sync-license]]"
-  - "[[glossary:cue]]"
-instances:
-  - giantmidi-007791 | 《致爱丽丝》，第一个动机两秒内成立，竖屏要的进入速度（C1）
-  - pdmx-001170 | 莫扎特《土耳其进行曲》，主题不铺垫直接出现（C1）
-  - pdmx-002097 | 《野蜂飞舞》，无前奏的连续音型怎样抓住注意力（C1）
-  - pdmx-001524 | 格里格《在山魔王的宫殿里》，短循环里靠加速维持张力（C1）
-sources:
-  - TikTok 与 YouTube 官方创作者规范中关于字幕安全区与音频响度的要求。
-  - 短视频配乐与声音设计的公开访谈，讨论开头与循环的处理。
-  - 流媒体响度标准文档，用于说明手机外放与归一化后的听感。
-updated: 2026-10-31
+links: ["[[glossary:loudness-normalization]]", "[[glossary:sync-license]]", "[[glossary:cue]]"]
+instances: []
+sources: ["https://artists.youtube/resources/shorts-for-artists/", "https://helpx.adobe.com/premiere/desktop/add-audio-effects/apply-audio-effects/remix-in-premiere.html", "https://www.w3.org/TR/webvtt1/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "竖屏配乐需在实际画幅与剪辑中核对入口、转场和音乐使用方式；只播放音频看不到字幕与按钮遮挡，也不能验证平台版本的节奏适配。"
 ---
 
 ::: zh
@@ -54,10 +46,6 @@ updated: 2026-10-31
 ## 横屏习惯搬不过来
 
 把横屏的配乐直接裁成竖屏用，落点和字幕全对不上。为了显得高级留长前奏，是最常见的死法。低频在手机外放几乎不存在，把钩子放在低频等于没有钩子。还有，别用一段音乐配所有视频，算法会把相似内容归到一起，观众也会腻。授权没理清就发布，流量越好，下架时越疼。
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["E4","D#4","E4","B3","D4","C4","A3","B3"],"label":"前三秒要出现的钩子","label_en":"A hook that has to arrive in three seconds","hint":"从第一个音开始数，动机在第几拍成立","hint_en":"Count from the first note and hear on which beat the motif lands"}
-```
 :::
 
 ::: en
@@ -87,8 +75,5 @@ Much vertical content replays, so the end has to lead back to the start. Ask for
 ## Habits that do not survive the crop
 
 Cropping a landscape score into a vertical frame leaves hit points and captions misaligned. Keeping a long intro for polish is the most common way to lose viewers. Phone speakers reproduce almost no low end, so a hook placed there is no hook at all. Nor should one track serve every video, since recommendation systems group similar content and viewers tire of it. Posting before the licence is clear hurts most when a video does well.
-
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["E4","D#4","E4","B3","D4","C4","A3","B3"],"label":"A hook that has to arrive in three seconds","label_en":"A hook that has to arrive in three seconds","hint":"Count from the first note and hear on which beat the motif lands","hint_en":"Count from the first note and hear on which beat the motif lands"}
-```
 :::
+

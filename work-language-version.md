@@ -1,35 +1,29 @@
 ---
-id: work-language-version
-site: ai
-cat: K
-title: 多语言版本
-title_en: Multilingual Versions
-summary: 共用一版伴奏，按音节改写歌词，逐语言过母语者
-summary_en: One backing track, lyrics rewritten to the melody, and a native check per language.
-level: standard
-tags: [本地化, 歌词, 人声, 对齐]
-tags_en: [localisation, lyrics, vocals, alignment]
-alias: [多语言版本, 本地化, 外语版, multilingual]
+id: "work-language-version"
+site: "ai"
+cat: "K"
+title: "多语言版本"
+title_en: "Multilingual Versions"
+summary: "共用一版伴奏，按音节改写歌词，逐语言过母语者"
+summary_en: "One backing track, lyrics rewritten to the melody, and a native check per language."
+level: "standard"
+tags: ["本地化", "歌词", "人声", "对齐"]
+tags_en: ["localisation", "lyrics", "vocals", "alignment"]
+alias: ["多语言版本", "本地化", "外语版", "multilingual"]
 order: 7
-tool_kind: guide
-tool_vendor: —
-tool_form: 案例
-tool_platforms: [通用]
-tool_price: 不适用
-tool_jobs: [本地化, 歌词改编, 人声合成]
-tool_verified: 2026-10-30
-links:
-  - "[[glossary:melody]]"
-  - "[[glossary:tempo]]"
-  - "[[glossary:key]]"
-instances:
-  - openscore-000039 | 法语快速歌曲，鼻化元音在快音节中的形状（C1）
-  - openscore-000008 | 德语叙事歌，三个角色的咬字必须分得开（C1）
-  - openscore-000538 | 法语连诵与重音，合成语音常丢（C1）
-sources:
-  - 歌词改写与音节对应的做法，对照歌曲写作与本地化惯例整理。
-  - 多语言交付的响度与字幕要求（发行公开规范）。
-updated: 2026-10-30
+tool_kind: "guide"
+tool_vendor: "—"
+tool_form: "案例"
+tool_platforms: ["通用"]
+tool_price: "不适用"
+tool_jobs: ["本地化", "歌词改编", "人声合成"]
+tool_verified: "2026-10-30"
+links: ["[[glossary:melody]]", "[[glossary:tempo]]", "[[glossary:key]]"]
+instances: []
+sources: ["https://dreamtonics.com/svstudio-resources/", "https://www.w3.org/TR/webvtt1/"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "多语言版本需核对各语言音素、歌词分句与字幕时间码，并逐版比对；没有歌词字幕的音乐播放不能证明声调、重音和文本同步准确。"
 ---
 
 ::: zh
@@ -52,10 +46,6 @@ updated: 2026-10-30
 ## 常见返工原因
 
 直译导致句子太长，歌手赶拍。辅音结尾被吞，字幕对不上。某语言版本重新生成伴奏，混音整体变了。响度没对齐，切语言时音量跳。地区用语不对，观众出戏。授权只写一种语言，追加版本要重谈。
-
-```audiolab
-{"type":"instrument","gm":"Voice Oohs","synth":"vocal","phrase":["C4","D4","E4","G4","E4","D4","C4","A3"],"label":"同一旋律换一种语言","label_en":"One melody in another language","hint":"听元音占多长，音节塞满就没有呼吸","hint_en":"Hear how long each vowel lasts; a packed line has no room to breathe"}
-```
 :::
 
 ::: en
@@ -78,8 +68,5 @@ Versions differ in length by no more than one second and sit exactly against the
 ## Common rework causes
 
 A literal translation runs too long and the singer rushes. Final consonants disappear and subtitles drift. One language gets a regenerated backing and the mix changes underneath it. Loudness is not matched, so switching languages jumps in volume. Regional wording feels wrong and pulls the audience out. The licence names one language only and added versions need a new deal.
-
-```audiolab
-{"type":"instrument","gm":"Voice Oohs","synth":"vocal","phrase":["C4","D4","E4","G4","E4","D4","C4","A3"],"label":"One melody in another language","label_en":"One melody in another language","hint":"Hear how long each vowel lasts; a packed line has no room to breathe","hint_en":"Hear how long each vowel lasts; a packed line has no room to breathe"}
-```
 :::
+

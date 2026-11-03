@@ -1,30 +1,22 @@
 ---
-id: prompt-multilingual
-site: ai
-cat: B
-title: 多语言提示
-title_en: Prompting Across Languages
-summary: 换语言不只是换字幕，声调、重音与音节数都会改变结果。
-summary_en: Changing language changes tone, stress and syllable count, not just the words on the screen.
-level: standard
-tags: [多语言, 提示词, 声调, 重音]
-tags_en: [multilingual, prompting, tone, stress]
-alias: [多语言提示, 中英提示, multilingual prompting]
+id: "prompt-multilingual"
+site: "ai"
+cat: "B"
+title: "多语言提示"
+title_en: "Prompting Across Languages"
+summary: "换语言不只是换字幕，声调、重音与音节数都会改变结果。"
+summary_en: "Changing language changes tone, stress and syllable count, not just the words on the screen."
+level: "standard"
+tags: ["多语言", "提示词", "声调", "重音"]
+tags_en: ["multilingual", "prompting", "tone", "stress"]
+alias: ["多语言提示", "中英提示", "multilingual prompting"]
 order: 131
-links:
-  - "[[glossary:phrase]]"
-  - "[[glossary:word-painting]]"
-  - "[[instrument:voice]]"
-instances:
-  - pdmx-002540 | 丹尼男孩，英文叙事歌的咬字与气口参照（C1）
-  - cyberhymnal-003336 | 中文歌词的赞美诗，看声调与旋律怎么配合（C1）
-  - mutopia-000622 | 人声加钢琴的通俗歌曲，听旋律有没有尊重语言重音（C1）
-  - pdmx-002646 | 十九世纪末流行歌曲，方整短句适合对照中英句读（C1）
-sources:
-  - International Phonetic Association, Handbook of the IPA 与 Journal of Singing 中关于声调、词重音与连读的章节。
-  - 普通话声调与歌词写作的公开教学资料。
-  - 生成服务公开的多语言支持说明，关于语言标签与地区口音。
-updated: 2026-10-31
+links: ["[[glossary:phrase]]", "[[glossary:word-painting]]", "[[instrument:voice]]"]
+instances: []
+sources: ["https://dreamtonics.com/svstudio-resources/", "https://www.w3.org/TR/speech-synthesis/", "https://help.udio.com/en/articles/10716221-create-a-song-with-your-own-lyrics"]
+updated: "2026-11-03"
+example_mode: "references"
+example_basis: "多语言提示与歌词需分别核对语言支持、音素和发音控制；普通器乐播放不包含语言辨识证据，更不能证明声调、重音或连读正确。"
 ---
 
 ::: zh
@@ -51,10 +43,6 @@ updated: 2026-10-31
 ## 混合语言的偏差
 
 中英混写时，模型常把提示的主语言当作演唱主语言，第二语言只分到很短片段，或带上主语言的口音。把两种语言的歌词分段写，标出切换行，再补一句“第二段为英文”，比一行混排更稳。地区口音也要单独说明，不然默认腔调可能与角色设定不符。遇到一句里同时出现两种语言、歌词需要严格押韵，或交付要过母语审听，混写的不确定性通常超过收益。拆成两个单语版本，各自生成，再在后期拼接，反而更快。语言标签不是装饰，写错会让整段的发音策略偏离。
-```audiolab
-{"type":"instrument","gm":"Acoustic Grand Piano","synth":"struck","phrase":["D4","F4","A4","D5"],"label":"同一句旋律，两种语言提示","label_en":"One line, two languages","hint":"先听重音和句尾，语言差异常落在那里","hint_en":"Listen to stress and phrase endings"}
-```
-
 :::
 
 ::: en
@@ -82,3 +70,4 @@ English hinges on word and sentence stress. Name the stressed words, avoid three
 
 When Chinese and English are mixed, the model often treats the prompt's main language as the sung language, gives the second language a short window, or carries the first language's accent. Write each language as its own block, mark the switch line and add "second verse in English"; that beats interleaving inside one line. State regional accent separately, or the default may not fit the character. When one line carries two languages, the rhyme must be strict, or delivery needs a native-speaker review, mixing is usually riskier than useful. Split into two monolingual versions, generate each, and join them later. Language tags are not decoration; the wrong one shifts pronunciation strategy for the whole section.
 :::
+
