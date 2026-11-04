@@ -13,8 +13,8 @@ alias: ["对网格", "量化强度", "quantize"]
 order: 6
 links: ["[[glossary:tempo]]", "[[glossary:rubato]]", "[[glossary:midi-protocol]]"]
 instances: ["groove-000013", "abcmisc-000179", "atepp-000367", "atepp-000501"]
-sources: ["量化的网格选择与强度设置（音序器公开文档）。", "量化对律动的影响，参考制作实践惯例。"]
-updated: "2026-11-03"
+sources: ["https://www.ableton.com/en/live-manual/11/editing-midi-notes-and-velocities/", "量化的网格选择与强度设置（音序器公开文档）。", "量化对律动的影响，参考制作实践惯例。"]
+updated: "2026-11-04"
 ---
 
 ::: zh
@@ -24,11 +24,11 @@ updated: "2026-11-03"
 
 ## 工作机制
 
-量化是把音符起点吸到最近的网格点，强度决定吸多少。百分之百会消除所有微时序差异，五成到七成通常既能对齐又保留感觉。网格必须跟音乐匹配，三连音、六八拍、摇摆八分不能用十六分网格硬套。量化只改起点，不改时值与力度，所以它修不了音太短这类问题。量化也会把琶音的滚奏压到同一格，几个音挤在一起，听感就变硬。
+量化是把音符起点吸到最近的网格点，强度决定吸多少。对选定音符使用百分之百强度，通常会把其起点移到目标网格；五成到七成可作为试听起点，是否合适仍取决于素材与软件设置。网格必须跟音乐匹配，三连音、六八拍、摇摆八分不能用十六分网格硬套。量化可作用于起点、终点或两者，具体取决于软件选项；终点量化会改变时值。起点校正不会自动修好力度、踏板或所有音符长度问题，应分别检查。量化也会把琶音的滚奏压到同一格，几个音挤在一起，听感就变硬。
 
 ## 从哪开始
 
-先听再量化，别一导入就全选。只量化明显不对的音符，用软件里的量化选定音符。网格按拍号与细分选，摇摆段落用三连音网格，或者干脆不量化。强度从六成开始，每次加一成听变化。量化完把重音手动提前或推后几毫秒，把律动找回来。鼓和贝斯可以量化得重一些，旋律与独奏要轻。量化前后各存一版，A/B 时才能确认是改善了还是只是变整齐了。
+先听再量化，别一导入就全选。只量化明显不对的音符，用软件里的量化选定音符。网格按拍号与细分选，摇摆段落按实际摇摆比例选择 groove；只有接近三连音分配时才适合三连音网格。也可以不量化。强度从六成开始，每次加一成听变化。量化完把重音手动提前或推后几毫秒，把律动找回来。鼓和贝斯可以量化得重一些，旋律与独奏要轻。量化前后各存一版，A/B 时才能确认是改善了还是只是变整齐了。
 
 ## 耳朵要抓的点
 
@@ -46,11 +46,11 @@ Generated MIDI often sits slightly off the grid, so it drags or refuses to line 
 
 ## The working mechanism
 
-Quantising pulls each note onset to the nearest grid point, and strength decides how far. Full strength erases every microtiming difference; fifty to seventy percent usually aligns without flattening. The grid has to match the music, because triplets, six-eight and swung eighths do not fit a sixteenth grid. Quantising changes onsets only, not lengths or velocity, so it cannot fix notes that are too short. It also collapses rolled chords and arpeggios onto one point, which hardens the attack.
+Quantising pulls each note onset to the nearest grid point, and strength decides how far. Full strength generally moves selected onsets to the target grid; try fifty to seventy percent as a starting point and listen in context. The grid has to match the music, because triplets, six-eight and swung eighths do not fit a sixteenth grid. Quantization can target starts, ends or both, depending on the software settings. Quantizing ends changes note lengths. Onset correction does not automatically fix velocity, pedal data or every length problem; check those separately. It also collapses rolled chords and arpeggios onto one point, which hardens the attack.
 
 ## Where to start
 
-Listen before quantising and never select all on import. Quantise only the notes that are clearly wrong, using quantise selected notes. Choose the grid by meter and subdivision, use a triplet grid for swing, or skip it entirely. Start at sixty percent strength and add ten percent at a time while listening. Afterwards nudge accents a few milliseconds early or late to recover the feel. Drums and bass can take heavier settings, melody and solos far lighter. Keep a copy before and after, so an A/B tells you whether it improved or merely tidied, and check the result against the other tracks rather than alone.
+Listen before quantising and never select all on import. Quantise only the notes that are clearly wrong, using quantise selected notes. Choose the grid by meter and subdivision, use a groove matching the actual swing ratio; a triplet grid suits only a triplet-like subdivision. Skipping quantization is also an option. Start at sixty percent strength and add ten percent at a time while listening. Afterwards nudge accents a few milliseconds early or late to recover the feel. Drums and bass can take heavier settings, melody and solos far lighter. Keep a copy before and after, so an A/B tells you whether it improved or merely tidied, and check the result against the other tracks rather than alone.
 
 ## What the ear catches
 
